@@ -1,4 +1,45 @@
 id: VFB_EPseq
-title: VFB expression pattern sequencing ontology
+title: "VFB expression pattern sequencing ontology"
 github_org: VirtualFlyBrain
 repo: vfb-EPseq-ontology
+robot_report:
+  custom_profile: TRUE
+  fail_on: ERROR
+robot_java_args: '-Xmx12G'
+use_dosdps: FALSE
+edit_format: owl
+export_formats:
+  - owl
+components:
+  products:
+    - filename: expression_data.owl
+import_group:
+  use_base_merging: TRUE
+  slme_individuals: exclude
+  products:
+    - id: FBcv
+      use_base: TRUE
+    - id: FBbt
+      use_base: TRUE
+    - id: FBdv
+      use_base: TRUE
+    - id: ro
+      use_base: TRUE
+    - id: obi
+      make_base: TRUE
+      base_iris:
+        - http://purl.obolibrary.org/obo/OBI_
+    - id: bao
+      make_base: TRUE
+      mirror_from: http://www.bioassayontology.org/bao/bao_complete.owl
+      base_iris: 
+        - http://www.bioassayontology.org/bao\#BAO
+namespaces: 
+  - http://flybase.org/reports/
+primary_release: full
+release_artefacts:
+  - full
+allow_equivalents: none
+release_date: TRUE
+gzip_main: FALSE
+release_use_reasoner: TRUE
