@@ -1,0 +1,12 @@
+format-version: 1.2
+data-version: VFB_EPseq/releases/2023-11-02/VFB_EPseq-full.owl
+ontology: VFB_EPseq/VFB_EPseq-full
+property_value: http://purl.org/dc/terms/description "None" xsd:string
+property_value: http://purl.org/dc/terms/license https://creativecommons.org/licenses/unspecified
+property_value: http://purl.org/dc/terms/title "VFB expression pattern sequencing ontology" xsd:string
+property_value: owl:versionInfo "2023-11-02" xsd:string
+
+[Term]
+id: VFB_EPSEQ:0000000
+name: root node
+
