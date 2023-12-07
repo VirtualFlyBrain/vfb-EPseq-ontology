@@ -5,7 +5,7 @@ repo: vfb-EPseq-ontology
 robot_report:
   custom_profile: TRUE
   fail_on: ERROR
-robot_java_args: '-Xmx12G'
+robot_java_args: '-Xmx24G'
 use_dosdps: FALSE
 edit_format: owl
 export_formats:
