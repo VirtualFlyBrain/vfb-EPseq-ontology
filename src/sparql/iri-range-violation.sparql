@@ -13,7 +13,7 @@ WHERE {
     oboInOwl:inSubset
     dcterms:contributor  }
   ?term ?property ?value .
-  FILTER(isIRI(?term) && (STRSTARTS(str(?term), "http://flybase.org/reports/")))
+  FILTER(isIRI(?term) && (STRSTARTS(str(?term), "http://flybase.org/reports/") || STRSTARTS(str(?term), "https://www.ncbi.nlm.nih.gov/bioproject/") || STRSTARTS(str(?term), "https://www.ncbi.nlm.nih.gov/sra/") || STRSTARTS(str(?term), "https://www.ncbi.nlm.nih.gov/biosample/")))
   FILTER (!isIRI(?value))
 }
 

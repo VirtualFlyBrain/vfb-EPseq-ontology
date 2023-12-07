@@ -36,6 +36,9 @@ import_group:
         - http://www.bioassayontology.org/bao\#BAO
 namespaces: 
   - http://flybase.org/reports/
+  - https://www.ncbi.nlm.nih.gov/bioproject/
+  - https://www.ncbi.nlm.nih.gov/sra/
+  - https://www.ncbi.nlm.nih.gov/biosample/
 primary_release: full
 release_artefacts:
   - full
