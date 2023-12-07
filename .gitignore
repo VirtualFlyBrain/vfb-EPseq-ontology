@@ -12,6 +12,9 @@ bin/
 src/ontology/mirror
 src/ontology/mirror/*
 src/ontology/reports/*
+src/ontology/expression_data/*.tsv
+src/ontology/expression_data/*.ofn
+src/ontology/expression_data/*.owl
 src/ontology/VFB_EPseq.owl
 src/ontology/VFB_EPseq.obo
 src/ontology/VFB_EPseq.json
