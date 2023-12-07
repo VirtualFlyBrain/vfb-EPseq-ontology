@@ -1,28 +1,14 @@
 
 ![Build Status](https://github.com/VirtualFlyBrain/vfb-EPseq-ontology/workflows/CI/badge.svg)
-# VFB expression pattern sequencing ontology
+# VFB expression pattern sequencing ontologies
 
-Description: None
+Ontologies of RNAseq data from samples purified based on driver expression. Metadata is obtained from NCBI, expression data is obtained from GEO. We are not using any data that is not associated with a particular driver (e.g. control samples).
 
-More information can be found at http://obofoundry.org/ontology/VFB_EPseq
-
-## Versions
-
-### Stable release versions
-
-The latest version of the ontology can always be found at:
-
-http://purl.obolibrary.org/obo/VFB_EPseq.owl
-
-(note this will not show up until the request has been approved by obofoundry.org)
-
-### Editors' version
-
-Editors of this ontology should use the edit version, [src/ontology/VFB_EPseq-edit.owl](src/ontology/VFB_EPseq-edit.owl)
+Each dataset has its own ontology file with the NCBI BioProject ID as its filename.
 
 ## Contact
 
-Please use this GitHub repository's [Issue tracker](https://github.com/VirtualFlyBrain/vfb-EPseq-ontology/issues) to request new terms/classes or report errors or specific concerns related to the ontology.
+Please use this GitHub repository's [Issue tracker](https://github.com/VirtualFlyBrain/vfb-EPseq-ontology/issues) to report errors or specific concerns related to the ontology.
 
 ## Acknowledgements
 
