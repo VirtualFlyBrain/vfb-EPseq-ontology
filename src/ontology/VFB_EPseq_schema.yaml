@@ -1,0 +1,44 @@
+id: http://github.org/vfb/vfb-EPseq-ontology/VFB_EPseq
+name: VFB_EPseq
+imports:
+  - linkml:types
+  - ./VFB_scRNAseq_schema
+prefixes:
+  NCBI_SAM: http://www.ncbi.nlm.nih.gov/biosample/
+  NCBI_PRJ: http://www.ncbi.nlm.nih.gov/bioproject/
+  NCBI_SRA: http://www.ncbi.nlm.nih.gov/sra/
+  VFB_scRNAseq: http://github.org/vfb/vfb-scRNAseq-ontology/VFB_scRNAseq/
+  FBcv: http://purl.obolibrary.org/obo/FBcv_
+  FBbt: http://purl.obolibrary.org/obo/FBbt_
+  FBdv: http://purl.obolibrary.org/obo/FBdv_
+  OBI: http://purl.obolibrary.org/obo/OBI_
+  IAO: http://purl.obolibrary.org/obo/IAO_
+  BAO: http://www.bioassayontology.org/bao#BAO_
+  RO: http://purl.obolibrary.org/obo/RO_
+  BFO: http://purl.obolibrary.org/obo/BFO_
+  linkml: https://w3id.org/linkml/
+  FlyBase: http://flybase.org/reports/
+  rdfs: http://www.w3.org/2000/01/rdf-schema#
+  oboInOwl: http://www.geneontology.org/formats/oboInOwl#
+  owl: http://www.w3.org/2002/07/owl#
+  dcterms: http://purl.org/dc/terms/
+  neo_custom: http://n2o.neo/custom/
+  neo_property: http://n2o.neo/property/
+  vfb: http://virtualflybrain.org/reports/
+default_curi_maps:
+  - semweb_context
+default_range: string
+
+classes:
+  ExpressionPattern:
+    is_a: Sample
+    attributes:
+      driver:
+        description: Expression pattern class (VFB ID) that this sample is an instance of.
+        range: Thing
+        annotations:
+          owl.fstring: TypeAssertion( {V} )
+    slots:
+      - gene
+      - expression_level
+      - hide_in_terminfo
