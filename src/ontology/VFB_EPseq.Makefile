@@ -68,3 +68,19 @@ $(EXPDIR)/dataset_%.owl:
 	$(ROBOT) convert -i $@ --format owl -o $@.gz &&\
 	rm -f $(wildcard $(EXPDIR)/dataset_$**.ofn) $(TMPDIR)/$*-exp-tmp.ofn
 
+################# reformatting input files - may need customisation of scripts for each dataset
+
+$(DATADIR)/$(DATASET)/$(DATASET)_%_metadata.xml:
+	touch $@
+
+$(DATADIR)/$(DATASET)/$(DATASET)_tpm.tsv:
+	touch $@
+
+.PHONY: process_new_sample_xml
+process_new_sample_xml: $(DATADIR)/$(DATASET)/$(DATASET)_sample_metadata.xml install_requirements
+	python3 $(SCRIPTSDIR)/format_sample_data.py $(DATASET)
+
+.PHONY: process_new_exp_tsv
+process_new_exp_tsv: $(DATADIR)/$(DATASET)/$(DATASET)_tpm.tsv install_requirements
+	python3 $(SCRIPTSDIR)/format_exp_data.py $(DATASET)
+
