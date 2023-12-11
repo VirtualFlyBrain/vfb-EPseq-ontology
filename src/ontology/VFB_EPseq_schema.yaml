@@ -25,6 +25,7 @@ prefixes:
   neo_custom: http://n2o.neo/custom/
   neo_property: http://n2o.neo/property/
   vfb: http://virtualflybrain.org/reports/
+  VFBexp: http://virtualflybrain.org/reports/VFBexp_
 default_curi_maps:
   - semweb_context
 default_range: string
@@ -33,12 +34,20 @@ classes:
   ExpressionPattern:
     is_a: Sample
     attributes:
+      notes:
+        description: Column for curator notes - not incorporated into ontology.
+      driver_symbol:
+        description: Symbol for driver - not incorporated into ontology.
       driver:
         description: Expression pattern class (VFB ID) that this sample is an instance of.
         range: Thing
         annotations:
-          owl.fstring: TypeAssertion( {V} )
+          owl.fstring: ClassAssertion( {V} {id} )
+        multivalued: false
     slots:
       - gene
       - expression_level
       - hide_in_terminfo
+  DatasetEP:
+    is_a: Dataset
+    description: Avoids a keyerror from attempting to use Dataset class from VFB_scRNAseq_schema directly.

@@ -68,6 +68,20 @@ $(EXPDIR)/dataset_%.owl:
 	$(ROBOT) convert -i $@ --format owl -o $@.gz &&\
 	rm -f $(wildcard $(EXPDIR)/dataset_$**.ofn) $(TMPDIR)/$*-exp-tmp.ofn
 
+################### metadata file
+
+# build metadata ontology for dataset
+$(ONTOLOGYDIR)/VFB_EPseq_$(DATASET).owl: update_schema install_requirements | $(TMPDIR)
+	$(LINKML) -C ExpressionPattern $(DATADIR)/$(DATASET)/$(DATASET)_sample_metadata_modified.tsv -o $(ONTOLOGYDIR)/$(DATASET)_sample_metadata.ofn &&\
+	$(LINKML) -C DatasetEP $(DATADIR)/$(DATASET)/$(DATASET)_dataset_metadata.tsv -o $(ONTOLOGYDIR)/$(DATASET)_dataset_data.ofn &&\
+	$(ROBOT) merge \
+	--input $(ONTOLOGYDIR)/$(DATASET)_sample_metadata.ofn \
+	--input $(ONTOLOGYDIR)/$(DATASET)_dataset_data.ofn \
+	--include-annotations true --collapse-import-closure false \
+	convert --format owl \
+	-o $@ &&\
+	rm $(ONTOLOGYDIR)/$(DATASET)_sample_metadata.ofn $(ONTOLOGYDIR)/$(DATASET)_dataset_data.ofn
+
 ################# reformatting input files - may need customisation of scripts for each dataset
 
 $(DATADIR)/$(DATASET)/$(DATASET)_%_metadata.xml:
