@@ -98,3 +98,17 @@ process_new_sample_xml: $(DATADIR)/$(DATASET)/$(DATASET)_sample_metadata.xml ins
 process_new_exp_tsv: $(DATADIR)/$(DATASET)/$(DATASET)_tpm.tsv install_requirements
 	python3 $(SCRIPTSDIR)/format_exp_data.py $(DATASET)
 
+######## overwrite some ODK goals to prevent unnecessary processing
+
+$(EDIT_PREPROCESSED): $(SRC)
+	cp $< $@
+
+$(SRCMERGED): $(EDIT_PREPROCESSED) $(OTHER_SRC)
+	cp $< $@
+
+$(PRESEED):
+	touch $@
+
+$(ALL_TERMS_COMBINED):
+	touch $@
+
