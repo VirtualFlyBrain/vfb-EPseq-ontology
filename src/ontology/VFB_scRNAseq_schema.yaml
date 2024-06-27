@@ -51,32 +51,31 @@ classes:
         description: Publication associated with the Dataset.
         range: Publication
         annotations:
-          owl: AnnotationProperty
+          owl.fstring: AnnotationAssertion( dcterms:references {id} {V} )
       licence:
         slot_uri: dcterms:licence
         description: Licence for the Dataset (all CC-BY 4.0 for scExpressionAtlas).
         range: Thing
         annotations:
-          owl: AnnotationProperty
+          owl.fstring: AnnotationAssertion( dcterms:licence {id} {V} )
       assay_type:
         slot_uri: OBI:0000312
         description: Assay type (FBcv ID) for the Dataset, this will probably be 'FBcv:0009000' ('single-cell RNA-seq').
         range: Thing
         annotations:
-          owl: ClassAssertion, ObjectSomeValuesFrom
+          owl.fstring: ClassAssertion( ObjectSomeValuesFrom( OBI:0000312 {V} ) {id} )
       site:
         slot_uri: oboInOwl:hasDbXref
         description: VFB site node curie. The site must be created in VFB and added to the dictionary in ../scripts/process_site_data.py to successfully map from FB data.
         range: Thing
         annotations:
-          owl: AnnotationProperty
-          owl.axiom_annotation.slots:
-            value: accession
+          owl.fstring: AnnotationAssertion(
+                        Annotation( neo_custom:accession {accession} )
+                        oboInOwl:hasDbXref {id} {V} )
       accession:
         slot_uri: neo_custom:accession
         description: Accession of the Dataset at the given Site.
         range: string
-        multivalued: true
     slots:
       - neo_label
 
@@ -91,7 +90,7 @@ classes:
         description: Tissue(s) (FBbt IDs) in the sample. Multiple IDs should be separated with '|' or in different rows. Maps as an overlaps relationship rather than part_of due to imprecision of dissection.
         range: Thing
         annotations:
-          owl: ClassAssertion, ObjectSomeValuesFrom
+          owl.fstring: ClassAssertion( ObjectSomeValuesFrom( RO:0002131 {V} ) {id} )
         multivalued: true
       associated_assay:
         slot_uri: RO:0002352
@@ -117,7 +116,7 @@ classes:
         description: Method used for the assay - currently getting any direct subclass of FBcv:0009005 'single-cell library sequencing' for scRNAseq data.
         range: Thing
         annotations:
-          owl: ClassAssertion, ObjectSomeValuesFrom
+          owl.fstring: ClassAssertion( ObjectSomeValuesFrom( BAO:0000212 {V} ) {id} )
         multivalued: false
       associated_sample_for_assay:
         slot_uri: RO:0002233
@@ -136,10 +135,10 @@ classes:
     annotations:
       owl.fstring: ClassAssertion( FBcv:0009002 {id} )
     attributes:
-      associated_sample_for_clustering:
+      associated_sample_or_assay_for_clustering:
         slot_uri: BFO:0000051
-        description: Sample (FBlc ID) that the Clustering uses.
-        range: Sample
+        description: Sample or Assay (FBlc ID) that the Clustering uses.
+        range: Class
         annotations:
           owl: ObjectPropertyAssertion
     slots:
@@ -169,7 +168,7 @@ classes:
         range: Thing
         multivalued: true
         annotations:
-          owl: ClassAssertion, ObjectSomeValuesFrom
+          owl.fstring: ClassAssertion( ObjectSomeValuesFrom( RO:0002473 {V} ) {id} )
     slots:
       - stage
       - associated_dataset
@@ -185,6 +184,9 @@ classes:
     class_uri: FBcv:0000212
     annotations:
       owl: NamedIndividual
+    attributes:
+      pub_dataset:
+        description: DataSet for the publication - created and used in tsv processing - not incorporated into ontology.
     slots:
       - neo_label
 
@@ -212,19 +214,19 @@ slots:
     description: Dataset (FBlc ID) that the Sample or Cluster belongs to.
     range: Dataset
     annotations:
-      owl: AnnotationProperty
+      owl.fstring: AnnotationAssertion( dcterms:source {id} {V} )
   sex:
     slot_uri: BFO:0000050
     description: Sex for the entity. Should be 'male' or 'female'.
     range: sex_options
     annotations:
-      owl: ClassAssertion, ObjectSomeValuesFrom
+      owl.fstring: ClassAssertion( ObjectSomeValuesFrom( BFO:0000050 {V} ) {id} )
   stage:
     slot_uri: RO:0002490
     description: Developmental stage (FBdv ID) of the Sample or Cluster.
     range: Thing
     annotations:
-      owl: ClassAssertion, ObjectSomeValuesFrom
+      owl.fstring: ClassAssertion( ObjectSomeValuesFrom( RO:0002490 {V} ) {id} )
   neo_label:
     slot_uri: neo_property:nodeLabel
     description: neo4j node label to add to entity.
@@ -236,6 +238,7 @@ slots:
     range: Thing
     annotations:
       owl.template: |-
+        {% if gene %}
         ClassAssertion ( 
             Annotation ( neo_custom:hide_in_terminfo {{hide_in_terminfo}} ) 
             Annotation ( neo_custom:expression_level {{expression_level}} ) 
@@ -243,6 +246,7 @@ slots:
             Annotation ( neo_custom:expression_extent {{expression_extent}} ) 
             {% endif %}
             ObjectSomeValuesFrom ( RO:0002292 {{gene}}) {{id}})
+        {% endif %}
   hide_in_terminfo:
     slot_uri: neo_custom:hide_in_terminfo
     description: Flag to hide expression edges in VFB Term Info pane. Range must be string - boolean changes capitalisation and does not add datatype anyway.
