@@ -5,14 +5,11 @@ repo: vfb-EPseq-ontology
 robot_report:
   custom_profile: TRUE
   fail_on: ERROR
-robot_java_args: '-Xmx24G'
+robot_java_args: '-Xmx22G'
 use_dosdps: FALSE
-edit_format: owl
+edit_format: ofn
 export_formats:
   - owl
-components:
-  products:
-    - filename: expression_data.owl
 import_group:
   use_base_merging: TRUE
   slme_individuals: exclude
