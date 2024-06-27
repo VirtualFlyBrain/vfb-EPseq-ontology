@@ -57,7 +57,7 @@ make_exp_ofns: install_linkml update_schema
 			$(LINKML) -C ExpressionPattern {} -o {.}.ofn && rm {}; \
 		fi'
 
-# merge and annotate sample ofns for each dataset
+# merge and annotate sample ofns for each dataset chunk
 # need to reformat expression annotations as these don't get the right types from linkml
 $(EXPDIR)/dataset_%.owl:
 	$(ROBOT) merge --inputs "$(EXPDIR)/dataset_$**.ofn" \
@@ -72,8 +72,8 @@ $(EXPDIR)/dataset_%.owl:
 
 # build metadata ontology for dataset
 $(ONTOLOGYDIR)/VFB_EPseq_$(DATASET).owl: update_schema install_requirements | $(TMPDIR)
-	$(LINKML) -C ExpressionPattern $(DATADIR)/$(DATASET)/$(DATASET)_sample_metadata_modified.tsv -o $(ONTOLOGYDIR)/$(DATASET)_sample_metadata.ofn &&\
-	$(LINKML) -C DatasetEP $(DATADIR)/$(DATASET)/$(DATASET)_dataset_metadata.tsv -o $(ONTOLOGYDIR)/$(DATASET)_dataset_data.ofn &&\
+	$(LINKML) -C ExpressionPattern $(DATADIR)/$(DATASET)/$(DATASET)_sample_metadata_FINAL.tsv -o $(ONTOLOGYDIR)/$(DATASET)_sample_metadata.ofn &&\
+	$(LINKML) -C DatasetEP $(DATADIR)/$(DATASET)/$(DATASET)_dataset_metadata_FINAL.tsv -o $(ONTOLOGYDIR)/$(DATASET)_dataset_data.ofn &&\
 	$(ROBOT) merge \
 	--input $(ONTOLOGYDIR)/$(DATASET)_sample_metadata.ofn \
 	--input $(ONTOLOGYDIR)/$(DATASET)_dataset_data.ofn \
