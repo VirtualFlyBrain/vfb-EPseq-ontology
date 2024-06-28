@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <catalog prefer="public" xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog">
  <group id="Folder Repository, directory=, recursive=false, Auto-Update=false, version=2" prefer="public" xml:base="">
+  <uri id="User Entered Import Resolution" name="http://purl.obolibrary.org/obo/VFB_EPseq/imports/merged_import.owl" uri="imports/merged_import.owl"/>
   <uri id="User Entered Import Resolution" name="http://virtualflybrain.org/data/VFB/OWL/VFB_EPseq_PRJNA480794.owl" uri="ontology_files/VFB_EPseq_PRJNA480794.owl"/>
   <uri id="User Entered Import Resolution" name="http://purl.obolibrary.org/obo/VFB_EPseq/imports/PRJNA480794_import.owl" uri="imports/PRJNA480794_import.owl"/>
   <uri id="User Entered Import Resolution" name="http://purl.obolibrary.org/obo/VFB_EPseq/expression_data/dataset_PRJNA480794_1.owl" uri="expression_data/dataset_PRJNA480794_1.owl"/>

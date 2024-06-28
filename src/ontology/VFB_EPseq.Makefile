@@ -15,6 +15,8 @@ $(EXPDIR) $(METADATADIR) $(ONTOLOGYDIR):
 	mkdir -p $@
 
 LINKML = linkml-data2owl -s VFB_EPseq_schema.yaml
+ROBOT_O = robot --catalog $(CATALOG_O)
+CATALOG_O = $(ONTOLOGYDIR)/catalog-v001.xml
 
 .PHONY: install_linkml
 install_linkml:
@@ -84,6 +86,52 @@ $(ONTOLOGYDIR)/VFB_EPseq_$(DATASET).owl: update_schema install_requirements | $(
 	-o $@ &&\
 	rm $(ONTOLOGYDIR)/$(DATASET)_sample_metadata.ofn $(ONTOLOGYDIR)/$(DATASET)_dataset_data.ofn $(ONTOLOGYDIR)/$(DATASET)_header.ofn
 
+
+########## release steps - imports, merged and compressed release files, reports
+
+# variables - need ontologies to be made already
+# dataset IDs from ontologies in ontology_files
+RELEASE_DATASETS = $(patsubst $(ONTOLOGYDIR)/VFB_EPseq_%.owl,%,$(wildcard $(ONTOLOGYDIR)/*.owl))
+ONTOLOGY_IMPORT_FILES = $(patsubst %,$(IMPORTDIR)/%_import.owl,$(RELEASE_DATASETS))
+IMPORT_SEED_FILES = $(patsubst %,$(IMPORTDIR)/%_terms.txt,$(RELEASE_DATASETS))
+RELEASE_ONTOLOGY_FILES = $(patsubst %,$(RELEASEDIR)/VFB_EPseq_%.owl.gz,$(RELEASE_DATASETS))
+
+.PHONY: all_imports
+all_imports: create_import_stubs $(ONTOLOGY_IMPORT_FILES) # merged import is default prerequisite
+	rm -f $(IMPORTDIR)/*terms.txt $(IMPORTDIR)/*terms_combined.txt
+
+.PHONY: create_import_stubs
+# make an empty ontology for imports to stop robot complaining
+create_import_stubs:
+	for FILE in $(ONTOLOGY_IMPORT_FILES); do \
+		if ! test -f $$FILE; then \
+			cp $(IMPORTDIR)/empty_import.txt $$FILE &&\
+			$(ROBOT) annotate -i $$FILE \
+			--ontology-iri "http://purl.obolibrary.org/obo/VFB_EPseq/$$FILE" \
+			-o $$FILE; fi; \
+		done
+
+# import seeds for each ontology
+$(IMPORTDIR)/%_terms.txt: create_import_stubs | $(ONTOLOGYDIR) $(TMPDIR)
+ifeq ($(IMP),true)
+	$(ROBOT_O) query --input $(ONTOLOGYDIR)/VFB_EPseq_$*.owl --query ../sparql/external_terms.sparql $@ &&\
+	echo "http://purl.obolibrary.org/obo/RO_0002292" >> $@
+else
+	touch $@
+endif
+
+$(IMPORTDIR)/merged_terms_combined.txt: $(IMPORT_SEED_FILES) | $(TMPDIR)
+ifeq ($(IMP),true)
+	cat $(IMPORT_SEED_FILES) | sort | uniq > $@
+else
+	touch $@
+endif
+
+.PHONY: update_catalog_files
+update_catalog_files:
+	python3 -m pip install beautifulsoup4
+	python3 -m pip install lxml
+	python3 $(SCRIPTSDIR)/update_catalogs.py
 
 ################# reformatting input files - may need customisation of scripts for each dataset
 
