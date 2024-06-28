@@ -12,7 +12,7 @@ if dataset == 'src':
 else:
     ds_info = f' for dataset {dataset}'
     ds_ann_info = ''
-    purl_filename = f'dataset_{dataset}'
+    purl_filename = f'VFB_EPseq_{dataset}'
     ontology_file = f'ontology_files/{dataset}_header.ofn'
 
 ontology_lines = []
