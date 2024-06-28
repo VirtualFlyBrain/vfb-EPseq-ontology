@@ -74,14 +74,16 @@ $(EXPDIR)/dataset_%.owl:
 $(ONTOLOGYDIR)/VFB_EPseq_$(DATASET).owl: update_schema install_requirements | $(TMPDIR)
 	$(LINKML) -C ExpressionPattern $(DATADIR)/$(DATASET)/$(DATASET)_sample_metadata_FINAL.tsv -o $(ONTOLOGYDIR)/$(DATASET)_sample_metadata.ofn &&\
 	$(LINKML) -C DatasetEP $(DATADIR)/$(DATASET)/$(DATASET)_dataset_metadata_FINAL.tsv -o $(ONTOLOGYDIR)/$(DATASET)_dataset_data.ofn &&\
+	python3 $(SCRIPTSDIR)/ontology_file_headers.py $(DATASET) &&\
 	$(ROBOT) merge \
+	--input $(ONTOLOGYDIR)/$(DATASET)_header.ofn \
 	--input $(ONTOLOGYDIR)/$(DATASET)_sample_metadata.ofn \
 	--input $(ONTOLOGYDIR)/$(DATASET)_dataset_data.ofn \
 	--include-annotations true --collapse-import-closure false \
-	annotate --ontology-iri http://virtualflybrain.org/data/VFB/OWL/dataset_$(DATASET).owl \
 	convert --format owl \
 	-o $@ &&\
-	rm $(ONTOLOGYDIR)/$(DATASET)_sample_metadata.ofn $(ONTOLOGYDIR)/$(DATASET)_dataset_data.ofn
+	rm $(ONTOLOGYDIR)/$(DATASET)_sample_metadata.ofn $(ONTOLOGYDIR)/$(DATASET)_dataset_data.ofn $(ONTOLOGYDIR)/$(DATASET)_header.ofn
+
 
 ################# reformatting input files - may need customisation of scripts for each dataset
 
