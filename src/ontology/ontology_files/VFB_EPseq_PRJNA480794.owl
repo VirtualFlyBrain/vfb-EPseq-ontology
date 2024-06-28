@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
-<rdf:RDF xmlns="http://github.org/vfb/vfb-EPseq-ontology/VFB_EPseq#"
-     xml:base="http://github.org/vfb/vfb-EPseq-ontology/VFB_EPseq"
+<rdf:RDF xmlns="http://virtualflybrain.org/data/VFB/OWL/dataset_PRJNA480794.owl#"
+     xml:base="http://virtualflybrain.org/data/VFB/OWL/dataset_PRJNA480794.owl"
      xmlns:RO="http://purl.obolibrary.org/obo/RO_"
      xmlns:BAO="http://www.bioassayontology.org/bao#BAO_"
      xmlns:BFO="http://purl.obolibrary.org/obo/BFO_"
@@ -27,7 +27,7 @@
      xmlns:neo_custom="http://n2o.neo/custom/"
      xmlns:VFB_scRNAseq="http://github.org/vfb/vfb-scRNAseq-ontology/VFB_scRNAseq/"
      xmlns:neo_property="http://n2o.neo/property/">
-    <owl:Ontology rdf:about="http://github.org/vfb/vfb-EPseq-ontology/VFB_EPseq"/>
+    <owl:Ontology rdf:about="http://virtualflybrain.org/data/VFB/OWL/dataset_PRJNA480794.owl"/>
     
 
 

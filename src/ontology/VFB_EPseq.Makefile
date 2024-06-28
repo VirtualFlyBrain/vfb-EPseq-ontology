@@ -78,6 +78,7 @@ $(ONTOLOGYDIR)/VFB_EPseq_$(DATASET).owl: update_schema install_requirements | $(
 	--input $(ONTOLOGYDIR)/$(DATASET)_sample_metadata.ofn \
 	--input $(ONTOLOGYDIR)/$(DATASET)_dataset_data.ofn \
 	--include-annotations true --collapse-import-closure false \
+	annotate --ontology-iri http://virtualflybrain.org/data/VFB/OWL/dataset_$(DATASET).owl \
 	convert --format owl \
 	-o $@ &&\
 	rm $(ONTOLOGYDIR)/$(DATASET)_sample_metadata.ofn $(ONTOLOGYDIR)/$(DATASET)_dataset_data.ofn
