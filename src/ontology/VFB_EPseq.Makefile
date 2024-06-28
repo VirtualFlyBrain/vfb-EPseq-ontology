@@ -5,13 +5,22 @@
 
 # uses aspects of scRNAseq pipeline, such as schema (extended here), but expected to be run one dataset at a time to make metadata and expression ontologies after some semi-automated pre-processing. Release process updates imports for all ontology files at once and produces all release files.
 
+.PHONY: prepare_release_notest
+# this prepares a release without updating the source files or running any tests
+prepare_release_notest: all_imports release_ontology_files gen_docs
+	rm -f $(CLEANFILES) $(ALL_TERMS_COMBINED) &&\
+	echo "Release files are now in $(RELEASEDIR) - now you should commit, push and make a release on your git hosting site such as GitHub or GitLab"
+
+########## directories and commands
+
 DATADIR = ../data_files
 EXPDIR = expression_data
 METADATADIR = metadata_files
 ONTOLOGYDIR = ontology_files
+RELEASEDIR = ../../metadata_release_files
 DATASET = PRJNA480794
 
-$(EXPDIR) $(METADATADIR) $(ONTOLOGYDIR):
+$(EXPDIR) $(METADATADIR) $(RELEASEDIR) $(ONTOLOGYDIR):
 	mkdir -p $@
 
 LINKML = linkml-data2owl -s VFB_EPseq_schema.yaml
@@ -94,7 +103,7 @@ $(ONTOLOGYDIR)/VFB_EPseq_$(DATASET).owl: update_schema install_requirements | $(
 RELEASE_DATASETS = $(patsubst $(ONTOLOGYDIR)/VFB_EPseq_%.owl,%,$(wildcard $(ONTOLOGYDIR)/*.owl))
 ONTOLOGY_IMPORT_FILES = $(patsubst %,$(IMPORTDIR)/%_import.owl,$(RELEASE_DATASETS))
 IMPORT_SEED_FILES = $(patsubst %,$(IMPORTDIR)/%_terms.txt,$(RELEASE_DATASETS))
-RELEASE_ONTOLOGY_FILES = $(patsubst %,$(RELEASEDIR)/VFB_EPseq_%.owl.gz,$(RELEASE_DATASETS))
+RELEASE_ONTOLOGY_FILES = $(patsubst %,$(RELEASEDIR)/VFB_EPseq_%.owl,$(RELEASE_DATASETS))
 
 .PHONY: all_imports
 all_imports: create_import_stubs $(ONTOLOGY_IMPORT_FILES) # merged import is default prerequisite
@@ -112,6 +121,7 @@ create_import_stubs:
 		done
 
 # import seeds for each ontology
+# need to add RO_0002292 (expresses), which is only in the expression imports
 $(IMPORTDIR)/%_terms.txt: create_import_stubs | $(ONTOLOGYDIR) $(TMPDIR)
 ifeq ($(IMP),true)
 	$(ROBOT_O) query --input $(ONTOLOGYDIR)/VFB_EPseq_$*.owl --query ../sparql/external_terms.sparql $@ &&\
@@ -132,6 +142,29 @@ update_catalog_files:
 	python3 -m pip install beautifulsoup4
 	python3 -m pip install lxml
 	python3 $(SCRIPTSDIR)/update_catalogs.py
+
+.PHONY: release_ontology_files
+release_ontology_files: $(RELEASE_ONTOLOGY_FILES)
+	echo $@
+
+# create merged release files (no need to reason etc)
+# remove expression import (loaded separately into VFB)
+$(RELEASEDIR)/VFB_EPseq_%.owl: | $(RELEASEDIR)
+	cat $(ONTOLOGYDIR)/VFB_EPseq_$*.owl | grep -v "http://purl.obolibrary.org/obo/VFB_EPseq/expression_data/" > $(ONTOLOGYDIR)/VFB_EPseq_$*-tmp.owl
+	$(ROBOT_O) merge -i $(ONTOLOGYDIR)/VFB_EPseq_$*-tmp.owl \
+	convert --format owl \
+	-o $@ &&\
+	rm -f $(ONTOLOGYDIR)/VFB_EPseq_$*-tmp.owl
+
+# make a $(SRC) file that imports all the owl files in ontology_files
+$(SRC):
+	python3 $(SCRIPTSDIR)/ontology_file_headers.py src
+
+# remove any existing docs and generate fresh
+.PHONY: gen_docs
+gen_docs: install_linkml
+	rm -fr ../../docs
+	gen-doc ./VFB_EPseq_schema.yaml --directory ../../docs
 
 ################# reformatting input files - may need customisation of scripts for each dataset
 
