@@ -7,7 +7,7 @@
 
 .PHONY: prepare_release_notest
 # this prepares a release without updating the source files or running any tests
-prepare_release_notest: all_imports release_ontology_files gen_docs
+prepare_release_notest: all_imports release_ontology_files gen_docs $(REPORTDIR)/FBgn_list.txt
 	rm -f $(CLEANFILES) $(ALL_TERMS_COMBINED) &&\
 	echo "Release files are now in $(RELEASEDIR) - now you should commit, push and make a release on your git hosting site such as GitHub or GitLab"
 
@@ -155,6 +155,11 @@ $(RELEASEDIR)/VFB_EPseq_%.owl: | $(RELEASEDIR)
 	convert --format owl \
 	-o $@ &&\
 	rm -f $(ONTOLOGYDIR)/VFB_EPseq_$*-tmp.owl
+
+# this is needed for gene annotations in vfb-scRNAseq-gene-annotations repo
+$(REPORTDIR)/FBgn_list.txt: $(TMPDIR)/existing_FBgns.txt | $(REPORTDIR)
+	cp $< $@ &&\
+	rm -f $(EXPDIR)/*.fbgns.tmp
 
 # make a $(SRC) file that imports all the owl files in ontology_files
 $(SRC):
