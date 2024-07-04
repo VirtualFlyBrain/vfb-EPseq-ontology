@@ -1,2 +1,6 @@
 1. FBgn0003926 was obsoleted in FlyBase and therefore removed from the _FINAL data.
 2. FBtp0092375 has no VFBexp ID, so this driver was not included.
+3. 'FBgn0036125', 'FBgn0037417' and 'FBgn0050456' have been split in FlyBase.
+  a) based on name in tpm file, 'FBgn0036125' should be 'FBgn0286980' (Iyd).
+  b) unclear whether 'FBgn0037417' (Osi10) maps to Osi10a or Osi10b, so removing this gene.
+  c) unclear whether 'FBgn0050456' (CG30456) maps to CG46491 or CG46492, so removing this gene.
