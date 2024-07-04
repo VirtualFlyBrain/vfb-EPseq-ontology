@@ -40,7 +40,7 @@ install_requirements:
 	python3 -m pip install -r $(SCRIPTSDIR)/requirements.txt
 
 
-################## EXPRESSION FILE
+################## EXPRESSION FILES
 
 # First make a correctly-formatted $(EXPDIR)/$(DATASET)_expression_FINAL.tsv)
 
@@ -55,9 +55,6 @@ DATASET_EXP_FILES = $(sort $(filter-out sample_%,$(subst -,.owl ,$(wildcard $(EX
 .PHONY: make_expression_files
 # make ofns from tsvs - RUN THIS SECOND
 make_expression_files: $(DATASET_EXP_FILES)
-
-exp_file_check:
-	echo $(DATASET_EXP_FILES)
 
 .PHONY: make_exp_ofns
 # check whether ofn exists for each sample tsv, delete tsv if true, make ofn then delete tsv if false.
@@ -169,6 +166,42 @@ gen_docs: install_linkml
 	rm -fr ../../docs
 	gen-doc ./VFB_EPseq_schema.yaml --directory ../../docs
 
+######## UPDATE OBSOLETE GENES
+
+.PHONY: unzip_exp_files
+# unzip expression files - overwrites any existing owl files, keeping .gz version too
+unzip_exp_files:
+	for FILE in $(EXPDIR)/*.owl.gz; \
+	do gzip -dkf $$FILE; done
+
+.PHONY: zip_exp_files
+# zip expression files - overwrites any existing owl.gz files, keeping unzipped version too
+zip_exp_files:
+	for FILE in $(EXPDIR)/*.owl; \
+	do $(ROBOT) convert -i $$FILE --format owl -o $$FILE.gz; done
+
+# generating seed file (to extract FBgns from there) needs too much memory (so using grep)
+$(TMPDIR)/existing_FBgns.txt: unzip_exp_files
+	for FILE in $(EXPDIR)/*.owl; \
+	do cat $$FILE | grep --only-matching -E "FBgn[0-9]+" | sort | uniq > $$FILE.fbgns.tmp; done &&\
+	cat $(EXPDIR)/*.fbgns.tmp | sort | uniq > $@
+
+.PHONY: get_gene_id_map
+get_gene_id_map: install_postgresql
+	# this won't work until https://flybase.github.io/docs/chado/functions#update_ids is fixed
+	python3 $(SCRIPTSDIR)/print_id_query.py &&\
+	psql -h chado.flybase.org -U flybase flybase -f ../sql/id_update_query.sql \
+	 > $(TMPDIR)/id_validation_table.tsv
+
+replace_gene_ids_in_files:
+	# need to get 'tmp/id_validation_table.txt' file from manual use of id validator
+	python3 $(SCRIPTSDIR)/update_FBgns_in_files.py &&\
+	for FILE in $(EXPDIR)/*.owl; \
+	do if [ -f $$FILE-processed.txt ]; \
+	then mv $$FILE-processed.txt $$FILE; fi &&\
+	$(ROBOT) convert -i $$FILE --format owl -o $$FILE.gz &&\
+	rm $$FILE.fbgns.tmp; done
+	
 ################# reformatting input files - may need customisation of scripts for each dataset
 
 $(DATADIR)/$(DATASET)/$(DATASET)_%_metadata.xml:
