@@ -53,8 +53,11 @@ process_expdata: | $(EXPDIR) $(METADATADIR)
 DATASET_EXP_FILES = $(sort $(filter-out sample_%,$(subst -,.owl ,$(wildcard $(EXPDIR)/*.tsv))) $(filter-out sample_%,$(subst -,.owl ,$(wildcard $(EXPDIR)/*.ofn))))
 
 .PHONY: make_expression_files
-# make ofns from tsvs and merge into owl files - RUN THIS SECOND
-make_expression_files: make_exp_ofns $(DATASET_EXP_FILES)
+# make ofns from tsvs - RUN THIS SECOND
+make_expression_files: $(DATASET_EXP_FILES)
+
+exp_file_check:
+	echo $(DATASET_EXP_FILES)
 
 .PHONY: make_exp_ofns
 # check whether ofn exists for each sample tsv, delete tsv if true, make ofn then delete tsv if false.
@@ -70,7 +73,7 @@ make_exp_ofns: install_linkml update_schema
 
 # merge and annotate sample ofns for each dataset chunk
 # need to reformat expression annotations as these don't get the right types from linkml
-$(EXPDIR)/dataset_%.owl:
+$(EXPDIR)/dataset_%.owl: make_exp_ofns
 	$(ROBOT) merge --inputs "$(EXPDIR)/dataset_$**.ofn" \
 	annotate --ontology-iri "http://purl.obolibrary.org/obo/VFB_EPseq/$@" \
 	-o $(TMPDIR)/$*-exp-tmp.ofn &&\

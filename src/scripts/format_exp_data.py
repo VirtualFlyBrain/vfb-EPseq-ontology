@@ -4,8 +4,8 @@ import pandas as pd
 
 dataset = sys.argv[1]
 infile = "../data_files/%s/%s_tpm.tsv" % (dataset, dataset)
-outfile = "../data_files/%s/%s_expression_formatted.tsv" % (dataset, dataset)
-metadata = "../data_files/%s/%s_sample_metadata.tsv" % (dataset, dataset)
+outfile = "../data_files/%s/%s_expression_FINAL.tsv" % (dataset, dataset)
+metadata = "../data_files/%s/%s_sample_metadata_FINAL.tsv" % (dataset, dataset)
 
 exp_df = pd.read_csv(infile, sep='\t').set_index('gene_id')
 meta_df = pd.read_csv(metadata, sep='\t')
@@ -22,10 +22,15 @@ exp_values = exp_values[exp_values>0]
 # make dataframe, amend colnames, add hide_in_term_info column
 exp_df = exp_values.to_frame(name='expression_level').reset_index()
 exp_df.rename(columns={'gene_id':'gene', 'level_1': 'id'}, inplace=True)
+
 # keep only rows with FBgn IDs
 exp_df = exp_df[exp_df['gene'].str.startswith('FBgn')]
+# drop some FBgns (e.g. if now obsolete)
+genes_to_remove = ['FBgn0003926']
+exp_df = exp_df[~exp_df['gene'].isin(genes_to_remove)]
 # prefix gene IDs
 exp_df['gene'] = exp_df['gene'].apply(lambda x: x.replace('FBgn', 'FlyBase:FBgn'))
+
 # drop samples that are not in meta_df (these have been excluded)
 exp_df = exp_df[exp_df['id'].isin(meta_df['id'])]
 exp_df['hide_in_terminfo'] = 'true'

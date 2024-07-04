@@ -1,0 +1,2 @@
+1. FBgn0003926 was obsoleted in FlyBase and therefore removed from the _FINAL data.
+2. FBtp0092375 has no VFBexp ID, so this driver was not included.

@@ -38,5 +38,5 @@ for s in samples:
         if end > len(sample_data):
             end = len(sample_data)
         sample_data_chunk = sample_data[start:end]
-        sample_data_chunk.to_csv("test/dataset_%s_%s-sample_%s_chunk_%s.tsv" %(dataset, dataset_group, sample_id, chunk_counter), sep='\t', index=None)
+        sample_data_chunk.to_csv("expression_data/dataset_%s_%s-sample_%s_chunk_%s.tsv" %(dataset, dataset_group, sample_id, chunk_counter), sep='\t', index=None)
         chunk_counter = chunk_counter - 1
