@@ -193,14 +193,14 @@ get_gene_id_map: install_postgresql
 	psql -h chado.flybase.org -U flybase flybase -f ../sql/id_update_query.sql \
 	 > $(TMPDIR)/id_validation_table.tsv
 
-replace_gene_ids_in_files:
+replace_gene_ids_in_files: $(TMPDIR)/existing_FBgns.txt
 	# need to get 'tmp/id_validation_table.txt' file from manual use of id validator
 	python3 $(SCRIPTSDIR)/update_FBgns_in_files.py &&\
 	for FILE in $(EXPDIR)/*.owl; \
 	do if [ -f $$FILE-processed.txt ]; \
-	then mv $$FILE-processed.txt $$FILE; fi &&\
-	$(ROBOT) convert -i $$FILE --format owl -o $$FILE.gz &&\
-	rm $$FILE.fbgns.tmp; done
+	then mv $$FILE-processed.txt $$FILE \
+	$(ROBOT) convert -i $$FILE --format owl -o $$FILE.gz; fi &&\
+	rm -f $$FILE.fbgns.tmp; done
 	
 ################# reformatting input files - may need customisation of scripts for each dataset
 
