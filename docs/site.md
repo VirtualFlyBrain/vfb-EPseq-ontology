@@ -21,8 +21,8 @@ URI: [oboInOwl:hasDbXref](http://www.geneontology.org/formats/oboInOwl#hasDbXref
 
 | Name | Description | Modifies Slot |
 | --- | --- | --- |
-| [DatasetEP](DatasetEP.md) | Avoids a keyerror from attempting to use Dataset class from VFB_scRNAseq_sche... |  no  |
 | [Dataset](Dataset.md) |  |  no  |
+| [DatasetEP](DatasetEP.md) | Avoids a keyerror from attempting to use Dataset class from VFB_scRNAseq_sche... |  no  |
 
 
 

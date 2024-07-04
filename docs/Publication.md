@@ -21,8 +21,8 @@ URI: [dcterms:references](http://purl.org/dc/terms/references)
 
 | Name | Description | Modifies Slot |
 | --- | --- | --- |
-| [DatasetEP](DatasetEP.md) | Avoids a keyerror from attempting to use Dataset class from VFB_scRNAseq_sche... |  no  |
 | [Dataset](Dataset.md) |  |  no  |
+| [DatasetEP](DatasetEP.md) | Avoids a keyerror from attempting to use Dataset class from VFB_scRNAseq_sche... |  no  |
 
 
 

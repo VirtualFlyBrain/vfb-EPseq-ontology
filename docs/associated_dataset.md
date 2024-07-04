@@ -21,11 +21,11 @@ URI: [dcterms:source](http://purl.org/dc/terms/source)
 
 | Name | Description | Modifies Slot |
 | --- | --- | --- |
-| [Cluster](Cluster.md) |  |  no  |
+| [Clustering](Clustering.md) |  |  no  |
 | [Assay](Assay.md) |  |  no  |
 | [ExpressionPattern](ExpressionPattern.md) |  |  no  |
-| [Clustering](Clustering.md) |  |  no  |
 | [Sample](Sample.md) |  |  no  |
+| [Cluster](Cluster.md) |  |  no  |
 
 
 

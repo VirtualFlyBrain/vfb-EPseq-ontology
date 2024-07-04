@@ -21,14 +21,14 @@ URI: [IAO:0000115](http://purl.obolibrary.org/obo/IAO_0000115)
 
 | Name | Description | Modifies Slot |
 | --- | --- | --- |
-| [Dataset](Dataset.md) |  |  no  |
-| [Cluster](Cluster.md) |  |  no  |
-| [Class](Class.md) |  |  no  |
-| [DatasetEP](DatasetEP.md) | Avoids a keyerror from attempting to use Dataset class from VFB_scRNAseq_sche... |  no  |
+| [Clustering](Clustering.md) |  |  no  |
 | [Assay](Assay.md) |  |  no  |
 | [ExpressionPattern](ExpressionPattern.md) |  |  no  |
-| [Clustering](Clustering.md) |  |  no  |
+| [Class](Class.md) |  |  no  |
+| [Dataset](Dataset.md) |  |  no  |
+| [DatasetEP](DatasetEP.md) | Avoids a keyerror from attempting to use Dataset class from VFB_scRNAseq_sche... |  no  |
 | [Sample](Sample.md) |  |  no  |
+| [Cluster](Cluster.md) |  |  no  |
 
 
 
