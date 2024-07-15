@@ -29,7 +29,7 @@ CATALOG_O = $(ONTOLOGYDIR)/catalog-v001.xml
 
 .PHONY: install_linkml
 install_linkml:
-	python3 -m pip install linkml-owl
+	python3 -m pip install linkml-owl==v0.4.1
 
 .PHONY: update_schema
 update_schema: install_requirements
@@ -70,7 +70,7 @@ make_exp_ofns: install_linkml update_schema
 
 # merge and annotate sample ofns for each dataset chunk
 # need to reformat expression annotations as these don't get the right types from linkml
-$(EXPDIR)/dataset_%.owl: make_exp_ofns
+$(EXPDIR)/VFB_EPseq_exp_%.owl: make_exp_ofns
 	$(ROBOT) merge --inputs "$(EXPDIR)/dataset_$**.ofn" \
 	annotate --ontology-iri "http://purl.obolibrary.org/obo/VFB_EPseq/$@" \
 	-o $(TMPDIR)/$*-exp-tmp.ofn &&\

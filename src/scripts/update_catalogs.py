@@ -27,10 +27,10 @@ class Catalog:
     def update_expression_ontologies(self, project_id):
         """Add any new entries for expression ontologies."""
         
-        exp_chunks = [filename.split('_')[2].replace('.owl', '')  for filename in os.listdir("expression_data") if (filename.endswith('.owl') and filename.split('_')[1]==project_id)]
+        exp_chunks = [filename.split('_')[4].replace('.owl', '')  for filename in os.listdir("expression_data") if (filename.endswith('.owl') and filename.split('_')[3]==project_id)]
         
         for chunk in exp_chunks:
-            purl = f"http://purl.obolibrary.org/obo/VFB_EPseq/expression_data/dataset_{project_id}_{chunk}.owl"
+            purl = f"http://purl.obolibrary.org/obo/VFB_EPseq/expression_data/VFB_EPseq_exp_{project_id}_{chunk}.owl"
             
             exist_check = self.soup.find('uri', {"name": purl})
             if not exist_check:
@@ -38,7 +38,7 @@ class Catalog:
                     self.soup.new_tag('uri', attrs={
                         "id": "User Entered Import Resolution",
                         "name": purl,
-                        "uri" : f"{self.path_to_root}expression_data/dataset_{project_id}_{chunk}.owl"}))
+                        "uri" : f"{self.path_to_root}expression_data/VFB_EPseq_exp_{project_id}_{chunk}.owl"}))
 
 
     def update_external_imports(self, project_id):

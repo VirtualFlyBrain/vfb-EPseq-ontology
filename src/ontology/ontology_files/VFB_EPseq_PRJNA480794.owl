@@ -16,9 +16,9 @@
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#"
      xmlns:property="http://n2o.neo/property/">
     <owl:Ontology rdf:about="http://virtualflybrain.org/data/VFB/OWL/VFB_EPseq_PRJNA480794.owl">
-        <owl:imports rdf:resource="http://purl.obolibrary.org/obo/VFB_EPseq/expression_data/dataset_PRJNA480794_1.owl"/>
-        <owl:imports rdf:resource="http://purl.obolibrary.org/obo/VFB_EPseq/expression_data/dataset_PRJNA480794_2.owl"/>
-        <owl:imports rdf:resource="http://purl.obolibrary.org/obo/VFB_EPseq/expression_data/dataset_PRJNA480794_3.owl"/>
+        <owl:imports rdf:resource="http://purl.obolibrary.org/obo/VFB_EPseq/expression_data/VFB_EPseq_exp_PRJNA480794_1.owl"/>
+        <owl:imports rdf:resource="http://purl.obolibrary.org/obo/VFB_EPseq/expression_data/VFB_EPseq_exp_PRJNA480794_2.owl"/>
+        <owl:imports rdf:resource="http://purl.obolibrary.org/obo/VFB_EPseq/expression_data/VFB_EPseq_exp_PRJNA480794_3.owl"/>
         <owl:imports rdf:resource="http://purl.obolibrary.org/obo/VFB_EPseq/imports/PRJNA480794_import.owl"/>
         <dc:description>An ontology of Drosophila melanogaster driver expression pattern RNAseq data for dataset PRJNA480794. This information is from published datasets taken from GEO.</dc:description>
         <dc:title>VFB expression pattern RNAseq Ontology for dataset PRJNA480794</dc:title>
