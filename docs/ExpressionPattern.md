@@ -156,13 +156,14 @@ URI: [http://github.org/vfb/vfb-EPseq-ontology/VFB_EPseq/:ExpressionPattern](htt
 
 
 
-
 ## Mappings
 
 | Mapping Type | Mapped Value |
 | ---  | ---  |
 | self | http://github.org/vfb/vfb-EPseq-ontology/VFB_EPseq/:ExpressionPattern |
 | native | http://github.org/vfb/vfb-EPseq-ontology/VFB_EPseq/:ExpressionPattern |
+
+
 
 
 
@@ -208,10 +209,10 @@ attributes:
       of.
     from_schema: http://github.org/vfb/vfb-EPseq-ontology/VFB_EPseq
     rank: 1000
-    multivalued: false
     domain_of:
     - ExpressionPattern
     range: Thing
+    multivalued: false
 
 ```
 </details>
@@ -254,12 +255,12 @@ attributes:
       of.
     from_schema: http://github.org/vfb/vfb-EPseq-ontology/VFB_EPseq
     rank: 1000
-    multivalued: false
     alias: driver
     owner: ExpressionPattern
     domain_of:
     - ExpressionPattern
     range: Thing
+    multivalued: false
   gene:
     name: gene
     annotations:
@@ -329,11 +330,11 @@ attributes:
     annotations:
       owl.fstring:
         tag: owl.fstring
-        value: AnnotationAssertion( dcterms:source {id} {V} )
+        value: AnnotationAssertion( dc:source {id} {V} )
     description: Dataset (FBlc ID) that the Sample or Cluster belongs to.
     from_schema: http://github.org/vfb/vfb-EPseq-ontology/VFB_EPseq
     rank: 1000
-    slot_uri: dcterms:source
+    slot_uri: dc:source
     alias: associated_dataset
     owner: ExpressionPattern
     domain_of:
@@ -389,12 +390,12 @@ attributes:
     from_schema: http://github.org/vfb/vfb-scRNAseq-ontology/VFB_scRNAseq
     rank: 1000
     slot_uri: RO:0002131
-    multivalued: true
     alias: sample_tissue
     owner: ExpressionPattern
     domain_of:
     - Sample
     range: Thing
+    multivalued: true
   associated_assay:
     name: associated_assay
     annotations:
@@ -406,12 +407,12 @@ attributes:
     from_schema: http://github.org/vfb/vfb-scRNAseq-ontology/VFB_scRNAseq
     rank: 1000
     slot_uri: RO:0002352
-    multivalued: true
     alias: associated_assay
     owner: ExpressionPattern
     domain_of:
     - Sample
     range: Assay
+    multivalued: true
   name:
     name: name
     annotations:

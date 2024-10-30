@@ -21,16 +21,16 @@ URI: [http://github.org/vfb/vfb-EPseq-ontology/VFB_EPseq/:id](http://github.org/
 
 | Name | Description | Modifies Slot |
 | --- | --- | --- |
-| [Clustering](Clustering.md) |  |  no  |
-| [Assay](Assay.md) |  |  no  |
-| [ExpressionPattern](ExpressionPattern.md) |  |  no  |
 | [Thing](Thing.md) |  |  no  |
-| [Class](Class.md) |  |  no  |
-| [Dataset](Dataset.md) |  |  no  |
 | [DatasetEP](DatasetEP.md) | Avoids a keyerror from attempting to use Dataset class from VFB_scRNAseq_sche... |  no  |
-| [Sample](Sample.md) |  |  no  |
+| [ExpressionPattern](ExpressionPattern.md) |  |  no  |
+| [Assay](Assay.md) |  |  no  |
 | [Cluster](Cluster.md) |  |  no  |
+| [Class](Class.md) |  |  no  |
+| [Clustering](Clustering.md) |  |  no  |
 | [Publication](Publication.md) |  |  no  |
+| [Dataset](Dataset.md) |  |  no  |
+| [Sample](Sample.md) |  |  no  |
 
 
 
@@ -60,6 +60,16 @@ URI: [http://github.org/vfb/vfb-EPseq-ontology/VFB_EPseq/:id](http://github.org/
 
 
 * from schema: http://github.org/vfb/vfb-EPseq-ontology/VFB_EPseq
+
+
+
+
+## Mappings
+
+| Mapping Type | Mapped Value |
+| ---  | ---  |
+| self | http://github.org/vfb/vfb-EPseq-ontology/VFB_EPseq/:id |
+| native | http://github.org/vfb/vfb-EPseq-ontology/VFB_EPseq/:id |
 
 
 

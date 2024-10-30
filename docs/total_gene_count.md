@@ -1,13 +1,13 @@
 
 
-# Slot: neo_label
+# Slot: total_gene_count
 
 
-_neo4j node label to add to entity._
+_Total number of distinct genes associated with the entity before filtering by extent._
 
 
 
-URI: [neo_property:nodeLabel](http://n2o.neo/property/nodeLabel)
+URI: [neo_custom:total_gene_count](http://n2o.neo/custom/total_gene_count)
 
 
 
@@ -21,13 +21,9 @@ URI: [neo_property:nodeLabel](http://n2o.neo/property/nodeLabel)
 
 | Name | Description | Modifies Slot |
 | --- | --- | --- |
-| [Assay](Assay.md) |  |  no  |
-| [ExpressionPattern](ExpressionPattern.md) |  |  no  |
 | [Cluster](Cluster.md) |  |  no  |
-| [DatasetEP](DatasetEP.md) | Avoids a keyerror from attempting to use Dataset class from VFB_scRNAseq_sche... |  no  |
-| [Publication](Publication.md) |  |  no  |
 | [Dataset](Dataset.md) |  |  no  |
-| [Sample](Sample.md) |  |  no  |
+| [DatasetEP](DatasetEP.md) | Avoids a keyerror from attempting to use Dataset class from VFB_scRNAseq_sche... |  no  |
 
 
 
@@ -37,7 +33,7 @@ URI: [neo_property:nodeLabel](http://n2o.neo/property/nodeLabel)
 
 ## Properties
 
-* Range: [String](String.md)
+* Range: [Integer](Integer.md)
 
 
 
@@ -69,8 +65,8 @@ URI: [neo_property:nodeLabel](http://n2o.neo/property/nodeLabel)
 
 | Mapping Type | Mapped Value |
 | ---  | ---  |
-| self | neo_property:nodeLabel |
-| native | http://github.org/vfb/vfb-EPseq-ontology/VFB_EPseq/:neo_label |
+| self | neo_custom:total_gene_count |
+| native | http://github.org/vfb/vfb-EPseq-ontology/VFB_EPseq/:total_gene_count |
 
 
 
@@ -79,23 +75,21 @@ URI: [neo_property:nodeLabel](http://n2o.neo/property/nodeLabel)
 
 <details>
 ```yaml
-name: neo_label
+name: total_gene_count
 annotations:
   owl:
     tag: owl
     value: AnnotationProperty
-description: neo4j node label to add to entity.
+description: Total number of distinct genes associated with the entity before filtering
+  by extent.
 from_schema: http://github.org/vfb/vfb-EPseq-ontology/VFB_EPseq
 rank: 1000
-slot_uri: neo_property:nodeLabel
-alias: neo_label
+slot_uri: neo_custom:total_gene_count
+alias: total_gene_count
 domain_of:
 - Dataset
-- Sample
-- Assay
 - Cluster
-- Publication
-range: string
+range: integer
 
 ```
 </details>

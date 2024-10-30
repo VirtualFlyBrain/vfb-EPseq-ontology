@@ -41,3 +41,14 @@ URI: [xsd:anyURI](http://www.w3.org/2001/XMLSchema#anyURI)
 
 
 
+
+## Mappings
+
+| Mapping Type | Mapped Value |
+| ---  | ---  |
+| self | xsd:anyURI |
+| native | http://github.org/vfb/vfb-EPseq-ontology/VFB_EPseq/:uri |
+| close | schema:URL |
+
+
+

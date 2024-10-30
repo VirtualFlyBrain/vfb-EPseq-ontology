@@ -61,6 +61,16 @@ URI: [RO:0002233](http://purl.obolibrary.org/obo/RO_0002233)
 
 
 
+## Mappings
+
+| Mapping Type | Mapped Value |
+| ---  | ---  |
+| self | RO:0002233 |
+| native | http://github.org/vfb/vfb-EPseq-ontology/VFB_EPseq/:associated_sample_for_assay |
+
+
+
+
 ## LinkML Source
 
 <details>
@@ -75,12 +85,12 @@ description: Input sample(s) for the scRNAseq assay. Multiple IDs should be sepa
 from_schema: http://github.org/vfb/vfb-EPseq-ontology/VFB_EPseq
 rank: 1000
 slot_uri: RO:0002233
-multivalued: true
 alias: associated_sample_for_assay
 owner: Assay
 domain_of:
 - Assay
 range: Sample
+multivalued: true
 
 ```
 </details>

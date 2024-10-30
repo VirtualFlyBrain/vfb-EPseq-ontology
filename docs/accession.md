@@ -54,6 +54,16 @@ URI: [neo_custom:accession](http://n2o.neo/custom/accession)
 
 
 
+## Mappings
+
+| Mapping Type | Mapped Value |
+| ---  | ---  |
+| self | neo_custom:accession |
+| native | http://github.org/vfb/vfb-EPseq-ontology/VFB_EPseq/:accession |
+
+
+
+
 ## LinkML Source
 
 <details>

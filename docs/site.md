@@ -60,6 +60,16 @@ URI: [oboInOwl:hasDbXref](http://www.geneontology.org/formats/oboInOwl#hasDbXref
 
 
 
+## Mappings
+
+| Mapping Type | Mapped Value |
+| ---  | ---  |
+| self | oboInOwl:hasDbXref |
+| native | http://github.org/vfb/vfb-EPseq-ontology/VFB_EPseq/:site |
+
+
+
+
 ## LinkML Source
 
 <details>

@@ -21,9 +21,9 @@ URI: [RO:0002490](http://purl.obolibrary.org/obo/RO_0002490)
 
 | Name | Description | Modifies Slot |
 | --- | --- | --- |
-| [ExpressionPattern](ExpressionPattern.md) |  |  no  |
-| [Cluster](Cluster.md) |  |  no  |
 | [Sample](Sample.md) |  |  no  |
+| [Cluster](Cluster.md) |  |  no  |
+| [ExpressionPattern](ExpressionPattern.md) |  |  no  |
 
 
 
@@ -57,6 +57,16 @@ URI: [RO:0002490](http://purl.obolibrary.org/obo/RO_0002490)
 
 
 * from schema: http://github.org/vfb/vfb-EPseq-ontology/VFB_EPseq
+
+
+
+
+## Mappings
+
+| Mapping Type | Mapped Value |
+| ---  | ---  |
+| self | RO:0002490 |
+| native | http://github.org/vfb/vfb-EPseq-ontology/VFB_EPseq/:stage |
 
 
 

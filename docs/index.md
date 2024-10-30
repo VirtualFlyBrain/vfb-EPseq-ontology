@@ -42,6 +42,7 @@ Name: VFB_EPseq
 | [driver_symbol](driver_symbol.md) | Symbol for driver - not incorporated into ontology |
 | [expression_extent](expression_extent.md) | Extent of expression of the given gene |
 | [expression_level](expression_level.md) | Level of expression of the given gene |
+| [filtered_gene_count](filtered_gene_count.md) | Total number of distinct genes associated with the entity after filtering by ... |
 | [gene](gene.md) | A gene (FBgn ID) that is expressed by the entity |
 | [hide_in_terminfo](hide_in_terminfo.md) | Flag to hide expression edges in VFB Term Info pane |
 | [id](id.md) | Identifier for the entity |
@@ -57,6 +58,7 @@ Name: VFB_EPseq
 | [site](site.md) | VFB site node curie |
 | [stage](stage.md) | Developmental stage (FBdv ID) of the Sample or Cluster |
 | [title](title.md) | Short description of the entity |
+| [total_gene_count](total_gene_count.md) | Total number of distinct genes associated with the entity before filtering by... |
 
 
 ## Enumerations

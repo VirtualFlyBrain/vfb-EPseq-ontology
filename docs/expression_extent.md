@@ -53,6 +53,16 @@ URI: [neo_custom:expression_extent](http://n2o.neo/custom/expression_extent)
 
 
 
+## Mappings
+
+| Mapping Type | Mapped Value |
+| ---  | ---  |
+| self | neo_custom:expression_extent |
+| native | http://github.org/vfb/vfb-EPseq-ontology/VFB_EPseq/:expression_extent |
+
+
+
+
 ## LinkML Source
 
 <details>

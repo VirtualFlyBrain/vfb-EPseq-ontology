@@ -59,6 +59,16 @@ URI: [BFO:0000050](http://purl.obolibrary.org/obo/BFO_0000050)
 
 
 
+## Mappings
+
+| Mapping Type | Mapped Value |
+| ---  | ---  |
+| self | BFO:0000050 |
+| native | http://github.org/vfb/vfb-EPseq-ontology/VFB_EPseq/:associated_clustering |
+
+
+
+
 ## LinkML Source
 
 <details>

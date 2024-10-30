@@ -21,8 +21,8 @@ URI: [neo_custom:hide_in_terminfo](http://n2o.neo/custom/hide_in_terminfo)
 
 | Name | Description | Modifies Slot |
 | --- | --- | --- |
-| [ExpressionPattern](ExpressionPattern.md) |  |  no  |
 | [Cluster](Cluster.md) |  |  no  |
+| [ExpressionPattern](ExpressionPattern.md) |  |  no  |
 
 
 
@@ -50,6 +50,16 @@ URI: [neo_custom:hide_in_terminfo](http://n2o.neo/custom/hide_in_terminfo)
 
 
 * from schema: http://github.org/vfb/vfb-EPseq-ontology/VFB_EPseq
+
+
+
+
+## Mappings
+
+| Mapping Type | Mapped Value |
+| ---  | ---  |
+| self | neo_custom:hide_in_terminfo |
+| native | http://github.org/vfb/vfb-EPseq-ontology/VFB_EPseq/:hide_in_terminfo |
 
 
 

@@ -59,6 +59,16 @@ URI: [BAO:0000212](http://www.bioassayontology.org/bao#BAO_0000212)
 
 
 
+## Mappings
+
+| Mapping Type | Mapped Value |
+| ---  | ---  |
+| self | BAO:0000212 |
+| native | http://github.org/vfb/vfb-EPseq-ontology/VFB_EPseq/:method |
+
+
+
+
 ## LinkML Source
 
 <details>
@@ -73,12 +83,12 @@ description: Method used for the assay - currently getting any direct subclass o
 from_schema: http://github.org/vfb/vfb-EPseq-ontology/VFB_EPseq
 rank: 1000
 slot_uri: BAO:0000212
-multivalued: false
 alias: method
 owner: Assay
 domain_of:
 - Assay
 range: Thing
+multivalued: false
 
 ```
 </details>

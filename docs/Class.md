@@ -100,13 +100,14 @@ URI: [http://github.org/vfb/vfb-EPseq-ontology/VFB_EPseq/:Class](http://github.o
 
 
 
-
 ## Mappings
 
 | Mapping Type | Mapped Value |
 | ---  | ---  |
 | self | http://github.org/vfb/vfb-EPseq-ontology/VFB_EPseq/:Class |
 | native | http://github.org/vfb/vfb-EPseq-ontology/VFB_EPseq/:Class |
+
+
 
 
 

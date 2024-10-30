@@ -21,8 +21,8 @@ URI: [neo_custom:expression_level](http://n2o.neo/custom/expression_level)
 
 | Name | Description | Modifies Slot |
 | --- | --- | --- |
-| [ExpressionPattern](ExpressionPattern.md) |  |  no  |
 | [Cluster](Cluster.md) |  |  no  |
+| [ExpressionPattern](ExpressionPattern.md) |  |  no  |
 
 
 
@@ -50,6 +50,16 @@ URI: [neo_custom:expression_level](http://n2o.neo/custom/expression_level)
 
 
 * from schema: http://github.org/vfb/vfb-EPseq-ontology/VFB_EPseq
+
+
+
+
+## Mappings
+
+| Mapping Type | Mapped Value |
+| ---  | ---  |
+| self | neo_custom:expression_level |
+| native | http://github.org/vfb/vfb-EPseq-ontology/VFB_EPseq/:expression_level |
 
 
 

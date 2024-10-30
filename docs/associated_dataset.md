@@ -7,7 +7,7 @@ _Dataset (FBlc ID) that the Sample or Cluster belongs to._
 
 
 
-URI: [dcterms:source](http://purl.org/dc/terms/source)
+URI: [dc:source](http://purl.org/dc/terms/source)
 
 
 
@@ -21,11 +21,11 @@ URI: [dcterms:source](http://purl.org/dc/terms/source)
 
 | Name | Description | Modifies Slot |
 | --- | --- | --- |
-| [Clustering](Clustering.md) |  |  no  |
-| [Assay](Assay.md) |  |  no  |
 | [ExpressionPattern](ExpressionPattern.md) |  |  no  |
-| [Sample](Sample.md) |  |  no  |
+| [Assay](Assay.md) |  |  no  |
 | [Cluster](Cluster.md) |  |  no  |
+| [Clustering](Clustering.md) |  |  no  |
+| [Sample](Sample.md) |  |  no  |
 
 
 
@@ -51,7 +51,7 @@ URI: [dcterms:source](http://purl.org/dc/terms/source)
 
 | property | value |
 | --- | --- |
-| owl.fstring | AnnotationAssertion( dcterms:source {id} {V} ) |
+| owl.fstring | AnnotationAssertion( dc:source {id} {V} ) |
 
 
 
@@ -59,6 +59,16 @@ URI: [dcterms:source](http://purl.org/dc/terms/source)
 
 
 * from schema: http://github.org/vfb/vfb-EPseq-ontology/VFB_EPseq
+
+
+
+
+## Mappings
+
+| Mapping Type | Mapped Value |
+| ---  | ---  |
+| self | dc:source |
+| native | http://github.org/vfb/vfb-EPseq-ontology/VFB_EPseq/:associated_dataset |
 
 
 
@@ -71,11 +81,11 @@ name: associated_dataset
 annotations:
   owl.fstring:
     tag: owl.fstring
-    value: AnnotationAssertion( dcterms:source {id} {V} )
+    value: AnnotationAssertion( dc:source {id} {V} )
 description: Dataset (FBlc ID) that the Sample or Cluster belongs to.
 from_schema: http://github.org/vfb/vfb-EPseq-ontology/VFB_EPseq
 rank: 1000
-slot_uri: dcterms:source
+slot_uri: dc:source
 alias: associated_dataset
 domain_of:
 - Sample

@@ -34,6 +34,8 @@ URI: [FBcv:0003023](http://purl.obolibrary.org/obo/FBcv_0003023)
     click Thing href "../Thing"
 
         
+      Dataset : filtered_gene_count
+        
       Dataset : id
         
       Dataset : licence
@@ -69,6 +71,8 @@ URI: [FBcv:0003023](http://purl.obolibrary.org/obo/FBcv_0003023)
         
       Dataset : title
         
+      Dataset : total_gene_count
+        
       
 ```
 
@@ -89,6 +93,8 @@ URI: [FBcv:0003023](http://purl.obolibrary.org/obo/FBcv_0003023)
 | Name | Cardinality and Range | Description | Inheritance |
 | ---  | --- | --- | --- |
 | [neo_label](neo_label.md) | 0..1 <br/> [String](String.md) | neo4j node label to add to entity | direct |
+| [total_gene_count](total_gene_count.md) | 0..1 <br/> [Integer](Integer.md) | Total number of distinct genes associated with the entity before filtering by... | direct |
+| [filtered_gene_count](filtered_gene_count.md) | 0..1 <br/> [Integer](Integer.md) | Total number of distinct genes associated with the entity after filtering by ... | direct |
 | [publication](publication.md) | 0..1 <br/> [Publication](Publication.md) | Publication associated with the Dataset | direct |
 | [licence](licence.md) | 0..1 <br/> [Thing](Thing.md) | Licence for the Dataset (all CC-BY 4 | direct |
 | [assay_type](assay_type.md) | 0..1 <br/> [Thing](Thing.md) | Assay type (FBcv ID) for the Dataset, this will probably be 'FBcv:0009000' ('... | direct |
@@ -139,13 +145,14 @@ URI: [FBcv:0003023](http://purl.obolibrary.org/obo/FBcv_0003023)
 
 
 
-
 ## Mappings
 
 | Mapping Type | Mapped Value |
 | ---  | ---  |
 | self | FBcv:0003023 |
 | native | http://github.org/vfb/vfb-EPseq-ontology/VFB_EPseq/:Dataset |
+
+
 
 
 
@@ -168,17 +175,19 @@ from_schema: http://github.org/vfb/vfb-EPseq-ontology/VFB_EPseq
 is_a: Class
 slots:
 - neo_label
+- total_gene_count
+- filtered_gene_count
 attributes:
   publication:
     name: publication
     annotations:
       owl.fstring:
         tag: owl.fstring
-        value: AnnotationAssertion( dcterms:references {id} {V} )
+        value: AnnotationAssertion( dc:references {id} {V} )
     description: Publication associated with the Dataset.
     from_schema: http://github.org/vfb/vfb-scRNAseq-ontology/VFB_scRNAseq
     rank: 1000
-    slot_uri: dcterms:references
+    slot_uri: dc:references
     domain_of:
     - Dataset
     range: Publication
@@ -187,11 +196,11 @@ attributes:
     annotations:
       owl.fstring:
         tag: owl.fstring
-        value: AnnotationAssertion( dcterms:licence {id} {V} )
+        value: AnnotationAssertion( dc:licence {id} {V} )
     description: Licence for the Dataset (all CC-BY 4.0 for scExpressionAtlas).
     from_schema: http://github.org/vfb/vfb-scRNAseq-ontology/VFB_scRNAseq
     rank: 1000
-    slot_uri: dcterms:licence
+    slot_uri: dc:licence
     domain_of:
     - Dataset
     range: Thing
@@ -256,11 +265,11 @@ attributes:
     annotations:
       owl.fstring:
         tag: owl.fstring
-        value: AnnotationAssertion( dcterms:references {id} {V} )
+        value: AnnotationAssertion( dc:references {id} {V} )
     description: Publication associated with the Dataset.
     from_schema: http://github.org/vfb/vfb-scRNAseq-ontology/VFB_scRNAseq
     rank: 1000
-    slot_uri: dcterms:references
+    slot_uri: dc:references
     alias: publication
     owner: Dataset
     domain_of:
@@ -271,11 +280,11 @@ attributes:
     annotations:
       owl.fstring:
         tag: owl.fstring
-        value: AnnotationAssertion( dcterms:licence {id} {V} )
+        value: AnnotationAssertion( dc:licence {id} {V} )
     description: Licence for the Dataset (all CC-BY 4.0 for scExpressionAtlas).
     from_schema: http://github.org/vfb/vfb-scRNAseq-ontology/VFB_scRNAseq
     rank: 1000
-    slot_uri: dcterms:licence
+    slot_uri: dc:licence
     alias: licence
     owner: Dataset
     domain_of:
@@ -345,6 +354,40 @@ attributes:
     - Cluster
     - Publication
     range: string
+  total_gene_count:
+    name: total_gene_count
+    annotations:
+      owl:
+        tag: owl
+        value: AnnotationProperty
+    description: Total number of distinct genes associated with the entity before
+      filtering by extent.
+    from_schema: http://github.org/vfb/vfb-EPseq-ontology/VFB_EPseq
+    rank: 1000
+    slot_uri: neo_custom:total_gene_count
+    alias: total_gene_count
+    owner: Dataset
+    domain_of:
+    - Dataset
+    - Cluster
+    range: integer
+  filtered_gene_count:
+    name: filtered_gene_count
+    annotations:
+      owl:
+        tag: owl
+        value: AnnotationProperty
+    description: Total number of distinct genes associated with the entity after filtering
+      by extent.
+    from_schema: http://github.org/vfb/vfb-EPseq-ontology/VFB_EPseq
+    rank: 1000
+    slot_uri: neo_custom:filtered_gene_count
+    alias: filtered_gene_count
+    owner: Dataset
+    domain_of:
+    - Dataset
+    - Cluster
+    range: integer
   name:
     name: name
     annotations:

@@ -37,3 +37,13 @@ URI: [xsd:string](http://www.w3.org/2001/XMLSchema#string)
 
 
 
+
+## Mappings
+
+| Mapping Type | Mapped Value |
+| ---  | ---  |
+| self | xsd:string |
+| native | http://github.org/vfb/vfb-EPseq-ontology/VFB_EPseq/:sparqlpath |
+
+
+

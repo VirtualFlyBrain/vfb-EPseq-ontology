@@ -37,3 +37,13 @@ URI: [shex:nonLiteral](http://www.w3.org/ns/shex#nonLiteral)
 
 
 
+
+## Mappings
+
+| Mapping Type | Mapped Value |
+| ---  | ---  |
+| self | shex:nonLiteral |
+| native | http://github.org/vfb/vfb-EPseq-ontology/VFB_EPseq/:nodeidentifier |
+
+
+

@@ -21,9 +21,9 @@ URI: [BFO:0000050](http://purl.obolibrary.org/obo/BFO_0000050)
 
 | Name | Description | Modifies Slot |
 | --- | --- | --- |
-| [ExpressionPattern](ExpressionPattern.md) |  |  no  |
-| [Cluster](Cluster.md) |  |  no  |
 | [Sample](Sample.md) |  |  no  |
+| [Cluster](Cluster.md) |  |  no  |
+| [ExpressionPattern](ExpressionPattern.md) |  |  no  |
 
 
 
@@ -57,6 +57,16 @@ URI: [BFO:0000050](http://purl.obolibrary.org/obo/BFO_0000050)
 
 
 * from schema: http://github.org/vfb/vfb-EPseq-ontology/VFB_EPseq
+
+
+
+
+## Mappings
+
+| Mapping Type | Mapped Value |
+| ---  | ---  |
+| self | BFO:0000050 |
+| native | http://github.org/vfb/vfb-EPseq-ontology/VFB_EPseq/:sex |
 
 
 

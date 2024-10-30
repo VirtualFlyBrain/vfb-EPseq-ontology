@@ -21,8 +21,8 @@ URI: [RO:0002352](http://purl.obolibrary.org/obo/RO_0002352)
 
 | Name | Description | Modifies Slot |
 | --- | --- | --- |
-| [ExpressionPattern](ExpressionPattern.md) |  |  no  |
 | [Sample](Sample.md) |  |  no  |
+| [ExpressionPattern](ExpressionPattern.md) |  |  no  |
 
 
 
@@ -62,6 +62,16 @@ URI: [RO:0002352](http://purl.obolibrary.org/obo/RO_0002352)
 
 
 
+## Mappings
+
+| Mapping Type | Mapped Value |
+| ---  | ---  |
+| self | RO:0002352 |
+| native | http://github.org/vfb/vfb-EPseq-ontology/VFB_EPseq/:associated_assay |
+
+
+
+
 ## LinkML Source
 
 <details>
@@ -76,12 +86,12 @@ description: Assay(s) that use this sample. Multiple IDs should be separated wit
 from_schema: http://github.org/vfb/vfb-EPseq-ontology/VFB_EPseq
 rank: 1000
 slot_uri: RO:0002352
-multivalued: true
 alias: associated_assay
 owner: Sample
 domain_of:
 - Sample
 range: Assay
+multivalued: true
 
 ```
 </details>

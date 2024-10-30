@@ -36,3 +36,14 @@ URI: [xsd:decimal](http://www.w3.org/2001/XMLSchema#decimal)
 
 
 
+
+## Mappings
+
+| Mapping Type | Mapped Value |
+| ---  | ---  |
+| self | xsd:decimal |
+| native | http://github.org/vfb/vfb-EPseq-ontology/VFB_EPseq/:decimal |
+| broad | schema:Number |
+
+
+

@@ -61,6 +61,16 @@ URI: [RO:0002473](http://purl.obolibrary.org/obo/RO_0002473)
 
 
 
+## Mappings
+
+| Mapping Type | Mapped Value |
+| ---  | ---  |
+| self | RO:0002473 |
+| native | http://github.org/vfb/vfb-EPseq-ontology/VFB_EPseq/:cell_type |
+
+
+
+
 ## LinkML Source
 
 <details>
@@ -75,12 +85,12 @@ description: Anatomy (FBbt IDs) for the Cluster. Multiple IDs should be separate
 from_schema: http://github.org/vfb/vfb-EPseq-ontology/VFB_EPseq
 rank: 1000
 slot_uri: RO:0002473
-multivalued: true
 alias: cell_type
 owner: Cluster
 domain_of:
 - Cluster
 range: Thing
+multivalued: true
 
 ```
 </details>

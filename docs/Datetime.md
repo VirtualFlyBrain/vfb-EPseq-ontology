@@ -37,3 +37,14 @@ URI: [xsd:dateTime](http://www.w3.org/2001/XMLSchema#dateTime)
 
 
 
+
+## Mappings
+
+| Mapping Type | Mapped Value |
+| ---  | ---  |
+| self | xsd:dateTime |
+| native | http://github.org/vfb/vfb-EPseq-ontology/VFB_EPseq/:datetime |
+| exact | schema:DateTime |
+
+
+

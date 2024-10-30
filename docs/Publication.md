@@ -7,7 +7,7 @@ _Publication associated with the Dataset._
 
 
 
-URI: [dcterms:references](http://purl.org/dc/terms/references)
+URI: [dc:references](http://purl.org/dc/terms/references)
 
 
 
@@ -48,7 +48,7 @@ URI: [dcterms:references](http://purl.org/dc/terms/references)
 
 | property | value |
 | --- | --- |
-| owl.fstring | AnnotationAssertion( dcterms:references {id} {V} ) |
+| owl.fstring | AnnotationAssertion( dc:references {id} {V} ) |
 
 
 
@@ -56,6 +56,16 @@ URI: [dcterms:references](http://purl.org/dc/terms/references)
 
 
 * from schema: http://github.org/vfb/vfb-EPseq-ontology/VFB_EPseq
+
+
+
+
+## Mappings
+
+| Mapping Type | Mapped Value |
+| ---  | ---  |
+| self | dc:references |
+| native | http://github.org/vfb/vfb-EPseq-ontology/VFB_EPseq/:publication |
 
 
 
@@ -68,11 +78,11 @@ name: publication
 annotations:
   owl.fstring:
     tag: owl.fstring
-    value: AnnotationAssertion( dcterms:references {id} {V} )
+    value: AnnotationAssertion( dc:references {id} {V} )
 description: Publication associated with the Dataset.
 from_schema: http://github.org/vfb/vfb-EPseq-ontology/VFB_EPseq
 rank: 1000
-slot_uri: dcterms:references
+slot_uri: dc:references
 alias: publication
 owner: Dataset
 domain_of:

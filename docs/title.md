@@ -21,14 +21,14 @@ URI: [IAO:0000115](http://purl.obolibrary.org/obo/IAO_0000115)
 
 | Name | Description | Modifies Slot |
 | --- | --- | --- |
-| [Clustering](Clustering.md) |  |  no  |
-| [Assay](Assay.md) |  |  no  |
-| [ExpressionPattern](ExpressionPattern.md) |  |  no  |
-| [Class](Class.md) |  |  no  |
-| [Dataset](Dataset.md) |  |  no  |
 | [DatasetEP](DatasetEP.md) | Avoids a keyerror from attempting to use Dataset class from VFB_scRNAseq_sche... |  no  |
-| [Sample](Sample.md) |  |  no  |
+| [ExpressionPattern](ExpressionPattern.md) |  |  no  |
+| [Assay](Assay.md) |  |  no  |
 | [Cluster](Cluster.md) |  |  no  |
+| [Class](Class.md) |  |  no  |
+| [Clustering](Clustering.md) |  |  no  |
+| [Dataset](Dataset.md) |  |  no  |
+| [Sample](Sample.md) |  |  no  |
 
 
 
@@ -64,6 +64,16 @@ URI: [IAO:0000115](http://purl.obolibrary.org/obo/IAO_0000115)
 
 
 * from schema: http://github.org/vfb/vfb-EPseq-ontology/VFB_EPseq
+
+
+
+
+## Mappings
+
+| Mapping Type | Mapped Value |
+| ---  | ---  |
+| self | IAO:0000115 |
+| native | http://github.org/vfb/vfb-EPseq-ontology/VFB_EPseq/:title |
 
 
 

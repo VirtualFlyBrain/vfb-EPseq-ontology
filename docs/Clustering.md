@@ -103,13 +103,14 @@ URI: [FBcv:0009002](http://purl.obolibrary.org/obo/FBcv_0009002)
 
 
 
-
 ## Mappings
 
 | Mapping Type | Mapped Value |
 | ---  | ---  |
 | self | FBcv:0009002 |
 | native | http://github.org/vfb/vfb-EPseq-ontology/VFB_EPseq/:Clustering |
+
+
 
 
 
@@ -183,11 +184,11 @@ attributes:
     annotations:
       owl.fstring:
         tag: owl.fstring
-        value: AnnotationAssertion( dcterms:source {id} {V} )
+        value: AnnotationAssertion( dc:source {id} {V} )
     description: Dataset (FBlc ID) that the Sample or Cluster belongs to.
     from_schema: http://github.org/vfb/vfb-EPseq-ontology/VFB_EPseq
     rank: 1000
-    slot_uri: dcterms:source
+    slot_uri: dc:source
     alias: associated_dataset
     owner: Clustering
     domain_of:

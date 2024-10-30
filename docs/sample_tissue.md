@@ -21,8 +21,8 @@ URI: [RO:0002131](http://purl.obolibrary.org/obo/RO_0002131)
 
 | Name | Description | Modifies Slot |
 | --- | --- | --- |
-| [ExpressionPattern](ExpressionPattern.md) |  |  no  |
 | [Sample](Sample.md) |  |  no  |
+| [ExpressionPattern](ExpressionPattern.md) |  |  no  |
 
 
 
@@ -62,6 +62,16 @@ URI: [RO:0002131](http://purl.obolibrary.org/obo/RO_0002131)
 
 
 
+## Mappings
+
+| Mapping Type | Mapped Value |
+| ---  | ---  |
+| self | RO:0002131 |
+| native | http://github.org/vfb/vfb-EPseq-ontology/VFB_EPseq/:sample_tissue |
+
+
+
+
 ## LinkML Source
 
 <details>
@@ -77,12 +87,12 @@ description: Tissue(s) (FBbt IDs) in the sample. Multiple IDs should be separate
 from_schema: http://github.org/vfb/vfb-EPseq-ontology/VFB_EPseq
 rank: 1000
 slot_uri: RO:0002131
-multivalued: true
 alias: sample_tissue
 owner: Sample
 domain_of:
 - Sample
 range: Thing
+multivalued: true
 
 ```
 </details>

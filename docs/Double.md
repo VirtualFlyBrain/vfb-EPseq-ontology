@@ -36,3 +36,14 @@ URI: [xsd:double](http://www.w3.org/2001/XMLSchema#double)
 
 
 
+
+## Mappings
+
+| Mapping Type | Mapped Value |
+| ---  | ---  |
+| self | xsd:double |
+| native | http://github.org/vfb/vfb-EPseq-ontology/VFB_EPseq/:double |
+| close | schema:Float |
+
+
+

@@ -53,6 +53,16 @@ URI: [http://github.org/vfb/vfb-EPseq-ontology/VFB_EPseq/:driver_symbol](http://
 
 
 
+## Mappings
+
+| Mapping Type | Mapped Value |
+| ---  | ---  |
+| self | http://github.org/vfb/vfb-EPseq-ontology/VFB_EPseq/:driver_symbol |
+| native | http://github.org/vfb/vfb-EPseq-ontology/VFB_EPseq/:driver_symbol |
+
+
+
+
 ## LinkML Source
 
 <details>

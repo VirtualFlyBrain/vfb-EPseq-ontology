@@ -53,6 +53,16 @@ URI: [http://github.org/vfb/vfb-EPseq-ontology/VFB_EPseq/:notes](http://github.o
 
 
 
+## Mappings
+
+| Mapping Type | Mapped Value |
+| ---  | ---  |
+| self | http://github.org/vfb/vfb-EPseq-ontology/VFB_EPseq/:notes |
+| native | http://github.org/vfb/vfb-EPseq-ontology/VFB_EPseq/:notes |
+
+
+
+
 ## LinkML Source
 
 <details>
