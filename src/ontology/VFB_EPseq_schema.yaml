@@ -21,7 +21,7 @@ prefixes:
   rdfs: http://www.w3.org/2000/01/rdf-schema#
   oboInOwl: http://www.geneontology.org/formats/oboInOwl#
   owl: http://www.w3.org/2002/07/owl#
-  dcterms: http://purl.org/dc/terms/
+  dc: http://purl.org/dc/terms/
   neo_custom: http://n2o.neo/custom/
   neo_property: http://n2o.neo/property/
   vfb: http://virtualflybrain.org/reports/

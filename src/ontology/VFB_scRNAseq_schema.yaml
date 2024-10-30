@@ -16,7 +16,7 @@ prefixes:
   rdfs: http://www.w3.org/2000/01/rdf-schema#
   oboInOwl: http://www.geneontology.org/formats/oboInOwl#
   owl: http://www.w3.org/2002/07/owl#
-  dcterms: http://purl.org/dc/terms/
+  dc: http://purl.org/dc/terms/
   neo_custom: http://n2o.neo/custom/
   neo_property: http://n2o.neo/property/
   vfb: http://virtualflybrain.org/reports/
@@ -47,17 +47,17 @@ classes:
       owl.fstring: ClassAssertion( FBcv:0003023 {id} )
     attributes:
       publication:
-        slot_uri: dcterms:references
+        slot_uri: dc:references
         description: Publication associated with the Dataset.
         range: Publication
         annotations:
-          owl.fstring: AnnotationAssertion( dcterms:references {id} {V} )
+          owl.fstring: AnnotationAssertion( dc:references {id} {V} )
       licence:
-        slot_uri: dcterms:licence
+        slot_uri: dc:licence
         description: Licence for the Dataset (all CC-BY 4.0 for scExpressionAtlas).
         range: Thing
         annotations:
-          owl.fstring: AnnotationAssertion( dcterms:licence {id} {V} )
+          owl.fstring: AnnotationAssertion( dc:licence {id} {V} )
       assay_type:
         slot_uri: OBI:0000312
         description: Assay type (FBcv ID) for the Dataset, this will probably be 'FBcv:0009000' ('single-cell RNA-seq').
@@ -78,6 +78,8 @@ classes:
         range: string
     slots:
       - neo_label
+      - total_gene_count
+      - filtered_gene_count
 
   Sample:
     is_a: Class
@@ -157,11 +159,11 @@ classes:
         annotations:
           owl: ObjectPropertyAssertion
       cell_number:
-        slot_uri: BAO:0002811
+        slot_uri: neo_custom:cell_count
         description: The number of cells in the Cluster (as integer).
         range: integer
         annotations:
-          owl.fstring: DataPropertyAssertion( BAO:0002811 {id} {cell_number} ^^xsd:integer )
+          owl: AnnotationProperty
       cell_type:
         slot_uri: RO:0002473
         description: Anatomy (FBbt IDs) for the Cluster. Multiple IDs should be separated with '|'.
@@ -178,6 +180,8 @@ classes:
       - expression_level
       - expression_extent
       - hide_in_terminfo
+      - total_gene_count
+      - filtered_gene_count
 
   Publication:
     is_a: Thing
@@ -210,11 +214,11 @@ slots:
       owl: AnnotationAssertion
     recommended: true
   associated_dataset:
-    slot_uri: dcterms:source
+    slot_uri: dc:source
     description: Dataset (FBlc ID) that the Sample or Cluster belongs to.
     range: Dataset
     annotations:
-      owl.fstring: AnnotationAssertion( dcterms:source {id} {V} )
+      owl.fstring: AnnotationAssertion( dc:source {id} {V} )
   sex:
     slot_uri: BFO:0000050
     description: Sex for the entity. Should be 'male' or 'female'.
@@ -258,6 +262,18 @@ slots:
     slot_uri: neo_custom:expression_level
     description: Level of expression of the given gene.
     range: float
+  total_gene_count:
+    slot_uri: neo_custom:total_gene_count
+    description: Total number of distinct genes associated with the entity before filtering by extent.
+    annotations:
+      owl: AnnotationProperty
+    range: integer
+  filtered_gene_count:
+    slot_uri: neo_custom:filtered_gene_count
+    description: Total number of distinct genes associated with the entity after filtering by extent.
+    annotations:
+      owl: AnnotationProperty
+    range: integer
 
 enums:
   sex_options:
