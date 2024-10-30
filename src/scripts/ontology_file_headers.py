@@ -44,12 +44,12 @@ else:
     ontology_lines.extend(import_exp_statements)
 
 ontology_lines.extend([
-f'Annotation(<http://purl.org/dc/elements/1.1/description> "An ontology of Drosophila melanogaster driver expression pattern RNAseq data{ds_info}. This information is from published datasets taken from GEO.{ds_ann_info}"^^xsd:string)',
-f'Annotation(<http://purl.org/dc/elements/1.1/title> "VFB expression pattern RNAseq Ontology{ds_info}"^^xsd:string)',
+f'Annotation(<http://purl.org/dc/terms/description> "An ontology of Drosophila melanogaster driver expression pattern RNAseq data{ds_info}. This information is from published datasets taken from GEO.{ds_ann_info}"^^xsd:string)',
+f'Annotation(<http://purl.org/dc/terms/title> "VFB expression pattern RNAseq Ontology{ds_info}"^^xsd:string)',
 'Annotation(<http://purl.org/dc/terms/license> <https://creativecommons.org/licenses/by/4.0/>)',
 '',
-'Declaration(AnnotationProperty(<http://purl.org/dc/elements/1.1/description>))',
-'Declaration(AnnotationProperty(<http://purl.org/dc/elements/1.1/title>))',
+'Declaration(AnnotationProperty(<http://purl.org/dc/terms/description>))',
+'Declaration(AnnotationProperty(<http://purl.org/dc/terms/title>))',
 'Declaration(AnnotationProperty(<http://purl.org/dc/terms/license>))',
 ')'
 ])
