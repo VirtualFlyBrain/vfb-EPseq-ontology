@@ -20,9 +20,9 @@
         <owl:imports rdf:resource="http://purl.obolibrary.org/obo/VFB_EPseq/expression_data/VFB_EPseq_exp_PRJNA480794_2.owl"/>
         <owl:imports rdf:resource="http://purl.obolibrary.org/obo/VFB_EPseq/expression_data/VFB_EPseq_exp_PRJNA480794_3.owl"/>
         <owl:imports rdf:resource="http://purl.obolibrary.org/obo/VFB_EPseq/imports/PRJNA480794_import.owl"/>
-        <dc:description>An ontology of Drosophila melanogaster driver expression pattern RNAseq data for dataset PRJNA480794. This information is from published datasets taken from GEO.</dc:description>
-        <dc:title>VFB expression pattern RNAseq Ontology for dataset PRJNA480794</dc:title>
+        <terms:description>An ontology of Drosophila melanogaster driver expression pattern RNAseq data for dataset PRJNA480794. This information is from published datasets taken from GEO.</terms:description>
         <terms:license rdf:resource="https://creativecommons.org/licenses/by/4.0/"/>
+        <terms:title>VFB expression pattern RNAseq Ontology for dataset PRJNA480794</terms:title>
     </owl:Ontology>
     
 
@@ -50,15 +50,9 @@
     
 
 
-    <!-- http://purl.org/dc/elements/1.1/description -->
+    <!-- http://purl.org/dc/terms/description -->
 
-    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/description"/>
-    
-
-
-    <!-- http://purl.org/dc/elements/1.1/title -->
-
-    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/title"/>
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/description"/>
     
 
 
@@ -77,6 +71,12 @@
     <!-- http://purl.org/dc/terms/references -->
 
     <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/references"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/title -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/title"/>
     
 
 
@@ -785,11 +785,12 @@
     <owl:NamedIndividual rdf:about="http://www.ncbi.nlm.nih.gov/bioproject/PRJNA480794">
         <rdf:type rdf:resource="http://purl.obolibrary.org/obo/FBcv_0003023"/>
         <property:nodeLabel>DataSet</property:nodeLabel>
-        <obo:IAO_0000115>A genetic, genomic, and computational resource for exploring neural circuit function</obo:IAO_0000115>
+        <obo:IAO_0000115>A study using TAPIN RNA sequencing to build high resolution transcriptomes from selected adult optic lobe neurons.</obo:IAO_0000115>
         <terms:licence rdf:resource="http://virtualflybrain.org/reports/VFBlicense_CC_BY_4_0"/>
         <terms:references rdf:resource="http://flybase.org/reports/FBrf0244935"/>
         <oboInOwl:hasDbXref rdf:resource="http://virtualflybrain.org/reports/ExpressionAtlas"/>
         <oboInOwl:hasDbXref rdf:resource="http://virtualflybrain.org/reports/GEO"/>
+        <rdfs:label>RNAseq_2020_Davis</rdfs:label>
     </owl:NamedIndividual>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://www.ncbi.nlm.nih.gov/bioproject/PRJNA480794"/>
@@ -825,7 +826,7 @@
         </rdf:type>
         <property:nodeLabel>Sample</property:nodeLabel>
         <terms:source rdf:resource="http://www.ncbi.nlm.nih.gov/bioproject/PRJNA480794"/>
-        <rdfs:label>Mi15_d2_rep2</rdfs:label>
+        <rdfs:label>RNAseq_2020_DavisMi15_d2_rep2</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -849,7 +850,7 @@
         </rdf:type>
         <property:nodeLabel>Sample</property:nodeLabel>
         <terms:source rdf:resource="http://www.ncbi.nlm.nih.gov/bioproject/PRJNA480794"/>
-        <rdfs:label>Mi15_d2_rep1</rdfs:label>
+        <rdfs:label>RNAseq_2020_DavisMi15_d2_rep1</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -873,7 +874,7 @@
         </rdf:type>
         <property:nodeLabel>Sample</property:nodeLabel>
         <terms:source rdf:resource="http://www.ncbi.nlm.nih.gov/bioproject/PRJNA480794"/>
-        <rdfs:label>Dm11_d1_rep1</rdfs:label>
+        <rdfs:label>RNAseq_2020_DavisDm11_d1_rep1</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -897,7 +898,7 @@
         </rdf:type>
         <property:nodeLabel>Sample</property:nodeLabel>
         <terms:source rdf:resource="http://www.ncbi.nlm.nih.gov/bioproject/PRJNA480794"/>
-        <rdfs:label>Dm9_d1_rep2</rdfs:label>
+        <rdfs:label>RNAseq_2020_DavisDm9_d1_rep2</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -921,7 +922,7 @@
         </rdf:type>
         <property:nodeLabel>Sample</property:nodeLabel>
         <terms:source rdf:resource="http://www.ncbi.nlm.nih.gov/bioproject/PRJNA480794"/>
-        <rdfs:label>Dm9_d1_rep1</rdfs:label>
+        <rdfs:label>RNAseq_2020_DavisDm9_d1_rep1</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -945,7 +946,7 @@
         </rdf:type>
         <property:nodeLabel>Sample</property:nodeLabel>
         <terms:source rdf:resource="http://www.ncbi.nlm.nih.gov/bioproject/PRJNA480794"/>
-        <rdfs:label>Dm10_d1_rep2</rdfs:label>
+        <rdfs:label>RNAseq_2020_DavisDm10_d1_rep2</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -969,7 +970,7 @@
         </rdf:type>
         <property:nodeLabel>Sample</property:nodeLabel>
         <terms:source rdf:resource="http://www.ncbi.nlm.nih.gov/bioproject/PRJNA480794"/>
-        <rdfs:label>Dm10_d1_rep1</rdfs:label>
+        <rdfs:label>RNAseq_2020_DavisDm10_d1_rep1</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -993,7 +994,7 @@
         </rdf:type>
         <property:nodeLabel>Sample</property:nodeLabel>
         <terms:source rdf:resource="http://www.ncbi.nlm.nih.gov/bioproject/PRJNA480794"/>
-        <rdfs:label>TmY3_d1_rep2</rdfs:label>
+        <rdfs:label>RNAseq_2020_DavisTmY3_d1_rep2</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -1017,7 +1018,7 @@
         </rdf:type>
         <property:nodeLabel>Sample</property:nodeLabel>
         <terms:source rdf:resource="http://www.ncbi.nlm.nih.gov/bioproject/PRJNA480794"/>
-        <rdfs:label>T4.T5_d1_female_rep2</rdfs:label>
+        <rdfs:label>RNAseq_2020_DavisT4.T5_d1_female_rep2</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -1041,7 +1042,7 @@
         </rdf:type>
         <property:nodeLabel>Sample</property:nodeLabel>
         <terms:source rdf:resource="http://www.ncbi.nlm.nih.gov/bioproject/PRJNA480794"/>
-        <rdfs:label>T4.T5_d1_female_rep1</rdfs:label>
+        <rdfs:label>RNAseq_2020_DavisT4.T5_d1_female_rep1</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -1065,7 +1066,7 @@
         </rdf:type>
         <property:nodeLabel>Sample</property:nodeLabel>
         <terms:source rdf:resource="http://www.ncbi.nlm.nih.gov/bioproject/PRJNA480794"/>
-        <rdfs:label>T4.T5_d1_male_rep2</rdfs:label>
+        <rdfs:label>RNAseq_2020_DavisT4.T5_d1_male_rep2</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -1089,7 +1090,7 @@
         </rdf:type>
         <property:nodeLabel>Sample</property:nodeLabel>
         <terms:source rdf:resource="http://www.ncbi.nlm.nih.gov/bioproject/PRJNA480794"/>
-        <rdfs:label>T4.T5_d1_male_rep1</rdfs:label>
+        <rdfs:label>RNAseq_2020_DavisT4.T5_d1_male_rep1</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -1113,7 +1114,7 @@
         </rdf:type>
         <property:nodeLabel>Sample</property:nodeLabel>
         <terms:source rdf:resource="http://www.ncbi.nlm.nih.gov/bioproject/PRJNA480794"/>
-        <rdfs:label>Muscles_Head_d2_rep2</rdfs:label>
+        <rdfs:label>RNAseq_2020_DavisMuscles_Head_d2_rep2</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -1137,7 +1138,7 @@
         </rdf:type>
         <property:nodeLabel>Sample</property:nodeLabel>
         <terms:source rdf:resource="http://www.ncbi.nlm.nih.gov/bioproject/PRJNA480794"/>
-        <rdfs:label>Muscles_Head_d2_rep1</rdfs:label>
+        <rdfs:label>RNAseq_2020_DavisMuscles_Head_d2_rep1</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -1161,7 +1162,7 @@
         </rdf:type>
         <property:nodeLabel>Sample</property:nodeLabel>
         <terms:source rdf:resource="http://www.ncbi.nlm.nih.gov/bioproject/PRJNA480794"/>
-        <rdfs:label>Muscles_Head_d1_rep2</rdfs:label>
+        <rdfs:label>RNAseq_2020_DavisMuscles_Head_d1_rep2</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -1185,7 +1186,7 @@
         </rdf:type>
         <property:nodeLabel>Sample</property:nodeLabel>
         <terms:source rdf:resource="http://www.ncbi.nlm.nih.gov/bioproject/PRJNA480794"/>
-        <rdfs:label>Muscles_Head_d1_rep1</rdfs:label>
+        <rdfs:label>RNAseq_2020_DavisMuscles_Head_d1_rep1</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -1209,7 +1210,7 @@
         </rdf:type>
         <property:nodeLabel>Sample</property:nodeLabel>
         <terms:source rdf:resource="http://www.ncbi.nlm.nih.gov/bioproject/PRJNA480794"/>
-        <rdfs:label>Muscles_App_d1_rep2</rdfs:label>
+        <rdfs:label>RNAseq_2020_DavisMuscles_App_d1_rep2</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -1233,7 +1234,7 @@
         </rdf:type>
         <property:nodeLabel>Sample</property:nodeLabel>
         <terms:source rdf:resource="http://www.ncbi.nlm.nih.gov/bioproject/PRJNA480794"/>
-        <rdfs:label>Muscles_App_d1_rep1</rdfs:label>
+        <rdfs:label>RNAseq_2020_DavisMuscles_App_d1_rep1</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -1257,7 +1258,7 @@
         </rdf:type>
         <property:nodeLabel>Sample</property:nodeLabel>
         <terms:source rdf:resource="http://www.ncbi.nlm.nih.gov/bioproject/PRJNA480794"/>
-        <rdfs:label>Dm12_d1_rep4</rdfs:label>
+        <rdfs:label>RNAseq_2020_DavisDm12_d1_rep4</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -1281,7 +1282,7 @@
         </rdf:type>
         <property:nodeLabel>Sample</property:nodeLabel>
         <terms:source rdf:resource="http://www.ncbi.nlm.nih.gov/bioproject/PRJNA480794"/>
-        <rdfs:label>Dm12_d1_rep3</rdfs:label>
+        <rdfs:label>RNAseq_2020_DavisDm12_d1_rep3</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -1305,7 +1306,7 @@
         </rdf:type>
         <property:nodeLabel>Sample</property:nodeLabel>
         <terms:source rdf:resource="http://www.ncbi.nlm.nih.gov/bioproject/PRJNA480794"/>
-        <rdfs:label>Dm1_d1_rep2</rdfs:label>
+        <rdfs:label>RNAseq_2020_DavisDm1_d1_rep2</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -1329,7 +1330,7 @@
         </rdf:type>
         <property:nodeLabel>Sample</property:nodeLabel>
         <terms:source rdf:resource="http://www.ncbi.nlm.nih.gov/bioproject/PRJNA480794"/>
-        <rdfs:label>Dm1_d1_rep1</rdfs:label>
+        <rdfs:label>RNAseq_2020_DavisDm1_d1_rep1</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -1353,7 +1354,7 @@
         </rdf:type>
         <property:nodeLabel>Sample</property:nodeLabel>
         <terms:source rdf:resource="http://www.ncbi.nlm.nih.gov/bioproject/PRJNA480794"/>
-        <rdfs:label>LC10bc_d1_rep2</rdfs:label>
+        <rdfs:label>RNAseq_2020_DavisLC10bc_d1_rep2</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -1377,7 +1378,7 @@
         </rdf:type>
         <property:nodeLabel>Sample</property:nodeLabel>
         <terms:source rdf:resource="http://www.ncbi.nlm.nih.gov/bioproject/PRJNA480794"/>
-        <rdfs:label>LC10bc_d1_rep1</rdfs:label>
+        <rdfs:label>RNAseq_2020_DavisLC10bc_d1_rep1</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -1401,7 +1402,7 @@
         </rdf:type>
         <property:nodeLabel>Sample</property:nodeLabel>
         <terms:source rdf:resource="http://www.ncbi.nlm.nih.gov/bioproject/PRJNA480794"/>
-        <rdfs:label>LC10d_d1_rep2</rdfs:label>
+        <rdfs:label>RNAseq_2020_DavisLC10d_d1_rep2</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -1425,7 +1426,7 @@
         </rdf:type>
         <property:nodeLabel>Sample</property:nodeLabel>
         <terms:source rdf:resource="http://www.ncbi.nlm.nih.gov/bioproject/PRJNA480794"/>
-        <rdfs:label>LC10d_d1_rep1</rdfs:label>
+        <rdfs:label>RNAseq_2020_DavisLC10d_d1_rep1</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -1449,7 +1450,7 @@
         </rdf:type>
         <property:nodeLabel>Sample</property:nodeLabel>
         <terms:source rdf:resource="http://www.ncbi.nlm.nih.gov/bioproject/PRJNA480794"/>
-        <rdfs:label>Mi15_d1_rep2</rdfs:label>
+        <rdfs:label>RNAseq_2020_DavisMi15_d1_rep2</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -1473,7 +1474,7 @@
         </rdf:type>
         <property:nodeLabel>Sample</property:nodeLabel>
         <terms:source rdf:resource="http://www.ncbi.nlm.nih.gov/bioproject/PRJNA480794"/>
-        <rdfs:label>Mi15_d1_rep1</rdfs:label>
+        <rdfs:label>RNAseq_2020_DavisMi15_d1_rep1</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -1497,7 +1498,7 @@
         </rdf:type>
         <property:nodeLabel>Sample</property:nodeLabel>
         <terms:source rdf:resource="http://www.ncbi.nlm.nih.gov/bioproject/PRJNA480794"/>
-        <rdfs:label>Mi9_d2_rep2</rdfs:label>
+        <rdfs:label>RNAseq_2020_DavisMi9_d2_rep2</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -1521,7 +1522,7 @@
         </rdf:type>
         <property:nodeLabel>Sample</property:nodeLabel>
         <terms:source rdf:resource="http://www.ncbi.nlm.nih.gov/bioproject/PRJNA480794"/>
-        <rdfs:label>Mi9_d2_rep1</rdfs:label>
+        <rdfs:label>RNAseq_2020_DavisMi9_d2_rep1</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -1545,7 +1546,7 @@
         </rdf:type>
         <property:nodeLabel>Sample</property:nodeLabel>
         <terms:source rdf:resource="http://www.ncbi.nlm.nih.gov/bioproject/PRJNA480794"/>
-        <rdfs:label>Mi9_d1_rep2</rdfs:label>
+        <rdfs:label>RNAseq_2020_DavisMi9_d1_rep2</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -1569,7 +1570,7 @@
         </rdf:type>
         <property:nodeLabel>Sample</property:nodeLabel>
         <terms:source rdf:resource="http://www.ncbi.nlm.nih.gov/bioproject/PRJNA480794"/>
-        <rdfs:label>Mi9_d1_rep1</rdfs:label>
+        <rdfs:label>RNAseq_2020_DavisMi9_d1_rep1</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -1593,7 +1594,7 @@
         </rdf:type>
         <property:nodeLabel>Sample</property:nodeLabel>
         <terms:source rdf:resource="http://www.ncbi.nlm.nih.gov/bioproject/PRJNA480794"/>
-        <rdfs:label>VGlut_d1_rep2</rdfs:label>
+        <rdfs:label>RNAseq_2020_DavisVGlut_d1_rep2</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -1617,7 +1618,7 @@
         </rdf:type>
         <property:nodeLabel>Sample</property:nodeLabel>
         <terms:source rdf:resource="http://www.ncbi.nlm.nih.gov/bioproject/PRJNA480794"/>
-        <rdfs:label>VGlut_d1_rep1</rdfs:label>
+        <rdfs:label>RNAseq_2020_DavisVGlut_d1_rep1</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -1641,7 +1642,7 @@
         </rdf:type>
         <property:nodeLabel>Sample</property:nodeLabel>
         <terms:source rdf:resource="http://www.ncbi.nlm.nih.gov/bioproject/PRJNA480794"/>
-        <rdfs:label>ChAT_d1_rep2</rdfs:label>
+        <rdfs:label>RNAseq_2020_DavisChAT_d1_rep2</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -1665,7 +1666,7 @@
         </rdf:type>
         <property:nodeLabel>Sample</property:nodeLabel>
         <terms:source rdf:resource="http://www.ncbi.nlm.nih.gov/bioproject/PRJNA480794"/>
-        <rdfs:label>ChAT_d1_rep1</rdfs:label>
+        <rdfs:label>RNAseq_2020_DavisChAT_d1_rep1</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -1689,7 +1690,7 @@
         </rdf:type>
         <property:nodeLabel>Sample</property:nodeLabel>
         <terms:source rdf:resource="http://www.ncbi.nlm.nih.gov/bioproject/PRJNA480794"/>
-        <rdfs:label>Gad1_d1_rep2</rdfs:label>
+        <rdfs:label>RNAseq_2020_DavisGad1_d1_rep2</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -1713,7 +1714,7 @@
         </rdf:type>
         <property:nodeLabel>Sample</property:nodeLabel>
         <terms:source rdf:resource="http://www.ncbi.nlm.nih.gov/bioproject/PRJNA480794"/>
-        <rdfs:label>Gad1_d1_rep1</rdfs:label>
+        <rdfs:label>RNAseq_2020_DavisGad1_d1_rep1</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -1737,7 +1738,7 @@
         </rdf:type>
         <property:nodeLabel>Sample</property:nodeLabel>
         <terms:source rdf:resource="http://www.ncbi.nlm.nih.gov/bioproject/PRJNA480794"/>
-        <rdfs:label>Tm2_d1_rep2</rdfs:label>
+        <rdfs:label>RNAseq_2020_DavisTm2_d1_rep2</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -1761,7 +1762,7 @@
         </rdf:type>
         <property:nodeLabel>Sample</property:nodeLabel>
         <terms:source rdf:resource="http://www.ncbi.nlm.nih.gov/bioproject/PRJNA480794"/>
-        <rdfs:label>Tm2_d1_rep1</rdfs:label>
+        <rdfs:label>RNAseq_2020_DavisTm2_d1_rep1</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -1785,7 +1786,7 @@
         </rdf:type>
         <property:nodeLabel>Sample</property:nodeLabel>
         <terms:source rdf:resource="http://www.ncbi.nlm.nih.gov/bioproject/PRJNA480794"/>
-        <rdfs:label>Mi4_d1_rep2</rdfs:label>
+        <rdfs:label>RNAseq_2020_DavisMi4_d1_rep2</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -1809,7 +1810,7 @@
         </rdf:type>
         <property:nodeLabel>Sample</property:nodeLabel>
         <terms:source rdf:resource="http://www.ncbi.nlm.nih.gov/bioproject/PRJNA480794"/>
-        <rdfs:label>Mi4_d1_rep1</rdfs:label>
+        <rdfs:label>RNAseq_2020_DavisMi4_d1_rep1</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -1833,7 +1834,7 @@
         </rdf:type>
         <property:nodeLabel>Sample</property:nodeLabel>
         <terms:source rdf:resource="http://www.ncbi.nlm.nih.gov/bioproject/PRJNA480794"/>
-        <rdfs:label>Tm4_d1_rep2</rdfs:label>
+        <rdfs:label>RNAseq_2020_DavisTm4_d1_rep2</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -1857,7 +1858,7 @@
         </rdf:type>
         <property:nodeLabel>Sample</property:nodeLabel>
         <terms:source rdf:resource="http://www.ncbi.nlm.nih.gov/bioproject/PRJNA480794"/>
-        <rdfs:label>Tm4_d1_rep1</rdfs:label>
+        <rdfs:label>RNAseq_2020_DavisTm4_d1_rep1</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -1881,7 +1882,7 @@
         </rdf:type>
         <property:nodeLabel>Sample</property:nodeLabel>
         <terms:source rdf:resource="http://www.ncbi.nlm.nih.gov/bioproject/PRJNA480794"/>
-        <rdfs:label>Tm3_d1_rep2</rdfs:label>
+        <rdfs:label>RNAseq_2020_DavisTm3_d1_rep2</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -1905,7 +1906,7 @@
         </rdf:type>
         <property:nodeLabel>Sample</property:nodeLabel>
         <terms:source rdf:resource="http://www.ncbi.nlm.nih.gov/bioproject/PRJNA480794"/>
-        <rdfs:label>Tm3_d1_rep1</rdfs:label>
+        <rdfs:label>RNAseq_2020_DavisTm3_d1_rep1</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -1929,7 +1930,7 @@
         </rdf:type>
         <property:nodeLabel>Sample</property:nodeLabel>
         <terms:source rdf:resource="http://www.ncbi.nlm.nih.gov/bioproject/PRJNA480794"/>
-        <rdfs:label>Mi1_d1_rep2</rdfs:label>
+        <rdfs:label>RNAseq_2020_DavisMi1_d1_rep2</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -1953,7 +1954,7 @@
         </rdf:type>
         <property:nodeLabel>Sample</property:nodeLabel>
         <terms:source rdf:resource="http://www.ncbi.nlm.nih.gov/bioproject/PRJNA480794"/>
-        <rdfs:label>Mi1_d1_rep1</rdfs:label>
+        <rdfs:label>RNAseq_2020_DavisMi1_d1_rep1</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -1977,7 +1978,7 @@
         </rdf:type>
         <property:nodeLabel>Sample</property:nodeLabel>
         <terms:source rdf:resource="http://www.ncbi.nlm.nih.gov/bioproject/PRJNA480794"/>
-        <rdfs:label>LPLC1_d1_rep1</rdfs:label>
+        <rdfs:label>RNAseq_2020_DavisLPLC1_d1_rep1</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -2001,7 +2002,7 @@
         </rdf:type>
         <property:nodeLabel>Sample</property:nodeLabel>
         <terms:source rdf:resource="http://www.ncbi.nlm.nih.gov/bioproject/PRJNA480794"/>
-        <rdfs:label>LC16_d2_rep2</rdfs:label>
+        <rdfs:label>RNAseq_2020_DavisLC16_d2_rep2</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -2025,7 +2026,7 @@
         </rdf:type>
         <property:nodeLabel>Sample</property:nodeLabel>
         <terms:source rdf:resource="http://www.ncbi.nlm.nih.gov/bioproject/PRJNA480794"/>
-        <rdfs:label>LC16_d2_rep1</rdfs:label>
+        <rdfs:label>RNAseq_2020_DavisLC16_d2_rep1</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -2049,7 +2050,7 @@
         </rdf:type>
         <property:nodeLabel>Sample</property:nodeLabel>
         <terms:source rdf:resource="http://www.ncbi.nlm.nih.gov/bioproject/PRJNA480794"/>
-        <rdfs:label>LC16_d1_rep2</rdfs:label>
+        <rdfs:label>RNAseq_2020_DavisLC16_d1_rep2</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -2073,7 +2074,7 @@
         </rdf:type>
         <property:nodeLabel>Sample</property:nodeLabel>
         <terms:source rdf:resource="http://www.ncbi.nlm.nih.gov/bioproject/PRJNA480794"/>
-        <rdfs:label>LC16_d1_rep1</rdfs:label>
+        <rdfs:label>RNAseq_2020_DavisLC16_d1_rep1</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -2097,7 +2098,7 @@
         </rdf:type>
         <property:nodeLabel>Sample</property:nodeLabel>
         <terms:source rdf:resource="http://www.ncbi.nlm.nih.gov/bioproject/PRJNA480794"/>
-        <rdfs:label>Dm4_d2_rep2</rdfs:label>
+        <rdfs:label>RNAseq_2020_DavisDm4_d2_rep2</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -2121,7 +2122,7 @@
         </rdf:type>
         <property:nodeLabel>Sample</property:nodeLabel>
         <terms:source rdf:resource="http://www.ncbi.nlm.nih.gov/bioproject/PRJNA480794"/>
-        <rdfs:label>Dm4_d2_rep1</rdfs:label>
+        <rdfs:label>RNAseq_2020_DavisDm4_d2_rep1</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -2145,7 +2146,7 @@
         </rdf:type>
         <property:nodeLabel>Sample</property:nodeLabel>
         <terms:source rdf:resource="http://www.ncbi.nlm.nih.gov/bioproject/PRJNA480794"/>
-        <rdfs:label>LC10b_d1_rep2</rdfs:label>
+        <rdfs:label>RNAseq_2020_DavisLC10b_d1_rep2</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -2169,7 +2170,7 @@
         </rdf:type>
         <property:nodeLabel>Sample</property:nodeLabel>
         <terms:source rdf:resource="http://www.ncbi.nlm.nih.gov/bioproject/PRJNA480794"/>
-        <rdfs:label>LC10b_d1_rep1</rdfs:label>
+        <rdfs:label>RNAseq_2020_DavisLC10b_d1_rep1</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -2193,7 +2194,7 @@
         </rdf:type>
         <property:nodeLabel>Sample</property:nodeLabel>
         <terms:source rdf:resource="http://www.ncbi.nlm.nih.gov/bioproject/PRJNA480794"/>
-        <rdfs:label>LPC1_d2_rep2</rdfs:label>
+        <rdfs:label>RNAseq_2020_DavisLPC1_d2_rep2</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -2217,7 +2218,7 @@
         </rdf:type>
         <property:nodeLabel>Sample</property:nodeLabel>
         <terms:source rdf:resource="http://www.ncbi.nlm.nih.gov/bioproject/PRJNA480794"/>
-        <rdfs:label>LPC1_d2_rep1</rdfs:label>
+        <rdfs:label>RNAseq_2020_DavisLPC1_d2_rep1</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -2241,7 +2242,7 @@
         </rdf:type>
         <property:nodeLabel>Sample</property:nodeLabel>
         <terms:source rdf:resource="http://www.ncbi.nlm.nih.gov/bioproject/PRJNA480794"/>
-        <rdfs:label>LC10a_d1_rep2</rdfs:label>
+        <rdfs:label>RNAseq_2020_DavisLC10a_d1_rep2</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -2265,7 +2266,7 @@
         </rdf:type>
         <property:nodeLabel>Sample</property:nodeLabel>
         <terms:source rdf:resource="http://www.ncbi.nlm.nih.gov/bioproject/PRJNA480794"/>
-        <rdfs:label>LC10a_d1_rep1</rdfs:label>
+        <rdfs:label>RNAseq_2020_DavisLC10a_d1_rep1</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -2289,7 +2290,7 @@
         </rdf:type>
         <property:nodeLabel>Sample</property:nodeLabel>
         <terms:source rdf:resource="http://www.ncbi.nlm.nih.gov/bioproject/PRJNA480794"/>
-        <rdfs:label>LPC1_d1_rep2</rdfs:label>
+        <rdfs:label>RNAseq_2020_DavisLPC1_d1_rep2</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -2313,7 +2314,7 @@
         </rdf:type>
         <property:nodeLabel>Sample</property:nodeLabel>
         <terms:source rdf:resource="http://www.ncbi.nlm.nih.gov/bioproject/PRJNA480794"/>
-        <rdfs:label>LPC1_d1_rep1</rdfs:label>
+        <rdfs:label>RNAseq_2020_DavisLPC1_d1_rep1</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -2337,7 +2338,7 @@
         </rdf:type>
         <property:nodeLabel>Sample</property:nodeLabel>
         <terms:source rdf:resource="http://www.ncbi.nlm.nih.gov/bioproject/PRJNA480794"/>
-        <rdfs:label>LLPC1_d1_rep2</rdfs:label>
+        <rdfs:label>RNAseq_2020_DavisLLPC1_d1_rep2</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -2361,7 +2362,7 @@
         </rdf:type>
         <property:nodeLabel>Sample</property:nodeLabel>
         <terms:source rdf:resource="http://www.ncbi.nlm.nih.gov/bioproject/PRJNA480794"/>
-        <rdfs:label>LLPC1_d1_rep1</rdfs:label>
+        <rdfs:label>RNAseq_2020_DavisLLPC1_d1_rep1</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -2385,7 +2386,7 @@
         </rdf:type>
         <property:nodeLabel>Sample</property:nodeLabel>
         <terms:source rdf:resource="http://www.ncbi.nlm.nih.gov/bioproject/PRJNA480794"/>
-        <rdfs:label>Pm4_d1_rep2</rdfs:label>
+        <rdfs:label>RNAseq_2020_DavisPm4_d1_rep2</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -2409,7 +2410,7 @@
         </rdf:type>
         <property:nodeLabel>Sample</property:nodeLabel>
         <terms:source rdf:resource="http://www.ncbi.nlm.nih.gov/bioproject/PRJNA480794"/>
-        <rdfs:label>Pm4_d1_rep1</rdfs:label>
+        <rdfs:label>RNAseq_2020_DavisPm4_d1_rep1</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -2433,7 +2434,7 @@
         </rdf:type>
         <property:nodeLabel>Sample</property:nodeLabel>
         <terms:source rdf:resource="http://www.ncbi.nlm.nih.gov/bioproject/PRJNA480794"/>
-        <rdfs:label>Dm11_d1_rep2</rdfs:label>
+        <rdfs:label>RNAseq_2020_DavisDm11_d1_rep2</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -2457,7 +2458,7 @@
         </rdf:type>
         <property:nodeLabel>Sample</property:nodeLabel>
         <terms:source rdf:resource="http://www.ncbi.nlm.nih.gov/bioproject/PRJNA480794"/>
-        <rdfs:label>TmY5a_d1_rep2</rdfs:label>
+        <rdfs:label>RNAseq_2020_DavisTmY5a_d1_rep2</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -2481,7 +2482,7 @@
         </rdf:type>
         <property:nodeLabel>Sample</property:nodeLabel>
         <terms:source rdf:resource="http://www.ncbi.nlm.nih.gov/bioproject/PRJNA480794"/>
-        <rdfs:label>TmY5a_d1_rep1</rdfs:label>
+        <rdfs:label>RNAseq_2020_DavisTmY5a_d1_rep1</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -2504,7 +2505,7 @@
         </rdf:type>
         <property:nodeLabel>Sample</property:nodeLabel>
         <terms:source rdf:resource="http://www.ncbi.nlm.nih.gov/bioproject/PRJNA480794"/>
-        <rdfs:label>R1-6_d1_rep4</rdfs:label>
+        <rdfs:label>RNAseq_2020_DavisR1-6_d1_rep4</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -2527,7 +2528,7 @@
         </rdf:type>
         <property:nodeLabel>Sample</property:nodeLabel>
         <terms:source rdf:resource="http://www.ncbi.nlm.nih.gov/bioproject/PRJNA480794"/>
-        <rdfs:label>R1-6_d1_rep3</rdfs:label>
+        <rdfs:label>RNAseq_2020_DavisR1-6_d1_rep3</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -2551,7 +2552,7 @@
         </rdf:type>
         <property:nodeLabel>Sample</property:nodeLabel>
         <terms:source rdf:resource="http://www.ncbi.nlm.nih.gov/bioproject/PRJNA480794"/>
-        <rdfs:label>R7_d1_rep2</rdfs:label>
+        <rdfs:label>RNAseq_2020_DavisR7_d1_rep2</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -2575,7 +2576,7 @@
         </rdf:type>
         <property:nodeLabel>Sample</property:nodeLabel>
         <terms:source rdf:resource="http://www.ncbi.nlm.nih.gov/bioproject/PRJNA480794"/>
-        <rdfs:label>R7_d1_rep1</rdfs:label>
+        <rdfs:label>RNAseq_2020_DavisR7_d1_rep1</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -2599,7 +2600,7 @@
         </rdf:type>
         <property:nodeLabel>Sample</property:nodeLabel>
         <terms:source rdf:resource="http://www.ncbi.nlm.nih.gov/bioproject/PRJNA480794"/>
-        <rdfs:label>R8_Rh6_d1_rep2</rdfs:label>
+        <rdfs:label>RNAseq_2020_DavisR8_Rh6_d1_rep2</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -2623,7 +2624,7 @@
         </rdf:type>
         <property:nodeLabel>Sample</property:nodeLabel>
         <terms:source rdf:resource="http://www.ncbi.nlm.nih.gov/bioproject/PRJNA480794"/>
-        <rdfs:label>R8_Rh6_d1_rep1</rdfs:label>
+        <rdfs:label>RNAseq_2020_DavisR8_Rh6_d1_rep1</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -2647,7 +2648,7 @@
         </rdf:type>
         <property:nodeLabel>Sample</property:nodeLabel>
         <terms:source rdf:resource="http://www.ncbi.nlm.nih.gov/bioproject/PRJNA480794"/>
-        <rdfs:label>Crz_d1_rep2</rdfs:label>
+        <rdfs:label>RNAseq_2020_DavisCrz_d1_rep2</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -2671,7 +2672,7 @@
         </rdf:type>
         <property:nodeLabel>Sample</property:nodeLabel>
         <terms:source rdf:resource="http://www.ncbi.nlm.nih.gov/bioproject/PRJNA480794"/>
-        <rdfs:label>R8_Rh5_d1_rep2</rdfs:label>
+        <rdfs:label>RNAseq_2020_DavisR8_Rh5_d1_rep2</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -2695,7 +2696,7 @@
         </rdf:type>
         <property:nodeLabel>Sample</property:nodeLabel>
         <terms:source rdf:resource="http://www.ncbi.nlm.nih.gov/bioproject/PRJNA480794"/>
-        <rdfs:label>R8_Rh5_d1_rep1</rdfs:label>
+        <rdfs:label>RNAseq_2020_DavisR8_Rh5_d1_rep1</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -2719,7 +2720,7 @@
         </rdf:type>
         <property:nodeLabel>Sample</property:nodeLabel>
         <terms:source rdf:resource="http://www.ncbi.nlm.nih.gov/bioproject/PRJNA480794"/>
-        <rdfs:label>R7_Rh3_d1_rep2</rdfs:label>
+        <rdfs:label>RNAseq_2020_DavisR7_Rh3_d1_rep2</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -2743,7 +2744,7 @@
         </rdf:type>
         <property:nodeLabel>Sample</property:nodeLabel>
         <terms:source rdf:resource="http://www.ncbi.nlm.nih.gov/bioproject/PRJNA480794"/>
-        <rdfs:label>R7_Rh3_d1_rep1</rdfs:label>
+        <rdfs:label>RNAseq_2020_DavisR7_Rh3_d1_rep1</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -2767,7 +2768,7 @@
         </rdf:type>
         <property:nodeLabel>Sample</property:nodeLabel>
         <terms:source rdf:resource="http://www.ncbi.nlm.nih.gov/bioproject/PRJNA480794"/>
-        <rdfs:label>Kdm2_d1_rep2</rdfs:label>
+        <rdfs:label>RNAseq_2020_DavisKdm2_d1_rep2</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -2791,7 +2792,7 @@
         </rdf:type>
         <property:nodeLabel>Sample</property:nodeLabel>
         <terms:source rdf:resource="http://www.ncbi.nlm.nih.gov/bioproject/PRJNA480794"/>
-        <rdfs:label>Kdm2_d1_rep1</rdfs:label>
+        <rdfs:label>RNAseq_2020_DavisKdm2_d1_rep1</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -2815,7 +2816,7 @@
         </rdf:type>
         <property:nodeLabel>Sample</property:nodeLabel>
         <terms:source rdf:resource="http://www.ncbi.nlm.nih.gov/bioproject/PRJNA480794"/>
-        <rdfs:label>Crz_d1_rep1</rdfs:label>
+        <rdfs:label>RNAseq_2020_DavisCrz_d1_rep1</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -2839,7 +2840,7 @@
         </rdf:type>
         <property:nodeLabel>Sample</property:nodeLabel>
         <terms:source rdf:resource="http://www.ncbi.nlm.nih.gov/bioproject/PRJNA480794"/>
-        <rdfs:label>Ilp2_d1_rep2</rdfs:label>
+        <rdfs:label>RNAseq_2020_DavisIlp2_d1_rep2</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -2863,7 +2864,7 @@
         </rdf:type>
         <property:nodeLabel>Sample</property:nodeLabel>
         <terms:source rdf:resource="http://www.ncbi.nlm.nih.gov/bioproject/PRJNA480794"/>
-        <rdfs:label>Ilp2_d1_rep1</rdfs:label>
+        <rdfs:label>RNAseq_2020_DavisIlp2_d1_rep1</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -2887,7 +2888,7 @@
         </rdf:type>
         <property:nodeLabel>Sample</property:nodeLabel>
         <terms:source rdf:resource="http://www.ncbi.nlm.nih.gov/bioproject/PRJNA480794"/>
-        <rdfs:label>Dsk_d1_rep2</rdfs:label>
+        <rdfs:label>RNAseq_2020_DavisDsk_d1_rep2</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -2911,7 +2912,7 @@
         </rdf:type>
         <property:nodeLabel>Sample</property:nodeLabel>
         <terms:source rdf:resource="http://www.ncbi.nlm.nih.gov/bioproject/PRJNA480794"/>
-        <rdfs:label>Dsk_d1_rep1</rdfs:label>
+        <rdfs:label>RNAseq_2020_DavisDsk_d1_rep1</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -2935,7 +2936,7 @@
         </rdf:type>
         <property:nodeLabel>Sample</property:nodeLabel>
         <terms:source rdf:resource="http://www.ncbi.nlm.nih.gov/bioproject/PRJNA480794"/>
-        <rdfs:label>NPF_d1_rep2</rdfs:label>
+        <rdfs:label>RNAseq_2020_DavisNPF_d1_rep2</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -2959,7 +2960,7 @@
         </rdf:type>
         <property:nodeLabel>Sample</property:nodeLabel>
         <terms:source rdf:resource="http://www.ncbi.nlm.nih.gov/bioproject/PRJNA480794"/>
-        <rdfs:label>NPF_d1_rep1</rdfs:label>
+        <rdfs:label>RNAseq_2020_DavisNPF_d1_rep1</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -2983,7 +2984,7 @@
         </rdf:type>
         <property:nodeLabel>Sample</property:nodeLabel>
         <terms:source rdf:resource="http://www.ncbi.nlm.nih.gov/bioproject/PRJNA480794"/>
-        <rdfs:label>Tm1_d1_rep2</rdfs:label>
+        <rdfs:label>RNAseq_2020_DavisTm1_d1_rep2</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -3007,7 +3008,7 @@
         </rdf:type>
         <property:nodeLabel>Sample</property:nodeLabel>
         <terms:source rdf:resource="http://www.ncbi.nlm.nih.gov/bioproject/PRJNA480794"/>
-        <rdfs:label>C2_d1_rep2</rdfs:label>
+        <rdfs:label>RNAseq_2020_DavisC2_d1_rep2</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -3031,7 +3032,7 @@
         </rdf:type>
         <property:nodeLabel>Sample</property:nodeLabel>
         <terms:source rdf:resource="http://www.ncbi.nlm.nih.gov/bioproject/PRJNA480794"/>
-        <rdfs:label>C2_d1_rep1</rdfs:label>
+        <rdfs:label>RNAseq_2020_DavisC2_d1_rep1</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -3055,7 +3056,7 @@
         </rdf:type>
         <property:nodeLabel>Sample</property:nodeLabel>
         <terms:source rdf:resource="http://www.ncbi.nlm.nih.gov/bioproject/PRJNA480794"/>
-        <rdfs:label>L5_d1_rep2</rdfs:label>
+        <rdfs:label>RNAseq_2020_DavisL5_d1_rep2</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -3079,7 +3080,7 @@
         </rdf:type>
         <property:nodeLabel>Sample</property:nodeLabel>
         <terms:source rdf:resource="http://www.ncbi.nlm.nih.gov/bioproject/PRJNA480794"/>
-        <rdfs:label>L5_d1_rep1</rdfs:label>
+        <rdfs:label>RNAseq_2020_DavisL5_d1_rep1</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -3103,7 +3104,7 @@
         </rdf:type>
         <property:nodeLabel>Sample</property:nodeLabel>
         <terms:source rdf:resource="http://www.ncbi.nlm.nih.gov/bioproject/PRJNA480794"/>
-        <rdfs:label>L4_d1_rep1</rdfs:label>
+        <rdfs:label>RNAseq_2020_DavisL4_d1_rep1</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -3127,7 +3128,7 @@
         </rdf:type>
         <property:nodeLabel>Sample</property:nodeLabel>
         <terms:source rdf:resource="http://www.ncbi.nlm.nih.gov/bioproject/PRJNA480794"/>
-        <rdfs:label>L3_d1_rep2</rdfs:label>
+        <rdfs:label>RNAseq_2020_DavisL3_d1_rep2</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -3151,7 +3152,7 @@
         </rdf:type>
         <property:nodeLabel>Sample</property:nodeLabel>
         <terms:source rdf:resource="http://www.ncbi.nlm.nih.gov/bioproject/PRJNA480794"/>
-        <rdfs:label>L3_d1_rep1</rdfs:label>
+        <rdfs:label>RNAseq_2020_DavisL3_d1_rep1</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -3175,7 +3176,7 @@
         </rdf:type>
         <property:nodeLabel>Sample</property:nodeLabel>
         <terms:source rdf:resource="http://www.ncbi.nlm.nih.gov/bioproject/PRJNA480794"/>
-        <rdfs:label>L2_d1_rep2</rdfs:label>
+        <rdfs:label>RNAseq_2020_DavisL2_d1_rep2</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -3199,7 +3200,7 @@
         </rdf:type>
         <property:nodeLabel>Sample</property:nodeLabel>
         <terms:source rdf:resource="http://www.ncbi.nlm.nih.gov/bioproject/PRJNA480794"/>
-        <rdfs:label>L2_d1_rep1</rdfs:label>
+        <rdfs:label>RNAseq_2020_DavisL2_d1_rep1</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -3223,7 +3224,7 @@
         </rdf:type>
         <property:nodeLabel>Sample</property:nodeLabel>
         <terms:source rdf:resource="http://www.ncbi.nlm.nih.gov/bioproject/PRJNA480794"/>
-        <rdfs:label>L1_d2_rep2</rdfs:label>
+        <rdfs:label>RNAseq_2020_DavisL1_d2_rep2</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -3247,7 +3248,7 @@
         </rdf:type>
         <property:nodeLabel>Sample</property:nodeLabel>
         <terms:source rdf:resource="http://www.ncbi.nlm.nih.gov/bioproject/PRJNA480794"/>
-        <rdfs:label>L1_d2_rep1</rdfs:label>
+        <rdfs:label>RNAseq_2020_DavisL1_d2_rep1</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -3271,7 +3272,7 @@
         </rdf:type>
         <property:nodeLabel>Sample</property:nodeLabel>
         <terms:source rdf:resource="http://www.ncbi.nlm.nih.gov/bioproject/PRJNA480794"/>
-        <rdfs:label>L1_d1_rep2</rdfs:label>
+        <rdfs:label>RNAseq_2020_DavisL1_d1_rep2</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -3295,7 +3296,7 @@
         </rdf:type>
         <property:nodeLabel>Sample</property:nodeLabel>
         <terms:source rdf:resource="http://www.ncbi.nlm.nih.gov/bioproject/PRJNA480794"/>
-        <rdfs:label>L1_d1_rep1</rdfs:label>
+        <rdfs:label>RNAseq_2020_DavisL1_d1_rep1</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -3319,7 +3320,7 @@
         </rdf:type>
         <property:nodeLabel>Sample</property:nodeLabel>
         <terms:source rdf:resource="http://www.ncbi.nlm.nih.gov/bioproject/PRJNA480794"/>
-        <rdfs:label>Tm9_d1_rep2</rdfs:label>
+        <rdfs:label>RNAseq_2020_DavisTm9_d1_rep2</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -3343,7 +3344,7 @@
         </rdf:type>
         <property:nodeLabel>Sample</property:nodeLabel>
         <terms:source rdf:resource="http://www.ncbi.nlm.nih.gov/bioproject/PRJNA480794"/>
-        <rdfs:label>Tm9_d1_rep1</rdfs:label>
+        <rdfs:label>RNAseq_2020_DavisTm9_d1_rep1</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -3367,7 +3368,7 @@
         </rdf:type>
         <property:nodeLabel>Sample</property:nodeLabel>
         <terms:source rdf:resource="http://www.ncbi.nlm.nih.gov/bioproject/PRJNA480794"/>
-        <rdfs:label>KC_apbp_m_d1_rep1</rdfs:label>
+        <rdfs:label>RNAseq_2020_DavisKC_apbp_m_d1_rep1</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -3391,7 +3392,7 @@
         </rdf:type>
         <property:nodeLabel>Sample</property:nodeLabel>
         <terms:source rdf:resource="http://www.ncbi.nlm.nih.gov/bioproject/PRJNA480794"/>
-        <rdfs:label>KC_apbp_ap_d1_rep2</rdfs:label>
+        <rdfs:label>RNAseq_2020_DavisKC_apbp_ap_d1_rep2</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -3415,7 +3416,7 @@
         </rdf:type>
         <property:nodeLabel>Sample</property:nodeLabel>
         <terms:source rdf:resource="http://www.ncbi.nlm.nih.gov/bioproject/PRJNA480794"/>
-        <rdfs:label>KC_apbp_ap_d1_rep1</rdfs:label>
+        <rdfs:label>RNAseq_2020_DavisKC_apbp_ap_d1_rep1</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -3439,7 +3440,7 @@
         </rdf:type>
         <property:nodeLabel>Sample</property:nodeLabel>
         <terms:source rdf:resource="http://www.ncbi.nlm.nih.gov/bioproject/PRJNA480794"/>
-        <rdfs:label>KC_gd_d2_rep2</rdfs:label>
+        <rdfs:label>RNAseq_2020_DavisKC_gd_d2_rep2</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -3463,7 +3464,7 @@
         </rdf:type>
         <property:nodeLabel>Sample</property:nodeLabel>
         <terms:source rdf:resource="http://www.ncbi.nlm.nih.gov/bioproject/PRJNA480794"/>
-        <rdfs:label>KC_gd_d2_rep1</rdfs:label>
+        <rdfs:label>RNAseq_2020_DavisKC_gd_d2_rep1</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -3487,7 +3488,7 @@
         </rdf:type>
         <property:nodeLabel>Sample</property:nodeLabel>
         <terms:source rdf:resource="http://www.ncbi.nlm.nih.gov/bioproject/PRJNA480794"/>
-        <rdfs:label>Dm3_d1_rep2</rdfs:label>
+        <rdfs:label>RNAseq_2020_DavisDm3_d1_rep2</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -3511,7 +3512,7 @@
         </rdf:type>
         <property:nodeLabel>Sample</property:nodeLabel>
         <terms:source rdf:resource="http://www.ncbi.nlm.nih.gov/bioproject/PRJNA480794"/>
-        <rdfs:label>Dm3_d1_rep1</rdfs:label>
+        <rdfs:label>RNAseq_2020_DavisDm3_d1_rep1</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -3535,7 +3536,7 @@
         </rdf:type>
         <property:nodeLabel>Sample</property:nodeLabel>
         <terms:source rdf:resource="http://www.ncbi.nlm.nih.gov/bioproject/PRJNA480794"/>
-        <rdfs:label>Lawf1_d2_rep2</rdfs:label>
+        <rdfs:label>RNAseq_2020_DavisLawf1_d2_rep2</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -3559,7 +3560,7 @@
         </rdf:type>
         <property:nodeLabel>Sample</property:nodeLabel>
         <terms:source rdf:resource="http://www.ncbi.nlm.nih.gov/bioproject/PRJNA480794"/>
-        <rdfs:label>Lawf1_d2_rep1</rdfs:label>
+        <rdfs:label>RNAseq_2020_DavisLawf1_d2_rep1</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -3583,7 +3584,7 @@
         </rdf:type>
         <property:nodeLabel>Sample</property:nodeLabel>
         <terms:source rdf:resource="http://www.ncbi.nlm.nih.gov/bioproject/PRJNA480794"/>
-        <rdfs:label>Tm20_d1_rep2</rdfs:label>
+        <rdfs:label>RNAseq_2020_DavisTm20_d1_rep2</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -3607,7 +3608,7 @@
         </rdf:type>
         <property:nodeLabel>Sample</property:nodeLabel>
         <terms:source rdf:resource="http://www.ncbi.nlm.nih.gov/bioproject/PRJNA480794"/>
-        <rdfs:label>Tm20_d1_rep1</rdfs:label>
+        <rdfs:label>RNAseq_2020_DavisTm20_d1_rep1</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -3631,7 +3632,7 @@
         </rdf:type>
         <property:nodeLabel>Sample</property:nodeLabel>
         <terms:source rdf:resource="http://www.ncbi.nlm.nih.gov/bioproject/PRJNA480794"/>
-        <rdfs:label>Dm8_d1_rep2</rdfs:label>
+        <rdfs:label>RNAseq_2020_DavisDm8_d1_rep2</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -3655,7 +3656,7 @@
         </rdf:type>
         <property:nodeLabel>Sample</property:nodeLabel>
         <terms:source rdf:resource="http://www.ncbi.nlm.nih.gov/bioproject/PRJNA480794"/>
-        <rdfs:label>Dm8_d1_rep1</rdfs:label>
+        <rdfs:label>RNAseq_2020_DavisDm8_d1_rep1</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -3679,7 +3680,7 @@
         </rdf:type>
         <property:nodeLabel>Sample</property:nodeLabel>
         <terms:source rdf:resource="http://www.ncbi.nlm.nih.gov/bioproject/PRJNA480794"/>
-        <rdfs:label>Tm29_d1_rep2</rdfs:label>
+        <rdfs:label>RNAseq_2020_DavisTm29_d1_rep2</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -3703,7 +3704,7 @@
         </rdf:type>
         <property:nodeLabel>Sample</property:nodeLabel>
         <terms:source rdf:resource="http://www.ncbi.nlm.nih.gov/bioproject/PRJNA480794"/>
-        <rdfs:label>Tm29_d1_rep1</rdfs:label>
+        <rdfs:label>RNAseq_2020_DavisTm29_d1_rep1</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -3727,7 +3728,7 @@
         </rdf:type>
         <property:nodeLabel>Sample</property:nodeLabel>
         <terms:source rdf:resource="http://www.ncbi.nlm.nih.gov/bioproject/PRJNA480794"/>
-        <rdfs:label>Glia_Eg_d2_rep2</rdfs:label>
+        <rdfs:label>RNAseq_2020_DavisGlia_Eg_d2_rep2</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -3751,7 +3752,7 @@
         </rdf:type>
         <property:nodeLabel>Sample</property:nodeLabel>
         <terms:source rdf:resource="http://www.ncbi.nlm.nih.gov/bioproject/PRJNA480794"/>
-        <rdfs:label>Glia_Eg_d2_rep1</rdfs:label>
+        <rdfs:label>RNAseq_2020_DavisGlia_Eg_d2_rep1</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -3775,7 +3776,7 @@
         </rdf:type>
         <property:nodeLabel>Sample</property:nodeLabel>
         <terms:source rdf:resource="http://www.ncbi.nlm.nih.gov/bioproject/PRJNA480794"/>
-        <rdfs:label>Glia_Eg_d3_rep2</rdfs:label>
+        <rdfs:label>RNAseq_2020_DavisGlia_Eg_d3_rep2</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -3799,7 +3800,7 @@
         </rdf:type>
         <property:nodeLabel>Sample</property:nodeLabel>
         <terms:source rdf:resource="http://www.ncbi.nlm.nih.gov/bioproject/PRJNA480794"/>
-        <rdfs:label>Glia_Eg_d3_rep1</rdfs:label>
+        <rdfs:label>RNAseq_2020_DavisGlia_Eg_d3_rep1</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -3823,7 +3824,7 @@
         </rdf:type>
         <property:nodeLabel>Sample</property:nodeLabel>
         <terms:source rdf:resource="http://www.ncbi.nlm.nih.gov/bioproject/PRJNA480794"/>
-        <rdfs:label>Glia_Eg_d1_rep2</rdfs:label>
+        <rdfs:label>RNAseq_2020_DavisGlia_Eg_d1_rep2</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -3847,7 +3848,7 @@
         </rdf:type>
         <property:nodeLabel>Sample</property:nodeLabel>
         <terms:source rdf:resource="http://www.ncbi.nlm.nih.gov/bioproject/PRJNA480794"/>
-        <rdfs:label>Glia_Eg_d1_rep1</rdfs:label>
+        <rdfs:label>RNAseq_2020_DavisGlia_Eg_d1_rep1</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -3871,7 +3872,7 @@
         </rdf:type>
         <property:nodeLabel>Sample</property:nodeLabel>
         <terms:source rdf:resource="http://www.ncbi.nlm.nih.gov/bioproject/PRJNA480794"/>
-        <rdfs:label>Glia_Psg_d2_rep2</rdfs:label>
+        <rdfs:label>RNAseq_2020_DavisGlia_Psg_d2_rep2</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -3895,7 +3896,7 @@
         </rdf:type>
         <property:nodeLabel>Sample</property:nodeLabel>
         <terms:source rdf:resource="http://www.ncbi.nlm.nih.gov/bioproject/PRJNA480794"/>
-        <rdfs:label>Glia_Psg_d2_rep1</rdfs:label>
+        <rdfs:label>RNAseq_2020_DavisGlia_Psg_d2_rep1</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -3919,7 +3920,7 @@
         </rdf:type>
         <property:nodeLabel>Sample</property:nodeLabel>
         <terms:source rdf:resource="http://www.ncbi.nlm.nih.gov/bioproject/PRJNA480794"/>
-        <rdfs:label>Glia_Psg_d1_rep2</rdfs:label>
+        <rdfs:label>RNAseq_2020_DavisGlia_Psg_d1_rep2</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -3943,7 +3944,7 @@
         </rdf:type>
         <property:nodeLabel>Sample</property:nodeLabel>
         <terms:source rdf:resource="http://www.ncbi.nlm.nih.gov/bioproject/PRJNA480794"/>
-        <rdfs:label>Glia_Psg_d1_rep1</rdfs:label>
+        <rdfs:label>RNAseq_2020_DavisGlia_Psg_d1_rep1</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -3967,7 +3968,7 @@
         </rdf:type>
         <property:nodeLabel>Sample</property:nodeLabel>
         <terms:source rdf:resource="http://www.ncbi.nlm.nih.gov/bioproject/PRJNA480794"/>
-        <rdfs:label>Glia_Mg_d1_rep2</rdfs:label>
+        <rdfs:label>RNAseq_2020_DavisGlia_Mg_d1_rep2</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -3991,7 +3992,7 @@
         </rdf:type>
         <property:nodeLabel>Sample</property:nodeLabel>
         <terms:source rdf:resource="http://www.ncbi.nlm.nih.gov/bioproject/PRJNA480794"/>
-        <rdfs:label>TmY3_d1_rep1</rdfs:label>
+        <rdfs:label>RNAseq_2020_DavisTmY3_d1_rep1</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -4015,7 +4016,7 @@
         </rdf:type>
         <property:nodeLabel>Sample</property:nodeLabel>
         <terms:source rdf:resource="http://www.ncbi.nlm.nih.gov/bioproject/PRJNA480794"/>
-        <rdfs:label>PAM_6_d1_rep2</rdfs:label>
+        <rdfs:label>RNAseq_2020_DavisPAM_6_d1_rep2</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -4039,7 +4040,7 @@
         </rdf:type>
         <property:nodeLabel>Sample</property:nodeLabel>
         <terms:source rdf:resource="http://www.ncbi.nlm.nih.gov/bioproject/PRJNA480794"/>
-        <rdfs:label>PAM_6_d1_rep1</rdfs:label>
+        <rdfs:label>RNAseq_2020_DavisPAM_6_d1_rep1</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -4063,7 +4064,7 @@
         </rdf:type>
         <property:nodeLabel>Sample</property:nodeLabel>
         <terms:source rdf:resource="http://www.ncbi.nlm.nih.gov/bioproject/PRJNA480794"/>
-        <rdfs:label>T4.T5_d1_rep2</rdfs:label>
+        <rdfs:label>RNAseq_2020_DavisT4.T5_d1_rep2</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -4087,7 +4088,7 @@
         </rdf:type>
         <property:nodeLabel>Sample</property:nodeLabel>
         <terms:source rdf:resource="http://www.ncbi.nlm.nih.gov/bioproject/PRJNA480794"/>
-        <rdfs:label>T4.T5_d1_rep1</rdfs:label>
+        <rdfs:label>RNAseq_2020_DavisT4.T5_d1_rep1</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -4111,7 +4112,7 @@
         </rdf:type>
         <property:nodeLabel>Sample</property:nodeLabel>
         <terms:source rdf:resource="http://www.ncbi.nlm.nih.gov/bioproject/PRJNA480794"/>
-        <rdfs:label>T4.T5_d2_rep2</rdfs:label>
+        <rdfs:label>RNAseq_2020_DavisT4.T5_d2_rep2</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -4135,7 +4136,7 @@
         </rdf:type>
         <property:nodeLabel>Sample</property:nodeLabel>
         <terms:source rdf:resource="http://www.ncbi.nlm.nih.gov/bioproject/PRJNA480794"/>
-        <rdfs:label>T4.T5_d2_rep1</rdfs:label>
+        <rdfs:label>RNAseq_2020_DavisT4.T5_d2_rep1</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -4159,7 +4160,7 @@
         </rdf:type>
         <property:nodeLabel>Sample</property:nodeLabel>
         <terms:source rdf:resource="http://www.ncbi.nlm.nih.gov/bioproject/PRJNA480794"/>
-        <rdfs:label>T5_d2_rep2</rdfs:label>
+        <rdfs:label>RNAseq_2020_DavisT5_d2_rep2</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -4183,7 +4184,7 @@
         </rdf:type>
         <property:nodeLabel>Sample</property:nodeLabel>
         <terms:source rdf:resource="http://www.ncbi.nlm.nih.gov/bioproject/PRJNA480794"/>
-        <rdfs:label>T5_d2_rep1</rdfs:label>
+        <rdfs:label>RNAseq_2020_DavisT5_d2_rep1</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -4207,7 +4208,7 @@
         </rdf:type>
         <property:nodeLabel>Sample</property:nodeLabel>
         <terms:source rdf:resource="http://www.ncbi.nlm.nih.gov/bioproject/PRJNA480794"/>
-        <rdfs:label>T5_d1_rep2</rdfs:label>
+        <rdfs:label>RNAseq_2020_DavisT5_d1_rep2</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -4231,7 +4232,7 @@
         </rdf:type>
         <property:nodeLabel>Sample</property:nodeLabel>
         <terms:source rdf:resource="http://www.ncbi.nlm.nih.gov/bioproject/PRJNA480794"/>
-        <rdfs:label>T5_d1_rep1</rdfs:label>
+        <rdfs:label>RNAseq_2020_DavisT5_d1_rep1</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -4255,7 +4256,7 @@
         </rdf:type>
         <property:nodeLabel>Sample</property:nodeLabel>
         <terms:source rdf:resource="http://www.ncbi.nlm.nih.gov/bioproject/PRJNA480794"/>
-        <rdfs:label>T4_d1_rep2</rdfs:label>
+        <rdfs:label>RNAseq_2020_DavisT4_d1_rep2</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -4279,7 +4280,7 @@
         </rdf:type>
         <property:nodeLabel>Sample</property:nodeLabel>
         <terms:source rdf:resource="http://www.ncbi.nlm.nih.gov/bioproject/PRJNA480794"/>
-        <rdfs:label>T4_d1_rep1</rdfs:label>
+        <rdfs:label>RNAseq_2020_DavisT4_d1_rep1</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -4303,7 +4304,7 @@
         </rdf:type>
         <property:nodeLabel>Sample</property:nodeLabel>
         <terms:source rdf:resource="http://www.ncbi.nlm.nih.gov/bioproject/PRJNA480794"/>
-        <rdfs:label>T4_d2_rep2</rdfs:label>
+        <rdfs:label>RNAseq_2020_DavisT4_d2_rep2</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -4327,7 +4328,7 @@
         </rdf:type>
         <property:nodeLabel>Sample</property:nodeLabel>
         <terms:source rdf:resource="http://www.ncbi.nlm.nih.gov/bioproject/PRJNA480794"/>
-        <rdfs:label>T4_d2_rep1</rdfs:label>
+        <rdfs:label>RNAseq_2020_DavisT4_d2_rep1</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -4351,7 +4352,7 @@
         </rdf:type>
         <property:nodeLabel>Sample</property:nodeLabel>
         <terms:source rdf:resource="http://www.ncbi.nlm.nih.gov/bioproject/PRJNA480794"/>
-        <rdfs:label>PAM_3_d1_rep2</rdfs:label>
+        <rdfs:label>RNAseq_2020_DavisPAM_3_d1_rep2</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -4375,7 +4376,7 @@
         </rdf:type>
         <property:nodeLabel>Sample</property:nodeLabel>
         <terms:source rdf:resource="http://www.ncbi.nlm.nih.gov/bioproject/PRJNA480794"/>
-        <rdfs:label>PAM_3_d1_rep1</rdfs:label>
+        <rdfs:label>RNAseq_2020_DavisPAM_3_d1_rep1</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -4399,7 +4400,7 @@
         </rdf:type>
         <property:nodeLabel>Sample</property:nodeLabel>
         <terms:source rdf:resource="http://www.ncbi.nlm.nih.gov/bioproject/PRJNA480794"/>
-        <rdfs:label>MBON_bp1_d1_rep2</rdfs:label>
+        <rdfs:label>RNAseq_2020_DavisMBON_bp1_d1_rep2</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -4423,7 +4424,7 @@
         </rdf:type>
         <property:nodeLabel>Sample</property:nodeLabel>
         <terms:source rdf:resource="http://www.ncbi.nlm.nih.gov/bioproject/PRJNA480794"/>
-        <rdfs:label>MBON_bp1_d1_rep1</rdfs:label>
+        <rdfs:label>RNAseq_2020_DavisMBON_bp1_d1_rep1</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -4447,7 +4448,7 @@
         </rdf:type>
         <property:nodeLabel>Sample</property:nodeLabel>
         <terms:source rdf:resource="http://www.ncbi.nlm.nih.gov/bioproject/PRJNA480794"/>
-        <rdfs:label>PAM_1_d1_rep2</rdfs:label>
+        <rdfs:label>RNAseq_2020_DavisPAM_1_d1_rep2</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -4471,7 +4472,7 @@
         </rdf:type>
         <property:nodeLabel>Sample</property:nodeLabel>
         <terms:source rdf:resource="http://www.ncbi.nlm.nih.gov/bioproject/PRJNA480794"/>
-        <rdfs:label>PAM_1_d1_rep1</rdfs:label>
+        <rdfs:label>RNAseq_2020_DavisPAM_1_d1_rep1</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -4495,7 +4496,7 @@
         </rdf:type>
         <property:nodeLabel>Sample</property:nodeLabel>
         <terms:source rdf:resource="http://www.ncbi.nlm.nih.gov/bioproject/PRJNA480794"/>
-        <rdfs:label>PAM_5_d1_rep2</rdfs:label>
+        <rdfs:label>RNAseq_2020_DavisPAM_5_d1_rep2</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -4519,7 +4520,7 @@
         </rdf:type>
         <property:nodeLabel>Sample</property:nodeLabel>
         <terms:source rdf:resource="http://www.ncbi.nlm.nih.gov/bioproject/PRJNA480794"/>
-        <rdfs:label>PAM_5_d1_rep1</rdfs:label>
+        <rdfs:label>RNAseq_2020_DavisPAM_5_d1_rep1</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -4543,7 +4544,7 @@
         </rdf:type>
         <property:nodeLabel>Sample</property:nodeLabel>
         <terms:source rdf:resource="http://www.ncbi.nlm.nih.gov/bioproject/PRJNA480794"/>
-        <rdfs:label>PAM_4_d1_rep2</rdfs:label>
+        <rdfs:label>RNAseq_2020_DavisPAM_4_d1_rep2</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -4567,7 +4568,7 @@
         </rdf:type>
         <property:nodeLabel>Sample</property:nodeLabel>
         <terms:source rdf:resource="http://www.ncbi.nlm.nih.gov/bioproject/PRJNA480794"/>
-        <rdfs:label>PAM_4_d1_rep1</rdfs:label>
+        <rdfs:label>RNAseq_2020_DavisPAM_4_d1_rep1</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -4591,7 +4592,7 @@
         </rdf:type>
         <property:nodeLabel>Sample</property:nodeLabel>
         <terms:source rdf:resource="http://www.ncbi.nlm.nih.gov/bioproject/PRJNA480794"/>
-        <rdfs:label>PAM_8_d1_rep2</rdfs:label>
+        <rdfs:label>RNAseq_2020_DavisPAM_8_d1_rep2</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -4615,7 +4616,7 @@
         </rdf:type>
         <property:nodeLabel>Sample</property:nodeLabel>
         <terms:source rdf:resource="http://www.ncbi.nlm.nih.gov/bioproject/PRJNA480794"/>
-        <rdfs:label>PAM_8_d1_rep1</rdfs:label>
+        <rdfs:label>RNAseq_2020_DavisPAM_8_d1_rep1</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -4639,7 +4640,7 @@
         </rdf:type>
         <property:nodeLabel>Sample</property:nodeLabel>
         <terms:source rdf:resource="http://www.ncbi.nlm.nih.gov/bioproject/PRJNA480794"/>
-        <rdfs:label>PAM_9_d1_rep2</rdfs:label>
+        <rdfs:label>RNAseq_2020_DavisPAM_9_d1_rep2</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -4663,7 +4664,7 @@
         </rdf:type>
         <property:nodeLabel>Sample</property:nodeLabel>
         <terms:source rdf:resource="http://www.ncbi.nlm.nih.gov/bioproject/PRJNA480794"/>
-        <rdfs:label>PAM_9_d1_rep1</rdfs:label>
+        <rdfs:label>RNAseq_2020_DavisPAM_9_d1_rep1</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -4687,7 +4688,7 @@
         </rdf:type>
         <property:nodeLabel>Sample</property:nodeLabel>
         <terms:source rdf:resource="http://www.ncbi.nlm.nih.gov/bioproject/PRJNA480794"/>
-        <rdfs:label>PAM_7_d1_rep2</rdfs:label>
+        <rdfs:label>RNAseq_2020_DavisPAM_7_d1_rep2</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -4711,7 +4712,7 @@
         </rdf:type>
         <property:nodeLabel>Sample</property:nodeLabel>
         <terms:source rdf:resource="http://www.ncbi.nlm.nih.gov/bioproject/PRJNA480794"/>
-        <rdfs:label>PAM_7_d1_rep1</rdfs:label>
+        <rdfs:label>RNAseq_2020_DavisPAM_7_d1_rep1</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -4735,7 +4736,7 @@
         </rdf:type>
         <property:nodeLabel>Sample</property:nodeLabel>
         <terms:source rdf:resource="http://www.ncbi.nlm.nih.gov/bioproject/PRJNA480794"/>
-        <rdfs:label>KC_ab_c_d1_rep2</rdfs:label>
+        <rdfs:label>RNAseq_2020_DavisKC_ab_c_d1_rep2</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -4759,7 +4760,7 @@
         </rdf:type>
         <property:nodeLabel>Sample</property:nodeLabel>
         <terms:source rdf:resource="http://www.ncbi.nlm.nih.gov/bioproject/PRJNA480794"/>
-        <rdfs:label>KC_ab_c_d1_rep1</rdfs:label>
+        <rdfs:label>RNAseq_2020_DavisKC_ab_c_d1_rep1</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -4783,7 +4784,7 @@
         </rdf:type>
         <property:nodeLabel>Sample</property:nodeLabel>
         <terms:source rdf:resource="http://www.ncbi.nlm.nih.gov/bioproject/PRJNA480794"/>
-        <rdfs:label>KC_ab_s_d1_rep2</rdfs:label>
+        <rdfs:label>RNAseq_2020_DavisKC_ab_s_d1_rep2</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -4807,7 +4808,7 @@
         </rdf:type>
         <property:nodeLabel>Sample</property:nodeLabel>
         <terms:source rdf:resource="http://www.ncbi.nlm.nih.gov/bioproject/PRJNA480794"/>
-        <rdfs:label>KC_ab_s_d1_rep1</rdfs:label>
+        <rdfs:label>RNAseq_2020_DavisKC_ab_s_d1_rep1</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -4831,7 +4832,7 @@
         </rdf:type>
         <property:nodeLabel>Sample</property:nodeLabel>
         <terms:source rdf:resource="http://www.ncbi.nlm.nih.gov/bioproject/PRJNA480794"/>
-        <rdfs:label>KC_ab_c.p.s_d1_rep2</rdfs:label>
+        <rdfs:label>RNAseq_2020_DavisKC_ab_c.p.s_d1_rep2</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -4855,7 +4856,7 @@
         </rdf:type>
         <property:nodeLabel>Sample</property:nodeLabel>
         <terms:source rdf:resource="http://www.ncbi.nlm.nih.gov/bioproject/PRJNA480794"/>
-        <rdfs:label>KC_ab_c.p.s_d1_rep1</rdfs:label>
+        <rdfs:label>RNAseq_2020_DavisKC_ab_c.p.s_d1_rep1</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -4879,7 +4880,7 @@
         </rdf:type>
         <property:nodeLabel>Sample</property:nodeLabel>
         <terms:source rdf:resource="http://www.ncbi.nlm.nih.gov/bioproject/PRJNA480794"/>
-        <rdfs:label>KC_ab_p_d1_rep2</rdfs:label>
+        <rdfs:label>RNAseq_2020_DavisKC_ab_p_d1_rep2</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -4903,7 +4904,7 @@
         </rdf:type>
         <property:nodeLabel>Sample</property:nodeLabel>
         <terms:source rdf:resource="http://www.ncbi.nlm.nih.gov/bioproject/PRJNA480794"/>
-        <rdfs:label>KC_ab_p_d1_rep1</rdfs:label>
+        <rdfs:label>RNAseq_2020_DavisKC_ab_p_d1_rep1</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -4927,7 +4928,7 @@
         </rdf:type>
         <property:nodeLabel>Sample</property:nodeLabel>
         <terms:source rdf:resource="http://www.ncbi.nlm.nih.gov/bioproject/PRJNA480794"/>
-        <rdfs:label>KC_apbp_m_d1_rep2</rdfs:label>
+        <rdfs:label>RNAseq_2020_DavisKC_apbp_m_d1_rep2</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -4951,7 +4952,7 @@
         </rdf:type>
         <property:nodeLabel>Sample</property:nodeLabel>
         <terms:source rdf:resource="http://www.ncbi.nlm.nih.gov/bioproject/PRJNA480794"/>
-        <rdfs:label>LPLC1_d1_rep2</rdfs:label>
+        <rdfs:label>RNAseq_2020_DavisLPLC1_d1_rep2</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -4975,7 +4976,7 @@
         </rdf:type>
         <property:nodeLabel>Sample</property:nodeLabel>
         <terms:source rdf:resource="http://www.ncbi.nlm.nih.gov/bioproject/PRJNA480794"/>
-        <rdfs:label>KC_gd_d1_rep2</rdfs:label>
+        <rdfs:label>RNAseq_2020_DavisKC_gd_d1_rep2</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -4999,7 +5000,7 @@
         </rdf:type>
         <property:nodeLabel>Sample</property:nodeLabel>
         <terms:source rdf:resource="http://www.ncbi.nlm.nih.gov/bioproject/PRJNA480794"/>
-        <rdfs:label>KC_gd_d1_rep1</rdfs:label>
+        <rdfs:label>RNAseq_2020_DavisKC_gd_d1_rep1</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -5023,7 +5024,7 @@
         </rdf:type>
         <property:nodeLabel>Sample</property:nodeLabel>
         <terms:source rdf:resource="http://www.ncbi.nlm.nih.gov/bioproject/PRJNA480794"/>
-        <rdfs:label>Lat_d1_rep2</rdfs:label>
+        <rdfs:label>RNAseq_2020_DavisLat_d1_rep2</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -5047,7 +5048,7 @@
         </rdf:type>
         <property:nodeLabel>Sample</property:nodeLabel>
         <terms:source rdf:resource="http://www.ncbi.nlm.nih.gov/bioproject/PRJNA480794"/>
-        <rdfs:label>Lat_d1_rep1</rdfs:label>
+        <rdfs:label>RNAseq_2020_DavisLat_d1_rep1</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -5071,7 +5072,7 @@
         </rdf:type>
         <property:nodeLabel>Sample</property:nodeLabel>
         <terms:source rdf:resource="http://www.ncbi.nlm.nih.gov/bioproject/PRJNA480794"/>
-        <rdfs:label>MBON_g1pedc_d1_rep2</rdfs:label>
+        <rdfs:label>RNAseq_2020_DavisMBON_g1pedc_d1_rep2</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -5095,7 +5096,7 @@
         </rdf:type>
         <property:nodeLabel>Sample</property:nodeLabel>
         <terms:source rdf:resource="http://www.ncbi.nlm.nih.gov/bioproject/PRJNA480794"/>
-        <rdfs:label>MBON_g1pedc_d1_rep1</rdfs:label>
+        <rdfs:label>RNAseq_2020_DavisMBON_g1pedc_d1_rep1</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -5119,7 +5120,7 @@
         </rdf:type>
         <property:nodeLabel>Sample</property:nodeLabel>
         <terms:source rdf:resource="http://www.ncbi.nlm.nih.gov/bioproject/PRJNA480794"/>
-        <rdfs:label>lLNv_d1_rep2</rdfs:label>
+        <rdfs:label>RNAseq_2020_DavislLNv_d1_rep2</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -5143,7 +5144,7 @@
         </rdf:type>
         <property:nodeLabel>Sample</property:nodeLabel>
         <terms:source rdf:resource="http://www.ncbi.nlm.nih.gov/bioproject/PRJNA480794"/>
-        <rdfs:label>lLNv_d1_rep1</rdfs:label>
+        <rdfs:label>RNAseq_2020_DavislLNv_d1_rep1</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -5167,7 +5168,7 @@
         </rdf:type>
         <property:nodeLabel>Sample</property:nodeLabel>
         <terms:source rdf:resource="http://www.ncbi.nlm.nih.gov/bioproject/PRJNA480794"/>
-        <rdfs:label>Pdf_d1_rep2</rdfs:label>
+        <rdfs:label>RNAseq_2020_DavisPdf_d1_rep2</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -5191,7 +5192,7 @@
         </rdf:type>
         <property:nodeLabel>Sample</property:nodeLabel>
         <terms:source rdf:resource="http://www.ncbi.nlm.nih.gov/bioproject/PRJNA480794"/>
-        <rdfs:label>Pdf_d1_rep1</rdfs:label>
+        <rdfs:label>RNAseq_2020_DavisPdf_d1_rep1</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -5215,7 +5216,7 @@
         </rdf:type>
         <property:nodeLabel>Sample</property:nodeLabel>
         <terms:source rdf:resource="http://www.ncbi.nlm.nih.gov/bioproject/PRJNA480794"/>
-        <rdfs:label>NPF_d1_rep4</rdfs:label>
+        <rdfs:label>RNAseq_2020_DavisNPF_d1_rep4</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -5239,7 +5240,7 @@
         </rdf:type>
         <property:nodeLabel>Sample</property:nodeLabel>
         <terms:source rdf:resource="http://www.ncbi.nlm.nih.gov/bioproject/PRJNA480794"/>
-        <rdfs:label>NPF_d1_rep3</rdfs:label>
+        <rdfs:label>RNAseq_2020_DavisNPF_d1_rep3</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -5263,7 +5264,7 @@
         </rdf:type>
         <property:nodeLabel>Sample</property:nodeLabel>
         <terms:source rdf:resource="http://www.ncbi.nlm.nih.gov/bioproject/PRJNA480794"/>
-        <rdfs:label>CCAP_d1_rep2</rdfs:label>
+        <rdfs:label>RNAseq_2020_DavisCCAP_d1_rep2</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -5287,7 +5288,7 @@
         </rdf:type>
         <property:nodeLabel>Sample</property:nodeLabel>
         <terms:source rdf:resource="http://www.ncbi.nlm.nih.gov/bioproject/PRJNA480794"/>
-        <rdfs:label>CCAP_d1_rep1</rdfs:label>
+        <rdfs:label>RNAseq_2020_DavisCCAP_d1_rep1</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -5311,7 +5312,7 @@
         </rdf:type>
         <property:nodeLabel>Sample</property:nodeLabel>
         <terms:source rdf:resource="http://www.ncbi.nlm.nih.gov/bioproject/PRJNA480794"/>
-        <rdfs:label>LPTC_HS.VS_d1_rep2</rdfs:label>
+        <rdfs:label>RNAseq_2020_DavisLPTC_HS.VS_d1_rep2</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -5335,7 +5336,7 @@
         </rdf:type>
         <property:nodeLabel>Sample</property:nodeLabel>
         <terms:source rdf:resource="http://www.ncbi.nlm.nih.gov/bioproject/PRJNA480794"/>
-        <rdfs:label>LPTC_HS.VS_d1_rep1</rdfs:label>
+        <rdfs:label>RNAseq_2020_DavisLPTC_HS.VS_d1_rep1</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -5359,7 +5360,7 @@
         </rdf:type>
         <property:nodeLabel>Sample</property:nodeLabel>
         <terms:source rdf:resource="http://www.ncbi.nlm.nih.gov/bioproject/PRJNA480794"/>
-        <rdfs:label>Tm1_d1_rep1</rdfs:label>
+        <rdfs:label>RNAseq_2020_DavisTm1_d1_rep1</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -5383,7 +5384,7 @@
         </rdf:type>
         <property:nodeLabel>Sample</property:nodeLabel>
         <terms:source rdf:resource="http://www.ncbi.nlm.nih.gov/bioproject/PRJNA480794"/>
-        <rdfs:label>Dm12_d1_rep2</rdfs:label>
+        <rdfs:label>RNAseq_2020_DavisDm12_d1_rep2</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -5407,7 +5408,7 @@
         </rdf:type>
         <property:nodeLabel>Sample</property:nodeLabel>
         <terms:source rdf:resource="http://www.ncbi.nlm.nih.gov/bioproject/PRJNA480794"/>
-        <rdfs:label>Dm12_d1_rep1</rdfs:label>
+        <rdfs:label>RNAseq_2020_DavisDm12_d1_rep1</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -5430,7 +5431,7 @@
         </rdf:type>
         <property:nodeLabel>Sample</property:nodeLabel>
         <terms:source rdf:resource="http://www.ncbi.nlm.nih.gov/bioproject/PRJNA480794"/>
-        <rdfs:label>R1-6_d1_rep2</rdfs:label>
+        <rdfs:label>RNAseq_2020_DavisR1-6_d1_rep2</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -5453,7 +5454,7 @@
         </rdf:type>
         <property:nodeLabel>Sample</property:nodeLabel>
         <terms:source rdf:resource="http://www.ncbi.nlm.nih.gov/bioproject/PRJNA480794"/>
-        <rdfs:label>R1-6_d1_rep1</rdfs:label>
+        <rdfs:label>RNAseq_2020_DavisR1-6_d1_rep1</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -5477,7 +5478,7 @@
         </rdf:type>
         <property:nodeLabel>Sample</property:nodeLabel>
         <terms:source rdf:resource="http://www.ncbi.nlm.nih.gov/bioproject/PRJNA480794"/>
-        <rdfs:label>C2.C3_d1_rep2</rdfs:label>
+        <rdfs:label>RNAseq_2020_DavisC2.C3_d1_rep2</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -5501,7 +5502,7 @@
         </rdf:type>
         <property:nodeLabel>Sample</property:nodeLabel>
         <terms:source rdf:resource="http://www.ncbi.nlm.nih.gov/bioproject/PRJNA480794"/>
-        <rdfs:label>C2.C3_d1_rep1</rdfs:label>
+        <rdfs:label>RNAseq_2020_DavisC2.C3_d1_rep1</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -5525,7 +5526,7 @@
         </rdf:type>
         <property:nodeLabel>Sample</property:nodeLabel>
         <terms:source rdf:resource="http://www.ncbi.nlm.nih.gov/bioproject/PRJNA480794"/>
-        <rdfs:label>L1.L2_d2_rep2</rdfs:label>
+        <rdfs:label>RNAseq_2020_DavisL1.L2_d2_rep2</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -5549,7 +5550,7 @@
         </rdf:type>
         <property:nodeLabel>Sample</property:nodeLabel>
         <terms:source rdf:resource="http://www.ncbi.nlm.nih.gov/bioproject/PRJNA480794"/>
-        <rdfs:label>L1.L2_d2_rep1</rdfs:label>
+        <rdfs:label>RNAseq_2020_DavisL1.L2_d2_rep1</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -5573,7 +5574,7 @@
         </rdf:type>
         <property:nodeLabel>Sample</property:nodeLabel>
         <terms:source rdf:resource="http://www.ncbi.nlm.nih.gov/bioproject/PRJNA480794"/>
-        <rdfs:label>L1.L2_d1_rep2</rdfs:label>
+        <rdfs:label>RNAseq_2020_DavisL1.L2_d1_rep2</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -5597,7 +5598,7 @@
         </rdf:type>
         <property:nodeLabel>Sample</property:nodeLabel>
         <terms:source rdf:resource="http://www.ncbi.nlm.nih.gov/bioproject/PRJNA480794"/>
-        <rdfs:label>L1.L2_d1_rep1</rdfs:label>
+        <rdfs:label>RNAseq_2020_DavisL1.L2_d1_rep1</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -5621,7 +5622,7 @@
         </rdf:type>
         <property:nodeLabel>Sample</property:nodeLabel>
         <terms:source rdf:resource="http://www.ncbi.nlm.nih.gov/bioproject/PRJNA480794"/>
-        <rdfs:label>Lai_d1_rep2</rdfs:label>
+        <rdfs:label>RNAseq_2020_DavisLai_d1_rep2</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -5645,7 +5646,7 @@
         </rdf:type>
         <property:nodeLabel>Sample</property:nodeLabel>
         <terms:source rdf:resource="http://www.ncbi.nlm.nih.gov/bioproject/PRJNA480794"/>
-        <rdfs:label>Lai_d1_rep1</rdfs:label>
+        <rdfs:label>RNAseq_2020_DavisLai_d1_rep1</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -5669,7 +5670,7 @@
         </rdf:type>
         <property:nodeLabel>Sample</property:nodeLabel>
         <terms:source rdf:resource="http://www.ncbi.nlm.nih.gov/bioproject/PRJNA480794"/>
-        <rdfs:label>T1_d1_rep2</rdfs:label>
+        <rdfs:label>RNAseq_2020_DavisT1_d1_rep2</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -5693,7 +5694,7 @@
         </rdf:type>
         <property:nodeLabel>Sample</property:nodeLabel>
         <terms:source rdf:resource="http://www.ncbi.nlm.nih.gov/bioproject/PRJNA480794"/>
-        <rdfs:label>T1_d1_rep1</rdfs:label>
+        <rdfs:label>RNAseq_2020_DavisT1_d1_rep1</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -5717,7 +5718,7 @@
         </rdf:type>
         <property:nodeLabel>Sample</property:nodeLabel>
         <terms:source rdf:resource="http://www.ncbi.nlm.nih.gov/bioproject/PRJNA480794"/>
-        <rdfs:label>Lawf2_d1_rep2</rdfs:label>
+        <rdfs:label>RNAseq_2020_DavisLawf2_d1_rep2</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -5741,7 +5742,7 @@
         </rdf:type>
         <property:nodeLabel>Sample</property:nodeLabel>
         <terms:source rdf:resource="http://www.ncbi.nlm.nih.gov/bioproject/PRJNA480794"/>
-        <rdfs:label>Lawf2_d1_rep1</rdfs:label>
+        <rdfs:label>RNAseq_2020_DavisLawf2_d1_rep1</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -5765,7 +5766,7 @@
         </rdf:type>
         <property:nodeLabel>Sample</property:nodeLabel>
         <terms:source rdf:resource="http://www.ncbi.nlm.nih.gov/bioproject/PRJNA480794"/>
-        <rdfs:label>Lawf1_d1_rep2</rdfs:label>
+        <rdfs:label>RNAseq_2020_DavisLawf1_d1_rep2</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -5789,7 +5790,7 @@
         </rdf:type>
         <property:nodeLabel>Sample</property:nodeLabel>
         <terms:source rdf:resource="http://www.ncbi.nlm.nih.gov/bioproject/PRJNA480794"/>
-        <rdfs:label>Lawf1_d1_rep1</rdfs:label>
+        <rdfs:label>RNAseq_2020_DavisLawf1_d1_rep1</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -5813,7 +5814,7 @@
         </rdf:type>
         <property:nodeLabel>Sample</property:nodeLabel>
         <terms:source rdf:resource="http://www.ncbi.nlm.nih.gov/bioproject/PRJNA480794"/>
-        <rdfs:label>L4_d1_rep2</rdfs:label>
+        <rdfs:label>RNAseq_2020_DavisL4_d1_rep2</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -5837,7 +5838,7 @@
         </rdf:type>
         <property:nodeLabel>Sample</property:nodeLabel>
         <terms:source rdf:resource="http://www.ncbi.nlm.nih.gov/bioproject/PRJNA480794"/>
-        <rdfs:label>C3_d1_rep2</rdfs:label>
+        <rdfs:label>RNAseq_2020_DavisC3_d1_rep2</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -5861,7 +5862,7 @@
         </rdf:type>
         <property:nodeLabel>Sample</property:nodeLabel>
         <terms:source rdf:resource="http://www.ncbi.nlm.nih.gov/bioproject/PRJNA480794"/>
-        <rdfs:label>C3_d1_rep1</rdfs:label>
+        <rdfs:label>RNAseq_2020_DavisC3_d1_rep1</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -5885,7 +5886,7 @@
         </rdf:type>
         <property:nodeLabel>Sample</property:nodeLabel>
         <terms:source rdf:resource="http://www.ncbi.nlm.nih.gov/bioproject/PRJNA480794"/>
-        <rdfs:label>PAM_2_d1_rep2</rdfs:label>
+        <rdfs:label>RNAseq_2020_DavisPAM_2_d1_rep2</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -5909,7 +5910,7 @@
         </rdf:type>
         <property:nodeLabel>Sample</property:nodeLabel>
         <terms:source rdf:resource="http://www.ncbi.nlm.nih.gov/bioproject/PRJNA480794"/>
-        <rdfs:label>PAM_2_d1_rep1</rdfs:label>
+        <rdfs:label>RNAseq_2020_DavisPAM_2_d1_rep1</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -5933,7 +5934,7 @@
         </rdf:type>
         <property:nodeLabel>Sample</property:nodeLabel>
         <terms:source rdf:resource="http://www.ncbi.nlm.nih.gov/bioproject/PRJNA480794"/>
-        <rdfs:label>Glia_Mg_d1_rep1</rdfs:label>
+        <rdfs:label>RNAseq_2020_DavisGlia_Mg_d1_rep1</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -5957,7 +5958,7 @@
         </rdf:type>
         <property:nodeLabel>Sample</property:nodeLabel>
         <terms:source rdf:resource="http://www.ncbi.nlm.nih.gov/bioproject/PRJNA480794"/>
-        <rdfs:label>PB_6_d1_rep2</rdfs:label>
+        <rdfs:label>RNAseq_2020_DavisPB_6_d1_rep2</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -5981,7 +5982,7 @@
         </rdf:type>
         <property:nodeLabel>Sample</property:nodeLabel>
         <terms:source rdf:resource="http://www.ncbi.nlm.nih.gov/bioproject/PRJNA480794"/>
-        <rdfs:label>PB_6_d1_rep1</rdfs:label>
+        <rdfs:label>RNAseq_2020_DavisPB_6_d1_rep1</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -6005,7 +6006,7 @@
         </rdf:type>
         <property:nodeLabel>Sample</property:nodeLabel>
         <terms:source rdf:resource="http://www.ncbi.nlm.nih.gov/bioproject/PRJNA480794"/>
-        <rdfs:label>PB_3_d1_rep2</rdfs:label>
+        <rdfs:label>RNAseq_2020_DavisPB_3_d1_rep2</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -6029,7 +6030,7 @@
         </rdf:type>
         <property:nodeLabel>Sample</property:nodeLabel>
         <terms:source rdf:resource="http://www.ncbi.nlm.nih.gov/bioproject/PRJNA480794"/>
-        <rdfs:label>PB_3_d1_rep1</rdfs:label>
+        <rdfs:label>RNAseq_2020_DavisPB_3_d1_rep1</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -6053,7 +6054,7 @@
         </rdf:type>
         <property:nodeLabel>Sample</property:nodeLabel>
         <terms:source rdf:resource="http://www.ncbi.nlm.nih.gov/bioproject/PRJNA480794"/>
-        <rdfs:label>LPi-34_d1_rep2</rdfs:label>
+        <rdfs:label>RNAseq_2020_DavisLPi-34_d1_rep2</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -6077,7 +6078,7 @@
         </rdf:type>
         <property:nodeLabel>Sample</property:nodeLabel>
         <terms:source rdf:resource="http://www.ncbi.nlm.nih.gov/bioproject/PRJNA480794"/>
-        <rdfs:label>LPi-34_d1_rep1</rdfs:label>
+        <rdfs:label>RNAseq_2020_DavisLPi-34_d1_rep1</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -6101,7 +6102,7 @@
         </rdf:type>
         <property:nodeLabel>Sample</property:nodeLabel>
         <terms:source rdf:resource="http://www.ncbi.nlm.nih.gov/bioproject/PRJNA480794"/>
-        <rdfs:label>PB_1_d1_rep2</rdfs:label>
+        <rdfs:label>RNAseq_2020_DavisPB_1_d1_rep2</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -6125,7 +6126,7 @@
         </rdf:type>
         <property:nodeLabel>Sample</property:nodeLabel>
         <terms:source rdf:resource="http://www.ncbi.nlm.nih.gov/bioproject/PRJNA480794"/>
-        <rdfs:label>PB_1_d1_rep1</rdfs:label>
+        <rdfs:label>RNAseq_2020_DavisPB_1_d1_rep1</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -6149,7 +6150,7 @@
         </rdf:type>
         <property:nodeLabel>Sample</property:nodeLabel>
         <terms:source rdf:resource="http://www.ncbi.nlm.nih.gov/bioproject/PRJNA480794"/>
-        <rdfs:label>PB_2_d1_rep2</rdfs:label>
+        <rdfs:label>RNAseq_2020_DavisPB_2_d1_rep2</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -6173,7 +6174,7 @@
         </rdf:type>
         <property:nodeLabel>Sample</property:nodeLabel>
         <terms:source rdf:resource="http://www.ncbi.nlm.nih.gov/bioproject/PRJNA480794"/>
-        <rdfs:label>PB_2_d1_rep1</rdfs:label>
+        <rdfs:label>RNAseq_2020_DavisPB_2_d1_rep1</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -6197,7 +6198,7 @@
         </rdf:type>
         <property:nodeLabel>Sample</property:nodeLabel>
         <terms:source rdf:resource="http://www.ncbi.nlm.nih.gov/bioproject/PRJNA480794"/>
-        <rdfs:label>PB_5_d1_rep2</rdfs:label>
+        <rdfs:label>RNAseq_2020_DavisPB_5_d1_rep2</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -6221,7 +6222,7 @@
         </rdf:type>
         <property:nodeLabel>Sample</property:nodeLabel>
         <terms:source rdf:resource="http://www.ncbi.nlm.nih.gov/bioproject/PRJNA480794"/>
-        <rdfs:label>PB_5_d1_rep1</rdfs:label>
+        <rdfs:label>RNAseq_2020_DavisPB_5_d1_rep1</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -6245,7 +6246,7 @@
         </rdf:type>
         <property:nodeLabel>Sample</property:nodeLabel>
         <terms:source rdf:resource="http://www.ncbi.nlm.nih.gov/bioproject/PRJNA480794"/>
-        <rdfs:label>Pm3_d1_rep2</rdfs:label>
+        <rdfs:label>RNAseq_2020_DavisPm3_d1_rep2</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -6269,7 +6270,7 @@
         </rdf:type>
         <property:nodeLabel>Sample</property:nodeLabel>
         <terms:source rdf:resource="http://www.ncbi.nlm.nih.gov/bioproject/PRJNA480794"/>
-        <rdfs:label>Pm3_d1_rep1</rdfs:label>
+        <rdfs:label>RNAseq_2020_DavisPm3_d1_rep1</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -6293,7 +6294,7 @@
         </rdf:type>
         <property:nodeLabel>Sample</property:nodeLabel>
         <terms:source rdf:resource="http://www.ncbi.nlm.nih.gov/bioproject/PRJNA480794"/>
-        <rdfs:label>PB_4_d2_rep2</rdfs:label>
+        <rdfs:label>RNAseq_2020_DavisPB_4_d2_rep2</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -6317,7 +6318,7 @@
         </rdf:type>
         <property:nodeLabel>Sample</property:nodeLabel>
         <terms:source rdf:resource="http://www.ncbi.nlm.nih.gov/bioproject/PRJNA480794"/>
-        <rdfs:label>PB_4_d2_rep1</rdfs:label>
+        <rdfs:label>RNAseq_2020_DavisPB_4_d2_rep1</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -6341,7 +6342,7 @@
         </rdf:type>
         <property:nodeLabel>Sample</property:nodeLabel>
         <terms:source rdf:resource="http://www.ncbi.nlm.nih.gov/bioproject/PRJNA480794"/>
-        <rdfs:label>LC4_d1_rep2</rdfs:label>
+        <rdfs:label>RNAseq_2020_DavisLC4_d1_rep2</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -6365,7 +6366,7 @@
         </rdf:type>
         <property:nodeLabel>Sample</property:nodeLabel>
         <terms:source rdf:resource="http://www.ncbi.nlm.nih.gov/bioproject/PRJNA480794"/>
-        <rdfs:label>LC4_d1_rep1</rdfs:label>
+        <rdfs:label>RNAseq_2020_DavisLC4_d1_rep1</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -6389,7 +6390,7 @@
         </rdf:type>
         <property:nodeLabel>Sample</property:nodeLabel>
         <terms:source rdf:resource="http://www.ncbi.nlm.nih.gov/bioproject/PRJNA480794"/>
-        <rdfs:label>LC6_d2_rep2</rdfs:label>
+        <rdfs:label>RNAseq_2020_DavisLC6_d2_rep2</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -6413,7 +6414,7 @@
         </rdf:type>
         <property:nodeLabel>Sample</property:nodeLabel>
         <terms:source rdf:resource="http://www.ncbi.nlm.nih.gov/bioproject/PRJNA480794"/>
-        <rdfs:label>PB_4_d1_rep2</rdfs:label>
+        <rdfs:label>RNAseq_2020_DavisPB_4_d1_rep2</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -6437,7 +6438,7 @@
         </rdf:type>
         <property:nodeLabel>Sample</property:nodeLabel>
         <terms:source rdf:resource="http://www.ncbi.nlm.nih.gov/bioproject/PRJNA480794"/>
-        <rdfs:label>PB_4_d1_rep1</rdfs:label>
+        <rdfs:label>RNAseq_2020_DavisPB_4_d1_rep1</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -6461,7 +6462,7 @@
         </rdf:type>
         <property:nodeLabel>Sample</property:nodeLabel>
         <terms:source rdf:resource="http://www.ncbi.nlm.nih.gov/bioproject/PRJNA480794"/>
-        <rdfs:label>Dm4_d1_rep2</rdfs:label>
+        <rdfs:label>RNAseq_2020_DavisDm4_d1_rep2</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -6485,7 +6486,7 @@
         </rdf:type>
         <property:nodeLabel>Sample</property:nodeLabel>
         <terms:source rdf:resource="http://www.ncbi.nlm.nih.gov/bioproject/PRJNA480794"/>
-        <rdfs:label>Dm4_d1_rep1</rdfs:label>
+        <rdfs:label>RNAseq_2020_DavisDm4_d1_rep1</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -6509,7 +6510,7 @@
         </rdf:type>
         <property:nodeLabel>Sample</property:nodeLabel>
         <terms:source rdf:resource="http://www.ncbi.nlm.nih.gov/bioproject/PRJNA480794"/>
-        <rdfs:label>LC6_d2_rep1</rdfs:label>
+        <rdfs:label>RNAseq_2020_DavisLC6_d2_rep1</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -6533,7 +6534,7 @@
         </rdf:type>
         <property:nodeLabel>Sample</property:nodeLabel>
         <terms:source rdf:resource="http://www.ncbi.nlm.nih.gov/bioproject/PRJNA480794"/>
-        <rdfs:label>LC6_d1_rep2</rdfs:label>
+        <rdfs:label>RNAseq_2020_DavisLC6_d1_rep2</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -6557,7 +6558,7 @@
         </rdf:type>
         <property:nodeLabel>Sample</property:nodeLabel>
         <terms:source rdf:resource="http://www.ncbi.nlm.nih.gov/bioproject/PRJNA480794"/>
-        <rdfs:label>LC6_d1_rep1</rdfs:label>
+        <rdfs:label>RNAseq_2020_DavisLC6_d1_rep1</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -6581,7 +6582,7 @@
         </rdf:type>
         <property:nodeLabel>Sample</property:nodeLabel>
         <terms:source rdf:resource="http://www.ncbi.nlm.nih.gov/bioproject/PRJNA480794"/>
-        <rdfs:label>LPLC2_d1_rep2</rdfs:label>
+        <rdfs:label>RNAseq_2020_DavisLPLC2_d1_rep2</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -6605,7 +6606,7 @@
         </rdf:type>
         <property:nodeLabel>Sample</property:nodeLabel>
         <terms:source rdf:resource="http://www.ncbi.nlm.nih.gov/bioproject/PRJNA480794"/>
-        <rdfs:label>LPLC2_d1_rep1</rdfs:label>
+        <rdfs:label>RNAseq_2020_DavisLPLC2_d1_rep1</rdfs:label>
     </owl:NamedIndividual>
 </rdf:RDF>
 
