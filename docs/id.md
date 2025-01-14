@@ -7,6 +7,8 @@ _Identifier for the entity. FlyBase identifiers should be prefixed with 'FlyBase
 
 
 
+
+
 URI: [http://github.org/vfb/vfb-EPseq-ontology/VFB_EPseq/:id](http://github.org/vfb/vfb-EPseq-ontology/VFB_EPseq/:id)
 
 
@@ -21,16 +23,16 @@ URI: [http://github.org/vfb/vfb-EPseq-ontology/VFB_EPseq/:id](http://github.org/
 
 | Name | Description | Modifies Slot |
 | --- | --- | --- |
+| [Dataset](Dataset.md) |  |  no  |
+| [Publication](Publication.md) |  |  no  |
 | [Thing](Thing.md) |  |  no  |
-| [DatasetEP](DatasetEP.md) | Avoids a keyerror from attempting to use Dataset class from VFB_scRNAseq_sche... |  no  |
 | [ExpressionPattern](ExpressionPattern.md) |  |  no  |
 | [Assay](Assay.md) |  |  no  |
-| [Cluster](Cluster.md) |  |  no  |
+| [DatasetEP](DatasetEP.md) | Avoids a keyerror from attempting to use Dataset class from VFB_scRNAseq_sche... |  no  |
 | [Class](Class.md) |  |  no  |
 | [Clustering](Clustering.md) |  |  no  |
-| [Publication](Publication.md) |  |  no  |
-| [Dataset](Dataset.md) |  |  no  |
 | [Sample](Sample.md) |  |  no  |
+| [Cluster](Cluster.md) |  |  no  |
 
 
 

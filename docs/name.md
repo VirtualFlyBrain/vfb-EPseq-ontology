@@ -7,6 +7,8 @@ _Short systematic label for the entity._
 
 
 
+
+
 URI: [rdfs:label](http://www.w3.org/2000/01/rdf-schema#label)
 
 
@@ -21,14 +23,14 @@ URI: [rdfs:label](http://www.w3.org/2000/01/rdf-schema#label)
 
 | Name | Description | Modifies Slot |
 | --- | --- | --- |
-| [DatasetEP](DatasetEP.md) | Avoids a keyerror from attempting to use Dataset class from VFB_scRNAseq_sche... |  no  |
+| [Dataset](Dataset.md) |  |  no  |
 | [ExpressionPattern](ExpressionPattern.md) |  |  no  |
 | [Assay](Assay.md) |  |  no  |
-| [Cluster](Cluster.md) |  |  no  |
+| [DatasetEP](DatasetEP.md) | Avoids a keyerror from attempting to use Dataset class from VFB_scRNAseq_sche... |  no  |
 | [Class](Class.md) |  |  no  |
 | [Clustering](Clustering.md) |  |  no  |
-| [Dataset](Dataset.md) |  |  no  |
 | [Sample](Sample.md) |  |  no  |
+| [Cluster](Cluster.md) |  |  no  |
 
 
 

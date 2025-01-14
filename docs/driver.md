@@ -7,6 +7,8 @@ _Expression pattern class (VFB ID) that this sample is an instance of._
 
 
 
+
+
 URI: [http://github.org/vfb/vfb-EPseq-ontology/VFB_EPseq/:driver](http://github.org/vfb/vfb-EPseq-ontology/VFB_EPseq/:driver)
 
 

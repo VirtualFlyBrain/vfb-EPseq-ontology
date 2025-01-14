@@ -7,6 +7,8 @@ _Level of expression of the given gene._
 
 
 
+
+
 URI: [neo_custom:expression_level](http://n2o.neo/custom/expression_level)
 
 
@@ -21,8 +23,8 @@ URI: [neo_custom:expression_level](http://n2o.neo/custom/expression_level)
 
 | Name | Description | Modifies Slot |
 | --- | --- | --- |
-| [Cluster](Cluster.md) |  |  no  |
 | [ExpressionPattern](ExpressionPattern.md) |  |  no  |
+| [Cluster](Cluster.md) |  |  no  |
 
 
 

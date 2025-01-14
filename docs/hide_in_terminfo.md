@@ -7,6 +7,8 @@ _Flag to hide expression edges in VFB Term Info pane. Range must be string - boo
 
 
 
+
+
 URI: [neo_custom:hide_in_terminfo](http://n2o.neo/custom/hide_in_terminfo)
 
 
@@ -21,8 +23,8 @@ URI: [neo_custom:hide_in_terminfo](http://n2o.neo/custom/hide_in_terminfo)
 
 | Name | Description | Modifies Slot |
 | --- | --- | --- |
-| [Cluster](Cluster.md) |  |  no  |
 | [ExpressionPattern](ExpressionPattern.md) |  |  no  |
+| [Cluster](Cluster.md) |  |  no  |
 
 
 

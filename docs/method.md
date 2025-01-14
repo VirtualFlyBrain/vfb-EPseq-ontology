@@ -7,6 +7,8 @@ _Method used for the assay - currently getting any direct subclass of FBcv:00090
 
 
 
+
+
 URI: [BAO:0000212](http://www.bioassayontology.org/bao#BAO_0000212)
 
 

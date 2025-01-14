@@ -7,6 +7,8 @@ _Column for curator notes - not incorporated into ontology._
 
 
 
+
+
 URI: [http://github.org/vfb/vfb-EPseq-ontology/VFB_EPseq/:notes](http://github.org/vfb/vfb-EPseq-ontology/VFB_EPseq/:notes)
 
 

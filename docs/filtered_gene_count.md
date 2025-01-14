@@ -7,6 +7,8 @@ _Total number of distinct genes associated with the entity after filtering by ex
 
 
 
+
+
 URI: [neo_custom:filtered_gene_count](http://n2o.neo/custom/filtered_gene_count)
 
 
@@ -21,9 +23,9 @@ URI: [neo_custom:filtered_gene_count](http://n2o.neo/custom/filtered_gene_count)
 
 | Name | Description | Modifies Slot |
 | --- | --- | --- |
-| [Cluster](Cluster.md) |  |  no  |
 | [Dataset](Dataset.md) |  |  no  |
 | [DatasetEP](DatasetEP.md) | Avoids a keyerror from attempting to use Dataset class from VFB_scRNAseq_sche... |  no  |
+| [Cluster](Cluster.md) |  |  no  |
 
 
 

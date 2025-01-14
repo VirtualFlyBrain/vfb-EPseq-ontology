@@ -7,6 +7,8 @@ _Assay(s) that use this sample. Multiple IDs should be separated with '|' or in 
 
 
 
+
+
 URI: [RO:0002352](http://purl.obolibrary.org/obo/RO_0002352)
 
 
@@ -21,8 +23,8 @@ URI: [RO:0002352](http://purl.obolibrary.org/obo/RO_0002352)
 
 | Name | Description | Modifies Slot |
 | --- | --- | --- |
-| [Sample](Sample.md) |  |  no  |
 | [ExpressionPattern](ExpressionPattern.md) |  |  no  |
+| [Sample](Sample.md) |  |  no  |
 
 
 
