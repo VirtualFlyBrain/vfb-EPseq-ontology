@@ -27,17 +27,28 @@ LINKML = linkml-data2owl -s VFB_EPseq_schema.yaml
 ROBOT_O = robot --catalog $(CATALOG_O)
 CATALOG_O = $(ONTOLOGYDIR)/catalog-v001.xml
 
-.PHONY: install_linkml
-install_linkml:
-	python3 -m pip install linkml-owl==v0.4.1
-
 .PHONY: update_schema
-update_schema: install_requirements
+update_schema:
 	wget https://raw.githubusercontent.com/VirtualFlyBrain/vfb-scRNAseq-ontology/main/src/ontology/VFB_scRNAseq_schema.yaml -O VFB_scRNAseq_schema.yaml
 
-.PHONY: install_requirements
-install_requirements:
-	python3 -m pip install -r $(SCRIPTSDIR)/requirements.txt
+.PHONY: setup_venv
+setup_venv:
+	apt-get update
+	apt-get -y install python3.12-venv
+	python3 -m venv my-venv
+
+.PHONY: install_linkml
+install_linkml: setup_venv
+	my-venv/bin/pip install linkml-owl==v0.4.1
+
+.PHONY: install_xml_tools
+install_xml_tools: setup_venv
+	my-venv/bin/pip install beautifulsoup4
+	my-venv/bin/pip install lxml
+
+.PHONY: install_vfbconnect
+install_vfbconnect: setup_venv
+	my-venv/bin/pip install vfb-connect
 
 
 ################## EXPRESSION FILES
@@ -47,7 +58,7 @@ install_requirements:
 .PHONY: process_expdata
 # split expression data into chunked sample tsvs - RUN THIS FIRST
 process_expdata: | $(EXPDIR) $(METADATADIR)
-	python3 $(SCRIPTSDIR)/process_expression_data.py $(DATASET)
+	my-venv/bin/python3 $(SCRIPTSDIR)/process_expression_data.py $(DATASET)
 
 # gene expression owl files for datasets that have 'sample' expression data tsvs or ofns (names are dataset_PRJxxxxxxx_x-sample_SAMxxxxxxx_chunk_x)
 DATASET_EXP_FILES = $(sort $(filter-out sample_%,$(subst -,.owl ,$(wildcard $(EXPDIR)/*.tsv))) $(filter-out sample_%,$(subst -,.owl ,$(wildcard $(EXPDIR)/*.ofn))))
@@ -82,10 +93,10 @@ $(EXPDIR)/VFB_EPseq_exp_%.owl: make_exp_ofns
 ################### metadata file
 
 # build metadata ontology for dataset
-$(ONTOLOGYDIR)/VFB_EPseq_$(DATASET).owl: update_schema install_requirements | $(TMPDIR)
+$(ONTOLOGYDIR)/VFB_EPseq_$(DATASET).owl: install_linkml update_schema | $(TMPDIR)
 	$(LINKML) -C ExpressionPattern $(DATADIR)/$(DATASET)/$(DATASET)_sample_metadata_FINAL.tsv -o $(ONTOLOGYDIR)/$(DATASET)_sample_metadata.ofn &&\
 	$(LINKML) -C DatasetEP $(DATADIR)/$(DATASET)/$(DATASET)_dataset_metadata_FINAL.tsv -o $(ONTOLOGYDIR)/$(DATASET)_dataset_data.ofn &&\
-	python3 $(SCRIPTSDIR)/ontology_file_headers.py $(DATASET) &&\
+	my-venv/bin/python3 $(SCRIPTSDIR)/ontology_file_headers.py $(DATASET) &&\
 	$(ROBOT) merge \
 	--input $(ONTOLOGYDIR)/$(DATASET)_header.ofn \
 	--input $(ONTOLOGYDIR)/$(DATASET)_sample_metadata.ofn \
@@ -138,10 +149,8 @@ else
 endif
 
 .PHONY: update_catalog_files
-update_catalog_files:
-	python3 -m pip install beautifulsoup4
-	python3 -m pip install lxml
-	python3 $(SCRIPTSDIR)/update_catalogs.py
+update_catalog_files: install_xml_tools
+	my-venv/bin/python3 $(SCRIPTSDIR)/update_catalogs.py
 
 .PHONY: release_ontology_files
 release_ontology_files: $(RELEASE_ONTOLOGY_FILES)
@@ -162,8 +171,8 @@ $(REPORTDIR)/FBgn_list.txt: $(TMPDIR)/existing_FBgns.txt | $(REPORTDIR)
 	rm -f $(EXPDIR)/*.fbgns.tmp
 
 # make a $(SRC) file that imports all the owl files in ontology_files
-$(SRC):
-	python3 $(SCRIPTSDIR)/ontology_file_headers.py src
+$(SRC): setup_venv
+	my-venv/bin/python3 $(SCRIPTSDIR)/ontology_file_headers.py src
 
 # remove any existing docs and generate fresh
 .PHONY: gen_docs
@@ -194,13 +203,13 @@ $(TMPDIR)/existing_FBgns.txt: unzip_exp_files
 .PHONY: get_gene_id_map
 get_gene_id_map: install_postgresql
 	# this won't work until https://flybase.github.io/docs/chado/functions#update_ids is fixed
-	python3 $(SCRIPTSDIR)/print_id_query.py &&\
+	my-venv/bin/python3 $(SCRIPTSDIR)/print_id_query.py &&\
 	psql -h chado.flybase.org -U flybase flybase -f ../sql/id_update_query.sql \
 	 > $(TMPDIR)/id_validation_table.tsv
 
 replace_gene_ids_in_files: $(TMPDIR)/existing_FBgns.txt
 	# need to get 'tmp/id_validation_table.txt' file from manual use of id validator
-	python3 $(SCRIPTSDIR)/update_FBgns_in_files.py &&\
+	my-venv/bin/python3 $(SCRIPTSDIR)/update_FBgns_in_files.py &&\
 	for FILE in $(EXPDIR)/*.owl; \
 	do if [ -f $$FILE-processed.txt ]; \
 	then mv $$FILE-processed.txt $$FILE \
@@ -216,12 +225,12 @@ $(DATADIR)/$(DATASET)/$(DATASET)_tpm.tsv:
 	touch $@
 
 .PHONY: process_new_sample_xml
-process_new_sample_xml: $(DATADIR)/$(DATASET)/$(DATASET)_sample_metadata.xml install_requirements
-	python3 $(SCRIPTSDIR)/format_sample_data.py $(DATASET)
+process_new_sample_xml: $(DATADIR)/$(DATASET)/$(DATASET)_sample_metadata.xml install_xml_tools install_vfbconnect
+	my-venv/bin/python3 $(SCRIPTSDIR)/format_sample_data.py $(DATASET)
 
 .PHONY: process_new_exp_tsv
-process_new_exp_tsv: $(DATADIR)/$(DATASET)/$(DATASET)_tpm.tsv install_requirements
-	python3 $(SCRIPTSDIR)/format_exp_data.py $(DATASET)
+process_new_exp_tsv: $(DATADIR)/$(DATASET)/$(DATASET)_tpm.tsv
+	my-venv/bin/python3 $(SCRIPTSDIR)/format_exp_data.py $(DATASET)
 
 ######## overwrite some ODK goals to prevent unnecessary processing
 

@@ -1,5 +1,0 @@
-beautifulsoup4
-lxml
-pandas
-vfb_connect==v1.6.0
-linkml-owl==v0.4.1

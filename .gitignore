@@ -9,6 +9,8 @@ bin/
 
 .github/token.txt
 
+src/ontology/my-venv
+src/ontology/my-venv/*
 src/ontology/mirror
 src/ontology/mirror/*
 src/ontology/expression_data/*.tsv
