@@ -23,14 +23,14 @@ URI: [rdfs:label](http://www.w3.org/2000/01/rdf-schema#label)
 
 | Name | Description | Modifies Slot |
 | --- | --- | --- |
-| [Dataset](Dataset.md) |  |  no  |
 | [ExpressionPattern](ExpressionPattern.md) |  |  no  |
+| [Dataset](Dataset.md) |  |  no  |
 | [Assay](Assay.md) |  |  no  |
-| [DatasetEP](DatasetEP.md) | Avoids a keyerror from attempting to use Dataset class from VFB_scRNAseq_sche... |  no  |
-| [Class](Class.md) |  |  no  |
-| [Clustering](Clustering.md) |  |  no  |
 | [Sample](Sample.md) |  |  no  |
+| [DatasetEP](DatasetEP.md) | Avoids a keyerror from attempting to use Dataset class from VFB_scRNAseq_sche... |  no  |
 | [Cluster](Cluster.md) |  |  no  |
+| [Clustering](Clustering.md) |  |  no  |
+| [Class](Class.md) |  |  no  |
 
 
 

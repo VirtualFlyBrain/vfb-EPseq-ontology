@@ -23,8 +23,8 @@ URI: [RO:0002131](http://purl.obolibrary.org/obo/RO_0002131)
 
 | Name | Description | Modifies Slot |
 | --- | --- | --- |
-| [ExpressionPattern](ExpressionPattern.md) |  |  no  |
 | [Sample](Sample.md) |  |  no  |
+| [ExpressionPattern](ExpressionPattern.md) |  |  no  |
 
 
 

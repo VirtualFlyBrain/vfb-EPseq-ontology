@@ -23,9 +23,9 @@ URI: [BFO:0000050](http://purl.obolibrary.org/obo/BFO_0000050)
 
 | Name | Description | Modifies Slot |
 | --- | --- | --- |
-| [ExpressionPattern](ExpressionPattern.md) |  |  no  |
 | [Sample](Sample.md) |  |  no  |
 | [Cluster](Cluster.md) |  |  no  |
+| [ExpressionPattern](ExpressionPattern.md) |  |  no  |
 
 
 
