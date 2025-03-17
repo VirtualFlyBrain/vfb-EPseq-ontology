@@ -25,9 +25,9 @@ URI: [dc:source](http://purl.org/dc/terms/source)
 | --- | --- | --- |
 | [ExpressionPattern](ExpressionPattern.md) |  |  no  |
 | [Assay](Assay.md) |  |  no  |
-| [Clustering](Clustering.md) |  |  no  |
 | [Sample](Sample.md) |  |  no  |
 | [Cluster](Cluster.md) |  |  no  |
+| [Clustering](Clustering.md) |  |  no  |
 
 
 

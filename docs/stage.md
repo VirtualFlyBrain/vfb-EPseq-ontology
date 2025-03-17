@@ -23,9 +23,9 @@ URI: [RO:0002490](http://purl.obolibrary.org/obo/RO_0002490)
 
 | Name | Description | Modifies Slot |
 | --- | --- | --- |
-| [ExpressionPattern](ExpressionPattern.md) |  |  no  |
 | [Sample](Sample.md) |  |  no  |
 | [Cluster](Cluster.md) |  |  no  |
+| [ExpressionPattern](ExpressionPattern.md) |  |  no  |
 
 
 
