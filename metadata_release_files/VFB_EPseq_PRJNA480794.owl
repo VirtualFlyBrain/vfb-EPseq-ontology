@@ -1631,14 +1631,21 @@ Each of these 3 primitives can be composed to yield a cross-product of different
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/FBbt_00057001">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FBbt_00007009"/>
+        <obo:IAO_0000115>Division of an organism along its anterior-posterior axis.</obo:IAO_0000115>
         <terms:contributor rdf:resource="https://orcid.org/0000-0002-7073-9172"/>
         <terms:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2008-06-30T04:15:23Z</terms:date>
-        <oboInOwl:hasDbXref>UBERON:6057001</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>UBERON:0011676</oboInOwl:hasDbXref>
         <oboInOwl:hasOBONamespace>fly_anatomy.ontology</oboInOwl:hasOBONamespace>
         <oboInOwl:id>FBbt:00057001</oboInOwl:id>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/fbbt#larval_OF"/>
         <rdfs:label>anterior-posterior subdivision of organism</rdfs:label>
     </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FBbt_00057001"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>Division of an organism along its anterior-posterior axis.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>https://orcid.org/0000-0002-1373-1705</oboInOwl:hasDbXref>
+    </owl:Axiom>
     
 
 

@@ -23,8 +23,8 @@ URI: [neo_custom:hide_in_terminfo](http://n2o.neo/custom/hide_in_terminfo)
 
 | Name | Description | Modifies Slot |
 | --- | --- | --- |
-| [ExpressionPattern](ExpressionPattern.md) |  |  no  |
 | [Cluster](Cluster.md) |  |  no  |
+| [ExpressionPattern](ExpressionPattern.md) |  |  no  |
 
 
 

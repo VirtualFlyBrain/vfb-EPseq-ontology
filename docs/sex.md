@@ -23,8 +23,8 @@ URI: [BFO:0000050](http://purl.obolibrary.org/obo/BFO_0000050)
 
 | Name | Description | Modifies Slot |
 | --- | --- | --- |
-| [Sample](Sample.md) |  |  no  |
 | [Cluster](Cluster.md) |  |  no  |
+| [Sample](Sample.md) |  |  no  |
 | [ExpressionPattern](ExpressionPattern.md) |  |  no  |
 
 

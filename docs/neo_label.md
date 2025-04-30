@@ -23,13 +23,13 @@ URI: [neo_property:nodeLabel](http://n2o.neo/property/nodeLabel)
 
 | Name | Description | Modifies Slot |
 | --- | --- | --- |
-| [ExpressionPattern](ExpressionPattern.md) |  |  no  |
-| [Dataset](Dataset.md) |  |  no  |
-| [Assay](Assay.md) |  |  no  |
-| [Sample](Sample.md) |  |  no  |
 | [DatasetEP](DatasetEP.md) | Avoids a keyerror from attempting to use Dataset class from VFB_scRNAseq_sche... |  no  |
-| [Cluster](Cluster.md) |  |  no  |
+| [Sample](Sample.md) |  |  no  |
+| [ExpressionPattern](ExpressionPattern.md) |  |  no  |
+| [Assay](Assay.md) |  |  no  |
+| [Dataset](Dataset.md) |  |  no  |
 | [Publication](Publication.md) |  |  no  |
+| [Cluster](Cluster.md) |  |  no  |
 
 
 
