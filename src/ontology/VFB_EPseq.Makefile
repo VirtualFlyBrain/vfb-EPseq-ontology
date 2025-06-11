@@ -116,8 +116,11 @@ ONTOLOGY_IMPORT_FILES = $(patsubst %,$(IMPORTDIR)/%_import.owl,$(RELEASE_DATASET
 IMPORT_SEED_FILES = $(patsubst %,$(IMPORTDIR)/%_terms.txt,$(RELEASE_DATASETS))
 RELEASE_ONTOLOGY_FILES = $(patsubst %,$(RELEASEDIR)/VFB_EPseq_%.owl,$(RELEASE_DATASETS))
 
+ALL_TERMS = $(IMPORTDIR)/merged_terms_combined.txt
+
 .PHONY: all_imports
-all_imports: create_import_stubs $(ONTOLOGY_IMPORT_FILES) # merged import is default prerequisite
+# merged import is default prerequisite
+all_imports: create_import_stubs $(ALL_TERMS) $(ONTOLOGY_IMPORT_FILES)
 	rm -f $(IMPORTDIR)/*terms.txt $(IMPORTDIR)/*terms_combined.txt
 
 .PHONY: create_import_stubs
@@ -130,6 +133,10 @@ create_import_stubs:
 			--ontology-iri "http://purl.obolibrary.org/obo/VFB_EPseq/$$FILE" \
 			-o $$FILE; fi; \
 		done
+
+# need this as unable to override $(ALL_TERMS) in merged_import prerequisites - it will be overridden in recipe
+$(foreach imp, $(IMPORTS), $(IMPORTDIR)/$(imp)_terms.txt):
+	echo $@
 
 # import seeds for each ontology
 # need to add RO_0002292 (expresses), which is only in the expression imports
@@ -148,13 +155,23 @@ else
 	touch $@
 endif
 
+$(IMPORTDIR)/%_terms_combined.txt: $(IMPORTSEED) $(IMPORTDIR)/%_terms.txt
+	if [ $(IMP) = true ]; then cat $^ | grep -v ^# | sort | uniq >  $@; fi
+
+# adding back goal removed in ODK 1.6
+$(IMPORTDIR)/%_import.owl: $(MIRRORDIR)/merged.owl $(IMPORTDIR)/%_terms_combined.txt
+	if [ $(IMP) = true ]; then $(ROBOT) query -i $< --update ../sparql/preprocess-module.ru \
+		extract -T $(IMPORTDIR)/$*_terms_combined.txt --force true --copy-ontology-annotations true --individuals exclude --method BOT \
+		query --update ../sparql/inject-subset-declaration.ru --update ../sparql/inject-synonymtype-declaration.ru --update ../sparql/postprocess-module.ru \
+		$(ANNOTATE_CONVERT_FILE); fi
+.PRECIOUS: $(IMPORTDIR)/%_import.owl
+
 .PHONY: update_catalog_files
 update_catalog_files: install_xml_tools
 	my-venv/bin/python3 $(SCRIPTSDIR)/update_catalogs.py
 
 .PHONY: release_ontology_files
 release_ontology_files: $(RELEASE_ONTOLOGY_FILES)
-	echo $@
 
 # create merged release files (no need to reason etc)
 # remove expression import (loaded separately into VFB)
