@@ -1,3 +1,6 @@
+# ODK-managed rules, do not modify
+# If you need to add your own ignore rules, you may do so below
+# the "End ODK-managed rules" marker at the end of this file.
 .DS_Store
 semantic.cache
 bin/
@@ -6,19 +9,33 @@ bin/
 *.tmp.obo
 *.tmp.owl
 *.tmp.json
+*-relation-graph.tsv.gz
+.template.db
 
 .github/token.txt
 
-src/ontology/my-venv
-src/ontology/my-venv/*
+/VFB_EPseq.owl
+/VFB_EPseq.obo
+/VFB_EPseq.json
+/VFB_EPseq.db
+/VFB_EPseq-base.*
+/VFB_EPseq-basic.*
+/VFB_EPseq-full.*
+/VFB_EPseq-simple.*
+/VFB_EPseq-simple-non-classified.*
+/mappings/
+/patterns/
+/reports/
+/subsets/
+
 src/ontology/mirror
 src/ontology/mirror/*
-src/ontology/expression_data/*.tsv
-src/ontology/expression_data/*.ofn
-src/ontology/expression_data/*.owl
+src/ontology/reports/*
+!src/ontology/reports/release-diff.md
 src/ontology/VFB_EPseq.owl
 src/ontology/VFB_EPseq.obo
 src/ontology/VFB_EPseq.json
+src/ontology/VFB_EPseq.db
 src/ontology/VFB_EPseq-base.*
 src/ontology/VFB_EPseq-basic.*
 src/ontology/VFB_EPseq-full.*
@@ -32,20 +49,37 @@ src/ontology/ontologyterms.txt
 src/ontology/simple_seed.txt
 src/ontology/patterns
 src/ontology/merged-VFB_EPseq-edit.owl
+src/ontology/VFB_EPseq-edit.properties
 
 src/ontology/target/
 src/ontology/tmp/*
+!src/ontology/tmp/.gitkeep
 !src/ontology/tmp/README.md
 
 src/ontology/run.sh.conf
 src/ontology/run.sh.env
 
 src/ontology/imports/*_terms_combined.txt
-src/ontology/imports/*_terms.txt
 
 src/patterns/data/**/*.ofn
 src/patterns/data/**/*.txt
 src/patterns/pattern_owl_seed.txt
 src/patterns/all_pattern_terms.txt
+
+# End of ODK-managed rules
+
+
+
+src/ontology/my-venv
+src/ontology/my-venv/*
+src/ontology/expression_data/*.tsv
+src/ontology/expression_data/*.ofn
+src/ontology/expression_data/*.owl
+
+
+
+
+src/ontology/imports/*_terms.txt
+
 src/data_files/**/*.xml
 src/data_files/**/*.tsv
