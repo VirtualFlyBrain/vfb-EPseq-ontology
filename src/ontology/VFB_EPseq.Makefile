@@ -245,9 +245,3 @@ $(PRESEED):
 
 $(ALL_TERMS_COMBINED):
 	touch $@
-
-.PHONY: update_repo
-# don't keep adding extra imports
-update_repo:
-	sh $(SCRIPTSDIR)/update_repo.sh
-	rm -f $(foreach n,$(IMPORTS), $(IMPORTDIR)/$(n)_import.owl) $(foreach n,$(IMPORTS), $(IMPORTDIR)/$(n)_terms.txt)
