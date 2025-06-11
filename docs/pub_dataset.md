@@ -1,6 +1,6 @@
 
 
-# Slot: pub_dataset
+# Slot: pub_dataset 
 
 
 _DataSet for the publication - created and used in tsv processing - not incorporated into ontology._
@@ -9,9 +9,8 @@ _DataSet for the publication - created and used in tsv processing - not incorpor
 
 
 
-URI: [http://github.org/vfb/vfb-EPseq-ontology/VFB_EPseq/:pub_dataset](http://github.org/vfb/vfb-EPseq-ontology/VFB_EPseq/:pub_dataset)
-
-
+URI: [http://github.org/vfb/vfb-EPseq-ontology/VFB_EPseq/pub_dataset](http://github.org/vfb/vfb-EPseq-ontology/VFB_EPseq/pub_dataset)
+Alias: pub_dataset
 
 <!-- no inheritance hierarchy -->
 
@@ -59,8 +58,8 @@ URI: [http://github.org/vfb/vfb-EPseq-ontology/VFB_EPseq/:pub_dataset](http://gi
 
 | Mapping Type | Mapped Value |
 | ---  | ---  |
-| self | http://github.org/vfb/vfb-EPseq-ontology/VFB_EPseq/:pub_dataset |
-| native | http://github.org/vfb/vfb-EPseq-ontology/VFB_EPseq/:pub_dataset |
+| self | http://github.org/vfb/vfb-EPseq-ontology/VFB_EPseq/pub_dataset |
+| native | http://github.org/vfb/vfb-EPseq-ontology/VFB_EPseq/pub_dataset |
 
 
 

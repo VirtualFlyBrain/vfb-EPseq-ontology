@@ -1,6 +1,6 @@
 
 
-# Slot: associated_sample_or_assay_for_clustering
+# Slot: associated_sample_or_assay_for_clustering 
 
 
 _Sample or Assay (FBlc ID) that the Clustering uses._
@@ -10,8 +10,7 @@ _Sample or Assay (FBlc ID) that the Clustering uses._
 
 
 URI: [BFO:0000051](http://purl.obolibrary.org/obo/BFO_0000051)
-
-
+Alias: associated_sample_or_assay_for_clustering
 
 <!-- no inheritance hierarchy -->
 
@@ -53,6 +52,7 @@ URI: [BFO:0000051](http://purl.obolibrary.org/obo/BFO_0000051)
 
 
 
+
 ### Schema Source
 
 
@@ -66,7 +66,7 @@ URI: [BFO:0000051](http://purl.obolibrary.org/obo/BFO_0000051)
 | Mapping Type | Mapped Value |
 | ---  | ---  |
 | self | BFO:0000051 |
-| native | http://github.org/vfb/vfb-EPseq-ontology/VFB_EPseq/:associated_sample_or_assay_for_clustering |
+| native | http://github.org/vfb/vfb-EPseq-ontology/VFB_EPseq/associated_sample_or_assay_for_clustering |
 
 
 

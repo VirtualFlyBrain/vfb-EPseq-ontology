@@ -1,4 +1,4 @@
-# Type: Date
+# Type: Date 
 
 
 
@@ -43,7 +43,7 @@ URI: [xsd:date](http://www.w3.org/2001/XMLSchema#date)
 | Mapping Type | Mapped Value |
 | ---  | ---  |
 | self | xsd:date |
-| native | http://github.org/vfb/vfb-EPseq-ontology/VFB_EPseq/:date |
+| native | http://github.org/vfb/vfb-EPseq-ontology/VFB_EPseq/date |
 | exact | schema:Date |
 
 

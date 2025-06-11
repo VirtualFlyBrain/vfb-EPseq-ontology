@@ -1,6 +1,6 @@
 
 
-# Slot: expression_extent
+# Slot: expression_extent 
 
 
 _Extent of expression of the given gene._
@@ -10,8 +10,7 @@ _Extent of expression of the given gene._
 
 
 URI: [neo_custom:expression_extent](http://n2o.neo/custom/expression_extent)
-
-
+Alias: expression_extent
 
 <!-- no inheritance hierarchy -->
 
@@ -60,7 +59,7 @@ URI: [neo_custom:expression_extent](http://n2o.neo/custom/expression_extent)
 | Mapping Type | Mapped Value |
 | ---  | ---  |
 | self | neo_custom:expression_extent |
-| native | http://github.org/vfb/vfb-EPseq-ontology/VFB_EPseq/:expression_extent |
+| native | http://github.org/vfb/vfb-EPseq-ontology/VFB_EPseq/expression_extent |
 
 
 

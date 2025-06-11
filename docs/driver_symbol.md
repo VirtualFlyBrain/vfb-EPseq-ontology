@@ -1,6 +1,6 @@
 
 
-# Slot: driver_symbol
+# Slot: driver_symbol 
 
 
 _Symbol for driver - not incorporated into ontology._
@@ -9,9 +9,8 @@ _Symbol for driver - not incorporated into ontology._
 
 
 
-URI: [http://github.org/vfb/vfb-EPseq-ontology/VFB_EPseq/:driver_symbol](http://github.org/vfb/vfb-EPseq-ontology/VFB_EPseq/:driver_symbol)
-
-
+URI: [http://github.org/vfb/vfb-EPseq-ontology/VFB_EPseq/driver_symbol](http://github.org/vfb/vfb-EPseq-ontology/VFB_EPseq/driver_symbol)
+Alias: driver_symbol
 
 <!-- no inheritance hierarchy -->
 
@@ -59,8 +58,8 @@ URI: [http://github.org/vfb/vfb-EPseq-ontology/VFB_EPseq/:driver_symbol](http://
 
 | Mapping Type | Mapped Value |
 | ---  | ---  |
-| self | http://github.org/vfb/vfb-EPseq-ontology/VFB_EPseq/:driver_symbol |
-| native | http://github.org/vfb/vfb-EPseq-ontology/VFB_EPseq/:driver_symbol |
+| self | http://github.org/vfb/vfb-EPseq-ontology/VFB_EPseq/driver_symbol |
+| native | http://github.org/vfb/vfb-EPseq-ontology/VFB_EPseq/driver_symbol |
 
 
 

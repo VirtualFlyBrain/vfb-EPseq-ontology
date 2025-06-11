@@ -1,6 +1,6 @@
 
 
-# Class: DatasetEP
+# Class: DatasetEP 
 
 
 _Avoids a keyerror from attempting to use Dataset class from VFB_scRNAseq_schema directly._
@@ -9,7 +9,7 @@ _Avoids a keyerror from attempting to use Dataset class from VFB_scRNAseq_schema
 
 
 
-URI: [http://github.org/vfb/vfb-EPseq-ontology/VFB_EPseq/:DatasetEP](http://github.org/vfb/vfb-EPseq-ontology/VFB_EPseq/:DatasetEP)
+URI: [http://github.org/vfb/vfb-EPseq-ontology/VFB_EPseq/DatasetEP](http://github.org/vfb/vfb-EPseq-ontology/VFB_EPseq/DatasetEP)
 
 
 
@@ -29,9 +29,11 @@ URI: [http://github.org/vfb/vfb-EPseq-ontology/VFB_EPseq/:DatasetEP](http://gith
         
           
     
+        
+        
+        DatasetEP --> "0..1" Thing : assay_type
+        click Thing href "../Thing"
     
-    DatasetEP --> "0..1" Thing : assay_type
-    click Thing href "../Thing"
 
         
       DatasetEP : filtered_gene_count
@@ -42,9 +44,11 @@ URI: [http://github.org/vfb/vfb-EPseq-ontology/VFB_EPseq/:DatasetEP](http://gith
         
           
     
+        
+        
+        DatasetEP --> "0..1" Thing : licence
+        click Thing href "../Thing"
     
-    DatasetEP --> "0..1" Thing : licence
-    click Thing href "../Thing"
 
         
       DatasetEP : name
@@ -55,18 +59,22 @@ URI: [http://github.org/vfb/vfb-EPseq-ontology/VFB_EPseq/:DatasetEP](http://gith
         
           
     
+        
+        
+        DatasetEP --> "0..1" Publication : publication
+        click Publication href "../Publication"
     
-    DatasetEP --> "0..1" Publication : publication
-    click Publication href "../Publication"
 
         
       DatasetEP : site
         
           
     
+        
+        
+        DatasetEP --> "0..1" Thing : site
+        click Thing href "../Thing"
     
-    DatasetEP --> "0..1" Thing : site
-    click Thing href "../Thing"
 
         
       DatasetEP : title
@@ -132,8 +140,8 @@ URI: [http://github.org/vfb/vfb-EPseq-ontology/VFB_EPseq/:DatasetEP](http://gith
 
 | Mapping Type | Mapped Value |
 | ---  | ---  |
-| self | http://github.org/vfb/vfb-EPseq-ontology/VFB_EPseq/:DatasetEP |
-| native | http://github.org/vfb/vfb-EPseq-ontology/VFB_EPseq/:DatasetEP |
+| self | http://github.org/vfb/vfb-EPseq-ontology/VFB_EPseq/DatasetEP |
+| native | http://github.org/vfb/vfb-EPseq-ontology/VFB_EPseq/DatasetEP |
 
 
 

@@ -1,6 +1,6 @@
 
 
-# Slot: expression_level
+# Slot: expression_level 
 
 
 _Level of expression of the given gene._
@@ -10,8 +10,7 @@ _Level of expression of the given gene._
 
 
 URI: [neo_custom:expression_level](http://n2o.neo/custom/expression_level)
-
-
+Alias: expression_level
 
 <!-- no inheritance hierarchy -->
 
@@ -61,7 +60,7 @@ URI: [neo_custom:expression_level](http://n2o.neo/custom/expression_level)
 | Mapping Type | Mapped Value |
 | ---  | ---  |
 | self | neo_custom:expression_level |
-| native | http://github.org/vfb/vfb-EPseq-ontology/VFB_EPseq/:expression_level |
+| native | http://github.org/vfb/vfb-EPseq-ontology/VFB_EPseq/expression_level |
 
 
 

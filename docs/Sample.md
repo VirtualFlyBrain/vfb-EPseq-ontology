@@ -1,6 +1,6 @@
 
 
-# Class: Sample
+# Class: Sample 
 
 
 
@@ -27,18 +27,22 @@ URI: [FBcv:0003024](http://purl.obolibrary.org/obo/FBcv_0003024)
         
           
     
+        
+        
+        Sample --> "*" Assay : associated_assay
+        click Assay href "../Assay"
     
-    Sample --> "*" Assay : associated_assay
-    click Assay href "../Assay"
 
         
       Sample : associated_dataset
         
           
     
+        
+        
+        Sample --> "0..1" Dataset : associated_dataset
+        click Dataset href "../Dataset"
     
-    Sample --> "0..1" Dataset : associated_dataset
-    click Dataset href "../Dataset"
 
         
       Sample : id
@@ -51,27 +55,33 @@ URI: [FBcv:0003024](http://purl.obolibrary.org/obo/FBcv_0003024)
         
           
     
+        
+        
+        Sample --> "*" Thing : sample_tissue
+        click Thing href "../Thing"
     
-    Sample --> "*" Thing : sample_tissue
-    click Thing href "../Thing"
 
         
       Sample : sex
         
           
     
+        
+        
+        Sample --> "0..1" SexOptions : sex
+        click SexOptions href "../SexOptions"
     
-    Sample --> "0..1" SexOptions : sex
-    click SexOptions href "../SexOptions"
 
         
       Sample : stage
         
           
     
+        
+        
+        Sample --> "0..1" Thing : stage
+        click Thing href "../Thing"
     
-    Sample --> "0..1" Thing : stage
-    click Thing href "../Thing"
 
         
       Sample : title
@@ -134,6 +144,7 @@ URI: [FBcv:0003024](http://purl.obolibrary.org/obo/FBcv_0003024)
 
 
 
+
 ### Schema Source
 
 
@@ -147,7 +158,7 @@ URI: [FBcv:0003024](http://purl.obolibrary.org/obo/FBcv_0003024)
 | Mapping Type | Mapped Value |
 | ---  | ---  |
 | self | FBcv:0003024 |
-| native | http://github.org/vfb/vfb-EPseq-ontology/VFB_EPseq/:Sample |
+| native | http://github.org/vfb/vfb-EPseq-ontology/VFB_EPseq/Sample |
 
 
 

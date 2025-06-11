@@ -1,6 +1,6 @@
 
 
-# Class: Assay
+# Class: Assay 
 
 
 
@@ -22,18 +22,22 @@ URI: [FBcv:0003025](http://purl.obolibrary.org/obo/FBcv_0003025)
         
           
     
+        
+        
+        Assay --> "0..1" Dataset : associated_dataset
+        click Dataset href "../Dataset"
     
-    Assay --> "0..1" Dataset : associated_dataset
-    click Dataset href "../Dataset"
 
         
       Assay : associated_sample_for_assay
         
           
     
+        
+        
+        Assay --> "*" Sample : associated_sample_for_assay
+        click Sample href "../Sample"
     
-    Assay --> "*" Sample : associated_sample_for_assay
-    click Sample href "../Sample"
 
         
       Assay : id
@@ -42,9 +46,11 @@ URI: [FBcv:0003025](http://purl.obolibrary.org/obo/FBcv_0003025)
         
           
     
+        
+        
+        Assay --> "0..1" Thing : method
+        click Thing href "../Thing"
     
-    Assay --> "0..1" Thing : method
-    click Thing href "../Thing"
 
         
       Assay : name
@@ -109,6 +115,7 @@ URI: [FBcv:0003025](http://purl.obolibrary.org/obo/FBcv_0003025)
 
 
 
+
 ### Schema Source
 
 
@@ -122,7 +129,7 @@ URI: [FBcv:0003025](http://purl.obolibrary.org/obo/FBcv_0003025)
 | Mapping Type | Mapped Value |
 | ---  | ---  |
 | self | FBcv:0003025 |
-| native | http://github.org/vfb/vfb-EPseq-ontology/VFB_EPseq/:Assay |
+| native | http://github.org/vfb/vfb-EPseq-ontology/VFB_EPseq/Assay |
 
 
 

@@ -1,6 +1,6 @@
 
 
-# Slot: site
+# Slot: site 
 
 
 _VFB site node curie. The site must be created in VFB and added to the dictionary in ../scripts/process_site_data.py to successfully map from FB data._
@@ -10,8 +10,7 @@ _VFB site node curie. The site must be created in VFB and added to the dictionar
 
 
 URI: [oboInOwl:hasDbXref](http://www.geneontology.org/formats/oboInOwl#hasDbXref)
-
-
+Alias: site
 
 <!-- no inheritance hierarchy -->
 
@@ -54,6 +53,7 @@ URI: [oboInOwl:hasDbXref](http://www.geneontology.org/formats/oboInOwl#hasDbXref
 
 
 
+
 ### Schema Source
 
 
@@ -67,7 +67,7 @@ URI: [oboInOwl:hasDbXref](http://www.geneontology.org/formats/oboInOwl#hasDbXref
 | Mapping Type | Mapped Value |
 | ---  | ---  |
 | self | oboInOwl:hasDbXref |
-| native | http://github.org/vfb/vfb-EPseq-ontology/VFB_EPseq/:site |
+| native | http://github.org/vfb/vfb-EPseq-ontology/VFB_EPseq/site |
 
 
 

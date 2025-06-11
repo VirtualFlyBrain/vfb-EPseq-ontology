@@ -1,6 +1,6 @@
 
 
-# Slot: driver
+# Slot: driver 
 
 
 _Expression pattern class (VFB ID) that this sample is an instance of._
@@ -9,9 +9,8 @@ _Expression pattern class (VFB ID) that this sample is an instance of._
 
 
 
-URI: [http://github.org/vfb/vfb-EPseq-ontology/VFB_EPseq/:driver](http://github.org/vfb/vfb-EPseq-ontology/VFB_EPseq/:driver)
-
-
+URI: [http://github.org/vfb/vfb-EPseq-ontology/VFB_EPseq/driver](http://github.org/vfb/vfb-EPseq-ontology/VFB_EPseq/driver)
+Alias: driver
 
 <!-- no inheritance hierarchy -->
 
@@ -53,6 +52,7 @@ URI: [http://github.org/vfb/vfb-EPseq-ontology/VFB_EPseq/:driver](http://github.
 
 
 
+
 ### Schema Source
 
 
@@ -65,8 +65,8 @@ URI: [http://github.org/vfb/vfb-EPseq-ontology/VFB_EPseq/:driver](http://github.
 
 | Mapping Type | Mapped Value |
 | ---  | ---  |
-| self | http://github.org/vfb/vfb-EPseq-ontology/VFB_EPseq/:driver |
-| native | http://github.org/vfb/vfb-EPseq-ontology/VFB_EPseq/:driver |
+| self | http://github.org/vfb/vfb-EPseq-ontology/VFB_EPseq/driver |
+| native | http://github.org/vfb/vfb-EPseq-ontology/VFB_EPseq/driver |
 
 
 

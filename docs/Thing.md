@@ -1,6 +1,6 @@
 
 
-# Class: Thing
+# Class: Thing 
 
 
 
@@ -93,7 +93,7 @@ URI: [owl:Class](http://www.w3.org/2002/07/owl#Class)
 | Mapping Type | Mapped Value |
 | ---  | ---  |
 | self | owl:Class |
-| native | http://github.org/vfb/vfb-EPseq-ontology/VFB_EPseq/:Thing |
+| native | http://github.org/vfb/vfb-EPseq-ontology/VFB_EPseq/Thing |
 
 
 

@@ -1,6 +1,6 @@
 
 
-# Slot: associated_clustering
+# Slot: associated_clustering 
 
 
 _Clustering (FBlc ID) that the Cluster belongs to._
@@ -10,8 +10,7 @@ _Clustering (FBlc ID) that the Cluster belongs to._
 
 
 URI: [BFO:0000050](http://purl.obolibrary.org/obo/BFO_0000050)
-
-
+Alias: associated_clustering
 
 <!-- no inheritance hierarchy -->
 
@@ -53,6 +52,7 @@ URI: [BFO:0000050](http://purl.obolibrary.org/obo/BFO_0000050)
 
 
 
+
 ### Schema Source
 
 
@@ -66,7 +66,7 @@ URI: [BFO:0000050](http://purl.obolibrary.org/obo/BFO_0000050)
 | Mapping Type | Mapped Value |
 | ---  | ---  |
 | self | BFO:0000050 |
-| native | http://github.org/vfb/vfb-EPseq-ontology/VFB_EPseq/:associated_clustering |
+| native | http://github.org/vfb/vfb-EPseq-ontology/VFB_EPseq/associated_clustering |
 
 
 

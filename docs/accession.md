@@ -1,6 +1,6 @@
 
 
-# Slot: accession
+# Slot: accession 
 
 
 _Accession of the Dataset at the given Site._
@@ -10,8 +10,7 @@ _Accession of the Dataset at the given Site._
 
 
 URI: [neo_custom:accession](http://n2o.neo/custom/accession)
-
-
+Alias: accession
 
 <!-- no inheritance hierarchy -->
 
@@ -61,7 +60,7 @@ URI: [neo_custom:accession](http://n2o.neo/custom/accession)
 | Mapping Type | Mapped Value |
 | ---  | ---  |
 | self | neo_custom:accession |
-| native | http://github.org/vfb/vfb-EPseq-ontology/VFB_EPseq/:accession |
+| native | http://github.org/vfb/vfb-EPseq-ontology/VFB_EPseq/accession |
 
 
 

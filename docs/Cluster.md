@@ -1,6 +1,6 @@
 
 
-# Class: Cluster
+# Class: Cluster 
 
 
 
@@ -22,18 +22,22 @@ URI: [FBcv:0009003](http://purl.obolibrary.org/obo/FBcv_0009003)
         
           
     
+        
+        
+        Cluster --> "0..1" Clustering : associated_clustering
+        click Clustering href "../Clustering"
     
-    Cluster --> "0..1" Clustering : associated_clustering
-    click Clustering href "../Clustering"
 
         
       Cluster : associated_dataset
         
           
     
+        
+        
+        Cluster --> "0..1" Dataset : associated_dataset
+        click Dataset href "../Dataset"
     
-    Cluster --> "0..1" Dataset : associated_dataset
-    click Dataset href "../Dataset"
 
         
       Cluster : cell_number
@@ -42,9 +46,11 @@ URI: [FBcv:0009003](http://purl.obolibrary.org/obo/FBcv_0009003)
         
           
     
+        
+        
+        Cluster --> "*" Thing : cell_type
+        click Thing href "../Thing"
     
-    Cluster --> "*" Thing : cell_type
-    click Thing href "../Thing"
 
         
       Cluster : expression_extent
@@ -57,9 +63,11 @@ URI: [FBcv:0009003](http://purl.obolibrary.org/obo/FBcv_0009003)
         
           
     
+        
+        
+        Cluster --> "0..1" Thing : gene
+        click Thing href "../Thing"
     
-    Cluster --> "0..1" Thing : gene
-    click Thing href "../Thing"
 
         
       Cluster : hide_in_terminfo
@@ -74,18 +82,22 @@ URI: [FBcv:0009003](http://purl.obolibrary.org/obo/FBcv_0009003)
         
           
     
+        
+        
+        Cluster --> "0..1" SexOptions : sex
+        click SexOptions href "../SexOptions"
     
-    Cluster --> "0..1" SexOptions : sex
-    click SexOptions href "../SexOptions"
 
         
       Cluster : stage
         
           
     
+        
+        
+        Cluster --> "0..1" Thing : stage
+        click Thing href "../Thing"
     
-    Cluster --> "0..1" Thing : stage
-    click Thing href "../Thing"
 
         
       Cluster : title
@@ -149,6 +161,7 @@ URI: [FBcv:0009003](http://purl.obolibrary.org/obo/FBcv_0009003)
 
 
 
+
 ### Schema Source
 
 
@@ -162,7 +175,7 @@ URI: [FBcv:0009003](http://purl.obolibrary.org/obo/FBcv_0009003)
 | Mapping Type | Mapped Value |
 | ---  | ---  |
 | self | FBcv:0009003 |
-| native | http://github.org/vfb/vfb-EPseq-ontology/VFB_EPseq/:Cluster |
+| native | http://github.org/vfb/vfb-EPseq-ontology/VFB_EPseq/Cluster |
 
 
 

@@ -1,4 +1,4 @@
-# Type: Decimal
+# Type: Decimal 
 
 
 
@@ -42,7 +42,7 @@ URI: [xsd:decimal](http://www.w3.org/2001/XMLSchema#decimal)
 | Mapping Type | Mapped Value |
 | ---  | ---  |
 | self | xsd:decimal |
-| native | http://github.org/vfb/vfb-EPseq-ontology/VFB_EPseq/:decimal |
+| native | http://github.org/vfb/vfb-EPseq-ontology/VFB_EPseq/decimal |
 | broad | schema:Number |
 
 

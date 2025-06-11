@@ -1,6 +1,6 @@
 
 
-# Class: Clustering
+# Class: Clustering 
 
 
 
@@ -22,18 +22,22 @@ URI: [FBcv:0009002](http://purl.obolibrary.org/obo/FBcv_0009002)
         
           
     
+        
+        
+        Clustering --> "0..1" Dataset : associated_dataset
+        click Dataset href "../Dataset"
     
-    Clustering --> "0..1" Dataset : associated_dataset
-    click Dataset href "../Dataset"
 
         
       Clustering : associated_sample_or_assay_for_clustering
         
           
     
+        
+        
+        Clustering --> "0..1" Class : associated_sample_or_assay_for_clustering
+        click Class href "../Class"
     
-    Clustering --> "0..1" Class : associated_sample_or_assay_for_clustering
-    click Class href "../Class"
 
         
       Clustering : id
@@ -95,6 +99,7 @@ URI: [FBcv:0009002](http://purl.obolibrary.org/obo/FBcv_0009002)
 
 
 
+
 ### Schema Source
 
 
@@ -108,7 +113,7 @@ URI: [FBcv:0009002](http://purl.obolibrary.org/obo/FBcv_0009002)
 | Mapping Type | Mapped Value |
 | ---  | ---  |
 | self | FBcv:0009002 |
-| native | http://github.org/vfb/vfb-EPseq-ontology/VFB_EPseq/:Clustering |
+| native | http://github.org/vfb/vfb-EPseq-ontology/VFB_EPseq/Clustering |
 
 
 

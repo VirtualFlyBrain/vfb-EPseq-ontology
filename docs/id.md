@@ -1,6 +1,6 @@
 
 
-# Slot: id
+# Slot: id 
 
 
 _Identifier for the entity. FlyBase identifiers should be prefixed with 'FlyBase:'._
@@ -9,9 +9,8 @@ _Identifier for the entity. FlyBase identifiers should be prefixed with 'FlyBase
 
 
 
-URI: [http://github.org/vfb/vfb-EPseq-ontology/VFB_EPseq/:id](http://github.org/vfb/vfb-EPseq-ontology/VFB_EPseq/:id)
-
-
+URI: [http://github.org/vfb/vfb-EPseq-ontology/VFB_EPseq/id](http://github.org/vfb/vfb-EPseq-ontology/VFB_EPseq/id)
+Alias: id
 
 <!-- no inheritance hierarchy -->
 
@@ -24,15 +23,15 @@ URI: [http://github.org/vfb/vfb-EPseq-ontology/VFB_EPseq/:id](http://github.org/
 | Name | Description | Modifies Slot |
 | --- | --- | --- |
 | [DatasetEP](DatasetEP.md) | Avoids a keyerror from attempting to use Dataset class from VFB_scRNAseq_sche... |  no  |
-| [Clustering](Clustering.md) |  |  no  |
+| [Cluster](Cluster.md) |  |  no  |
+| [Thing](Thing.md) |  |  no  |
 | [Sample](Sample.md) |  |  no  |
 | [ExpressionPattern](ExpressionPattern.md) |  |  no  |
-| [Assay](Assay.md) |  |  no  |
 | [Dataset](Dataset.md) |  |  no  |
 | [Publication](Publication.md) |  |  no  |
+| [Assay](Assay.md) |  |  no  |
 | [Class](Class.md) |  |  no  |
-| [Thing](Thing.md) |  |  no  |
-| [Cluster](Cluster.md) |  |  no  |
+| [Clustering](Clustering.md) |  |  no  |
 
 
 
@@ -70,8 +69,8 @@ URI: [http://github.org/vfb/vfb-EPseq-ontology/VFB_EPseq/:id](http://github.org/
 
 | Mapping Type | Mapped Value |
 | ---  | ---  |
-| self | http://github.org/vfb/vfb-EPseq-ontology/VFB_EPseq/:id |
-| native | http://github.org/vfb/vfb-EPseq-ontology/VFB_EPseq/:id |
+| self | http://github.org/vfb/vfb-EPseq-ontology/VFB_EPseq/id |
+| native | http://github.org/vfb/vfb-EPseq-ontology/VFB_EPseq/id |
 
 
 

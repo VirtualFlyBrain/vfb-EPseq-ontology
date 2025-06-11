@@ -1,6 +1,6 @@
 
 
-# Slot: publication
+# Slot: publication 
 
 
 _Publication associated with the Dataset._
@@ -10,8 +10,7 @@ _Publication associated with the Dataset._
 
 
 URI: [dc:references](http://purl.org/dc/terms/references)
-
-
+Alias: publication
 
 <!-- no inheritance hierarchy -->
 
@@ -54,6 +53,7 @@ URI: [dc:references](http://purl.org/dc/terms/references)
 
 
 
+
 ### Schema Source
 
 
@@ -67,7 +67,7 @@ URI: [dc:references](http://purl.org/dc/terms/references)
 | Mapping Type | Mapped Value |
 | ---  | ---  |
 | self | dc:references |
-| native | http://github.org/vfb/vfb-EPseq-ontology/VFB_EPseq/:publication |
+| native | http://github.org/vfb/vfb-EPseq-ontology/VFB_EPseq/publication |
 
 
 

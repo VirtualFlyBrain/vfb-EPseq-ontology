@@ -1,6 +1,6 @@
 
 
-# Class: Dataset
+# Class: Dataset 
 
 
 
@@ -29,9 +29,11 @@ URI: [FBcv:0003023](http://purl.obolibrary.org/obo/FBcv_0003023)
         
           
     
+        
+        
+        Dataset --> "0..1" Thing : assay_type
+        click Thing href "../Thing"
     
-    Dataset --> "0..1" Thing : assay_type
-    click Thing href "../Thing"
 
         
       Dataset : filtered_gene_count
@@ -42,9 +44,11 @@ URI: [FBcv:0003023](http://purl.obolibrary.org/obo/FBcv_0003023)
         
           
     
+        
+        
+        Dataset --> "0..1" Thing : licence
+        click Thing href "../Thing"
     
-    Dataset --> "0..1" Thing : licence
-    click Thing href "../Thing"
 
         
       Dataset : name
@@ -55,18 +59,22 @@ URI: [FBcv:0003023](http://purl.obolibrary.org/obo/FBcv_0003023)
         
           
     
+        
+        
+        Dataset --> "0..1" Publication : publication
+        click Publication href "../Publication"
     
-    Dataset --> "0..1" Publication : publication
-    click Publication href "../Publication"
 
         
       Dataset : site
         
           
     
+        
+        
+        Dataset --> "0..1" Thing : site
+        click Thing href "../Thing"
     
-    Dataset --> "0..1" Thing : site
-    click Thing href "../Thing"
 
         
       Dataset : title
@@ -137,6 +145,7 @@ URI: [FBcv:0003023](http://purl.obolibrary.org/obo/FBcv_0003023)
 
 
 
+
 ### Schema Source
 
 
@@ -150,7 +159,7 @@ URI: [FBcv:0003023](http://purl.obolibrary.org/obo/FBcv_0003023)
 | Mapping Type | Mapped Value |
 | ---  | ---  |
 | self | FBcv:0003023 |
-| native | http://github.org/vfb/vfb-EPseq-ontology/VFB_EPseq/:Dataset |
+| native | http://github.org/vfb/vfb-EPseq-ontology/VFB_EPseq/Dataset |
 
 
 

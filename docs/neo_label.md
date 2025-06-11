@@ -1,6 +1,6 @@
 
 
-# Slot: neo_label
+# Slot: neo_label 
 
 
 _neo4j node label to add to entity._
@@ -10,8 +10,7 @@ _neo4j node label to add to entity._
 
 
 URI: [neo_property:nodeLabel](http://n2o.neo/property/nodeLabel)
-
-
+Alias: neo_label
 
 <!-- no inheritance hierarchy -->
 
@@ -24,12 +23,12 @@ URI: [neo_property:nodeLabel](http://n2o.neo/property/nodeLabel)
 | Name | Description | Modifies Slot |
 | --- | --- | --- |
 | [DatasetEP](DatasetEP.md) | Avoids a keyerror from attempting to use Dataset class from VFB_scRNAseq_sche... |  no  |
-| [Sample](Sample.md) |  |  no  |
-| [ExpressionPattern](ExpressionPattern.md) |  |  no  |
-| [Assay](Assay.md) |  |  no  |
-| [Dataset](Dataset.md) |  |  no  |
-| [Publication](Publication.md) |  |  no  |
 | [Cluster](Cluster.md) |  |  no  |
+| [Sample](Sample.md) |  |  no  |
+| [Dataset](Dataset.md) |  |  no  |
+| [ExpressionPattern](ExpressionPattern.md) |  |  no  |
+| [Publication](Publication.md) |  |  no  |
+| [Assay](Assay.md) |  |  no  |
 
 
 
@@ -59,6 +58,7 @@ URI: [neo_property:nodeLabel](http://n2o.neo/property/nodeLabel)
 
 
 
+
 ### Schema Source
 
 
@@ -72,7 +72,7 @@ URI: [neo_property:nodeLabel](http://n2o.neo/property/nodeLabel)
 | Mapping Type | Mapped Value |
 | ---  | ---  |
 | self | neo_property:nodeLabel |
-| native | http://github.org/vfb/vfb-EPseq-ontology/VFB_EPseq/:neo_label |
+| native | http://github.org/vfb/vfb-EPseq-ontology/VFB_EPseq/neo_label |
 
 
 

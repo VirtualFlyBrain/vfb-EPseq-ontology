@@ -1,6 +1,6 @@
 
 
-# Slot: stage
+# Slot: stage 
 
 
 _Developmental stage (FBdv ID) of the Sample or Cluster._
@@ -10,8 +10,7 @@ _Developmental stage (FBdv ID) of the Sample or Cluster._
 
 
 URI: [RO:0002490](http://purl.obolibrary.org/obo/RO_0002490)
-
-
+Alias: stage
 
 <!-- no inheritance hierarchy -->
 
@@ -23,8 +22,8 @@ URI: [RO:0002490](http://purl.obolibrary.org/obo/RO_0002490)
 
 | Name | Description | Modifies Slot |
 | --- | --- | --- |
-| [Cluster](Cluster.md) |  |  no  |
 | [Sample](Sample.md) |  |  no  |
+| [Cluster](Cluster.md) |  |  no  |
 | [ExpressionPattern](ExpressionPattern.md) |  |  no  |
 
 
@@ -55,6 +54,7 @@ URI: [RO:0002490](http://purl.obolibrary.org/obo/RO_0002490)
 
 
 
+
 ### Schema Source
 
 
@@ -68,7 +68,7 @@ URI: [RO:0002490](http://purl.obolibrary.org/obo/RO_0002490)
 | Mapping Type | Mapped Value |
 | ---  | ---  |
 | self | RO:0002490 |
-| native | http://github.org/vfb/vfb-EPseq-ontology/VFB_EPseq/:stage |
+| native | http://github.org/vfb/vfb-EPseq-ontology/VFB_EPseq/stage |
 
 
 

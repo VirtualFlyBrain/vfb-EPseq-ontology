@@ -1,6 +1,6 @@
 
 
-# Slot: gene
+# Slot: gene 
 
 
 _A gene (FBgn ID) that is expressed by the entity. Max one gene per tsv row alongside its expression_level, expression_extent (for scRNAseq clusters) and hide_in_terminfo (=true)._
@@ -10,8 +10,7 @@ _A gene (FBgn ID) that is expressed by the entity. Max one gene per tsv row alon
 
 
 URI: [RO:0002292](http://purl.obolibrary.org/obo/RO_0002292)
-
-
+Alias: gene
 
 <!-- no inheritance hierarchy -->
 
@@ -62,6 +61,7 @@ ClassAssertion (
 
 
 
+
 ### Schema Source
 
 
@@ -75,7 +75,7 @@ ClassAssertion (
 | Mapping Type | Mapped Value |
 | ---  | ---  |
 | self | RO:0002292 |
-| native | http://github.org/vfb/vfb-EPseq-ontology/VFB_EPseq/:gene |
+| native | http://github.org/vfb/vfb-EPseq-ontology/VFB_EPseq/gene |
 
 
 

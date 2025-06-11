@@ -1,6 +1,6 @@
 
 
-# Slot: associated_sample_for_assay
+# Slot: associated_sample_for_assay 
 
 
 _Input sample(s) for the scRNAseq assay. Multiple IDs should be separated with '|' or in different rows._
@@ -10,8 +10,7 @@ _Input sample(s) for the scRNAseq assay. Multiple IDs should be separated with '
 
 
 URI: [RO:0002233](http://purl.obolibrary.org/obo/RO_0002233)
-
-
+Alias: associated_sample_for_assay
 
 <!-- no inheritance hierarchy -->
 
@@ -55,6 +54,7 @@ URI: [RO:0002233](http://purl.obolibrary.org/obo/RO_0002233)
 
 
 
+
 ### Schema Source
 
 
@@ -68,7 +68,7 @@ URI: [RO:0002233](http://purl.obolibrary.org/obo/RO_0002233)
 | Mapping Type | Mapped Value |
 | ---  | ---  |
 | self | RO:0002233 |
-| native | http://github.org/vfb/vfb-EPseq-ontology/VFB_EPseq/:associated_sample_for_assay |
+| native | http://github.org/vfb/vfb-EPseq-ontology/VFB_EPseq/associated_sample_for_assay |
 
 
 

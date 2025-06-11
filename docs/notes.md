@@ -1,6 +1,6 @@
 
 
-# Slot: notes
+# Slot: notes 
 
 
 _Column for curator notes - not incorporated into ontology._
@@ -9,9 +9,8 @@ _Column for curator notes - not incorporated into ontology._
 
 
 
-URI: [http://github.org/vfb/vfb-EPseq-ontology/VFB_EPseq/:notes](http://github.org/vfb/vfb-EPseq-ontology/VFB_EPseq/:notes)
-
-
+URI: [http://github.org/vfb/vfb-EPseq-ontology/VFB_EPseq/notes](http://github.org/vfb/vfb-EPseq-ontology/VFB_EPseq/notes)
+Alias: notes
 
 <!-- no inheritance hierarchy -->
 
@@ -59,8 +58,8 @@ URI: [http://github.org/vfb/vfb-EPseq-ontology/VFB_EPseq/:notes](http://github.o
 
 | Mapping Type | Mapped Value |
 | ---  | ---  |
-| self | http://github.org/vfb/vfb-EPseq-ontology/VFB_EPseq/:notes |
-| native | http://github.org/vfb/vfb-EPseq-ontology/VFB_EPseq/:notes |
+| self | http://github.org/vfb/vfb-EPseq-ontology/VFB_EPseq/notes |
+| native | http://github.org/vfb/vfb-EPseq-ontology/VFB_EPseq/notes |
 
 
 

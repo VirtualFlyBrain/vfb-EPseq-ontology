@@ -1,6 +1,6 @@
 
 
-# Slot: hide_in_terminfo
+# Slot: hide_in_terminfo 
 
 
 _Flag to hide expression edges in VFB Term Info pane. Range must be string - boolean changes capitalisation and does not add datatype anyway._
@@ -10,8 +10,7 @@ _Flag to hide expression edges in VFB Term Info pane. Range must be string - boo
 
 
 URI: [neo_custom:hide_in_terminfo](http://n2o.neo/custom/hide_in_terminfo)
-
-
+Alias: hide_in_terminfo
 
 <!-- no inheritance hierarchy -->
 
@@ -61,7 +60,7 @@ URI: [neo_custom:hide_in_terminfo](http://n2o.neo/custom/hide_in_terminfo)
 | Mapping Type | Mapped Value |
 | ---  | ---  |
 | self | neo_custom:hide_in_terminfo |
-| native | http://github.org/vfb/vfb-EPseq-ontology/VFB_EPseq/:hide_in_terminfo |
+| native | http://github.org/vfb/vfb-EPseq-ontology/VFB_EPseq/hide_in_terminfo |
 
 
 

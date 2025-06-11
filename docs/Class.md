@@ -1,10 +1,10 @@
 
 
-# Class: Class
+# Class: Class 
 
 
 
-URI: [http://github.org/vfb/vfb-EPseq-ontology/VFB_EPseq/:Class](http://github.org/vfb/vfb-EPseq-ontology/VFB_EPseq/:Class)
+URI: [http://github.org/vfb/vfb-EPseq-ontology/VFB_EPseq/Class](http://github.org/vfb/vfb-EPseq-ontology/VFB_EPseq/Class)
 
 
 
@@ -92,6 +92,7 @@ URI: [http://github.org/vfb/vfb-EPseq-ontology/VFB_EPseq/:Class](http://github.o
 
 
 
+
 ### Schema Source
 
 
@@ -104,8 +105,8 @@ URI: [http://github.org/vfb/vfb-EPseq-ontology/VFB_EPseq/:Class](http://github.o
 
 | Mapping Type | Mapped Value |
 | ---  | ---  |
-| self | http://github.org/vfb/vfb-EPseq-ontology/VFB_EPseq/:Class |
-| native | http://github.org/vfb/vfb-EPseq-ontology/VFB_EPseq/:Class |
+| self | http://github.org/vfb/vfb-EPseq-ontology/VFB_EPseq/Class |
+| native | http://github.org/vfb/vfb-EPseq-ontology/VFB_EPseq/Class |
 
 
 

@@ -1,6 +1,6 @@
 
 
-# Slot: cell_number
+# Slot: cell_number 
 
 
 _The number of cells in the Cluster (as integer)._
@@ -10,8 +10,7 @@ _The number of cells in the Cluster (as integer)._
 
 
 URI: [neo_custom:cell_count](http://n2o.neo/custom/cell_count)
-
-
+Alias: cell_number
 
 <!-- no inheritance hierarchy -->
 
@@ -53,6 +52,7 @@ URI: [neo_custom:cell_count](http://n2o.neo/custom/cell_count)
 
 
 
+
 ### Schema Source
 
 
@@ -66,7 +66,7 @@ URI: [neo_custom:cell_count](http://n2o.neo/custom/cell_count)
 | Mapping Type | Mapped Value |
 | ---  | ---  |
 | self | neo_custom:cell_count |
-| native | http://github.org/vfb/vfb-EPseq-ontology/VFB_EPseq/:cell_number |
+| native | http://github.org/vfb/vfb-EPseq-ontology/VFB_EPseq/cell_number |
 
 
 

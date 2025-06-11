@@ -1,6 +1,6 @@
 
 
-# Slot: name
+# Slot: name 
 
 
 _Short systematic label for the entity._
@@ -10,8 +10,7 @@ _Short systematic label for the entity._
 
 
 URI: [rdfs:label](http://www.w3.org/2000/01/rdf-schema#label)
-
-
+Alias: name
 
 <!-- no inheritance hierarchy -->
 
@@ -24,13 +23,13 @@ URI: [rdfs:label](http://www.w3.org/2000/01/rdf-schema#label)
 | Name | Description | Modifies Slot |
 | --- | --- | --- |
 | [DatasetEP](DatasetEP.md) | Avoids a keyerror from attempting to use Dataset class from VFB_scRNAseq_sche... |  no  |
-| [Clustering](Clustering.md) |  |  no  |
+| [Cluster](Cluster.md) |  |  no  |
 | [Sample](Sample.md) |  |  no  |
 | [ExpressionPattern](ExpressionPattern.md) |  |  no  |
-| [Assay](Assay.md) |  |  no  |
 | [Dataset](Dataset.md) |  |  no  |
+| [Assay](Assay.md) |  |  no  |
 | [Class](Class.md) |  |  no  |
-| [Cluster](Cluster.md) |  |  no  |
+| [Clustering](Clustering.md) |  |  no  |
 
 
 
@@ -62,6 +61,7 @@ URI: [rdfs:label](http://www.w3.org/2000/01/rdf-schema#label)
 
 
 
+
 ### Schema Source
 
 
@@ -75,7 +75,7 @@ URI: [rdfs:label](http://www.w3.org/2000/01/rdf-schema#label)
 | Mapping Type | Mapped Value |
 | ---  | ---  |
 | self | rdfs:label |
-| native | http://github.org/vfb/vfb-EPseq-ontology/VFB_EPseq/:name |
+| native | http://github.org/vfb/vfb-EPseq-ontology/VFB_EPseq/name |
 
 
 

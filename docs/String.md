@@ -1,4 +1,4 @@
-# Type: String
+# Type: String 
 
 
 
@@ -42,7 +42,7 @@ URI: [xsd:string](http://www.w3.org/2001/XMLSchema#string)
 | Mapping Type | Mapped Value |
 | ---  | ---  |
 | self | xsd:string |
-| native | http://github.org/vfb/vfb-EPseq-ontology/VFB_EPseq/:string |
+| native | http://github.org/vfb/vfb-EPseq-ontology/VFB_EPseq/string |
 | exact | schema:Text |
 
 

@@ -1,6 +1,6 @@
 
 
-# Slot: method
+# Slot: method 
 
 
 _Method used for the assay - currently getting any direct subclass of FBcv:0009005 'single-cell library sequencing' for scRNAseq data._
@@ -10,8 +10,7 @@ _Method used for the assay - currently getting any direct subclass of FBcv:00090
 
 
 URI: [BAO:0000212](http://www.bioassayontology.org/bao#BAO_0000212)
-
-
+Alias: method
 
 <!-- no inheritance hierarchy -->
 
@@ -53,6 +52,7 @@ URI: [BAO:0000212](http://www.bioassayontology.org/bao#BAO_0000212)
 
 
 
+
 ### Schema Source
 
 
@@ -66,7 +66,7 @@ URI: [BAO:0000212](http://www.bioassayontology.org/bao#BAO_0000212)
 | Mapping Type | Mapped Value |
 | ---  | ---  |
 | self | BAO:0000212 |
-| native | http://github.org/vfb/vfb-EPseq-ontology/VFB_EPseq/:method |
+| native | http://github.org/vfb/vfb-EPseq-ontology/VFB_EPseq/method |
 
 
 

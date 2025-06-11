@@ -1,10 +1,10 @@
 
 
-# Class: ExpressionPattern
+# Class: ExpressionPattern 
 
 
 
-URI: [http://github.org/vfb/vfb-EPseq-ontology/VFB_EPseq/:ExpressionPattern](http://github.org/vfb/vfb-EPseq-ontology/VFB_EPseq/:ExpressionPattern)
+URI: [http://github.org/vfb/vfb-EPseq-ontology/VFB_EPseq/ExpressionPattern](http://github.org/vfb/vfb-EPseq-ontology/VFB_EPseq/ExpressionPattern)
 
 
 
@@ -22,27 +22,33 @@ URI: [http://github.org/vfb/vfb-EPseq-ontology/VFB_EPseq/:ExpressionPattern](htt
         
           
     
+        
+        
+        ExpressionPattern --> "*" Assay : associated_assay
+        click Assay href "../Assay"
     
-    ExpressionPattern --> "*" Assay : associated_assay
-    click Assay href "../Assay"
 
         
       ExpressionPattern : associated_dataset
         
           
     
+        
+        
+        ExpressionPattern --> "0..1" Dataset : associated_dataset
+        click Dataset href "../Dataset"
     
-    ExpressionPattern --> "0..1" Dataset : associated_dataset
-    click Dataset href "../Dataset"
 
         
       ExpressionPattern : driver
         
           
     
+        
+        
+        ExpressionPattern --> "0..1" Thing : driver
+        click Thing href "../Thing"
     
-    ExpressionPattern --> "0..1" Thing : driver
-    click Thing href "../Thing"
 
         
       ExpressionPattern : driver_symbol
@@ -53,9 +59,11 @@ URI: [http://github.org/vfb/vfb-EPseq-ontology/VFB_EPseq/:ExpressionPattern](htt
         
           
     
+        
+        
+        ExpressionPattern --> "0..1" Thing : gene
+        click Thing href "../Thing"
     
-    ExpressionPattern --> "0..1" Thing : gene
-    click Thing href "../Thing"
 
         
       ExpressionPattern : hide_in_terminfo
@@ -72,27 +80,33 @@ URI: [http://github.org/vfb/vfb-EPseq-ontology/VFB_EPseq/:ExpressionPattern](htt
         
           
     
+        
+        
+        ExpressionPattern --> "*" Thing : sample_tissue
+        click Thing href "../Thing"
     
-    ExpressionPattern --> "*" Thing : sample_tissue
-    click Thing href "../Thing"
 
         
       ExpressionPattern : sex
         
           
     
+        
+        
+        ExpressionPattern --> "0..1" SexOptions : sex
+        click SexOptions href "../SexOptions"
     
-    ExpressionPattern --> "0..1" SexOptions : sex
-    click SexOptions href "../SexOptions"
 
         
       ExpressionPattern : stage
         
           
     
+        
+        
+        ExpressionPattern --> "0..1" Thing : stage
+        click Thing href "../Thing"
     
-    ExpressionPattern --> "0..1" Thing : stage
-    click Thing href "../Thing"
 
         
       ExpressionPattern : title
@@ -160,8 +174,8 @@ URI: [http://github.org/vfb/vfb-EPseq-ontology/VFB_EPseq/:ExpressionPattern](htt
 
 | Mapping Type | Mapped Value |
 | ---  | ---  |
-| self | http://github.org/vfb/vfb-EPseq-ontology/VFB_EPseq/:ExpressionPattern |
-| native | http://github.org/vfb/vfb-EPseq-ontology/VFB_EPseq/:ExpressionPattern |
+| self | http://github.org/vfb/vfb-EPseq-ontology/VFB_EPseq/ExpressionPattern |
+| native | http://github.org/vfb/vfb-EPseq-ontology/VFB_EPseq/ExpressionPattern |
 
 
 

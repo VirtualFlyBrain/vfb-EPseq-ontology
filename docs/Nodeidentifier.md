@@ -1,4 +1,4 @@
-# Type: Nodeidentifier
+# Type: Nodeidentifier 
 
 
 
@@ -43,7 +43,7 @@ URI: [shex:nonLiteral](http://www.w3.org/ns/shex#nonLiteral)
 | Mapping Type | Mapped Value |
 | ---  | ---  |
 | self | shex:nonLiteral |
-| native | http://github.org/vfb/vfb-EPseq-ontology/VFB_EPseq/:nodeidentifier |
+| native | http://github.org/vfb/vfb-EPseq-ontology/VFB_EPseq/nodeidentifier |
 
 
 

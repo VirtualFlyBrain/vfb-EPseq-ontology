@@ -1,6 +1,6 @@
 
 
-# Slot: assay_type
+# Slot: assay_type 
 
 
 _Assay type (FBcv ID) for the Dataset, this will probably be 'FBcv:0009000' ('single-cell RNA-seq')._
@@ -10,8 +10,7 @@ _Assay type (FBcv ID) for the Dataset, this will probably be 'FBcv:0009000' ('si
 
 
 URI: [OBI:0000312](http://purl.obolibrary.org/obo/OBI_0000312)
-
-
+Alias: assay_type
 
 <!-- no inheritance hierarchy -->
 
@@ -54,6 +53,7 @@ URI: [OBI:0000312](http://purl.obolibrary.org/obo/OBI_0000312)
 
 
 
+
 ### Schema Source
 
 
@@ -67,7 +67,7 @@ URI: [OBI:0000312](http://purl.obolibrary.org/obo/OBI_0000312)
 | Mapping Type | Mapped Value |
 | ---  | ---  |
 | self | OBI:0000312 |
-| native | http://github.org/vfb/vfb-EPseq-ontology/VFB_EPseq/:assay_type |
+| native | http://github.org/vfb/vfb-EPseq-ontology/VFB_EPseq/assay_type |
 
 
 

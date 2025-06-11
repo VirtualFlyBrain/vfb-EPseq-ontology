@@ -1,6 +1,6 @@
 
 
-# Slot: sample_tissue
+# Slot: sample_tissue 
 
 
 _Tissue(s) (FBbt IDs) in the sample. Multiple IDs should be separated with '|' or in different rows. Maps as an overlaps relationship rather than part_of due to imprecision of dissection._
@@ -10,8 +10,7 @@ _Tissue(s) (FBbt IDs) in the sample. Multiple IDs should be separated with '|' o
 
 
 URI: [RO:0002131](http://purl.obolibrary.org/obo/RO_0002131)
-
-
+Alias: sample_tissue
 
 <!-- no inheritance hierarchy -->
 
@@ -56,6 +55,7 @@ URI: [RO:0002131](http://purl.obolibrary.org/obo/RO_0002131)
 
 
 
+
 ### Schema Source
 
 
@@ -69,7 +69,7 @@ URI: [RO:0002131](http://purl.obolibrary.org/obo/RO_0002131)
 | Mapping Type | Mapped Value |
 | ---  | ---  |
 | self | RO:0002131 |
-| native | http://github.org/vfb/vfb-EPseq-ontology/VFB_EPseq/:sample_tissue |
+| native | http://github.org/vfb/vfb-EPseq-ontology/VFB_EPseq/sample_tissue |
 
 
 

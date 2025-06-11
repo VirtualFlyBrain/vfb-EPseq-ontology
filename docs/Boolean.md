@@ -1,4 +1,4 @@
-# Type: Boolean
+# Type: Boolean 
 
 
 
@@ -43,7 +43,7 @@ URI: [xsd:boolean](http://www.w3.org/2001/XMLSchema#boolean)
 | Mapping Type | Mapped Value |
 | ---  | ---  |
 | self | xsd:boolean |
-| native | http://github.org/vfb/vfb-EPseq-ontology/VFB_EPseq/:boolean |
+| native | http://github.org/vfb/vfb-EPseq-ontology/VFB_EPseq/boolean |
 | exact | schema:Boolean |
 
 

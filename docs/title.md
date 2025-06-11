@@ -1,6 +1,6 @@
 
 
-# Slot: title
+# Slot: title 
 
 
 _Short description of the entity._
@@ -10,8 +10,7 @@ _Short description of the entity._
 
 
 URI: [IAO:0000115](http://purl.obolibrary.org/obo/IAO_0000115)
-
-
+Alias: title
 
 <!-- no inheritance hierarchy -->
 
@@ -24,13 +23,13 @@ URI: [IAO:0000115](http://purl.obolibrary.org/obo/IAO_0000115)
 | Name | Description | Modifies Slot |
 | --- | --- | --- |
 | [DatasetEP](DatasetEP.md) | Avoids a keyerror from attempting to use Dataset class from VFB_scRNAseq_sche... |  no  |
-| [Clustering](Clustering.md) |  |  no  |
+| [Cluster](Cluster.md) |  |  no  |
 | [Sample](Sample.md) |  |  no  |
 | [ExpressionPattern](ExpressionPattern.md) |  |  no  |
-| [Assay](Assay.md) |  |  no  |
 | [Dataset](Dataset.md) |  |  no  |
+| [Assay](Assay.md) |  |  no  |
 | [Class](Class.md) |  |  no  |
-| [Cluster](Cluster.md) |  |  no  |
+| [Clustering](Clustering.md) |  |  no  |
 
 
 
@@ -62,6 +61,7 @@ URI: [IAO:0000115](http://purl.obolibrary.org/obo/IAO_0000115)
 
 
 
+
 ### Schema Source
 
 
@@ -75,7 +75,7 @@ URI: [IAO:0000115](http://purl.obolibrary.org/obo/IAO_0000115)
 | Mapping Type | Mapped Value |
 | ---  | ---  |
 | self | IAO:0000115 |
-| native | http://github.org/vfb/vfb-EPseq-ontology/VFB_EPseq/:title |
+| native | http://github.org/vfb/vfb-EPseq-ontology/VFB_EPseq/title |
 
 
 

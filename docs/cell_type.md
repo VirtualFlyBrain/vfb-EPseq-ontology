@@ -1,6 +1,6 @@
 
 
-# Slot: cell_type
+# Slot: cell_type 
 
 
 _Anatomy (FBbt IDs) for the Cluster. Multiple IDs should be separated with '|'._
@@ -10,8 +10,7 @@ _Anatomy (FBbt IDs) for the Cluster. Multiple IDs should be separated with '|'._
 
 
 URI: [RO:0002473](http://purl.obolibrary.org/obo/RO_0002473)
-
-
+Alias: cell_type
 
 <!-- no inheritance hierarchy -->
 
@@ -55,6 +54,7 @@ URI: [RO:0002473](http://purl.obolibrary.org/obo/RO_0002473)
 
 
 
+
 ### Schema Source
 
 
@@ -68,7 +68,7 @@ URI: [RO:0002473](http://purl.obolibrary.org/obo/RO_0002473)
 | Mapping Type | Mapped Value |
 | ---  | ---  |
 | self | RO:0002473 |
-| native | http://github.org/vfb/vfb-EPseq-ontology/VFB_EPseq/:cell_type |
+| native | http://github.org/vfb/vfb-EPseq-ontology/VFB_EPseq/cell_type |
 
 
 
