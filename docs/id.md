@@ -22,16 +22,16 @@ Alias: id
 
 | Name | Description | Modifies Slot |
 | --- | --- | --- |
+| [Clustering](Clustering.md) |  |  no  |
+| [Assay](Assay.md) |  |  no  |
+| [Thing](Thing.md) |  |  no  |
+| [Dataset](Dataset.md) |  |  no  |
 | [DatasetEP](DatasetEP.md) | Avoids a keyerror from attempting to use Dataset class from VFB_scRNAseq_sche... |  no  |
 | [Cluster](Cluster.md) |  |  no  |
-| [Thing](Thing.md) |  |  no  |
+| [Publication](Publication.md) |  |  no  |
+| [Class](Class.md) |  |  no  |
 | [Sample](Sample.md) |  |  no  |
 | [ExpressionPattern](ExpressionPattern.md) |  |  no  |
-| [Dataset](Dataset.md) |  |  no  |
-| [Publication](Publication.md) |  |  no  |
-| [Assay](Assay.md) |  |  no  |
-| [Class](Class.md) |  |  no  |
-| [Clustering](Clustering.md) |  |  no  |
 
 
 

@@ -22,8 +22,8 @@ Alias: associated_assay
 
 | Name | Description | Modifies Slot |
 | --- | --- | --- |
-| [Sample](Sample.md) |  |  no  |
 | [ExpressionPattern](ExpressionPattern.md) |  |  no  |
+| [Sample](Sample.md) |  |  no  |
 
 
 
