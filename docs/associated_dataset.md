@@ -22,11 +22,11 @@ Alias: associated_dataset
 
 | Name | Description | Modifies Slot |
 | --- | --- | --- |
-| [Clustering](Clustering.md) |  |  no  |
+| [Sample](Sample.md) |  |  no  |
 | [Assay](Assay.md) |  |  no  |
 | [Cluster](Cluster.md) |  |  no  |
-| [Sample](Sample.md) |  |  no  |
 | [ExpressionPattern](ExpressionPattern.md) |  |  no  |
+| [Clustering](Clustering.md) |  |  no  |
 
 
 
