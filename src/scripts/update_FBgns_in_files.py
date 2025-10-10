@@ -8,6 +8,7 @@ mapping = pd.read_csv('tmp/id_validation_table.txt', sep='\t', low_memory=False)
 changed_ids = mapping[~mapping['#submitted_item'].isin(mapping['validated_id'])]
 changed_ids = changed_ids.set_index('#submitted_item', verify_integrity=True)
 replacement_dict = changed_ids['validated_id'].to_dict()
+print('Replacements to make: ' + str(replacement_dict))
 
 exp_files = glob.glob('expression_data/*.owl')
 

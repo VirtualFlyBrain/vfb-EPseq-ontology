@@ -36,6 +36,7 @@ setup_venv:
 	apt-get update
 	apt-get -y install python3.12-venv
 	python3 -m venv my-venv
+	my-venv/bin/pip install pandas
 
 .PHONY: install_linkml
 install_linkml: setup_venv
@@ -218,19 +219,19 @@ $(TMPDIR)/existing_FBgns.txt: unzip_exp_files
 	cat $(EXPDIR)/*.fbgns.tmp | sort | uniq > $@
 
 .PHONY: get_gene_id_map
-get_gene_id_map: install_postgresql
+get_gene_id_map: install_postgresql setup_venv
 	# this won't work until https://flybase.github.io/docs/chado/functions#update_ids is fixed
 	my-venv/bin/python3 $(SCRIPTSDIR)/print_id_query.py &&\
 	psql -h chado.flybase.org -U flybase flybase -f ../sql/id_update_query.sql \
 	 > $(TMPDIR)/id_validation_table.tsv
 
-replace_gene_ids_in_files: $(TMPDIR)/existing_FBgns.txt
+replace_gene_ids_in_files: $(TMPDIR)/existing_FBgns.txt setup_venv
 	# need to get 'tmp/id_validation_table.txt' file from manual use of id validator
 	my-venv/bin/python3 $(SCRIPTSDIR)/update_FBgns_in_files.py &&\
 	for FILE in $(EXPDIR)/*.owl; \
 	do if [ -f $$FILE-processed.txt ]; \
-	then mv $$FILE-processed.txt $$FILE \
-	$(ROBOT) convert -i $$FILE --format owl -o $$FILE.gz; fi &&\
+	then mv $$FILE-processed.txt $$FILE &&\
+	$(ROBOT) convert -i $$FILE --format owl -o $$FILE.gz; fi; \
 	rm -f $$FILE.fbgns.tmp; done
 	
 ################# reformatting input files - may need customisation of scripts for each dataset
