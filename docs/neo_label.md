@@ -24,11 +24,11 @@ Alias: neo_label
 | --- | --- | --- |
 | [Sample](Sample.md) |  |  no  |
 | [Assay](Assay.md) |  |  no  |
+| [ExpressionPattern](ExpressionPattern.md) |  |  no  |
 | [Dataset](Dataset.md) |  |  no  |
 | [Cluster](Cluster.md) |  |  no  |
-| [ExpressionPattern](ExpressionPattern.md) |  |  no  |
-| [Publication](Publication.md) |  |  no  |
 | [DatasetEP](DatasetEP.md) | Avoids a keyerror from attempting to use Dataset class from VFB_scRNAseq_sche... |  no  |
+| [Publication](Publication.md) |  |  no  |
 
 
 

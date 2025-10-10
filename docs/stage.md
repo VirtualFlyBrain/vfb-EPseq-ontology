@@ -23,8 +23,8 @@ Alias: stage
 | Name | Description | Modifies Slot |
 | --- | --- | --- |
 | [Cluster](Cluster.md) |  |  no  |
-| [ExpressionPattern](ExpressionPattern.md) |  |  no  |
 | [Sample](Sample.md) |  |  no  |
+| [ExpressionPattern](ExpressionPattern.md) |  |  no  |
 
 
 

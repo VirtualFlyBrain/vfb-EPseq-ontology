@@ -24,8 +24,8 @@ Alias: associated_dataset
 | --- | --- | --- |
 | [Sample](Sample.md) |  |  no  |
 | [Assay](Assay.md) |  |  no  |
-| [Cluster](Cluster.md) |  |  no  |
 | [ExpressionPattern](ExpressionPattern.md) |  |  no  |
+| [Cluster](Cluster.md) |  |  no  |
 | [Clustering](Clustering.md) |  |  no  |
 
 
