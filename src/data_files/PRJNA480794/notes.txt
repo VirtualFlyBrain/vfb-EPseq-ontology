@@ -4,3 +4,4 @@
   a) based on name in tpm file, 'FBgn0036125' should be 'FBgn0286980' (Iyd).
   b) unclear whether 'FBgn0037417' (Osi10) maps to Osi10a or Osi10b, so removing this gene.
   c) unclear whether 'FBgn0050456' (CG30456) maps to CG46491 or CG46492, so removing this gene.
+4. Automatic FBgn updates 2025-10-10 (NOT in _FINAL data) {'FBgn0001226': 'FBgn0289994', 'FBgn0026317': 'FBgn0290397', 'FBgn0028833': 'FBgn0290421', 'FBgn0029503': 'FBgn0290396', 'FBgn0032197': 'FBgn0290203', 'FBgn0034913': 'FBgn0290324', 'FBgn0039153': 'FBgn0290399', 'FBgn0039403': 'FBgn0290417', 'FBgn0039407': 'FBgn0290420', 'FBgn0039411': 'FBgn0290398', 'FBgn0039419': 'FBgn0290419', 'FBgn0043884': 'FBgn0290416', 'FBgn0260450': 'FBgn0290170', 'FBgn0261609': 'FBgn0290109', 'FBgn0261800': 'FBgn0289933', 'FBgn0263755': 'FBgn0290182', 'FBgn0266464': 'FBgn0290174', 'FBgn0266668': 'FBgn0290418'}.
