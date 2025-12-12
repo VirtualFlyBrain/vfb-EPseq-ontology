@@ -22,14 +22,14 @@ Alias: title
 
 | Name | Description | Modifies Slot |
 | --- | --- | --- |
-| [ExpressionPattern](ExpressionPattern.md) |  |  no  |
-| [Sample](Sample.md) |  |  no  |
-| [Assay](Assay.md) |  |  no  |
-| [Dataset](Dataset.md) |  |  no  |
 | [Cluster](Cluster.md) |  |  no  |
 | [DatasetEP](DatasetEP.md) | Avoids a keyerror from attempting to use Dataset class from VFB_scRNAseq_sche... |  no  |
-| [Clustering](Clustering.md) |  |  no  |
 | [Class](Class.md) |  |  no  |
+| [ExpressionPattern](ExpressionPattern.md) |  |  no  |
+| [Assay](Assay.md) |  |  no  |
+| [Dataset](Dataset.md) |  |  no  |
+| [Clustering](Clustering.md) |  |  no  |
+| [Sample](Sample.md) |  |  no  |
 
 
 

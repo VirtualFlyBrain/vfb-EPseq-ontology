@@ -22,13 +22,13 @@ Alias: neo_label
 
 | Name | Description | Modifies Slot |
 | --- | --- | --- |
-| [Sample](Sample.md) |  |  no  |
-| [Assay](Assay.md) |  |  no  |
-| [ExpressionPattern](ExpressionPattern.md) |  |  no  |
-| [Dataset](Dataset.md) |  |  no  |
 | [Cluster](Cluster.md) |  |  no  |
 | [DatasetEP](DatasetEP.md) | Avoids a keyerror from attempting to use Dataset class from VFB_scRNAseq_sche... |  no  |
+| [ExpressionPattern](ExpressionPattern.md) |  |  no  |
+| [Assay](Assay.md) |  |  no  |
+| [Dataset](Dataset.md) |  |  no  |
 | [Publication](Publication.md) |  |  no  |
+| [Sample](Sample.md) |  |  no  |
 
 
 
