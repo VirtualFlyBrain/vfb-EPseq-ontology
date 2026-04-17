@@ -29,18 +29,38 @@ Alias: cell_number
 
 
 
-
 ## Properties
 
-* Range: [Integer](Integer.md)
+### Type and Range
+
+| Property | Value |
+| --- | --- |
+| Range | [Integer](Integer.md) |
+| Domain Of | [Cluster](Cluster.md) |
+| Slot URI | [neo_custom:cell_count](http://n2o.neo/custom/cell_count) |
+
+### Cardinality and Requirements
+
+| Property | Value |
+| --- | --- |
+### Slot Characteristics
+
+| Property | Value |
+| --- | --- |
+| Owner | [Cluster](Cluster.md) |
+
+
+
+
+
+
+
 
 
 
 
 
 ## Identifier and Mapping Information
-
-
 
 
 

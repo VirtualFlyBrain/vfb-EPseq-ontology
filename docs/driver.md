@@ -29,18 +29,37 @@ Alias: driver
 
 
 
-
 ## Properties
 
-* Range: [Thing](Thing.md)
+### Type and Range
+
+| Property | Value |
+| --- | --- |
+| Range | [Thing](Thing.md) |
+| Domain Of | [ExpressionPattern](ExpressionPattern.md) |
+
+### Cardinality and Requirements
+
+| Property | Value |
+| --- | --- |
+### Slot Characteristics
+
+| Property | Value |
+| --- | --- |
+| Owner | [ExpressionPattern](ExpressionPattern.md) |
+
+
+
+
+
+
+
 
 
 
 
 
 ## Identifier and Mapping Information
-
-
 
 
 

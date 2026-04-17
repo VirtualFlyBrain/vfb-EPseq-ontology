@@ -22,10 +22,9 @@ Alias: sex
 
 | Name | Description | Modifies Slot |
 | --- | --- | --- |
-| [Cluster](Cluster.md) |  |  no  |
 | [ExpressionPattern](ExpressionPattern.md) |  |  no  |
+| [Cluster](Cluster.md) |  |  no  |
 | [Sample](Sample.md) |  |  no  |
-
 
 
 
@@ -34,15 +33,29 @@ Alias: sex
 
 ## Properties
 
-* Range: [SexOptions](SexOptions.md)
+### Type and Range
+
+| Property | Value |
+| --- | --- |
+| Range | [SexOptions](SexOptions.md) |
+| Domain Of | [Sample](Sample.md), [Cluster](Cluster.md) |
+| Slot URI | [BFO:0000050](http://purl.obolibrary.org/obo/BFO_0000050) |
+
+### Cardinality and Requirements
+
+| Property | Value |
+| --- | --- |
+
+
+
+
+
 
 
 
 
 
 ## Identifier and Mapping Information
-
-
 
 
 

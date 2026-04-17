@@ -22,9 +22,8 @@ Alias: sample_tissue
 
 | Name | Description | Modifies Slot |
 | --- | --- | --- |
-| [ExpressionPattern](ExpressionPattern.md) |  |  no  |
 | [Sample](Sample.md) |  |  no  |
-
+| [ExpressionPattern](ExpressionPattern.md) |  |  no  |
 
 
 
@@ -33,17 +32,37 @@ Alias: sample_tissue
 
 ## Properties
 
-* Range: [Thing](Thing.md)
+### Type and Range
 
-* Multivalued: True
+| Property | Value |
+| --- | --- |
+| Range | [Thing](Thing.md) |
+| Domain Of | [Sample](Sample.md) |
+| Slot URI | [RO:0002131](http://purl.obolibrary.org/obo/RO_0002131) |
+
+### Cardinality and Requirements
+
+| Property | Value |
+| --- | --- |
+| Multivalued | Yes |
+### Slot Characteristics
+
+| Property | Value |
+| --- | --- |
+| Owner | [Sample](Sample.md) |
+
+
+
+
+
+
+
 
 
 
 
 
 ## Identifier and Mapping Information
-
-
 
 
 

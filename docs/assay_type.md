@@ -30,18 +30,38 @@ Alias: assay_type
 
 
 
-
 ## Properties
 
-* Range: [Thing](Thing.md)
+### Type and Range
+
+| Property | Value |
+| --- | --- |
+| Range | [Thing](Thing.md) |
+| Domain Of | [Dataset](Dataset.md) |
+| Slot URI | [OBI:0000312](http://purl.obolibrary.org/obo/OBI_0000312) |
+
+### Cardinality and Requirements
+
+| Property | Value |
+| --- | --- |
+### Slot Characteristics
+
+| Property | Value |
+| --- | --- |
+| Owner | [Dataset](Dataset.md) |
+
+
+
+
+
+
+
 
 
 
 
 
 ## Identifier and Mapping Information
-
-
 
 
 

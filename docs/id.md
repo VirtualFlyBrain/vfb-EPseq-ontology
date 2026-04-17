@@ -23,16 +23,15 @@ Alias: id
 | Name | Description | Modifies Slot |
 | --- | --- | --- |
 | [Cluster](Cluster.md) |  |  no  |
-| [Thing](Thing.md) |  |  no  |
-| [DatasetEP](DatasetEP.md) | Avoids a keyerror from attempting to use Dataset class from VFB_scRNAseq_sche... |  no  |
-| [Class](Class.md) |  |  no  |
-| [ExpressionPattern](ExpressionPattern.md) |  |  no  |
-| [Assay](Assay.md) |  |  no  |
-| [Dataset](Dataset.md) |  |  no  |
-| [Clustering](Clustering.md) |  |  no  |
-| [Publication](Publication.md) |  |  no  |
 | [Sample](Sample.md) |  |  no  |
-
+| [Assay](Assay.md) |  |  no  |
+| [Thing](Thing.md) |  |  no  |
+| [Clustering](Clustering.md) |  |  no  |
+| [DatasetEP](DatasetEP.md) | Avoids a keyerror from attempting to use Dataset class from VFB_scRNAseq_sche... |  no  |
+| [ExpressionPattern](ExpressionPattern.md) |  |  no  |
+| [Publication](Publication.md) |  |  no  |
+| [Class](Class.md) |  |  no  |
+| [Dataset](Dataset.md) |  |  no  |
 
 
 
@@ -41,17 +40,36 @@ Alias: id
 
 ## Properties
 
-* Range: [Uriorcurie](Uriorcurie.md)
+### Type and Range
 
-* Required: True
+| Property | Value |
+| --- | --- |
+| Range | [Uriorcurie](Uriorcurie.md) |
+| Domain Of | [Thing](Thing.md) |
+
+### Cardinality and Requirements
+
+| Property | Value |
+| --- | --- |
+| Required | Yes |
+### Slot Characteristics
+
+| Property | Value |
+| --- | --- |
+| Identifier | Yes |
+
+
+
+
+
+
+
 
 
 
 
 
 ## Identifier and Mapping Information
-
-
 
 
 

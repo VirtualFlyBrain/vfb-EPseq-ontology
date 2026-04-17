@@ -30,18 +30,31 @@ Alias: expression_level
 
 
 
-
 ## Properties
 
-* Range: [Float](Float.md)
+### Type and Range
+
+| Property | Value |
+| --- | --- |
+| Range | [Float](Float.md) |
+| Domain Of | [ExpressionPattern](ExpressionPattern.md), [Cluster](Cluster.md) |
+| Slot URI | [neo_custom:expression_level](http://n2o.neo/custom/expression_level) |
+
+### Cardinality and Requirements
+
+| Property | Value |
+| --- | --- |
+
+
+
+
+
 
 
 
 
 
 ## Identifier and Mapping Information
-
-
 
 
 

@@ -10,13 +10,12 @@ URI: [FBcv:0009002](http://purl.obolibrary.org/obo/FBcv_0009002)
 
 
 
-
 ```mermaid
  classDiagram
     class Clustering
-    click Clustering href "../Clustering"
+    click Clustering href "../Clustering/"
       Class <|-- Clustering
-        click Class href "../Class"
+        click Class href "../Class/"
       
       Clustering : associated_dataset
         
@@ -25,7 +24,7 @@ URI: [FBcv:0009002](http://purl.obolibrary.org/obo/FBcv_0009002)
         
         
         Clustering --> "0..1" Dataset : associated_dataset
-        click Dataset href "../Dataset"
+        click Dataset href "../Dataset/"
     
 
         
@@ -36,7 +35,7 @@ URI: [FBcv:0009002](http://purl.obolibrary.org/obo/FBcv_0009002)
         
         
         Clustering --> "0..1" Class : associated_sample_or_assay_for_clustering
-        click Class href "../Class"
+        click Class href "../Class/"
     
 
         
@@ -58,6 +57,12 @@ URI: [FBcv:0009002](http://purl.obolibrary.org/obo/FBcv_0009002)
     * [Class](Class.md)
         * **Clustering**
 
+
+## Class Properties
+
+| Property | Value |
+| --- | --- |
+| Class URI | [FBcv:0009002](http://purl.obolibrary.org/obo/FBcv_0009002) |
 
 
 ## Slots
@@ -85,9 +90,13 @@ URI: [FBcv:0009002](http://purl.obolibrary.org/obo/FBcv_0009002)
 
 
 
+
+
+
+
+
+
 ## Identifier and Mapping Information
-
-
 
 
 
@@ -114,7 +123,6 @@ URI: [FBcv:0009002](http://purl.obolibrary.org/obo/FBcv_0009002)
 | ---  | ---  |
 | self | FBcv:0009002 |
 | native | http://github.org/vfb/vfb-EPseq-ontology/VFB_EPseq/Clustering |
-
 
 
 

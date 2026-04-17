@@ -10,19 +10,18 @@ URI: [FBcv:0003023](http://purl.obolibrary.org/obo/FBcv_0003023)
 
 
 
-
 ```mermaid
  classDiagram
     class Dataset
-    click Dataset href "../Dataset"
+    click Dataset href "../Dataset/"
       Class <|-- Dataset
-        click Class href "../Class"
+        click Class href "../Class/"
       
 
       Dataset <|-- DatasetEP
-        click DatasetEP href "../DatasetEP"
+        click DatasetEP href "../DatasetEP/"
       
-      
+
       Dataset : accession
         
       Dataset : assay_type
@@ -32,7 +31,7 @@ URI: [FBcv:0003023](http://purl.obolibrary.org/obo/FBcv_0003023)
         
         
         Dataset --> "0..1" Thing : assay_type
-        click Thing href "../Thing"
+        click Thing href "../Thing/"
     
 
         
@@ -47,7 +46,7 @@ URI: [FBcv:0003023](http://purl.obolibrary.org/obo/FBcv_0003023)
         
         
         Dataset --> "0..1" Thing : licence
-        click Thing href "../Thing"
+        click Thing href "../Thing/"
     
 
         
@@ -62,7 +61,7 @@ URI: [FBcv:0003023](http://purl.obolibrary.org/obo/FBcv_0003023)
         
         
         Dataset --> "0..1" Publication : publication
-        click Publication href "../Publication"
+        click Publication href "../Publication/"
     
 
         
@@ -73,7 +72,7 @@ URI: [FBcv:0003023](http://purl.obolibrary.org/obo/FBcv_0003023)
         
         
         Dataset --> "0..1" Thing : site
-        click Thing href "../Thing"
+        click Thing href "../Thing/"
     
 
         
@@ -94,6 +93,12 @@ URI: [FBcv:0003023](http://purl.obolibrary.org/obo/FBcv_0003023)
         * **Dataset**
             * [DatasetEP](DatasetEP.md)
 
+
+## Class Properties
+
+| Property | Value |
+| --- | --- |
+| Class URI | [FBcv:0003023](http://purl.obolibrary.org/obo/FBcv_0003023) |
 
 
 ## Slots
@@ -131,9 +136,13 @@ URI: [FBcv:0003023](http://purl.obolibrary.org/obo/FBcv_0003023)
 
 
 
+
+
+
+
+
+
 ## Identifier and Mapping Information
-
-
 
 
 
@@ -160,7 +169,6 @@ URI: [FBcv:0003023](http://purl.obolibrary.org/obo/FBcv_0003023)
 | ---  | ---  |
 | self | FBcv:0003023 |
 | native | http://github.org/vfb/vfb-EPseq-ontology/VFB_EPseq/Dataset |
-
 
 
 

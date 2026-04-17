@@ -10,13 +10,12 @@ URI: [FBcv:0003025](http://purl.obolibrary.org/obo/FBcv_0003025)
 
 
 
-
 ```mermaid
  classDiagram
     class Assay
-    click Assay href "../Assay"
+    click Assay href "../Assay/"
       Class <|-- Assay
-        click Class href "../Class"
+        click Class href "../Class/"
       
       Assay : associated_dataset
         
@@ -25,7 +24,7 @@ URI: [FBcv:0003025](http://purl.obolibrary.org/obo/FBcv_0003025)
         
         
         Assay --> "0..1" Dataset : associated_dataset
-        click Dataset href "../Dataset"
+        click Dataset href "../Dataset/"
     
 
         
@@ -36,7 +35,7 @@ URI: [FBcv:0003025](http://purl.obolibrary.org/obo/FBcv_0003025)
         
         
         Assay --> "*" Sample : associated_sample_for_assay
-        click Sample href "../Sample"
+        click Sample href "../Sample/"
     
 
         
@@ -49,7 +48,7 @@ URI: [FBcv:0003025](http://purl.obolibrary.org/obo/FBcv_0003025)
         
         
         Assay --> "0..1" Thing : method
-        click Thing href "../Thing"
+        click Thing href "../Thing/"
     
 
         
@@ -71,6 +70,12 @@ URI: [FBcv:0003025](http://purl.obolibrary.org/obo/FBcv_0003025)
     * [Class](Class.md)
         * **Assay**
 
+
+## Class Properties
+
+| Property | Value |
+| --- | --- |
+| Class URI | [FBcv:0003025](http://purl.obolibrary.org/obo/FBcv_0003025) |
 
 
 ## Slots
@@ -101,9 +106,13 @@ URI: [FBcv:0003025](http://purl.obolibrary.org/obo/FBcv_0003025)
 
 
 
+
+
+
+
+
+
 ## Identifier and Mapping Information
-
-
 
 
 
@@ -130,7 +139,6 @@ URI: [FBcv:0003025](http://purl.obolibrary.org/obo/FBcv_0003025)
 | ---  | ---  |
 | self | FBcv:0003025 |
 | native | http://github.org/vfb/vfb-EPseq-ontology/VFB_EPseq/Assay |
-
 
 
 

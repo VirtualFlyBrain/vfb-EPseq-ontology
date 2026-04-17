@@ -29,18 +29,38 @@ Alias: associated_clustering
 
 
 
-
 ## Properties
 
-* Range: [Clustering](Clustering.md)
+### Type and Range
+
+| Property | Value |
+| --- | --- |
+| Range | [Clustering](Clustering.md) |
+| Domain Of | [Cluster](Cluster.md) |
+| Slot URI | [BFO:0000050](http://purl.obolibrary.org/obo/BFO_0000050) |
+
+### Cardinality and Requirements
+
+| Property | Value |
+| --- | --- |
+### Slot Characteristics
+
+| Property | Value |
+| --- | --- |
+| Owner | [Cluster](Cluster.md) |
+
+
+
+
+
+
+
 
 
 
 
 
 ## Identifier and Mapping Information
-
-
 
 
 

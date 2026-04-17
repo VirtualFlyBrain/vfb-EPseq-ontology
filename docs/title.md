@@ -23,14 +23,13 @@ Alias: title
 | Name | Description | Modifies Slot |
 | --- | --- | --- |
 | [Cluster](Cluster.md) |  |  no  |
-| [DatasetEP](DatasetEP.md) | Avoids a keyerror from attempting to use Dataset class from VFB_scRNAseq_sche... |  no  |
-| [Class](Class.md) |  |  no  |
-| [ExpressionPattern](ExpressionPattern.md) |  |  no  |
-| [Assay](Assay.md) |  |  no  |
-| [Dataset](Dataset.md) |  |  no  |
-| [Clustering](Clustering.md) |  |  no  |
 | [Sample](Sample.md) |  |  no  |
-
+| [Assay](Assay.md) |  |  no  |
+| [Clustering](Clustering.md) |  |  no  |
+| [DatasetEP](DatasetEP.md) | Avoids a keyerror from attempting to use Dataset class from VFB_scRNAseq_sche... |  no  |
+| [ExpressionPattern](ExpressionPattern.md) |  |  no  |
+| [Class](Class.md) |  |  no  |
+| [Dataset](Dataset.md) |  |  no  |
 
 
 
@@ -39,17 +38,30 @@ Alias: title
 
 ## Properties
 
-* Range: [String](String.md)
+### Type and Range
 
-* Recommended: True
+| Property | Value |
+| --- | --- |
+| Range | [String](String.md) |
+| Domain Of | [Class](Class.md) |
+| Slot URI | [IAO:0000115](http://purl.obolibrary.org/obo/IAO_0000115) |
+
+### Cardinality and Requirements
+
+| Property | Value |
+| --- | --- |
+| Recommended | Yes |
+
+
+
+
+
 
 
 
 
 
 ## Identifier and Mapping Information
-
-
 
 
 

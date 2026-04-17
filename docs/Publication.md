@@ -30,18 +30,38 @@ Alias: publication
 
 
 
-
 ## Properties
 
-* Range: [Publication](Publication.md)
+### Type and Range
+
+| Property | Value |
+| --- | --- |
+| Range | [Publication](Publication.md) |
+| Domain Of | [Dataset](Dataset.md) |
+| Slot URI | [dc:references](http://purl.org/dc/terms/references) |
+
+### Cardinality and Requirements
+
+| Property | Value |
+| --- | --- |
+### Slot Characteristics
+
+| Property | Value |
+| --- | --- |
+| Owner | [Dataset](Dataset.md) |
+
+
+
+
+
+
+
 
 
 
 
 
 ## Identifier and Mapping Information
-
-
 
 
 

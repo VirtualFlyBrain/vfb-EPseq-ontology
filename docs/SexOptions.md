@@ -2,10 +2,9 @@
 
 
 
-URI: [SexOptions](SexOptions.md)
+URI: [http://github.org/vfb/vfb-EPseq-ontology/VFB_EPseq/sex_options](http://github.org/vfb/vfb-EPseq-ontology/VFB_EPseq/sex_options)
 
 ## Permissible Values
-
 | Value | Meaning | Description |
 | --- | --- | --- |
 | male | FBbt:00007004 |  |
@@ -25,9 +24,11 @@ URI: [SexOptions](SexOptions.md)
 
 
 
+
+
+
+
 ## Identifier and Mapping Information
-
-
 
 
 

@@ -10,27 +10,26 @@ URI: [http://github.org/vfb/vfb-EPseq-ontology/VFB_EPseq/Class](http://github.or
 
 
 
-
 ```mermaid
  classDiagram
     class Class
-    click Class href "../Class"
+    click Class href "../Class/"
       Thing <|-- Class
-        click Thing href "../Thing"
+        click Thing href "../Thing/"
       
 
       Class <|-- Dataset
-        click Dataset href "../Dataset"
+        click Dataset href "../Dataset/"
       Class <|-- Sample
-        click Sample href "../Sample"
+        click Sample href "../Sample/"
       Class <|-- Assay
-        click Assay href "../Assay"
+        click Assay href "../Assay/"
       Class <|-- Clustering
-        click Clustering href "../Clustering"
+        click Clustering href "../Clustering/"
       Class <|-- Cluster
-        click Cluster href "../Cluster"
+        click Cluster href "../Cluster/"
       
-      
+
       Class : id
         
       Class : name
@@ -52,7 +51,6 @@ URI: [http://github.org/vfb/vfb-EPseq-ontology/VFB_EPseq/Class](http://github.or
         * [Assay](Assay.md)
         * [Clustering](Clustering.md)
         * [Cluster](Cluster.md)
-
 
 
 ## Slots
@@ -78,9 +76,13 @@ URI: [http://github.org/vfb/vfb-EPseq-ontology/VFB_EPseq/Class](http://github.or
 
 
 
+
+
+
+
+
+
 ## Identifier and Mapping Information
-
-
 
 
 
@@ -107,7 +109,6 @@ URI: [http://github.org/vfb/vfb-EPseq-ontology/VFB_EPseq/Class](http://github.or
 | ---  | ---  |
 | self | http://github.org/vfb/vfb-EPseq-ontology/VFB_EPseq/Class |
 | native | http://github.org/vfb/vfb-EPseq-ontology/VFB_EPseq/Class |
-
 
 
 

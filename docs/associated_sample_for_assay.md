@@ -29,20 +29,39 @@ Alias: associated_sample_for_assay
 
 
 
-
 ## Properties
 
-* Range: [Sample](Sample.md)
+### Type and Range
 
-* Multivalued: True
+| Property | Value |
+| --- | --- |
+| Range | [Sample](Sample.md) |
+| Domain Of | [Assay](Assay.md) |
+| Slot URI | [RO:0002233](http://purl.obolibrary.org/obo/RO_0002233) |
+
+### Cardinality and Requirements
+
+| Property | Value |
+| --- | --- |
+| Multivalued | Yes |
+### Slot Characteristics
+
+| Property | Value |
+| --- | --- |
+| Owner | [Assay](Assay.md) |
+
+
+
+
+
+
+
 
 
 
 
 
 ## Identifier and Mapping Information
-
-
 
 
 

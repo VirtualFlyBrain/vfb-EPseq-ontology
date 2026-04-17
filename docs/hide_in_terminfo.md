@@ -30,18 +30,31 @@ Alias: hide_in_terminfo
 
 
 
-
 ## Properties
 
-* Range: [String](String.md)
+### Type and Range
+
+| Property | Value |
+| --- | --- |
+| Range | [String](String.md) |
+| Domain Of | [ExpressionPattern](ExpressionPattern.md), [Cluster](Cluster.md) |
+| Slot URI | [neo_custom:hide_in_terminfo](http://n2o.neo/custom/hide_in_terminfo) |
+
+### Cardinality and Requirements
+
+| Property | Value |
+| --- | --- |
+
+
+
+
+
 
 
 
 
 
 ## Identifier and Mapping Information
-
-
 
 
 

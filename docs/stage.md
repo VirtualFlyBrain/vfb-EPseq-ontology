@@ -22,10 +22,9 @@ Alias: stage
 
 | Name | Description | Modifies Slot |
 | --- | --- | --- |
-| [Cluster](Cluster.md) |  |  no  |
 | [ExpressionPattern](ExpressionPattern.md) |  |  no  |
+| [Cluster](Cluster.md) |  |  no  |
 | [Sample](Sample.md) |  |  no  |
-
 
 
 
@@ -34,15 +33,29 @@ Alias: stage
 
 ## Properties
 
-* Range: [Thing](Thing.md)
+### Type and Range
+
+| Property | Value |
+| --- | --- |
+| Range | [Thing](Thing.md) |
+| Domain Of | [Sample](Sample.md), [Cluster](Cluster.md) |
+| Slot URI | [RO:0002490](http://purl.obolibrary.org/obo/RO_0002490) |
+
+### Cardinality and Requirements
+
+| Property | Value |
+| --- | --- |
+
+
+
+
+
 
 
 
 
 
 ## Identifier and Mapping Information
-
-
 
 
 

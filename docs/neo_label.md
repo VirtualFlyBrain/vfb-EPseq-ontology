@@ -23,13 +23,12 @@ Alias: neo_label
 | Name | Description | Modifies Slot |
 | --- | --- | --- |
 | [Cluster](Cluster.md) |  |  no  |
+| [Sample](Sample.md) |  |  no  |
+| [Assay](Assay.md) |  |  no  |
 | [DatasetEP](DatasetEP.md) | Avoids a keyerror from attempting to use Dataset class from VFB_scRNAseq_sche... |  no  |
 | [ExpressionPattern](ExpressionPattern.md) |  |  no  |
-| [Assay](Assay.md) |  |  no  |
-| [Dataset](Dataset.md) |  |  no  |
 | [Publication](Publication.md) |  |  no  |
-| [Sample](Sample.md) |  |  no  |
-
+| [Dataset](Dataset.md) |  |  no  |
 
 
 
@@ -38,15 +37,29 @@ Alias: neo_label
 
 ## Properties
 
-* Range: [String](String.md)
+### Type and Range
+
+| Property | Value |
+| --- | --- |
+| Range | [String](String.md) |
+| Domain Of | [Dataset](Dataset.md), [Sample](Sample.md), [Assay](Assay.md), [Cluster](Cluster.md), [Publication](Publication.md) |
+| Slot URI | [neo_property:nodeLabel](http://n2o.neo/property/nodeLabel) |
+
+### Cardinality and Requirements
+
+| Property | Value |
+| --- | --- |
+
+
+
+
+
 
 
 
 
 
 ## Identifier and Mapping Information
-
-
 
 
 

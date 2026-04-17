@@ -10,15 +10,14 @@ URI: [owl:Class](http://www.w3.org/2002/07/owl#Class)
 
 
 
-
 ```mermaid
  classDiagram
     class Thing
-    click Thing href "../Thing"
+    click Thing href "../Thing/"
       Thing <|-- Class
-        click Class href "../Class"
+        click Class href "../Class/"
       Thing <|-- Publication
-        click Publication href "../Publication"
+        click Publication href "../Publication/"
       
       Thing : id
         
@@ -34,6 +33,12 @@ URI: [owl:Class](http://www.w3.org/2002/07/owl#Class)
     * [Class](Class.md)
     * [Publication](Publication.md)
 
+
+## Class Properties
+
+| Property | Value |
+| --- | --- |
+| Class URI | [owl:Class](http://www.w3.org/2002/07/owl#Class) |
 
 
 ## Slots
@@ -72,9 +77,13 @@ URI: [owl:Class](http://www.w3.org/2002/07/owl#Class)
 
 
 
+
+
+
+
+
+
 ## Identifier and Mapping Information
-
-
 
 
 
@@ -94,7 +103,6 @@ URI: [owl:Class](http://www.w3.org/2002/07/owl#Class)
 | ---  | ---  |
 | self | owl:Class |
 | native | http://github.org/vfb/vfb-EPseq-ontology/VFB_EPseq/Thing |
-
 
 
 

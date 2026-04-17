@@ -30,18 +30,38 @@ Alias: site
 
 
 
-
 ## Properties
 
-* Range: [Thing](Thing.md)
+### Type and Range
+
+| Property | Value |
+| --- | --- |
+| Range | [Thing](Thing.md) |
+| Domain Of | [Dataset](Dataset.md) |
+| Slot URI | [oboInOwl:hasDbXref](http://www.geneontology.org/formats/oboInOwl#hasDbXref) |
+
+### Cardinality and Requirements
+
+| Property | Value |
+| --- | --- |
+### Slot Characteristics
+
+| Property | Value |
+| --- | --- |
+| Owner | [Dataset](Dataset.md) |
+
+
+
+
+
+
+
 
 
 
 
 
 ## Identifier and Mapping Information
-
-
 
 
 

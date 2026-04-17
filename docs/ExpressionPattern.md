@@ -10,13 +10,12 @@ URI: [http://github.org/vfb/vfb-EPseq-ontology/VFB_EPseq/ExpressionPattern](http
 
 
 
-
 ```mermaid
  classDiagram
     class ExpressionPattern
-    click ExpressionPattern href "../ExpressionPattern"
+    click ExpressionPattern href "../ExpressionPattern/"
       Sample <|-- ExpressionPattern
-        click Sample href "../Sample"
+        click Sample href "../Sample/"
       
       ExpressionPattern : associated_assay
         
@@ -25,7 +24,7 @@ URI: [http://github.org/vfb/vfb-EPseq-ontology/VFB_EPseq/ExpressionPattern](http
         
         
         ExpressionPattern --> "*" Assay : associated_assay
-        click Assay href "../Assay"
+        click Assay href "../Assay/"
     
 
         
@@ -36,7 +35,7 @@ URI: [http://github.org/vfb/vfb-EPseq-ontology/VFB_EPseq/ExpressionPattern](http
         
         
         ExpressionPattern --> "0..1" Dataset : associated_dataset
-        click Dataset href "../Dataset"
+        click Dataset href "../Dataset/"
     
 
         
@@ -47,7 +46,7 @@ URI: [http://github.org/vfb/vfb-EPseq-ontology/VFB_EPseq/ExpressionPattern](http
         
         
         ExpressionPattern --> "0..1" Thing : driver
-        click Thing href "../Thing"
+        click Thing href "../Thing/"
     
 
         
@@ -62,7 +61,7 @@ URI: [http://github.org/vfb/vfb-EPseq-ontology/VFB_EPseq/ExpressionPattern](http
         
         
         ExpressionPattern --> "0..1" Thing : gene
-        click Thing href "../Thing"
+        click Thing href "../Thing/"
     
 
         
@@ -83,7 +82,7 @@ URI: [http://github.org/vfb/vfb-EPseq-ontology/VFB_EPseq/ExpressionPattern](http
         
         
         ExpressionPattern --> "*" Thing : sample_tissue
-        click Thing href "../Thing"
+        click Thing href "../Thing/"
     
 
         
@@ -94,7 +93,7 @@ URI: [http://github.org/vfb/vfb-EPseq-ontology/VFB_EPseq/ExpressionPattern](http
         
         
         ExpressionPattern --> "0..1" SexOptions : sex
-        click SexOptions href "../SexOptions"
+        click SexOptions href "../SexOptions/"
     
 
         
@@ -105,7 +104,7 @@ URI: [http://github.org/vfb/vfb-EPseq-ontology/VFB_EPseq/ExpressionPattern](http
         
         
         ExpressionPattern --> "0..1" Thing : stage
-        click Thing href "../Thing"
+        click Thing href "../Thing/"
     
 
         
@@ -123,7 +122,6 @@ URI: [http://github.org/vfb/vfb-EPseq-ontology/VFB_EPseq/ExpressionPattern](http
     * [Class](Class.md)
         * [Sample](Sample.md)
             * **ExpressionPattern**
-
 
 
 ## Slots
@@ -154,9 +152,13 @@ URI: [http://github.org/vfb/vfb-EPseq-ontology/VFB_EPseq/ExpressionPattern](http
 
 
 
+
+
+
+
+
+
 ## Identifier and Mapping Information
-
-
 
 
 
@@ -176,7 +178,6 @@ URI: [http://github.org/vfb/vfb-EPseq-ontology/VFB_EPseq/ExpressionPattern](http
 | ---  | ---  |
 | self | http://github.org/vfb/vfb-EPseq-ontology/VFB_EPseq/ExpressionPattern |
 | native | http://github.org/vfb/vfb-EPseq-ontology/VFB_EPseq/ExpressionPattern |
-
 
 
 

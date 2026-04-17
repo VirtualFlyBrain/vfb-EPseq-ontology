@@ -31,18 +31,31 @@ Alias: total_gene_count
 
 
 
-
 ## Properties
 
-* Range: [Integer](Integer.md)
+### Type and Range
+
+| Property | Value |
+| --- | --- |
+| Range | [Integer](Integer.md) |
+| Domain Of | [Dataset](Dataset.md), [Cluster](Cluster.md) |
+| Slot URI | [neo_custom:total_gene_count](http://n2o.neo/custom/total_gene_count) |
+
+### Cardinality and Requirements
+
+| Property | Value |
+| --- | --- |
+
+
+
+
+
 
 
 
 
 
 ## Identifier and Mapping Information
-
-
 
 
 

@@ -29,20 +29,39 @@ Alias: cell_type
 
 
 
-
 ## Properties
 
-* Range: [Thing](Thing.md)
+### Type and Range
 
-* Multivalued: True
+| Property | Value |
+| --- | --- |
+| Range | [Thing](Thing.md) |
+| Domain Of | [Cluster](Cluster.md) |
+| Slot URI | [RO:0002473](http://purl.obolibrary.org/obo/RO_0002473) |
+
+### Cardinality and Requirements
+
+| Property | Value |
+| --- | --- |
+| Multivalued | Yes |
+### Slot Characteristics
+
+| Property | Value |
+| --- | --- |
+| Owner | [Cluster](Cluster.md) |
+
+
+
+
+
+
+
 
 
 
 
 
 ## Identifier and Mapping Information
-
-
 
 
 

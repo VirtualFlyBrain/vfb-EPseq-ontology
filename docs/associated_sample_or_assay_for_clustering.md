@@ -29,18 +29,38 @@ Alias: associated_sample_or_assay_for_clustering
 
 
 
-
 ## Properties
 
-* Range: [Class](Class.md)
+### Type and Range
+
+| Property | Value |
+| --- | --- |
+| Range | [Class](Class.md) |
+| Domain Of | [Clustering](Clustering.md) |
+| Slot URI | [BFO:0000051](http://purl.obolibrary.org/obo/BFO_0000051) |
+
+### Cardinality and Requirements
+
+| Property | Value |
+| --- | --- |
+### Slot Characteristics
+
+| Property | Value |
+| --- | --- |
+| Owner | [Clustering](Clustering.md) |
+
+
+
+
+
+
+
 
 
 
 
 
 ## Identifier and Mapping Information
-
-
 
 
 

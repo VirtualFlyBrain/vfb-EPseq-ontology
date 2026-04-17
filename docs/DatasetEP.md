@@ -15,13 +15,12 @@ URI: [http://github.org/vfb/vfb-EPseq-ontology/VFB_EPseq/DatasetEP](http://githu
 
 
 
-
 ```mermaid
  classDiagram
     class DatasetEP
-    click DatasetEP href "../DatasetEP"
+    click DatasetEP href "../DatasetEP/"
       Dataset <|-- DatasetEP
-        click Dataset href "../Dataset"
+        click Dataset href "../Dataset/"
       
       DatasetEP : accession
         
@@ -32,7 +31,7 @@ URI: [http://github.org/vfb/vfb-EPseq-ontology/VFB_EPseq/DatasetEP](http://githu
         
         
         DatasetEP --> "0..1" Thing : assay_type
-        click Thing href "../Thing"
+        click Thing href "../Thing/"
     
 
         
@@ -47,7 +46,7 @@ URI: [http://github.org/vfb/vfb-EPseq-ontology/VFB_EPseq/DatasetEP](http://githu
         
         
         DatasetEP --> "0..1" Thing : licence
-        click Thing href "../Thing"
+        click Thing href "../Thing/"
     
 
         
@@ -62,7 +61,7 @@ URI: [http://github.org/vfb/vfb-EPseq-ontology/VFB_EPseq/DatasetEP](http://githu
         
         
         DatasetEP --> "0..1" Publication : publication
-        click Publication href "../Publication"
+        click Publication href "../Publication/"
     
 
         
@@ -73,7 +72,7 @@ URI: [http://github.org/vfb/vfb-EPseq-ontology/VFB_EPseq/DatasetEP](http://githu
         
         
         DatasetEP --> "0..1" Thing : site
-        click Thing href "../Thing"
+        click Thing href "../Thing/"
     
 
         
@@ -93,7 +92,6 @@ URI: [http://github.org/vfb/vfb-EPseq-ontology/VFB_EPseq/DatasetEP](http://githu
     * [Class](Class.md)
         * [Dataset](Dataset.md)
             * **DatasetEP**
-
 
 
 ## Slots
@@ -120,9 +118,13 @@ URI: [http://github.org/vfb/vfb-EPseq-ontology/VFB_EPseq/DatasetEP](http://githu
 
 
 
+
+
+
+
+
+
 ## Identifier and Mapping Information
-
-
 
 
 
@@ -142,7 +144,6 @@ URI: [http://github.org/vfb/vfb-EPseq-ontology/VFB_EPseq/DatasetEP](http://githu
 | ---  | ---  |
 | self | http://github.org/vfb/vfb-EPseq-ontology/VFB_EPseq/DatasetEP |
 | native | http://github.org/vfb/vfb-EPseq-ontology/VFB_EPseq/DatasetEP |
-
 
 
 

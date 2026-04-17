@@ -10,13 +10,12 @@ URI: [FBcv:0009003](http://purl.obolibrary.org/obo/FBcv_0009003)
 
 
 
-
 ```mermaid
  classDiagram
     class Cluster
-    click Cluster href "../Cluster"
+    click Cluster href "../Cluster/"
       Class <|-- Cluster
-        click Class href "../Class"
+        click Class href "../Class/"
       
       Cluster : associated_clustering
         
@@ -25,7 +24,7 @@ URI: [FBcv:0009003](http://purl.obolibrary.org/obo/FBcv_0009003)
         
         
         Cluster --> "0..1" Clustering : associated_clustering
-        click Clustering href "../Clustering"
+        click Clustering href "../Clustering/"
     
 
         
@@ -36,7 +35,7 @@ URI: [FBcv:0009003](http://purl.obolibrary.org/obo/FBcv_0009003)
         
         
         Cluster --> "0..1" Dataset : associated_dataset
-        click Dataset href "../Dataset"
+        click Dataset href "../Dataset/"
     
 
         
@@ -49,7 +48,7 @@ URI: [FBcv:0009003](http://purl.obolibrary.org/obo/FBcv_0009003)
         
         
         Cluster --> "*" Thing : cell_type
-        click Thing href "../Thing"
+        click Thing href "../Thing/"
     
 
         
@@ -66,7 +65,7 @@ URI: [FBcv:0009003](http://purl.obolibrary.org/obo/FBcv_0009003)
         
         
         Cluster --> "0..1" Thing : gene
-        click Thing href "../Thing"
+        click Thing href "../Thing/"
     
 
         
@@ -85,7 +84,7 @@ URI: [FBcv:0009003](http://purl.obolibrary.org/obo/FBcv_0009003)
         
         
         Cluster --> "0..1" SexOptions : sex
-        click SexOptions href "../SexOptions"
+        click SexOptions href "../SexOptions/"
     
 
         
@@ -96,7 +95,7 @@ URI: [FBcv:0009003](http://purl.obolibrary.org/obo/FBcv_0009003)
         
         
         Cluster --> "0..1" Thing : stage
-        click Thing href "../Thing"
+        click Thing href "../Thing/"
     
 
         
@@ -116,6 +115,12 @@ URI: [FBcv:0009003](http://purl.obolibrary.org/obo/FBcv_0009003)
     * [Class](Class.md)
         * **Cluster**
 
+
+## Class Properties
+
+| Property | Value |
+| --- | --- |
+| Class URI | [FBcv:0009003](http://purl.obolibrary.org/obo/FBcv_0009003) |
 
 
 ## Slots
@@ -147,9 +152,13 @@ URI: [FBcv:0009003](http://purl.obolibrary.org/obo/FBcv_0009003)
 
 
 
+
+
+
+
+
+
 ## Identifier and Mapping Information
-
-
 
 
 
@@ -176,7 +185,6 @@ URI: [FBcv:0009003](http://purl.obolibrary.org/obo/FBcv_0009003)
 | ---  | ---  |
 | self | FBcv:0009003 |
 | native | http://github.org/vfb/vfb-EPseq-ontology/VFB_EPseq/Cluster |
-
 
 
 

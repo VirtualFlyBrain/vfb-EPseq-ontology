@@ -29,18 +29,31 @@ Alias: expression_extent
 
 
 
-
 ## Properties
 
-* Range: [Float](Float.md)
+### Type and Range
+
+| Property | Value |
+| --- | --- |
+| Range | [Float](Float.md) |
+| Domain Of | [Cluster](Cluster.md) |
+| Slot URI | [neo_custom:expression_extent](http://n2o.neo/custom/expression_extent) |
+
+### Cardinality and Requirements
+
+| Property | Value |
+| --- | --- |
+
+
+
+
+
 
 
 
 
 
 ## Identifier and Mapping Information
-
-
 
 
 
