@@ -1558,6 +1558,7 @@ Each of these 3 primitives can be composed to yield a cross-product of different
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/FBbt_00100313">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FBbt_00007001"/>
         <obo:IAO_0000115>Anatomical structure that has multiple cells as parts.</obo:IAO_0000115>
+        <obo:IAO_0000233 rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://github.com/FlyBase/drosophila-anatomy-developmental-ontology/issues/24</obo:IAO_0000233>
         <terms:contributor rdf:resource="https://orcid.org/0000-0002-7073-9172"/>
         <terms:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2010-11-02T02:25:04Z</terms:date>
         <oboInOwl:hasDbXref>UBERON:0010000</oboInOwl:hasDbXref>

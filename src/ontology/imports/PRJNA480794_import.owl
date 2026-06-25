@@ -7,9 +7,9 @@ Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
 
 
 Ontology(<http://purl.obolibrary.org/obo/VFB_EPseq/imports/PRJNA480794_import.owl>
-<http://purl.obolibrary.org/obo/VFB_EPseq/releases/2026-04-17/imports/PRJNA480794_import.owl>
+<http://purl.obolibrary.org/obo/VFB_EPseq/releases/2026-06-25/imports/PRJNA480794_import.owl>
 Annotation(<http://purl.org/dc/elements/1.1/source> <http://purl.obolibrary.org/obo/fbcv/releases/2026-04-03/fbcv-base.owl>)
-Annotation(owl:versionInfo "2026-04-17")
+Annotation(owl:versionInfo "2026-06-25")
 
 Declaration(Class(<http://purl.obolibrary.org/obo/BFO_0000002>))
 Declaration(Class(<http://purl.obolibrary.org/obo/BFO_0000003>))
@@ -385,7 +385,7 @@ SubAnnotationPropertyOf(<http://purl.obolibrary.org/obo/fbcv#do_not_annotate> <h
 
 SubAnnotationPropertyOf(<http://purl.obolibrary.org/obo/ro/subsets#ro-eco> <http://www.geneontology.org/formats/oboInOwl#SubsetProperty>)
 
-# Annotation Property: <http://www.geneontology.org/formats/oboInOwl#hasDbXref> (has cross-reference)
+# Annotation Property: <http://www.geneontology.org/formats/oboInOwl#hasDbXref> (database_cross_reference)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000112> <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "disease characteristic (MONDO:0021125) has cross-reference (http://www.geneontology.org/formats/oboInOwl#hasDbXref) \"NCIT:C41009\"^^xsd:string")
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "An annotation property that links an ontology entity or a statement to a prefixed identifier or URI.")
@@ -1054,6 +1054,7 @@ SubClassOf(<http://purl.obolibrary.org/obo/FBbt_00057001> <http://purl.obolibrar
 # Class: <http://purl.obolibrary.org/obo/FBbt_00100313> (multicellular structure)
 
 AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> "https://orcid.org/0000-0002-7073-9172") Annotation(rdf:type owl:Axiom) <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/FBbt_00100313> "Anatomical structure that has multiple cells as parts.")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000233> <http://purl.obolibrary.org/obo/FBbt_00100313> "https://github.com/FlyBase/drosophila-anatomy-developmental-ontology/issues/24"^^xsd:anyURI)
 AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/FBbt_00100313> <https://orcid.org/0000-0002-7073-9172>)
 AnnotationAssertion(<http://purl.org/dc/terms/date> <http://purl.obolibrary.org/obo/FBbt_00100313> "2010-11-02T02:25:04Z"^^xsd:dateTime)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://purl.obolibrary.org/obo/FBbt_00100313> "UBERON:0010000")

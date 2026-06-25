@@ -22,8 +22,8 @@ Alias: stage
 
 | Name | Description | Modifies Slot |
 | --- | --- | --- |
-| [ExpressionPattern](ExpressionPattern.md) |  |  no  |
 | [Cluster](Cluster.md) |  |  no  |
+| [ExpressionPattern](ExpressionPattern.md) |  |  no  |
 | [Sample](Sample.md) |  |  no  |
 
 

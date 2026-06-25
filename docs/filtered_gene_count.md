@@ -22,9 +22,9 @@ Alias: filtered_gene_count
 
 | Name | Description | Modifies Slot |
 | --- | --- | --- |
-| [DatasetEP](DatasetEP.md) | Avoids a keyerror from attempting to use Dataset class from VFB_scRNAseq_sche... |  no  |
-| [Cluster](Cluster.md) |  |  no  |
 | [Dataset](Dataset.md) |  |  no  |
+| [Cluster](Cluster.md) |  |  no  |
+| [DatasetEP](DatasetEP.md) | Avoids a keyerror from attempting to use Dataset class from VFB_scRNAseq_sche... |  no  |
 
 
 
