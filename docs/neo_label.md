@@ -25,10 +25,10 @@ Alias: neo_label
 | [DatasetEP](DatasetEP.md) | Avoids a keyerror from attempting to use Dataset class from VFB_scRNAseq_sche... |  no  |
 | [Sample](Sample.md) |  |  no  |
 | [Publication](Publication.md) |  |  no  |
-| [Dataset](Dataset.md) |  |  no  |
-| [Cluster](Cluster.md) |  |  no  |
-| [ExpressionPattern](ExpressionPattern.md) |  |  no  |
 | [Assay](Assay.md) |  |  no  |
+| [ExpressionPattern](ExpressionPattern.md) |  |  no  |
+| [Cluster](Cluster.md) |  |  no  |
+| [Dataset](Dataset.md) |  |  no  |
 
 
 
