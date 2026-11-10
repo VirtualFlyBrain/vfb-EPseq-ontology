@@ -1,0 +1,32 @@
+# Davis et al. 2020, TAPIN-seq of driver-sorted adult optic lobe neurons.
+project: davis_2020
+source:
+  geo_series: GSE116969
+  bioproject: PRJNA480794
+  expression_atlas: E-GEOD-116969
+  publication: FlyBase:FBrf0244935
+  first_author: Davis
+  year: 2020
+dataset:
+  label_prefix: TAPIN-seq data from          # -> "TAPIN-seq data from Davis (2020)"
+  title: A study using TAPIN RNA sequencing to build high resolution transcriptomes from selected adult optic lobe neurons.
+  licence: CC-BY-4.0
+  # output file names (VFB_EPseq_<name>.owl, VFB_EPseq_exp_<name>_<n>.owl.gz): VFB's
+  # collectdata and dumps-prep load VFB_EPseq_PR* / VFB_EPseq_exp_*
+  output_name: PRJNA480794
+samples:
+  # every loaded sample: whole heads (GEO "tissue: head"), adult
+  tissue: FBbt:00000004
+  stage: FBdv:00005369
+  drivers: drivers.tsv
+  # GEO "driver type" values not loaded, with the reason
+  exclude_driver_types:
+    control: TAPIN controls (no driver; external driver id NA)
+    dissected: >-
+      lamina / optic lobe dissections (SS00796, SS55439); left out of the 2024 curation,
+      reason not recorded
+expression:
+  # GEO supplementary table, identical to the 2024 curation's input (PRJNA480794_tpm.tsv)
+  tpm_file: GSE116969_dataTable2.genes_x_samples_TPM.all_genes.txt.gz
+  value: TPM          # expression_level; genes with TPM 0 are left out
+  samples_per_file: 100
