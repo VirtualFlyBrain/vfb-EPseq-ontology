@@ -1,0 +1,31 @@
+name: CI
+
+on:
+  pull_request:
+  push:
+    branches: [main]
+
+permissions:
+  contents: read
+
+jobs:
+  checks:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: astral-sh/setup-uv@v6
+        with:
+          python-version: "3.14"
+
+      - name: Install locked environment
+        run: uv sync --locked --extra dev
+
+      - name: Tests
+        run: uv run pytest
+
+      - name: Ids match vfb-scRNAseq's registry (main)
+        run: uv run python scripts/check_ids.py
+
+      - name: id_keys.tsv up to date with GEO and the config; every key has an id
+        run: uv run python scripts/write_keys.py --project davis_2020 --check

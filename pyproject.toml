@@ -1,0 +1,30 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "vfb-epseq"
+version = "0.0.0"
+description = "RDF/OWL metadata and expression for Drosophila expression-pattern (driver-sorted) RNA-seq datasets, for Virtual Fly Brain."
+readme = "README.md"
+requires-python = ">=3.12"
+license = { text = "MIT" }
+authors = [{ name = "Virtual Fly Brain" }]
+dependencies = [
+  # schema, OWL emission, gene-id mapping and GEO ingest are shared with vfb-scRNAseq
+  "vfb-scrnaseq",
+  "PyYAML>=6",
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=8"]
+
+[tool.uv.sources]
+vfb-scrnaseq = { git = "https://github.com/VirtualFlyBrain/vfb-scRNAseq", rev = "a20b136d356354990a79613a038571c2f026121d" }
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/vfb_epseq"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["src"]

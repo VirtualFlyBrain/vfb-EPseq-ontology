@@ -1,0 +1,29 @@
+gsm	title	reason
+GSM3265452	L1L2_aFLAG_beads_rep1	TAPIN controls (no driver; external driver id NA)
+GSM3265453	L1L2_aFLAG_beads_rep2	TAPIN controls (no driver; external driver id NA)
+GSM3265454	no_driver_aGFP_beads_rep1	TAPIN controls (no driver; external driver id NA)
+GSM3265455	no_driver_aGFP_beads_rep2	TAPIN controls (no driver; external driver id NA)
+GSM3265456	Tm1_d1_input_rep1	TAPIN controls (no driver; external driver id NA)
+GSM3265457	Tm1_d1_input_rep2	TAPIN controls (no driver; external driver id NA)
+GSM3265458	Tm1_d1_capture1_rep1	TAPIN controls (no driver; external driver id NA)
+GSM3265459	Tm1_d1_capture1_rep2	TAPIN controls (no driver; external driver id NA)
+GSM3265460	Tm1_d1_mock1_rep1	TAPIN controls (no driver; external driver id NA)
+GSM3265461	Tm1_d1_mock1_rep2	TAPIN controls (no driver; external driver id NA)
+GSM3265462	Tm1_d1_mock2_rep1	TAPIN controls (no driver; external driver id NA)
+GSM3265463	Tm1_d1_mock2_rep2	TAPIN controls (no driver; external driver id NA)
+GSM3265464	no_driver_aGFP_beads_rep3	TAPIN controls (no driver; external driver id NA)
+GSM3265465	no_driver_aGFP_beads_rep4	TAPIN controls (no driver; external driver id NA)
+GSM3265466	mock2_rep1	TAPIN controls (no driver; external driver id NA)
+GSM3265467	mock2_rep2	TAPIN controls (no driver; external driver id NA)
+GSM3265510	R1-6_d1_rep1	FBtp0092375 has no VFBexp class in VFB (checked 2026-11-10): samples not loaded
+GSM3265511	R1-6_d1_rep2	FBtp0092375 has no VFBexp class in VFB (checked 2026-11-10): samples not loaded
+GSM3265534	R1-6_d1_rep3	FBtp0092375 has no VFBexp class in VFB (checked 2026-11-10): samples not loaded
+GSM3265535	R1-6_d1_rep4	FBtp0092375 has no VFBexp class in VFB (checked 2026-11-10): samples not loaded
+GSM3265536	opticlobe_d1_rep1	bulk RNA from dissected lamina / optic lobe (GEO protocol bulk, no reporter): not captured by the driver (SS00796, SS55439), so not instances of its expression pattern
+GSM3265537	lamina_d1_rep1	bulk RNA from dissected lamina / optic lobe (GEO protocol bulk, no reporter): not captured by the driver (SS00796, SS55439), so not instances of its expression pattern
+GSM3265538	opticlobe_d2_rep1	bulk RNA from dissected lamina / optic lobe (GEO protocol bulk, no reporter): not captured by the driver (SS00796, SS55439), so not instances of its expression pattern
+GSM3265539	lamina_d2_rep1	bulk RNA from dissected lamina / optic lobe (GEO protocol bulk, no reporter): not captured by the driver (SS00796, SS55439), so not instances of its expression pattern
+GSM3265540	opticlobe_d1_rep2	bulk RNA from dissected lamina / optic lobe (GEO protocol bulk, no reporter): not captured by the driver (SS00796, SS55439), so not instances of its expression pattern
+GSM3265541	lamina_d1_rep2	bulk RNA from dissected lamina / optic lobe (GEO protocol bulk, no reporter): not captured by the driver (SS00796, SS55439), so not instances of its expression pattern
+GSM3265542	opticlobe_d2_rep2	bulk RNA from dissected lamina / optic lobe (GEO protocol bulk, no reporter): not captured by the driver (SS00796, SS55439), so not instances of its expression pattern
+GSM3265543	lamina_d2_rep2	bulk RNA from dissected lamina / optic lobe (GEO protocol bulk, no reporter): not captured by the driver (SS00796, SS55439), so not instances of its expression pattern
