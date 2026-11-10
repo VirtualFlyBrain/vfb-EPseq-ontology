@@ -78,7 +78,7 @@ def test_expression(cfg, tmp_path):
     with gzip.open(tpm, "wt") as fh:
         fh.write("gene_id\tgene_name\ta_rep1\tb_rep1\tctl\n"
                  "FBgn1\tg1\t1.5\t0\t9\n"          # 0 left out
-                 "FBgn2\told2\t2\t3\t9\n"          # merged with FBgn3 (different values: summed)
+                 "FBgn2\told2\t2\t3\t9\n"          # merged with FBgn3, different values: dropped
                  "FBgn3\told3\t0.25\t1\t9\n"
                  "FBgn4\tdup\t4\t5\t9\n"           # FBgn4 and FBgn5 identical: counted once
                  "FBgn5\tdup2\t4\t5\t9\n"
@@ -90,6 +90,5 @@ def test_expression(cfg, tmp_path):
     chunks = list(build.expression(cfg, tpm, SAMPLES, build.IdLookup(cfg, IDS), genes))
     assert len(chunks) == 2                                   # samples_per_file 1
     got = {(r[0], r[2]): r[4] for c in chunks for r in c}
-    assert got == {("VFBseq_00000002", "FBgn1"): "1.5", ("VFBseq_00000002", "FBgn9"): "2.25",
-                   ("VFBseq_00000002", "FBgn8"): "4",
-                   ("VFBseq_00000003", "FBgn9"): "4", ("VFBseq_00000003", "FBgn8"): "5"}
+    assert got == {("VFBseq_00000002", "FBgn1"): "1.5", ("VFBseq_00000002", "FBgn8"): "4",
+                   ("VFBseq_00000003", "FBgn8"): "5"}

@@ -840,7 +840,7 @@
         <dc:references rdf:resource="http://flybase.org/reports/FBrf0244935"/>
         <oboInOwl:hasDbXref rdf:resource="http://virtualflybrain.org/reports/ExpressionAtlas"/>
         <oboInOwl:hasDbXref rdf:resource="http://virtualflybrain.org/reports/GEO"/>
-        <rdfs:label>TAPIN-seq data from Davis (2020)</rdfs:label>
+        <rdfs:label>TAPIN-seq and INTACT data from Davis (2020)</rdfs:label>
     </NamedIndividual>
     <Axiom>
         <annotatedSource rdf:resource="http://virtualflybrain.org/reports/VFBseq_00003283"/>

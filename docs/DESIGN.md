@@ -33,7 +33,9 @@ Before the migration, samples and the dataset had NCBI BioSample / BioProject IR
   (the authors' TPM) and `hide_in_terminfo` true. No extent (bulk RNA-seq).
 
 Not yet modelled (todo): Assays (the SRA runs), `genotype_includes` (the FBco / FBtp
-of each driver and the UAS reporter), an assay type for TAPIN-seq.
+of each driver and the UAS reporter), an assay type for TAPIN-seq / INTACT, and the 8
+dissected lamina / optic lobe samples as tissue samples (FBbt tissue, no expression
+pattern class).
 
 ## Davis 2020 (`davis_2020`)
 
@@ -48,23 +50,29 @@ curation).
   the Glia_Eg samples where BioSample gives `SS55439`; both are listed. A driver id not
   in the table stops the build.
 - **Left out** (`projects/davis_2020/samples_left_out.tsv`): 16 TAPIN controls; 8 lamina /
-  optic lobe dissections (SS00796, SS55439; left out in 2024, reason not recorded); 4
+  optic lobe dissections (SS00796, SS55439: bulk RNA from dissected tissue, GEO protocol
+`bulk` with no reporter, so not captured by the driver and not instances of its
+expression pattern; left out in 2024 too); 4
   R1-6 samples (ninaE driver FBtp0092375 has no VFBexp class; checked 2026-11-10).
 - **Gene ids** (`gene_id_map.tsv`, FB2026_03): retired ids replaced by their current
   gene; 3 split ids (CG30456, Osi10, Iyd) and 1 withdrawn id (FBgn0003926) dropped; ERCC
-  spike-ins skipped. Where several input ids now belong to one gene, TPM is summed,
-  except that rows identical in all 266 samples (CG30497 / CG45093, CG11566 / stg1:
-  overlapping models given the same reads) are counted once.
+  spike-ins skipped. Where several input ids now belong to one gene (FlyBase merges):
+  rows identical in all 266 samples (CG30497 / CG45093, CG11566 / stg1: overlapping
+  models given the same reads) count once; genes whose input rows differ (xmas from
+  xmas-1 / xmas-2, Or67c from CR44541 / Or67c, lncRNA:CR46499 from CG12688 / CR45484)
+  are dropped, since the overlap between the old models, and so the TPM of the merged
+  gene, is unknown.
 
 ### Differences from the 2025 release (checked 2026-11-10)
 
 Same 238 driver-typed samples with the same drivers, tissue, stage and dataset links.
 
 - New `VFBseq_` IRIs (VFBseq_00003283-00003521); BioSample and GEO xrefs added on
-  samples; new labels (`TAPIN-seq data from Davis (2020)`, `Mi1_d1_rep1 (Davis 2020)`;
-  previously `RNAseq_2020_Davis`, `RNAseq_2020_DavisMi1_d1_rep1`).
+  samples; new labels `TAPIN-seq and INTACT data from Davis (2020)` (50 samples are
+  INTACT) and `Mi1_d1_rep1 (Davis 2020)`, previously `RNAseq_2020_Davis` and
+  `RNAseq_2020_DavisMi1_d1_rep1`.
 - The 4 R1-6 samples (no driver class, no expression) are no longer loaded.
-- Expression: 2,718,583 axioms (was 2,718,789). Iyd (FBgn0286980, 206 axioms) dropped
-  as a split (the 2024 curation mapped it by name); 5 genes renamed by FlyBase since
-  2025-10 moved to their new ids; 3 merged genes (xmas, Or67c, CR45484) now have the
-  sum of their input ids' TPM; all other values identical.
+- Expression: 2,717,993 axioms (was 2,718,789). Iyd (FBgn0286980, 206 axioms) dropped
+  as a split (the 2024 curation mapped it by name); 3 merged genes with differing input
+  rows dropped (xmas, Or67c, lncRNA:CR46499; 590 axioms); 5 genes renamed by FlyBase
+  since 2025-10 moved to their new ids; all other values identical.

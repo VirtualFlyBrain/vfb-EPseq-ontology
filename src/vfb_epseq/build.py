@@ -109,17 +109,14 @@ def tpm_features(path: Path) -> list[tuple[str, str]]:
         return [(r[0], r[1]) for r in rows if r[0].startswith("FBgn")]
 
 
-def _fmt(x: float) -> str:
-    return f"{round(x, 2):g}" if abs(x) < 1e6 else f"{round(x, 2)}"
-
-
 def expression(cfg: dict, tpm: Path, samples: list[Sample], ids: IdLookup,
                genes: dict[str, tuple[str, str]]) -> Iterator[list[tuple]]:
     """Per-file chunks of expression rows (sample id, label, FBgn, symbol, TPM, None).
 
-    TPM 0 is left out; input ids that map to the same current gene (merged genes) have
-    their TPM summed, except that an input row identical to another of the same gene in
-    every sample is counted once; unmapped ids (split / withdrawn) are dropped."""
+    TPM 0 is left out; unmapped ids (split / withdrawn) are dropped. Where several input
+    ids map to one current gene (merged genes), rows identical in every sample (overlapping
+    models given the same reads) count once; a gene whose input rows differ is dropped,
+    since the overlap between the old models is unknown and their TPM can't be combined."""
     with gzip.open(tpm, "rt") as fh:
         rows = csv.reader(fh, delimiter="\t")
         header = next(rows)
@@ -127,32 +124,19 @@ def expression(cfg: dict, tpm: Path, samples: list[Sample], ids: IdLookup,
         missing = [s.title for s in samples if s.title not in col]
         if missing:
             raise ValueError(f"samples not in {tpm.name}: {missing}")
-        values: dict[str, dict[str, float]] = {s.title: defaultdict(float) for s in samples}
-        raw: dict[str, dict[str, str]] = {s.title: {} for s in samples}
-        sources: dict[str, int] = defaultdict(int)
-        seen: dict[str, set[tuple]] = defaultdict(set)
+        distinct: dict[str, dict[tuple, list[str]]] = defaultdict(dict)
         for r in rows:
-            if r[0] not in genes:
-                continue
-            cur = genes[r[0]][0]
-            if tuple(r[2:]) in seen[cur]:
-                # the same values as another input id of this gene, in every sample:
-                # overlapping gene models given the same reads, so counted once
-                continue
-            seen[cur].add(tuple(r[2:]))
-            sources[cur] += 1
-            for s in samples:
-                v = r[col[s.title]]
-                if v and float(v) > 0:
-                    values[s.title][cur] += float(v)
-                    raw[s.title][cur] = v
+            if r[0] in genes:
+                distinct[genes[r[0]][0]].setdefault(tuple(r[2:]), r)
+    kept = {cur: next(iter(rs.values())) for cur, rs in distinct.items() if len(rs) == 1}
     symbols = {cur: sym for cur, sym in genes.values()}
     n = cfg["expression"]["samples_per_file"]
     for i in range(0, len(samples), n):
         chunk = []
         for s in samples[i:i + n]:
-            sid = ids.sample(s)
-            for cur in sorted(values[s.title]):
-                v = raw[s.title][cur] if sources[cur] == 1 else _fmt(values[s.title][cur])
-                chunk.append((sid, s.title, cur, symbols[cur], v, None))
+            sid, c = ids.sample(s), col[s.title]
+            for cur in sorted(kept):
+                v = kept[cur][c]
+                if v and float(v) > 0:
+                    chunk.append((sid, s.title, cur, symbols[cur], v, None))
         yield chunk

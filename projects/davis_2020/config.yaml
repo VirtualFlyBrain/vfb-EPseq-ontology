@@ -8,7 +8,7 @@ source:
   first_author: Davis
   year: 2020
 dataset:
-  label_prefix: TAPIN-seq data from          # -> "TAPIN-seq data from Davis (2020)"
+  label_prefix: TAPIN-seq and INTACT data from   # -> "TAPIN-seq and INTACT data from Davis (2020)"
   title: A study using TAPIN RNA sequencing to build high resolution transcriptomes from selected adult optic lobe neurons.
   licence: CC-BY-4.0
   # output file names (VFB_EPseq_<name>.owl, VFB_EPseq_exp_<name>_<n>.owl.gz): VFB's
@@ -23,8 +23,8 @@ samples:
   exclude_driver_types:
     control: TAPIN controls (no driver; external driver id NA)
     dissected: >-
-      lamina / optic lobe dissections (SS00796, SS55439); left out of the 2024 curation,
-      reason not recorded
+      bulk RNA from dissected lamina / optic lobe (GEO protocol bulk, no reporter): not
+      captured by the driver (SS00796, SS55439), so not instances of its expression pattern
 expression:
   # GEO supplementary table, identical to the 2024 curation's input (PRJNA480794_tpm.tsv)
   tpm_file: GSE116969_dataTable2.genes_x_samples_TPM.all_genes.txt.gz

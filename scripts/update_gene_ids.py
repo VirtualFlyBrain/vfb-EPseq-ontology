@@ -2,9 +2,9 @@
 """Map the TPM table's gene ids to current FlyBase genes -> projects/<p>/gene_id_map.tsv.
 
 Uses vfb-scRNAseq's gene-id code (FlyBase Chado; needs `psql`): current ids are kept,
-a retired id of one current gene is replaced by it (ids merged into one gene have their
-TPM summed), split / withdrawn / non-gene ids are dropped. The build reads the committed
-map, so it needs no Chado access.
+a retired id of one current gene is replaced by it, split / withdrawn / non-gene ids are
+dropped. Where several ids merged into one gene, the build keeps it only if their rows
+are identical. The build reads the committed map, so it needs no Chado access.
 
 Usage: uv run python scripts/update_gene_ids.py --project davis_2020 [--release FB2026_03]
 """

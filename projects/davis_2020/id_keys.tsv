@@ -1,5 +1,5 @@
 entity_type	natural_key	label	accession
-Dataset	GSE116969	TAPIN-seq data from Davis (2020)	GSE116969
+Dataset	GSE116969	TAPIN-seq and INTACT data from Davis (2020)	GSE116969
 Sample	GSE116969:Mi1_d1_rep1	Mi1_d1_rep1	SAMN09649977
 Sample	GSE116969:Mi1_d1_rep2	Mi1_d1_rep2	SAMN09649976
 Sample	GSE116969:Tm3_d1_rep1	Tm3_d1_rep1	SAMN09649975
