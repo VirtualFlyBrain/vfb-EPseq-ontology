@@ -1,0 +1,67 @@
+id: http://virtualflybrain.org/schema/VFB_EPseq
+name: VFB_EPseq
+description: >-
+  Extension of the vfb-scRNAseq schema (imported as `vfb_scrnaseq`, resolved to the
+  installed package) for RNA-seq of cells sorted by a driver's expression pattern.
+  Only what EPseq needs beyond the master schema is defined here.
+imports:
+  - linkml:types
+  - vfb_scrnaseq
+prefixes:
+  linkml: https://w3id.org/linkml/
+  vfb: http://virtualflybrain.org/reports/
+  neo_custom: http://n2o.neo/custom/
+  oboInOwl: http://www.geneontology.org/formats/oboInOwl#
+default_range: string
+
+classes:
+  EPseqDataset:
+    is_a: Dataset
+    description: A Dataset, with an extra cross-reference to Expression Atlas where it has one.
+    attributes:
+      expression_atlas_xref:
+        slot_uri: oboInOwl:hasDbXref
+        description: Expression Atlas experiment accession (E-GEOD-...).
+        range: string
+        annotations:
+          owl.fstring: AnnotationAssertion(
+                        Annotation( neo_custom:accession "{V}" )
+                        oboInOwl:hasDbXref {id} vfb:ExpressionAtlas )
+
+  DriverSample:
+    is_a: Sample
+    description: >-
+      A Sample of cells sorted by the expression of a driver (e.g. a split-GAL4 line
+      driving a nuclear tag). It is an instance of the driver's expression pattern class
+      (VFBexp_), which VFB uses to link it to the driver.
+    attributes:
+      expression_pattern:
+        description: VFBexp class of the driver's expression pattern.
+        range: Thing
+        annotations:
+          owl.fstring: ClassAssertion( {V} {id} )
+      geo_xref:
+        slot_uri: oboInOwl:hasDbXref
+        description: GEO sample accession (GSM).
+        range: string
+        multivalued: true
+        annotations:
+          owl.fstring: AnnotationAssertion(
+                        Annotation( neo_custom:accession "{V}" )
+                        oboInOwl:hasDbXref {id} vfb:GEO )
+      biosample_xref:
+        slot_uri: oboInOwl:hasDbXref
+        description: NCBI BioSample accession (SAMN).
+        range: string
+        multivalued: true
+        annotations:
+          owl.fstring: AnnotationAssertion(
+                        Annotation( neo_custom:accession "{V}" )
+                        oboInOwl:hasDbXref {id} vfb:BioSample )
+
+  EPseqContainer:
+    is_a: Container
+    tree_root: true
+    attributes:
+      epseq_datasets: { range: EPseqDataset, multivalued: true, inlined_as_list: true }
+      driver_samples: { range: DriverSample, multivalued: true, inlined_as_list: true }
