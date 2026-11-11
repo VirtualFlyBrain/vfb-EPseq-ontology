@@ -1,5 +1,6 @@
 # Authors' cell type (from the GEO sample title, samples.cell_type_pattern) -> FBbt cell type(s)
-# the sample is composed primarily of: one term, the common parent where the driver labels several types. The types come from the driver alone: each split line was
+# the sample is composed primarily of. Where the driver labels several types, their common parent; several ids
+# ('|') only where each applies to most of the cells and they don't contradict (e.g. type + lineage), never siblings. The types come from the driver alone: each split line was
 # chosen for labelling that type (Aso 2014a) and expression-checked with the sorting reporter (Aso
 # 2019 methods); there is no typing from the transcriptome. Checked against VFB 2026-11-11.
 author_cell_type	cell_type	label	note

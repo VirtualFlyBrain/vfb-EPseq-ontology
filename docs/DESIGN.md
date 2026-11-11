@@ -23,7 +23,9 @@ Before the migration, samples and the dataset had NCBI BioSample / BioProject IR
 
 ## Model
 
-- **Dataset** (FBcv:0003023): label `<method> data from <Author> (<year>)`, description,
+- **Dataset** (FBcv:0003023): label `<method> data from <Author> (<year>)` (`Bulk RNA-seq`
+  from Aso 2019 on; the isolation method goes in the description), optional assay type
+  (`dataset.assay_type`, e.g. FBcv:0009018 *cell type-specific RNA-sequencing analysis*), description,
   publication, licence, GEO and Expression Atlas xrefs. Node label `DataSet`.
 - **Sample** (FBcv:0003024): one per driver-sorted GEO sample, label `<sample title>
   (<Author> <year>)`. Instance of the driver's `VFBexp_` expression pattern class (VFB
@@ -54,7 +56,11 @@ pattern class).
 - **Cell types** (optional `cell_types.tsv`): the authors' type for each sample, matched
   from the title by `samples.cell_type_pattern`, mapped to one FBbt term (the common
   parent where the driver labels several types, as for a grouped cluster call in
-  vfb-scRNAseq). Typed from the driver as the authors state it, never from
+  vfb-scRNAseq). Several terms are fine where each applies to most of the cells and
+  they don't contradict one another, e.g. a type and its lineage or neurotransmitter
+  class; never sibling types that each hold only part of the sample (two *composed
+  primarily of* types that split the cells contradict each other). Typed from the
+  driver as the authors state it, never from
   our reading of the expression. An author type not in the table stops the build.
 
 ## Davis 2020 (`davis_2020`)

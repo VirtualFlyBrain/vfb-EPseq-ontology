@@ -8,7 +8,9 @@ source:
   first_author: Aso
   year: 2019
 dataset:
-  label_prefix: Driver-sorted RNA-seq data from   # -> "Driver-sorted RNA-seq data from Aso (2019)"
+  label_prefix: Bulk RNA-seq data from   # -> "Bulk RNA-seq data from Aso (2019)"; sorting (hand / FACS) per sample in GEO
+  # cell type-specific RNA-sequencing analysis; not yet in VFB's FBcv import (2026-11-11): add before loading
+  assay_type: FBcv:0009018
   title: Bulk RNA-seq data from the dopaminergic neurons, MB output neurons, Kenyon cells, APL and DPM neurons in adult Drosophila.
   licence: CC-BY-4.0
   output_name: PRJNA587485

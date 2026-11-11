@@ -78,6 +78,7 @@ def test_missing_id(cfg):
 
 def test_entities_emit(cfg, tmp_path):
     from vfb_scrnaseq.emit import emit_owl
+    cfg["dataset"]["assay_type"] = "FBcv:0009018"
     ents = build.entities(cfg, SAMPLES, build.IdLookup(cfg, IDS))
     text = emit_owl(ents, tmp_path / "out.ofn", schema_path=SCHEMA).read_text()
     s = "VFBseq:00000002"
@@ -87,7 +88,8 @@ def test_entities_emit(cfg, tmp_path):
                f"AnnotationAssertion(dc:source {s} VFBseq:00000001)",
                f'AnnotationAssertion(rdfs:label {s} "a_rep1 (Davis 2020)")',
                'neo_custom:accession "SAMN1"', 'neo_custom:accession "E-GEOD-1"',
-               "ClassAssertion(FBcv:0003023 VFBseq:00000001)"):
+               "ClassAssertion(FBcv:0003023 VFBseq:00000001)",
+               "ClassAssertion(ObjectSomeValuesFrom(OBI:0000312 FBcv:0009018) VFBseq:00000001)"):
         assert ax in text, ax
     assert text.count("RO:0002473") == 1                       # b_rep1 has no cell type
 

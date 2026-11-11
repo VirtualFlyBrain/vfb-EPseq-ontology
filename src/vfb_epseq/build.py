@@ -82,6 +82,7 @@ def entities(cfg: dict, samples: list[Sample], ids: IdLookup) -> list[dict]:
         "type": "EPseqDataset", "id": ds_iri, "name": dataset_label(cfg), "title": ds["title"],
         "neo_label": ["DataSet"], "site": "vfb:GEO", "accession": src["geo_series"],
         "licence": LICENCES[ds["licence"]], "publication": src["publication"],
+        **({"assay_type": ds["assay_type"]} if ds.get("assay_type") else {}),
         **({"expression_atlas_xref": src["expression_atlas"]} if src.get("expression_atlas") else {}),
     }]
     for s in samples:
