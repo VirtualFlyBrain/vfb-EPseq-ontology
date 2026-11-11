@@ -40,6 +40,15 @@ classes:
         range: Thing
         annotations:
           owl.fstring: ClassAssertion( {V} {id} )
+      cell_type:
+        slot_uri: RO:0002473
+        description: >-
+          Cell type(s) (FBbt IDs) the Sample is composed primarily of: the authors' type
+          for the cells their driver labels, as for a Cluster.
+        range: Thing
+        multivalued: true
+        annotations:
+          owl.fstring: ClassAssertion( ObjectSomeValuesFrom( RO:0002473 {V} ) {id} )
       geo_xref:
         slot_uri: oboInOwl:hasDbXref
         description: GEO sample accession (GSM).

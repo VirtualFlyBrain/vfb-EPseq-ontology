@@ -90,6 +90,7 @@ def entities(cfg: dict, samples: list[Sample], ids: IdLookup) -> list[dict]:
             "associated_dataset": ds_iri, "neo_label": ["Sample"],
             "sample_tissue": [sc["tissue"]], "stage": sc["stage"],
             "expression_pattern": f"vfb:{s.expression_pattern}",
+            **({"cell_type": list(s.cell_types)} if s.cell_types else {}),
             "geo_xref": [s.gsm], **({"biosample_xref": [s.biosample]} if s.biosample else {}),
         })
     return out

@@ -28,7 +28,9 @@ Before the migration, samples and the dataset had NCBI BioSample / BioProject IR
 - **Sample** (FBcv:0003024): one per driver-sorted GEO sample, label `<sample title>
   (<Author> <year>)`. Instance of the driver's `VFBexp_` expression pattern class (VFB
   links the sample to the driver through it); overlaps the dissected tissue; stage; the
-  dataset (`dc:source`); GEO (GSM) and BioSample xrefs.
+  dataset (`dc:source`); GEO (GSM) and BioSample xrefs. Where the authors give the cell
+  type their driver labels, the sample is *composed primarily of* (RO:0002473) it, as a
+  Cluster is in vfb-scRNAseq (`cell_types.tsv`: author type -> FBbt).
 - **Expression:** `expresses` (RO:0002292) a gene, annotated with `expression_level`
   (the authors' TPM) and `hide_in_terminfo` true. No extent (bulk RNA-seq).
 
@@ -36,6 +38,23 @@ Not yet modelled (todo): Assays (the SRA runs), `genotype_includes` (the FBco / 
 of each driver and the UAS reporter), an assay type for TAPIN-seq / INTACT, and the 8
 dissected lamina / optic lobe samples as tissue samples (FBbt tissue, no expression
 pattern class).
+
+## Drivers and cell types (all projects)
+
+- **Driver -> VFBexp class** (`drivers.tsv`, keyed by the GEO characteristic
+  `samples.driver_field`). A split line can match several VFBexp classes: the same AD in
+  attP40 (`P{}`) and VK00027 (`PBac{}`), FBcos with the halves swapped, or later combined
+  constructs. Take the line's AD and DBD insertions from Janelia's combinations file
+  (`flylight-split-gal4-curation` `data/flylight_combination_lines_VFB.tsv`) and check them
+  against the line name (Aso 2014a: DBD in attP2; AD in su(Hw)attP8 / attP40 / VK00027 for
+  suffix A / B / C); record AD, DBD and evidence per line. Look classes up by FBtp pair,
+  not by line name: a class may carry only another line's name (lines sharing an AD+DBD
+  pair are one class). A driver not in the table stops the build; one with no class
+  (e.g. a GAL4 restricted by FLP, which has no intersection class) leaves its samples out.
+- **Cell types** (optional `cell_types.tsv`): the authors' type for each sample, matched
+  from the title by `samples.cell_type_pattern`, mapped to FBbt (several ids where the
+  driver labels several types). Typed from the driver as the authors state it, never from
+  our reading of the expression. An author type not in the table stops the build.
 
 ## Davis 2020 (`davis_2020`)
 
