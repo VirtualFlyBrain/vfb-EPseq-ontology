@@ -1,0 +1,23 @@
+# Aso et al. 2019 (eLife 8:e49257), bulk RNA-seq of split-GAL4-sorted mushroom body cell types.
+# Not loaded yet: trial project to firm up EPseq policies (2026-11).
+project: aso_2019
+source:
+  geo_series: GSE139889
+  bioproject: PRJNA587485
+  publication: FlyBase:FBrf0244530
+  first_author: Aso
+  year: 2019
+dataset:
+  label_prefix: Driver-sorted RNA-seq data from   # -> "Driver-sorted RNA-seq data from Aso (2019)"
+  title: Bulk RNA-seq data from the dopaminergic neurons, MB output neurons, Kenyon cells, APL and DPM neurons in adult Drosophila.
+  licence: CC-BY-4.0
+  output_name: PRJNA587485
+samples:
+  # dissected adult brains (paper methods; GEO has no tissue field), adult females
+  tissue: FBbt:00003624
+  stage: FBdv:00005369
+  drivers: drivers.tsv
+  driver_field: genetic driver
+  cell_types: cell_types.tsv
+  # GEO titles: <PID>_<cell type>_<driver>_<reporter>_..., e.g. 20_1_1_KC-γ_MB623C_nlstdTomato_F_FACS_2500-cells
+  cell_type_pattern: '_(?P<cell_type>[^_]+)_{driver}_'

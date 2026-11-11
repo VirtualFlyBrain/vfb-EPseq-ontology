@@ -1,0 +1,26 @@
+# GEO "genetic driver" -> VFB expression pattern class. Split lines: AD/DBD insertions from
+# Janelia combinations file (flylight-split-gal4-curation data/flylight_combination_lines_VFB.tsv, 2026-11-09);
+# every one agrees with Aso 2014a's suffix rule (DBD in attP2; AD in attP40 for B, VK00027 for C)
+# and, in FlyBase, P{..p65.AD} = attP40, PBac{..p65.AD} = VK00027. Checked against VFB pdb 2026-11-11.
+driver	expression_pattern	AD	DBD	evidence	note
+MB623C	VFBexp_FBtp0125032FBtp0133108	PBac{R13F02-p65.AD}VK00027	P{VT058937-GAL4.DBD}attP2	only class for the line	
+SS01248	VFBexp_FBtp0099459FBtp0161044	P{VT063193-p65.AD}attP40	P{R14E06-GAL4.DBD}attP2	only class for the line	
+MB315C	VFBexp_FBtp0099488FBtp0099551	PBac{R58E02-p65.AD}VK00027	P{R48H11-GAL4.DBD}attP2	Aso 2014a supp file 1 enhancer pair; only class	
+MB312C	VFBexp_FBtp0099451FBtp0099551	PBac{R58E02-p65.AD}VK00027	P{R10G03-GAL4.DBD}attP2	Aso 2014a supp file 1 enhancer pair; only class	
+MB043C	VFBexp_FBtp0099478FBtp0099551	PBac{R58E02-p65.AD}VK00027	P{R32D11-GAL4.DBD}attP2	Aso 2014a supp file 1 enhancer pair; only class	
+MB005C	VFBexp_FBtp0117486FBtp0133108	PBac{R13F02-p65.AD}VK00027	P{R34A03-GAL4.DBD}attP2	FBco0000017 (Aso 2014a); not the swapped FBco0002029 (Hattori 2017 only)	
+MB296B	VFBexp_FBtp0099472FBtp0099523	P{R15B01-p65.AD}attP40	P{R26F01-GAL4.DBD}attP2	Aso 2014a supp file 1 enhancer pair; suffix B = AD in attP40 (Aso 2014a Fig 2 legend), not PBac{}VK00027 FBtp0166440	
+MB058B	VFBexp_FBtp0099491FBtp0099563	P{R82C10-p65.AD}attP40	P{R50B03-GAL4.DBD}attP2	Aso 2014a supp file 1 enhancer pair; suffix B = attP40, not PBac FBtp0166854	
+MB109B	VFBexp_FBtp0099469FBtp0099561	P{R76F05-p65.AD}attP40	P{R23C12-GAL4.DBD}attP2	Aso 2014a supp file 1 enhancer pair; suffix B = attP40, not PBac FBtp0126901	
+MB441B	VFBexp_FBtp0099487FBtp0099540	P{R30G08-p65.AD}attP40	P{R48B03-GAL4.DBD}attP2	Aso 2014a supp file 1 enhancer pair; suffix B = attP40, not PBac FBtp0166543	
+MB213B	VFBexp_FBtp0099479FBtp0099561	P{R76F05-p65.AD}attP40	P{R32G08-GAL4.DBD}attP2	Aso 2014a supp file 1 enhancer pair; suffix B = attP40, not PBac FBtp0126901	
+MB433B	VFBexp_FBtp0099453FBtp0099538	P{R30E08-p65.AD}attP40	P{R11C07-GAL4.DBD}attP2	Aso 2014a supp file 1 enhancer pair; suffix B = attP40, not PBac FBtp0166539	
+MB027B	VFBexp_FBtp0099497FBtp0099533	P{R24H08-p65.AD}attP40	P{R53F03-GAL4.DBD}attP2	Aso 2014a supp file 1 enhancer pair; suffix B = attP40, not PBac FBtp0161113	
+MB310C	VFBexp_FBtp0099191FBtp0099546	PBac{R52G04-p65.AD}VK00027	P{R17C11-GAL4.DBD}attP2	Aso 2014a supp file 1 enhancer pair; suffix C = VK00027; not the combined P{AD1(Bxb1),MB083C,MB011B} (Luo & Schnitzer 2025 stocks)	
+MB112C	VFBexp_FBtp0099456FBtp0099565	PBac{R93D10-p65.AD}VK00027	P{R13F04-GAL4.DBD}attP2	Aso 2014a supp file 1 enhancer pair; FBco0000004; GAL4 DBD, not the lexA DBD FBco0002065; not the combined P{MB112C,MB083C,MB011B} (Luo & Schnitzer 2025 stocks)	
+SS01240	VFBexp_FBtp0099456FBtp0120685	P{VT046004-p65.AD}attP40	P{R13F04-GAL4.DBD}attP2	FBco0000466; not the combined P{MB112C,MB083C,MB011B} (Luo & Schnitzer 2025 stocks)	
+SS01308	VFBexp_FBtp0099473FBtp0120835	P{VT050240-p65.AD}attP40	P{R27G01-GAL4.DBD}attP2	FBco0000502; not the combined P{AD1(Bxb1),R27G01-GAL4.DBD} (Luo & Schnitzer 2025 stocks)	
+MB008C	VFBexp_FBtp0099485FBtp0133108	PBac{R13F02-p65.AD}VK00027	P{R44E04-GAL4.DBD}attP2	FBco0000014	VFB class carries synonym MB008B (whose AD is P{}attP40, a different FBtp) and xref MB008D; MB008C not a synonym yet
+SS01399	VFBexp_FBtp0099504FBtp0117260	P{VT026773-p65.AD}attP40	P{R72B05-GAL4.DBD}attP2	FBco0000453	same AD+DBD pair as MB630B, whose name the VFB class carries; SS01399 not a synonym yet
+G239	VFBexp_FBti0132502			G239 = G0239 (P{GAL4}G0239), listed as an MBON-α3 driver in Aso 2014a Table 1 (Chiang 2011)	GAL4 enhancer trap, not a split
+NP2631-GH146-flp					not loaded: NP2631-GAL4 restricted by GH146-FLP (APL); VFB has no class for this intersection (TODO: non-split intersections)
