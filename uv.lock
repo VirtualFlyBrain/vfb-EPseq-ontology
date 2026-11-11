@@ -2003,6 +2003,7 @@ name = "vfb-epseq"
 version = "0.0.0"
 source = { editable = "." }
 dependencies = [
+    { name = "openpyxl" },
     { name = "pyyaml" },
     { name = "vfb-scrnaseq" },
 ]
@@ -2014,6 +2015,7 @@ dev = [
 
 [package.metadata]
 requires-dist = [
+    { name = "openpyxl", specifier = ">=3.1" },
     { name = "pytest", marker = "extra == 'dev'", specifier = ">=8" },
     { name = "pyyaml", specifier = ">=6" },
     { name = "vfb-scrnaseq", git = "https://github.com/VirtualFlyBrain/vfb-scRNAseq?rev=a20b136d356354990a79613a038571c2f026121d" },

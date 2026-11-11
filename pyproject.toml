@@ -14,6 +14,7 @@ dependencies = [
   # schema, OWL emission, gene-id mapping and GEO ingest are shared with vfb-scRNAseq
   "vfb-scrnaseq",
   "PyYAML>=6",
+  "openpyxl>=3.1",   # spreadsheet expression tables (e.g. Aso 2019)
 ]
 
 [project.optional-dependencies]

@@ -1,0 +1,43 @@
+# Aso et al. 2019 (eLife 8:e49257), bulk RNA-seq of split-GAL4-sorted mushroom body cell types.
+# Ids minted 2026-11-11; not in a VFB release yet, so still open to change (docs/DESIGN.md).
+project: aso_2019
+source:
+  geo_series: GSE139889
+  bioproject: PRJNA587485
+  publication: FlyBase:FBrf0244530
+  first_author: Aso
+  year: 2019
+dataset:
+  label_prefix: Bulk RNA-seq data from   # -> "Bulk RNA-seq data from Aso (2019)"; sorting (hand / FACS) per sample in GEO
+  # cell type-specific RNA-sequencing analysis; not in VFB yet, but the metadata file (VFB_EPseq_PR*) seeds
+  # collectdata's FBcv slice, so it comes in with the load
+  assay_type: FBcv:0009018
+  title: Bulk RNA-seq data from the dopaminergic neurons, MB output neurons, Kenyon cells, APL and DPM neurons in adult Drosophila.
+  licence: CC-BY-4.0
+  output_name: PRJNA587485
+samples:
+  # dissected adult brains (paper methods; GEO has no tissue field), adult females
+  tissue: FBbt:00003624
+  stage: FBdv:00005369
+  drivers: drivers.tsv
+  driver_field: genetic driver
+  cell_types: cell_types.tsv
+  # GEO titles: <PID>_<cell type>_<driver>_<reporter>_..., e.g. 20_1_1_KC-γ_MB623C_nlstdTomato_F_FACS_2500-cells
+  cell_type_pattern: '_(?P<cell_type>[^_]+)_{driver}_'
+expression:
+  # GEO supplementary file 1: RSEM transcript TPM (FlyBase r6.34), one column per sample
+  tpm_file: GSE139889_Aso_et_al_2019_Supplementary_File_1_r6.34.xlsx
+  xlsx:
+    sheet: merged_template
+    column_row: 4             # PID row (the sample id prefixing each GEO title)
+    header_row: 16
+    gene_column: gene_ID
+    symbol_column: gene_symbol
+    sample_prefix: Sample_    # sample columns' headers (Sample_PID_20_1_1, Sample_21_1_1, ...)
+  # PID from the title: 20_1_1_KC-γ_... -> 20_1_1, SB_79_MBON-... -> SB_79 (APL's YoshiWGB_n not loaded)
+  sample_column: '(?P<column>\d+_\d+_\d+|SB_\d+)_'
+  # RSEM assigns each read once (EM over transcripts), so a gene's TPM is the sum of its
+  # transcripts', including those of genes FlyBase has since merged into it
+  merged_genes: sum
+  value: TPM
+  samples_per_file: 100

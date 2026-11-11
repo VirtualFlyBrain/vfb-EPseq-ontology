@@ -18,17 +18,25 @@ vfb-scRNAseq is a uv git dependency, pinned to a commit, for:
   follow its form: `<GEO series>` for the Dataset, `<GEO series>:<sample title>` for a
   Sample. CI checks `ids.tsv` against the registry on vfb-scRNAseq main.
 
+**Ids are not final until published on the live VFB site** (virtualflybrain.org). Until
+an entity is in a VFB release, anything about it may change: re-keyed, re-minted or
+dropped, with its config, mappings and output files. Once it is live its id is fixed.
+
 Before the migration, samples and the dataset had NCBI BioSample / BioProject IRIs
 (`http://www.ncbi.nlm.nih.gov/biosample/SAMN...`); these are now xrefs.
 
 ## Model
 
-- **Dataset** (FBcv:0003023): label `<method> data from <Author> (<year>)`, description,
+- **Dataset** (FBcv:0003023): label `<method> data from <Author> (<year>)` (`Bulk RNA-seq`
+  from Aso 2019 on; the isolation method goes in the description), optional assay type
+  (`dataset.assay_type`, e.g. FBcv:0009018 *cell type-specific RNA-sequencing analysis*), description,
   publication, licence, GEO and Expression Atlas xrefs. Node label `DataSet`.
 - **Sample** (FBcv:0003024): one per driver-sorted GEO sample, label `<sample title>
   (<Author> <year>)`. Instance of the driver's `VFBexp_` expression pattern class (VFB
   links the sample to the driver through it); overlaps the dissected tissue; stage; the
-  dataset (`dc:source`); GEO (GSM) and BioSample xrefs.
+  dataset (`dc:source`); GEO (GSM) and BioSample xrefs. Where the authors give the cell
+  type their driver labels, the sample is *composed primarily of* (RO:0002473) it, as a
+  Cluster is in vfb-scRNAseq (`cell_types.tsv`: author type -> FBbt).
 - **Expression:** `expresses` (RO:0002292) a gene, annotated with `expression_level`
   (the authors' TPM) and `hide_in_terminfo` true. No extent (bulk RNA-seq).
 
@@ -36,6 +44,28 @@ Not yet modelled (todo): Assays (the SRA runs), `genotype_includes` (the FBco / 
 of each driver and the UAS reporter), an assay type for TAPIN-seq / INTACT, and the 8
 dissected lamina / optic lobe samples as tissue samples (FBbt tissue, no expression
 pattern class).
+
+## Drivers and cell types (all projects)
+
+- **Driver -> VFBexp class** (`drivers.tsv`, keyed by the GEO characteristic
+  `samples.driver_field`). A split line can match several VFBexp classes: the same AD in
+  attP40 (`P{}`) and VK00027 (`PBac{}`), FBcos with the halves swapped, or later combined
+  constructs. Take the line's AD and DBD insertions from Janelia's combinations file
+  (`flylight-split-gal4-curation` `data/flylight_combination_lines_VFB.tsv`) and check them
+  against the line name (Aso 2014a: DBD in attP2; AD in su(Hw)attP8 / attP40 / VK00027 for
+  suffix A / B / C); record AD, DBD and evidence per line. Look classes up by FBtp pair,
+  not by line name: a class may carry only another line's name (lines sharing an AD+DBD
+  pair are one class). A driver not in the table stops the build; one with no class
+  (e.g. a GAL4 restricted by FLP, which has no intersection class) leaves its samples out.
+- **Cell types** (optional `cell_types.tsv`): the authors' type for each sample, matched
+  from the title by `samples.cell_type_pattern`, mapped to one FBbt term (the common
+  parent where the driver labels several types, as for a grouped cluster call in
+  vfb-scRNAseq). Several terms are fine where each applies to most of the cells and
+  they don't contradict one another, e.g. a type and its lineage or neurotransmitter
+  class; never sibling types that each hold only part of the sample (two *composed
+  primarily of* types that split the cells contradict each other). Typed from the
+  driver as the authors state it, never from
+  our reading of the expression. An author type not in the table stops the build.
 
 ## Davis 2020 (`davis_2020`)
 
@@ -76,3 +106,29 @@ Same 238 driver-typed samples with the same drivers, tissue, stage and dataset l
   as a split (the 2024 curation mapped it by name); 3 merged genes with differing input
   rows dropped (xmas, Or67c, lncRNA:CR46499; 590 axioms); 5 genes renamed by FlyBase
   since 2025-10 moved to their new ids; all other values identical.
+
+## Aso 2019 (`aso_2019`; ids minted, not yet released)
+
+GEO GSE139889 (BioProject PRJNA587485), FBrf0244530, CC BY 4.0. 55 GEO samples; 50
+loaded. Cells hand-picked or FACS-sorted (GEO `sorting`, per sample) from dissociated
+adult female brains, by split-GAL4 (Aso 2014a) or GAL4 driving a fluorescent reporter.
+
+- **Tissue / stage:** adult brain (FBbt:00003624; paper methods, GEO has no tissue),
+  adult. Dataset label *Bulk RNA-seq data from Aso (2019)*, assay type FBcv:0009018.
+- **Drivers / cell types:** `drivers.tsv` (AD / DBD and evidence per line) and
+  `cell_types.tsv` (author type from the title). Lines labelling several sibling types
+  map to the common parent (MBON-α′3, PAM-β1/β2, PAM-γ4<γ1γ2 + PAM-γ4).
+- **Left out:** the 5 APL samples (NP2631-GH146-flp: GAL4 restricted by FLP, no
+  intersection class).
+- **Expression:** supplementary file 1 (xlsx, RSEM transcript TPM on r6.34): transcript
+  TPM summed per gene; columns matched to samples by PID (the title prefix); 99 rows with
+  no FBgn (non-FlyBase sequences, GAL4 / LexA transgenes) skipped, as Davis's ERCCs, so
+  gene TPMs are not renormalised.
+- **Gene ids** (FB2026_03): 17,612 genes; 74 retired ids replaced, 1 withdrawn
+  (snRNA:U3) dropped, no splits. Merged genes are summed (`merged_genes: sum`): RSEM
+  assigns each read once across transcripts, so the sum is the merged gene's TPM. stg1's
+  two old models (CG11566 / stg1) have identical TPMs in every sample, as in Davis; under
+  EM that is reads split evenly between indistinguishable transcripts, not duplicated.
+- Build: 51 entities (VFBseq_00003522-00003572), 381,696 expression axioms, 15,237
+  genes, 2,863-11,087 genes per sample. Not in a VFB release yet (that waits for the
+  Argo job replacing Jenkins), so still open to change.

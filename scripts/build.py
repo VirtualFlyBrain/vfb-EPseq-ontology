@@ -1,7 +1,8 @@
 #!/usr/bin/env python
 """Build a project's OWL: metadata/VFB_EPseq_<name>.owl and
-expression/VFB_EPseq_exp_<name>_<n>.owl.gz, plus expression/FBgn_list.txt (every gene
-in the expression output, read by vfb-scRNAseq-gene-annotations) and
+expression/VFB_EPseq_exp_<name>_<n>.owl.gz, plus expression/FBgn_list_<name>.txt (its
+genes) and expression/FBgn_list.txt (every project's genes, read by
+vfb-scRNAseq-gene-annotations), and
 projects/<p>/samples_left_out.tsv.
 
 Needs the inputs in .cache/ (fetched if missing), ids.tsv and gene_id_map.tsv, and
@@ -17,7 +18,7 @@ from pathlib import Path
 
 import _common  # noqa: F401
 from vfb_scrnaseq.emit import emit_expression_owl, emit_owl, to_owlxml
-from vfb_epseq.build import IdLookup, entities, expression, gene_map, read_ids
+from vfb_epseq.build import IdLookup, entities, expression, gene_map, read_ids, read_tpm
 from vfb_epseq.project import REPO_ROOT, SCHEMA, geo_series, load_config, select_samples, tpm_path
 
 ap = argparse.ArgumentParser()
@@ -48,11 +49,14 @@ if not args.metadata_only:
     for old in exp_dir.glob(f"VFB_EPseq_exp_{name}_*.owl.gz"):
         old.unlink()
     genes: set[str] = set()
-    chunks = expression(cfg, tpm_path(cfg), samples, ids, gene_map(cfg["_dir"] / "gene_id_map.tsv"))
+    chunks = expression(cfg, read_tpm(cfg, tpm_path(cfg)), samples, ids, gene_map(cfg["_dir"] / "gene_id_map.tsv"))
     for n, rows in enumerate(chunks, 1):
         genes.update(r[2] for r in rows)
         out = emit_expression_owl(rows, exp_dir / f"VFB_EPseq_exp_{name}_{n}.owl.gz", schema_path=SCHEMA)
         print(f"{len(rows)} expression axioms -> {out}")
     fbgns = sorted(g for g in genes if re.fullmatch(r"FBgn\d+", g))
-    (exp_dir / "FBgn_list.txt").write_text("".join(f"{g}\n" for g in fbgns))
-    print(f"{len(fbgns)} genes -> {exp_dir / 'FBgn_list.txt'}")
+    (exp_dir / f"FBgn_list_{name}.txt").write_text("".join(f"{g}\n" for g in fbgns))
+    # FBgn_list.txt covers every project's expression: the union of the per-project lists
+    union = sorted({ln for f in exp_dir.glob("FBgn_list_*.txt") for ln in f.read_text().split()})
+    (exp_dir / "FBgn_list.txt").write_text("".join(f"{g}\n" for g in union))
+    print(f"{len(fbgns)} genes -> FBgn_list_{name}.txt; {len(union)} in FBgn_list.txt (all projects)")

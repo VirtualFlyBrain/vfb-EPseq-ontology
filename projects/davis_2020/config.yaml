@@ -19,6 +19,8 @@ samples:
   tissue: FBbt:00000004
   stage: FBdv:00005369
   drivers: drivers.tsv
+  driver_field: external driver id     # GEO characteristic naming the driver (drivers.tsv)
+  driver_type_field: driver type
   # GEO "driver type" values not loaded, with the reason
   exclude_driver_types:
     control: TAPIN controls (no driver; external driver id NA)

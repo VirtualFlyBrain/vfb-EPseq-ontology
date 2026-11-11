@@ -11,11 +11,16 @@ installs that repo as a package for the shared parts: the LinkML schema (extende
 OWL emission, FlyBase gene-id mapping and GEO ingest. Ids are `VFBseq_` ids from
 vfb-scRNAseq's registry; GEO / BioSample / Expression Atlas accessions are xrefs.
 
+**Ids are not final until published on the live VFB site** (virtualflybrain.org). Until
+an entity is in a VFB release, anything about it may change: re-keyed, re-minted or
+dropped, with its config, mappings and output files. Once it is live its id is fixed.
+
 ## Datasets
 
 | Project | Paper | Data | Samples | Drivers |
 |---|---|---|---|---|
 | `davis_2020` | Davis et al. 2020 (FBrf0244935), TAPIN-seq of adult optic lobe neurons | GEO GSE116969 / BioProject PRJNA480794 | 238 | 113 |
+| `aso_2019` (not yet released) | Aso et al. 2019 (FBrf0244530), bulk RNA-seq of sorted mushroom body cell types | GEO GSE139889 / BioProject PRJNA587485 | 50 | 19 |
 
 ## Outputs
 
@@ -23,7 +28,8 @@ vfb-scRNAseq's registry; GEO / BioSample / Expression Atlas accessions are xrefs
   driver's expression pattern class (`VFBexp_...`), with tissue, stage, dataset and xrefs.
 - `expression/VFB_EPseq_exp_<name>_<n>.owl.gz`: per-sample gene expression (TPM as
   `expression_level`, `hide_in_terminfo` true), up to 100 samples per file.
-- `expression/FBgn_list.txt`: every gene in the expression output (for
+- `expression/FBgn_list_<name>.txt`: the genes in a project's expression output;
+  `expression/FBgn_list.txt`: their union, every project's genes (for
   vfb-scRNAseq-gene-annotations).
 
 Until VFB publishes from these paths, the previous release files stay where the old

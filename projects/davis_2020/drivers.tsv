@@ -1,6 +1,6 @@
-# GEO "external driver id" -> VFB expression pattern class. From the 2024 curation
+# GEO "external driver id" (samples.driver_field) -> VFB expression pattern class. From the 2024 curation
 # (PRJNA480794_sample_metadata_FINAL.tsv): VFB lookup by driver name, else by hand.
-external_driver_id	expression_pattern	note
+driver	expression_pattern	note
 BL-1767	VFBexp_FBti0150063	
 BL-25681	VFBexp_FBtp0018000	
 BL-25686	VFBexp_FBtp0017683	

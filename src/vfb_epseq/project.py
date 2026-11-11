@@ -1,13 +1,15 @@
 """A project's config, inputs (GEO SOFT + TPM table, cached in .cache/) and samples.
 
-All dataset-specific knowledge is in ``projects/<name>/config.yaml`` and
-``projects/<name>/drivers.tsv``; this module stays dataset-agnostic.
+All dataset-specific knowledge is in ``projects/<name>/config.yaml``,
+``projects/<name>/drivers.tsv`` and (optionally) ``cell_types.tsv``; this module stays
+dataset-agnostic.
 """
 
 from __future__ import annotations
 
 import csv
 import gzip
+import re
 import shutil
 import urllib.request
 from dataclasses import dataclass
@@ -59,33 +61,57 @@ def tpm_path(cfg: dict) -> Path:
     return path
 
 
-def read_drivers(path: Path) -> dict[str, tuple[str, str]]:
-    """drivers.tsv -> {GEO external driver id: (VFBexp class or '', note)}."""
+def _read_tsv(path: Path) -> list[dict]:
     with path.open() as fh:
-        rows = csv.DictReader((ln for ln in fh if not ln.startswith("#")), delimiter="\t")
-        return {r["external_driver_id"]: (r["expression_pattern"], r["note"]) for r in rows}
+        return list(csv.DictReader((ln for ln in fh if not ln.startswith("#")), delimiter="\t"))
+
+
+def read_drivers(path: Path) -> dict[str, tuple[str, str]]:
+    """drivers.tsv -> {GEO driver name: (VFBexp class or '', note)}."""
+    return {r["driver"]: (r["expression_pattern"], r["note"]) for r in _read_tsv(path)}
+
+
+def read_cell_types(path: Path) -> dict[str, tuple[str, ...]]:
+    """cell_types.tsv -> {author cell type: FBbt ids ('|'-separated in the file)}."""
+    return {r["author_cell_type"]: tuple(c for c in r["cell_type"].split("|") if c)
+            for r in _read_tsv(path)}
 
 
 @dataclass
 class Sample:
-    title: str            # the authors' sample name (GEO title; the TPM table's column)
+    title: str            # the authors' sample name (GEO title; keys its TPM table column)
     gsm: str
     biosample: str
-    driver_id: str        # GEO "external driver id"
+    driver_id: str        # the GEO characteristic named by samples.driver_field
     expression_pattern: str
+    author_cell_type: str = ""
+    cell_types: tuple[str, ...] = ()   # FBbt ids the sample is composed primarily of
+
+
+def _author_cell_type(sc: dict, title: str, driver: str) -> str | None:
+    """The authors' cell type, matched from the sample title by samples.cell_type_pattern
+    (a regex with a `cell_type` group; `{driver}` stands for the sample's driver)."""
+    pattern = sc["cell_type_pattern"].replace("{driver}", re.escape(driver))
+    m = re.search(pattern, title)
+    return m.group("cell_type").strip() if m else None
 
 
 def select_samples(series: GeoSeries, cfg: dict) -> tuple[list[Sample], list[dict]]:
     """(samples to load, [{title, gsm, reason}] left out), in GEO order.
 
-    Raises on a driver id missing from drivers.tsv (a new driver needs curating)."""
+    The driver is the GEO characteristic samples.driver_field; samples whose
+    samples.driver_type_field value is in exclude_driver_types are left out. With
+    samples.cell_types, each sample's author cell type (from its title) is mapped to FBbt.
+    Raises on a driver missing from drivers.tsv or an author cell type missing from
+    cell_types.tsv (new ones need curating)."""
     sc = cfg["samples"]
     drivers = read_drivers(cfg["_dir"] / sc["drivers"])
+    cell_types = read_cell_types(cfg["_dir"] / sc["cell_types"]) if sc.get("cell_types") else None
     exclude = sc.get("exclude_driver_types", {})
-    keep, left_out, missing = [], [], set()
+    keep, left_out, missing, missing_types = [], [], set(), set()
     for s in series.samples:
-        dtype = (s.characteristic("driver type") or "").strip()
-        driver_id = (s.characteristic("external driver id") or "").strip()
+        dtype = (s.characteristic(sc["driver_type_field"]) or "").strip() if sc.get("driver_type_field") else ""
+        driver_id = (s.characteristic(sc["driver_field"]) or "").strip()
         if dtype in exclude:
             left_out.append({"title": s.title, "gsm": s.accession, "reason": exclude[dtype].strip()})
             continue
@@ -96,7 +122,17 @@ def select_samples(series: GeoSeries, cfg: dict) -> tuple[list[Sample], list[dic
         if not vfbexp:
             left_out.append({"title": s.title, "gsm": s.accession, "reason": note or "no VFBexp class"})
             continue
-        keep.append(Sample(s.title, s.accession, s.relations.get("BioSample", ""), driver_id, vfbexp))
+        author, fbbt = "", ()
+        if cell_types is not None:
+            author = _author_cell_type(sc, s.title, driver_id)
+            if author is None or author not in cell_types:
+                missing_types.add(author or f"(no match in {s.title!r})")
+                continue
+            fbbt = cell_types[author]
+        keep.append(Sample(s.title, s.accession, s.relations.get("BioSample", ""), driver_id, vfbexp,
+                           author, fbbt))
     if missing:
-        raise ValueError(f"driver ids not in {sc['drivers']} (curate them): {sorted(missing)}")
+        raise ValueError(f"drivers not in {sc['drivers']} (curate them): {sorted(missing)}")
+    if missing_types:
+        raise ValueError(f"author cell types not in {sc['cell_types']} (curate them): {sorted(missing_types)}")
     return keep, left_out
