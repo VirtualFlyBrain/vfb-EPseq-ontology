@@ -25,6 +25,27 @@ dropped, with its config, mappings and output files. Once it is live its id is f
 Before the migration, samples and the dataset had NCBI BioSample / BioProject IRIs
 (`http://www.ncbi.nlm.nih.gov/biosample/SAMN...`); these are now xrefs.
 
+## Publishing (todo, when ready to load)
+
+Output files are named by project (`<author>_<year>`), as in vfb-scRNAseq (2026-11-11;
+previously by BioProject). VFB still loads the previous release files, under the old names,
+from the legacy Jenkins job (`metadata_release_files/`, `src/ontology/`). When the Argo
+publish job replaces it, apply the renames there and in collectdata together, before the
+next data release:
+
+- **Argo publish job** (vfb-k8s, like `scrnaseq-publish` with vfb-scRNAseq's
+  `scripts/release_files.py`): publish `metadata/vfb_EPseq_metadata_<project>.owl` as
+  `VFB_EPseq_metadata_<project>.owl`, and `expression/vfb_EPseq_expression_<project>_<n>.owl.gz`
+  unzipped as `VFB_EPseq_exp_<project>_<n>.owl`. Remove the old `VFB_EPseq_PRJNA480794.owl`
+  and `VFB_EPseq_exp_PRJNA480794_*.owl` from the OWL dir, or Davis loads twice.
+- **collectdata** (`vfb-pipeline-collectdata`, `vfb_fullontologies.txt`): `VFB_EPseq_PR*`
+  -> `VFB_EPseq_metadata_*` (and the README examples). Change it with the first publish:
+  the old glob matches none of the new files, the new one none of the old.
+- **Unchanged:** the dumps `PDB_EXTERNAL_ONTS` and vfb-data-release globs
+  (`VFB_EPseq_exp_*.owl`) match the new expression names.
+- **vfb-scRNAseq-gene-annotations:** read `expression/FBgn_list.txt` (not
+  `src/ontology/reports/FBgn_list.txt`).
+
 ## Model
 
 - **Dataset** (FBcv:0003023): label `<method> data from <Author> (<year>)` (`Bulk RNA-seq`

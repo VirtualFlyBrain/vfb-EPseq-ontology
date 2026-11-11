@@ -13,9 +13,6 @@ dataset:
   assay_type: FBcv:0009018    # cell type-specific RNA-sequencing analysis
   title: A study using TAPIN RNA sequencing to build high resolution transcriptomes from selected adult optic lobe neurons.
   licence: CC-BY-4.0
-  # output file names (VFB_EPseq_<name>.owl, VFB_EPseq_exp_<name>_<n>.owl.gz): VFB's
-  # collectdata and dumps-prep load VFB_EPseq_PR* / VFB_EPseq_exp_*
-  output_name: PRJNA480794
 samples:
   # every loaded sample: whole heads (GEO "tissue: head"), adult
   tissue: FBbt:00000004
