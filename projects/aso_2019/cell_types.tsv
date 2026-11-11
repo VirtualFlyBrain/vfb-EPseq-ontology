@@ -1,20 +1,20 @@
 # Authors' cell type (from the GEO sample title, samples.cell_type_pattern) -> FBbt cell type(s)
-# the sample is composed primarily of. The types come from the driver alone: each split line was
+# the sample is composed primarily of: one term, the common parent where the driver labels several types. The types come from the driver alone: each split line was
 # chosen for labelling that type (Aso 2014a) and expression-checked with the sorting reporter (Aso
 # 2019 methods); there is no typing from the transcriptome. Checked against VFB 2026-11-11.
 author_cell_type	cell_type	label	note
 KC-γ	FBbt:00049828	adult gamma Kenyon cell	
 KC-α′/β′	FBbt:00049834	adult alpha'/beta' Kenyon cell	
 KC-α/β	FBbt:00100248	alpha/beta Kenyon cell	
-MBON-α′3	FBbt:00111063|FBbt:00111064	mushroom body output neuron 16|mushroom body output neuron 17	MB027B labels MBON-α′3ap and MBON-α′3m (Aso 2014a Table 1); not MBON28 (atypical MBON-α′3 of Li 2020)
+MBON-α′3	FBbt:00110102	mushroom body vertical lobe arborizing neuron 2 alpha'	MB027B labels MBON-α′3ap and MBON-α′3m (MBON16, MBON17; Aso 2014a Table 1): their common parent; not MBON28 (atypical MBON-α′3 of Li 2020)
 PAM-α1	FBbt:00111022	dopaminergic PAM neuron 11	
 PPL1-α′2α2	FBbt:00100236	mushroom body vertical lobe arborizing neuron 1	
 PAM-β′2a	FBbt:00111016	dopaminergic PAM neuron 2	
 MBON-γ1pedc>α/β	FBbt:00100246	mushroom body output neuron 11	
-PMA-β1, PAM-β2	FBbt:00110994|FBbt:00110993	dopaminergic PAM neuron 10|dopaminergic PAM neuron 4	"PMA" is the authors' typo for PAM; MB213B labels both types
+PMA-β1, PAM-β2	FBbt:00110992	mushroom body medial lobe arborizing neuron 8	"PMA" is the authors' typo for PAM; MB213B labels PAM-β1 and PAM-β2 (PAM10, PAM04): their common parent
 PPL1-γ2 α′1	FBbt:00100241	mushroom body medial-vertical lobe arborizing neuron 1	
 MBON-α1	FBbt:00111005	mushroom body output neuron 7	
-PAM-γ4<γ1γ2	FBbt:00111019	dopaminergic PAM neuron 7	
+PAM-γ4<γ1γ2	FBbt:00100214	adult dopaminergic PAM neuron	GEO source name: "PAM-γ4<γ1γ2 and PAM-γ4" (PAM07, PAM08); their only common parent
 PAM-γ5	FBbt:00111015	dopaminergic PAM neuron 1	
 MBON-β1>α	FBbt:00100242	mushroom body output neuron 6	
 PAM-γ3	FBbt:00100230	dopaminergic PAM neuron 12	

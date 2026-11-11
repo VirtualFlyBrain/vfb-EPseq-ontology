@@ -52,8 +52,9 @@ pattern class).
   pair are one class). A driver not in the table stops the build; one with no class
   (e.g. a GAL4 restricted by FLP, which has no intersection class) leaves its samples out.
 - **Cell types** (optional `cell_types.tsv`): the authors' type for each sample, matched
-  from the title by `samples.cell_type_pattern`, mapped to FBbt (several ids where the
-  driver labels several types). Typed from the driver as the authors state it, never from
+  from the title by `samples.cell_type_pattern`, mapped to one FBbt term (the common
+  parent where the driver labels several types, as for a grouped cluster call in
+  vfb-scRNAseq). Typed from the driver as the authors state it, never from
   our reading of the expression. An author type not in the table stops the build.
 
 ## Davis 2020 (`davis_2020`)
