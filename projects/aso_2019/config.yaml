@@ -9,7 +9,8 @@ source:
   year: 2019
 dataset:
   label_prefix: Bulk RNA-seq data from   # -> "Bulk RNA-seq data from Aso (2019)"; sorting (hand / FACS) per sample in GEO
-  # cell type-specific RNA-sequencing analysis; not yet in VFB's FBcv import (2026-11-11): add before loading
+  # cell type-specific RNA-sequencing analysis; not in VFB yet, but the metadata file (VFB_EPseq_PR*) seeds
+  # collectdata's FBcv slice, so it comes in with the load
   assay_type: FBcv:0009018
   title: Bulk RNA-seq data from the dopaminergic neurons, MB output neurons, Kenyon cells, APL and DPM neurons in adult Drosophila.
   licence: CC-BY-4.0
@@ -23,3 +24,20 @@ samples:
   cell_types: cell_types.tsv
   # GEO titles: <PID>_<cell type>_<driver>_<reporter>_..., e.g. 20_1_1_KC-γ_MB623C_nlstdTomato_F_FACS_2500-cells
   cell_type_pattern: '_(?P<cell_type>[^_]+)_{driver}_'
+expression:
+  # GEO supplementary file 1: RSEM transcript TPM (FlyBase r6.34), one column per sample
+  tpm_file: GSE139889_Aso_et_al_2019_Supplementary_File_1_r6.34.xlsx
+  xlsx:
+    sheet: merged_template
+    column_row: 4             # PID row (the sample id prefixing each GEO title)
+    header_row: 16
+    gene_column: gene_ID
+    symbol_column: gene_symbol
+    sample_prefix: Sample_    # sample columns' headers (Sample_PID_20_1_1, Sample_21_1_1, ...)
+  # PID from the title: 20_1_1_KC-γ_... -> 20_1_1, SB_79_MBON-... -> SB_79 (APL's YoshiWGB_n not loaded)
+  sample_column: '(?P<column>\d+_\d+_\d+|SB_\d+)_'
+  # RSEM assigns each read once (EM over transcripts), so a gene's TPM is the sum of its
+  # transcripts', including those of genes FlyBase has since merged into it
+  merged_genes: sum
+  value: TPM
+  samples_per_file: 100

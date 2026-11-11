@@ -79,7 +79,7 @@ def read_cell_types(path: Path) -> dict[str, tuple[str, ...]]:
 
 @dataclass
 class Sample:
-    title: str            # the authors' sample name (GEO title; the TPM table's column)
+    title: str            # the authors' sample name (GEO title; keys its TPM table column)
     gsm: str
     biosample: str
     driver_id: str        # the GEO characteristic named by samples.driver_field

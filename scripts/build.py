@@ -17,7 +17,7 @@ from pathlib import Path
 
 import _common  # noqa: F401
 from vfb_scrnaseq.emit import emit_expression_owl, emit_owl, to_owlxml
-from vfb_epseq.build import IdLookup, entities, expression, gene_map, read_ids
+from vfb_epseq.build import IdLookup, entities, expression, gene_map, read_ids, read_tpm
 from vfb_epseq.project import REPO_ROOT, SCHEMA, geo_series, load_config, select_samples, tpm_path
 
 ap = argparse.ArgumentParser()
@@ -48,7 +48,7 @@ if not args.metadata_only:
     for old in exp_dir.glob(f"VFB_EPseq_exp_{name}_*.owl.gz"):
         old.unlink()
     genes: set[str] = set()
-    chunks = expression(cfg, tpm_path(cfg), samples, ids, gene_map(cfg["_dir"] / "gene_id_map.tsv"))
+    chunks = expression(cfg, read_tpm(cfg, tpm_path(cfg)), samples, ids, gene_map(cfg["_dir"] / "gene_id_map.tsv"))
     for n, rows in enumerate(chunks, 1):
         genes.update(r[2] for r in rows)
         out = emit_expression_owl(rows, exp_dir / f"VFB_EPseq_exp_{name}_{n}.owl.gz", schema_path=SCHEMA)

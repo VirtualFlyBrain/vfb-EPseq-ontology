@@ -13,7 +13,7 @@ import sys
 
 import _common  # noqa: F401
 from vfb_scrnaseq import gene_ids
-from vfb_epseq.build import tpm_features
+from vfb_epseq.build import read_tpm, tpm_features
 from vfb_epseq.project import load_config, tpm_path
 
 ap = argparse.ArgumentParser()
@@ -24,7 +24,7 @@ cfg = load_config(args.project)
 release = args.release or gene_ids.flybase_release()
 if not release:
     print("  WARNING: could not read the FlyBase release from flybase.org; pass --release", file=sys.stderr)
-rows = gene_ids.reclassify(tpm_features(tpm_path(cfg)))
+rows = gene_ids.reclassify(tpm_features(read_tpm(cfg, tpm_path(cfg))))
 out = cfg["_dir"] / "gene_id_map.tsv"
 counts = gene_ids.write_map(out, rows, release)
 merges = counts.pop("merges")

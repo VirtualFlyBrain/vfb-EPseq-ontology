@@ -107,9 +107,45 @@ def test_expression(cfg, tmp_path):
                  "ERCC-1\tERCC-1\t1\t1\t1\n")
     genes = {"FBgn1": ("FBgn1", "g1"), "FBgn2": ("FBgn9", "m"), "FBgn3": ("FBgn9", "m"),
              "FBgn4": ("FBgn8", "d"), "FBgn5": ("FBgn8", "d")}
-    assert build.tpm_features(tpm)[-1] == ("FBgn6", "split")
-    chunks = list(build.expression(cfg, tpm, SAMPLES, build.IdLookup(cfg, IDS), genes))
+    table = build.read_tpm(cfg, tpm)
+    assert build.tpm_features(table)[-1] == ("FBgn6", "split")
+    chunks = list(build.expression(cfg, table, SAMPLES, build.IdLookup(cfg, IDS), genes))
     assert len(chunks) == 2                                   # samples_per_file 1
     got = {(r[0], r[2]): r[4] for c in chunks for r in c}
     assert got == {("VFBseq_00000002", "FBgn1"): "1.5", ("VFBseq_00000002", "FBgn8"): "4",
                    ("VFBseq_00000003", "FBgn8"): "5"}
+    cfg["expression"]["merged_genes"] = "sum"
+    got = {(r[0], r[2]): r[4] for c in build.expression(cfg, table, SAMPLES, build.IdLookup(cfg, IDS), genes)
+           for r in c}
+    assert got[("VFBseq_00000002", "FBgn9")] == "2.25" and got[("VFBseq_00000002", "FBgn8")] == "8"
+
+
+def test_xlsx(cfg, tmp_path):
+    openpyxl = pytest.importorskip("openpyxl")
+    wb = openpyxl.Workbook()
+    ws = wb.active
+    ws.title = "m"
+    ws.append([None, None, None, "Driver", "SS1", "SS1", "SS2"])
+    ws.append([None, None, None, "PID", "1_1", "1_2", "9_9"])
+    ws.append(["transcript", "gene_ID", "gene_symbol", None, "Sample_PID_1_1", "Sample_1_2", "Sample_9_9"])
+    ws.append(["FBtr1", "FBgn1", "g1", None, 0.1, 1, 5])
+    ws.append(["FBtr2", "FBgn1", "g1", None, 0.2, 0, 5])    # transcripts summed per gene
+    ws.append(["DQ1", None, None, None, 7, 7, 7])           # no FBgn: skipped
+    ws.append(["FBtr3", "FBgn2", "g2", None, 0, 2.5, 5])
+    path = tmp_path / "t.xlsx"
+    wb.save(path)
+    cfg["expression"].update(xlsx={"sheet": "m", "column_row": 2, "header_row": 3, "gene_column": "gene_ID",
+                                   "symbol_column": "gene_symbol", "sample_prefix": "Sample_"},
+                             sample_column=r"(?P<column>\d+_\d+)_")
+    table = build.read_tpm(cfg, path)
+    assert table.columns == ["1_1", "1_2", "9_9"] and build.tpm_features(table) == [("FBgn1", "g1"), ("FBgn2", "g2")]
+    samples = [Sample("1_1_KC_SS1", "GSM1", "", "SS1", "VFBexp_FBtp1FBtp2"),
+               Sample("1_2_KC_SS1", "GSM2", "", "SS1", "VFBexp_FBtp1FBtp2")]
+    ids = build.IdLookup(cfg, {("Sample", "GSE1:1_1_KC_SS1"): "VFBseq_00000002",
+                               ("Sample", "GSE1:1_2_KC_SS1"): "VFBseq_00000003"})
+    genes = {"FBgn1": ("FBgn1", "g1"), "FBgn2": ("FBgn2", "g2")}
+    got = {(r[0], r[2]): r[4] for c in build.expression(cfg, table, samples, ids, genes) for r in c}
+    assert got == {("VFBseq_00000002", "FBgn1"): "0.3", ("VFBseq_00000003", "FBgn1"): "1",
+                   ("VFBseq_00000003", "FBgn2"): "2.5"}
+    with pytest.raises(ValueError, match="does not match"):
+        build.sample_column(cfg, Sample("x", "GSM9", "", "SS1", ""))

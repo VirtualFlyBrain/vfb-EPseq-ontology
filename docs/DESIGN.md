@@ -102,3 +102,28 @@ Same 238 driver-typed samples with the same drivers, tissue, stage and dataset l
   as a split (the 2024 curation mapped it by name); 3 merged genes with differing input
   rows dropped (xmas, Or67c, lncRNA:CR46499; 590 axioms); 5 genes renamed by FlyBase
   since 2025-10 moved to their new ids; all other values identical.
+
+## Aso 2019 (`aso_2019`; trial, not loaded)
+
+GEO GSE139889 (BioProject PRJNA587485), FBrf0244530, CC BY 4.0. 55 GEO samples; 50
+loaded. Cells hand-picked or FACS-sorted (GEO `sorting`, per sample) from dissociated
+adult female brains, by split-GAL4 (Aso 2014a) or GAL4 driving a fluorescent reporter.
+
+- **Tissue / stage:** adult brain (FBbt:00003624; paper methods, GEO has no tissue),
+  adult. Dataset label *Bulk RNA-seq data from Aso (2019)*, assay type FBcv:0009018.
+- **Drivers / cell types:** `drivers.tsv` (AD / DBD and evidence per line) and
+  `cell_types.tsv` (author type from the title). Lines labelling several sibling types
+  map to the common parent (MBON-α′3, PAM-β1/β2, PAM-γ4<γ1γ2 + PAM-γ4).
+- **Left out:** the 5 APL samples (NP2631-GH146-flp: GAL4 restricted by FLP, no
+  intersection class).
+- **Expression:** supplementary file 1 (xlsx, RSEM transcript TPM on r6.34): transcript
+  TPM summed per gene; columns matched to samples by PID (the title prefix); 99 rows with
+  no FBgn (non-FlyBase sequences, GAL4 / LexA transgenes) skipped, as Davis's ERCCs, so
+  gene TPMs are not renormalised.
+- **Gene ids** (FB2026_03): 17,612 genes; 74 retired ids replaced, 1 withdrawn
+  (snRNA:U3) dropped, no splits. Merged genes are summed (`merged_genes: sum`): RSEM
+  assigns each read once across transcripts, so the sum is the merged gene's TPM. stg1's
+  two old models (CG11566 / stg1) have identical TPMs in every sample, as in Davis; under
+  EM that is reads split evenly between indistinguishable transcripts, not duplicated.
+- Trial build (placeholder ids): 51 entities, 381,696 expression axioms, 15,237 genes,
+  2,863-11,087 genes per sample.
