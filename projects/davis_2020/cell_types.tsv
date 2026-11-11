@@ -1,0 +1,104 @@
+# Authors' cell type (the GEO title before _d<n>, as Davis 2020 supplementary table A 'celltype') -> FBbt type
+# the sample is composed primarily of. Where the driver labels several types, their common parent; several ids
+# ('|') only where each applies to most of the cells and they don't contradict. Typed from the driver as the
+# authors describe it (table A celltype.details), not from the expression; minor additional expression
+# (celltype.additional.expression) is not typed. Broad drivers (gene-expressing cells) map to the adult
+# neurotransmitter / peptide class. Checked against FBbt (2026-11-02 build) 2026-11-11.
+author_cell_type	cell_type	label	note
+C2	FBbt:00003743	centrifugal neuron C2	
+C3	FBbt:00003744	centrifugal neuron C3	
+C2.C3	FBbt:00003742	optic lobe centrifugal columnar neuron	C2 and C3: their common parent
+CCAP	FBbt:00111316	adult CCAP neuron	broad: putative CCAP-expressing cells (promoter fusion)
+ChAT	FBbt:00058205	adult cholinergic neuron	broad: putative ChAT-expressing cells (protein trap)
+Crz	FBbt:00051053	adult corazonin neuron	broad: putative Crz-expressing cells (promoter fusion)
+Dm1	FBbt:00003768	distal medullary amacrine neuron Dm1	
+Dm10	FBbt:00110135	distal medullary amacrine neuron Dm10	
+Dm11	FBbt:00111272	distal medullary amacrine neuron Dm11	
+Dm12	FBbt:00111273	distal medullary amacrine neuron Dm12	
+Dm3	FBbt:00003770	distal medullary amacrine neuron Dm3	
+Dm4	FBbt:00003771	distal medullary amacrine neuron Dm4	
+Dm8	FBbt:00013774	distal medullary amacrine neuron Dm8	
+Dm9	FBbt:00111271	distal medullary amacrine neuron Dm9	
+Dsk	FBbt:00048999	adult Drosulfakinin neuron	broad: putative Dsk-expressing cells (promoter fusion)
+Gad1	FBbt:00058207	adult GABAergic neuron	broad: putative Gad1-expressing cells (protein trap)
+Glia_Eg	FBbt:00100513	adult lamina epithelial glial cell	Eg, epithelial glia (Edwards 2012)
+Glia_Mg	FBbt:00005722	adult lamina marginal glial cell	Mg, marginal glia (Edwards 2012)
+Glia_Psg	FBbt:00100524	adult proximal lamina satellite glial cell	Psg, proximal satellite glia (Edwards 2012)
+Ilp2	FBbt:00110107	adult insulin secreting cell of pars intercerebralis	broad: putative Ilp2-expressing cells (promoter fusion)
+KC_ab_c	FBbt:00110929	alpha/beta core Kenyon cell	
+KC_ab_p	FBbt:00110931	alpha/beta posterior Kenyon cell	
+KC_ab_s	FBbt:00110930	alpha/beta surface Kenyon cell	
+KC_ab_c.p.s	FBbt:00100248	alpha/beta Kenyon cell	KC α/βc, α/βp, α/βs: their common parent
+KC_apbp_ap	FBbt:00100250	alpha'/beta' anterior-posterior Kenyon cell	
+KC_apbp_m	FBbt:00100253	alpha'/beta' middle Kenyon cell	
+KC_gd	FBbt:00110932	gamma dorsal Kenyon cell	
+Kdm2			no cell type: broad enhancer trap (putative Kdm2-expressing cells), no type stated
+L1	FBbt:00003719	lamina monopolar neuron L1	
+L2	FBbt:00003720	lamina monopolar neuron L2	
+L3	FBbt:00003721	lamina monopolar neuron L3	
+L4	FBbt:00003722	lamina monopolar neuron L4	
+L5	FBbt:00003725	lamina monopolar neuron L5	
+L1.L2	FBbt:00003718	lamina monopolar neuron	L1 and L2: their common parent
+Lai	FBbt:00003746	lamina intrinsic neuron Lai	
+Lat	FBbt:00003745	lamina tangential neuron	
+Lawf1	FBbt:00003741	lamina wide-field 1 neuron	
+Lawf2	FBbt:00110065	lamina wide-field 2 neuron	
+LC10a	FBbt:00111747	lobula columnar neuron LC10a	
+LC10b	FBbt:00111745	lobula columnar neuron LC10b	
+LC10bc	FBbt:00110933	lobula columnar neuron LC10A	LC10b and LC10c: their common parent (LC10A group)
+LC10d	FBbt:00111748	lobula columnar neuron LC10d	
+LC16	FBbt:00111751	lobula columnar neuron LC16	
+LC4	FBbt:00003874	lobula columnar neuron LC4	
+LC6	FBbt:00003876	lobula columnar neuron LC6	
+lLNv	FBbt:00003763	l-LNv neuron	
+LLPC1	FBbt:00058227	lobula-lobula plate columnar neuron LLPC1	
+LPC1	FBbt:00111767	lobula plate columnar neuron LPC1	
+LPi-34	FBbt:00111289	lobula plate intrinsic neuron LPi3-4	LPi3-4
+LPLC1	FBbt:00111762	lobula plate-lobula columnar neuron LPLC1	
+LPLC2	FBbt:00111763	lobula plate-lobula columnar neuron LPLC2	
+LPTC_HS.VS	FBbt:00003906	lobula plate giant neuron	HS and VS: their common parent
+MBON_bp1	FBbt:00111008	mushroom body output neuron 10	MBON-β′1
+MBON_g1pedc	FBbt:00100246	mushroom body output neuron 11	MBON-γ1pedc>α/β
+Mi1	FBbt:00003776	medulla intrinsic neuron Mi1	
+Mi15	FBbt:00111285	medulla intrinsic neuron Mi15	
+Mi4	FBbt:00003779	medulla intrinsic neuron Mi4	
+Mi9	FBbt:00003784	medulla intrinsic neuron Mi9	
+Muscles_App	FBbt:00058230	adult muscle cell	muscle cells; driver (24B-GAL4) also in some non-muscle cells
+Muscles_Head	FBbt:00058230	adult muscle cell	muscle cells; driver also in some non-muscle cells
+NPF	FBbt:00048113	adult NPF neuron	broad: putative NPF-expressing cells (promoter fusion)
+PAM_1	FBbt:00111016	dopaminergic PAM neuron 2	PAM-β′2a
+PAM_2	FBbt:00100214	adult dopaminergic PAM neuron	PAM-β′2a, γ3, γ4, γ4<γ1γ2, γ5: their common parent
+PAM_3	FBbt:00110992	mushroom body medial lobe arborizing neuron 8	PAM-β1, β2 (PAM10, PAM04): their common parent
+PAM_4	FBbt:00100214	adult dopaminergic PAM neuron	PAM-γ4, γ4<γ1γ2 (PAM08, PAM07): their common parent
+PAM_5	FBbt:00111015	dopaminergic PAM neuron 1	PAM-γ5
+PAM_6	FBbt:00100214	adult dopaminergic PAM neuron	PAM-β′2m, γ3, γ4, γ5: their common parent
+PAM_7	FBbt:00111022	dopaminergic PAM neuron 11	PAM-α1
+PAM_8	FBbt:00100230	dopaminergic PAM neuron 12	PAM-γ3
+PAM_9	FBbt:00110994	dopaminergic PAM neuron 10	PAM-β1
+PB_1	FBbt:00049807	adult intrinsic protocerebral bridge 18 glomeruli-delta7 neuron	PB18.s-GxΔ7Gy.b and PB18.s-9i1i8c.b: their common parent (Δ7)
+PB_2	FBbt:00047030	adult ellipsoid body-protocerebral bridge 1 glomerulus-dorsal/ventral gall neuron	PBG1-8.b-EBw.s-D/Vgall.b (E-PG)
+PB_3			no cell type: PBG2-9.s-EBt.b-NO1.b (P-EN1), but the authors note optic lobe cells (incl. Mi1) outnumber the PB cells
+PB_4	FBbt:00111404	protocerebral bridge 1 glomerulus-fan-shaped body-nodulus 3 posterior domain neuron	PBG2-9.s-FBl1.b-NO3P.b
+PB_5	FBbt:00111396	protocerebral bridge 1 glomerulus-fan-shaped body-nodulus 3 anterior domain neuron	PBG2-9.s-FBl2.b-NO3A.b
+PB_6	FBbt:00111390	protocerebral bridge 1 glomerulus-fan-shaped body-nodulus 2 dorsal domain neuron	PBG2-9.s-FBl3.b-NO2D.b
+Pdf	FBbt:00100171	adult Pdf neuron	broad: putative PDF-expressing cells (promoter fusion)
+Pm3	FBbt:00110066	proximal medullary amacrine neuron Pm3	
+Pm4	FBbt:00111282	proximal medullary amacrine neuron Pm4	
+R7	FBbt:00004225	photoreceptor cell R7	R7 (Rh3 and Rh4 expressing)
+R7_Rh3	FBbt:02000006	photoreceptor cell R7 of pale ommatidium	Rh3 R7: pale R7
+R8_Rh5	FBbt:02000004	photoreceptor cell R8 of pale ommatidium	Rh5 R8: pale R8
+R8_Rh6	FBbt:02000003	photoreceptor cell R8 of yellow ommatidium	Rh6 R8: yellow R8
+T1	FBbt:00003727	columnar neuron T1	
+T4	FBbt:00003731	T4 neuron	T4, strongest in T4b, T4c
+T5	FBbt:00003736	T5 neuron	T5 (d1: mostly T5c, T5d; d2: T5a, T5b)
+T4.T5	FBbt:00003726	T neuron	T4 and T5: their common parent
+Tm1	FBbt:00003789	transmedullary neuron Tm1	
+Tm2	FBbt:00003790	transmedullary neuron Tm2	
+Tm20	FBbt:00003808	transmedullary neuron Tm20	
+Tm29	FBbt:00049916	transmedullary neuron Tm29	
+Tm3	FBbt:00003791	transmedullary neuron Tm3	
+Tm4	FBbt:00003792	transmedullary neuron Tm4	
+Tm9	FBbt:00003797	transmedullary neuron Tm9	
+TmY3	FBbt:00003820	transmedullary Y neuron TmY3	
+TmY5a	FBbt:00003823	transmedullary Y neuron TmY5a	
+VGlut	FBbt:00058208	adult glutamatergic neuron	broad: putative VGlut-expressing cells (protein trap)

@@ -94,9 +94,21 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/OBI_0000312 -->
+
+    <ObjectProperty rdf:about="http://purl.obolibrary.org/obo/OBI_0000312"/>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/RO_0002131 -->
 
     <ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0002131"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RO_0002473 -->
+
+    <ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0002473"/>
     
 
 
@@ -123,6 +135,558 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/FBbt_00003718 -->
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/FBbt_00003718"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FBbt_00003719 -->
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/FBbt_00003719"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FBbt_00003720 -->
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/FBbt_00003720"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FBbt_00003721 -->
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/FBbt_00003721"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FBbt_00003722 -->
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/FBbt_00003722"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FBbt_00003725 -->
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/FBbt_00003725"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FBbt_00003726 -->
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/FBbt_00003726"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FBbt_00003727 -->
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/FBbt_00003727"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FBbt_00003731 -->
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/FBbt_00003731"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FBbt_00003736 -->
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/FBbt_00003736"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FBbt_00003741 -->
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/FBbt_00003741"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FBbt_00003742 -->
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/FBbt_00003742"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FBbt_00003743 -->
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/FBbt_00003743"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FBbt_00003744 -->
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/FBbt_00003744"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FBbt_00003745 -->
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/FBbt_00003745"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FBbt_00003746 -->
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/FBbt_00003746"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FBbt_00003763 -->
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/FBbt_00003763"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FBbt_00003768 -->
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/FBbt_00003768"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FBbt_00003770 -->
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/FBbt_00003770"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FBbt_00003771 -->
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/FBbt_00003771"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FBbt_00003776 -->
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/FBbt_00003776"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FBbt_00003779 -->
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/FBbt_00003779"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FBbt_00003784 -->
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/FBbt_00003784"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FBbt_00003789 -->
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/FBbt_00003789"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FBbt_00003790 -->
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/FBbt_00003790"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FBbt_00003791 -->
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/FBbt_00003791"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FBbt_00003792 -->
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/FBbt_00003792"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FBbt_00003797 -->
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/FBbt_00003797"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FBbt_00003808 -->
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/FBbt_00003808"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FBbt_00003820 -->
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/FBbt_00003820"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FBbt_00003823 -->
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/FBbt_00003823"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FBbt_00003874 -->
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/FBbt_00003874"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FBbt_00003876 -->
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/FBbt_00003876"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FBbt_00003906 -->
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/FBbt_00003906"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FBbt_00004225 -->
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/FBbt_00004225"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FBbt_00005722 -->
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/FBbt_00005722"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FBbt_00013774 -->
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/FBbt_00013774"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FBbt_00047030 -->
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/FBbt_00047030"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FBbt_00048113 -->
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/FBbt_00048113"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FBbt_00048999 -->
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/FBbt_00048999"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FBbt_00049807 -->
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/FBbt_00049807"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FBbt_00049916 -->
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/FBbt_00049916"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FBbt_00051053 -->
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/FBbt_00051053"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FBbt_00058205 -->
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/FBbt_00058205"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FBbt_00058207 -->
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/FBbt_00058207"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FBbt_00058208 -->
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/FBbt_00058208"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FBbt_00058227 -->
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/FBbt_00058227"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FBbt_00058230 -->
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/FBbt_00058230"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FBbt_00100171 -->
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/FBbt_00100171"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FBbt_00100214 -->
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/FBbt_00100214"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FBbt_00100230 -->
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/FBbt_00100230"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FBbt_00100246 -->
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/FBbt_00100246"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FBbt_00100248 -->
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/FBbt_00100248"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FBbt_00100250 -->
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/FBbt_00100250"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FBbt_00100253 -->
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/FBbt_00100253"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FBbt_00100513 -->
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/FBbt_00100513"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FBbt_00100524 -->
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/FBbt_00100524"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FBbt_00110065 -->
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/FBbt_00110065"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FBbt_00110066 -->
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/FBbt_00110066"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FBbt_00110107 -->
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/FBbt_00110107"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FBbt_00110135 -->
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/FBbt_00110135"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FBbt_00110929 -->
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/FBbt_00110929"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FBbt_00110930 -->
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/FBbt_00110930"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FBbt_00110931 -->
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/FBbt_00110931"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FBbt_00110932 -->
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/FBbt_00110932"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FBbt_00110933 -->
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/FBbt_00110933"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FBbt_00110992 -->
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/FBbt_00110992"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FBbt_00110994 -->
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/FBbt_00110994"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FBbt_00111008 -->
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/FBbt_00111008"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FBbt_00111015 -->
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/FBbt_00111015"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FBbt_00111016 -->
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/FBbt_00111016"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FBbt_00111022 -->
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/FBbt_00111022"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FBbt_00111271 -->
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/FBbt_00111271"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FBbt_00111272 -->
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/FBbt_00111272"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FBbt_00111273 -->
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/FBbt_00111273"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FBbt_00111282 -->
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/FBbt_00111282"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FBbt_00111285 -->
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/FBbt_00111285"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FBbt_00111289 -->
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/FBbt_00111289"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FBbt_00111316 -->
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/FBbt_00111316"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FBbt_00111390 -->
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/FBbt_00111390"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FBbt_00111396 -->
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/FBbt_00111396"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FBbt_00111404 -->
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/FBbt_00111404"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FBbt_00111745 -->
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/FBbt_00111745"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FBbt_00111747 -->
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/FBbt_00111747"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FBbt_00111748 -->
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/FBbt_00111748"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FBbt_00111751 -->
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/FBbt_00111751"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FBbt_00111762 -->
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/FBbt_00111762"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FBbt_00111763 -->
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/FBbt_00111763"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FBbt_00111767 -->
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/FBbt_00111767"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FBbt_02000003 -->
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/FBbt_02000003"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FBbt_02000004 -->
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/FBbt_02000004"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FBbt_02000006 -->
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/FBbt_02000006"/>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/FBcv_0003023 -->
 
     <Class rdf:about="http://purl.obolibrary.org/obo/FBcv_0003023"/>
@@ -132,6 +696,12 @@
     <!-- http://purl.obolibrary.org/obo/FBcv_0003024 -->
 
     <Class rdf:about="http://purl.obolibrary.org/obo/FBcv_0003024"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FBcv_0009018 -->
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/FBcv_0009018"/>
     
 
 
@@ -834,13 +1404,19 @@
 
     <NamedIndividual rdf:about="http://virtualflybrain.org/reports/VFBseq_00003283">
         <rdf:type rdf:resource="http://purl.obolibrary.org/obo/FBcv_0003023"/>
+        <rdf:type>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000312"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBcv_0009018"/>
+            </Restriction>
+        </rdf:type>
         <neo_property:nodeLabel>DataSet</neo_property:nodeLabel>
         <obo:IAO_0000115>A study using TAPIN RNA sequencing to build high resolution transcriptomes from selected adult optic lobe neurons.</obo:IAO_0000115>
         <dc:licence rdf:resource="http://virtualflybrain.org/reports/VFBlicense_CC_BY_4_0"/>
         <dc:references rdf:resource="http://flybase.org/reports/FBrf0244935"/>
         <oboInOwl:hasDbXref rdf:resource="http://virtualflybrain.org/reports/ExpressionAtlas"/>
         <oboInOwl:hasDbXref rdf:resource="http://virtualflybrain.org/reports/GEO"/>
-        <rdfs:label>TAPIN-seq and INTACT data from Davis (2020)</rdfs:label>
+        <rdfs:label>Bulk RNA-seq data from Davis (2020)</rdfs:label>
     </NamedIndividual>
     <Axiom>
         <annotatedSource rdf:resource="http://virtualflybrain.org/reports/VFBseq_00003283"/>
@@ -866,6 +1442,12 @@
             <Restriction>
                 <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002131"/>
                 <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00000004"/>
+            </Restriction>
+        </rdf:type>
+        <rdf:type>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002473"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00003776"/>
             </Restriction>
         </rdf:type>
         <rdf:type>
@@ -908,6 +1490,12 @@
         </rdf:type>
         <rdf:type>
             <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002473"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00003776"/>
+            </Restriction>
+        </rdf:type>
+        <rdf:type>
+            <Restriction>
                 <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002490"/>
                 <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBdv_00005369"/>
             </Restriction>
@@ -942,6 +1530,12 @@
             <Restriction>
                 <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002131"/>
                 <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00000004"/>
+            </Restriction>
+        </rdf:type>
+        <rdf:type>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002473"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00003791"/>
             </Restriction>
         </rdf:type>
         <rdf:type>
@@ -984,6 +1578,12 @@
         </rdf:type>
         <rdf:type>
             <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002473"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00003791"/>
+            </Restriction>
+        </rdf:type>
+        <rdf:type>
+            <Restriction>
                 <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002490"/>
                 <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBdv_00005369"/>
             </Restriction>
@@ -1018,6 +1618,12 @@
             <Restriction>
                 <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002131"/>
                 <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00000004"/>
+            </Restriction>
+        </rdf:type>
+        <rdf:type>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002473"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00003792"/>
             </Restriction>
         </rdf:type>
         <rdf:type>
@@ -1060,6 +1666,12 @@
         </rdf:type>
         <rdf:type>
             <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002473"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00003792"/>
+            </Restriction>
+        </rdf:type>
+        <rdf:type>
+            <Restriction>
                 <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002490"/>
                 <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBdv_00005369"/>
             </Restriction>
@@ -1094,6 +1706,12 @@
             <Restriction>
                 <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002131"/>
                 <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00000004"/>
+            </Restriction>
+        </rdf:type>
+        <rdf:type>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002473"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00003779"/>
             </Restriction>
         </rdf:type>
         <rdf:type>
@@ -1136,6 +1754,12 @@
         </rdf:type>
         <rdf:type>
             <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002473"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00003779"/>
+            </Restriction>
+        </rdf:type>
+        <rdf:type>
+            <Restriction>
                 <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002490"/>
                 <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBdv_00005369"/>
             </Restriction>
@@ -1170,6 +1794,12 @@
             <Restriction>
                 <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002131"/>
                 <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00000004"/>
+            </Restriction>
+        </rdf:type>
+        <rdf:type>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002473"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00003790"/>
             </Restriction>
         </rdf:type>
         <rdf:type>
@@ -1212,6 +1842,12 @@
         </rdf:type>
         <rdf:type>
             <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002473"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00003790"/>
+            </Restriction>
+        </rdf:type>
+        <rdf:type>
+            <Restriction>
                 <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002490"/>
                 <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBdv_00005369"/>
             </Restriction>
@@ -1246,6 +1882,12 @@
             <Restriction>
                 <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002131"/>
                 <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00000004"/>
+            </Restriction>
+        </rdf:type>
+        <rdf:type>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002473"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00003797"/>
             </Restriction>
         </rdf:type>
         <rdf:type>
@@ -1288,6 +1930,12 @@
         </rdf:type>
         <rdf:type>
             <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002473"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00003797"/>
+            </Restriction>
+        </rdf:type>
+        <rdf:type>
+            <Restriction>
                 <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002490"/>
                 <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBdv_00005369"/>
             </Restriction>
@@ -1322,6 +1970,12 @@
             <Restriction>
                 <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002131"/>
                 <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00000004"/>
+            </Restriction>
+        </rdf:type>
+        <rdf:type>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002473"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00003719"/>
             </Restriction>
         </rdf:type>
         <rdf:type>
@@ -1364,6 +2018,12 @@
         </rdf:type>
         <rdf:type>
             <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002473"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00003719"/>
+            </Restriction>
+        </rdf:type>
+        <rdf:type>
+            <Restriction>
                 <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002490"/>
                 <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBdv_00005369"/>
             </Restriction>
@@ -1398,6 +2058,12 @@
             <Restriction>
                 <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002131"/>
                 <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00000004"/>
+            </Restriction>
+        </rdf:type>
+        <rdf:type>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002473"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00003719"/>
             </Restriction>
         </rdf:type>
         <rdf:type>
@@ -1440,6 +2106,12 @@
         </rdf:type>
         <rdf:type>
             <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002473"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00003719"/>
+            </Restriction>
+        </rdf:type>
+        <rdf:type>
+            <Restriction>
                 <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002490"/>
                 <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBdv_00005369"/>
             </Restriction>
@@ -1474,6 +2146,12 @@
             <Restriction>
                 <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002131"/>
                 <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00000004"/>
+            </Restriction>
+        </rdf:type>
+        <rdf:type>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002473"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00003720"/>
             </Restriction>
         </rdf:type>
         <rdf:type>
@@ -1516,6 +2194,12 @@
         </rdf:type>
         <rdf:type>
             <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002473"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00003720"/>
+            </Restriction>
+        </rdf:type>
+        <rdf:type>
+            <Restriction>
                 <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002490"/>
                 <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBdv_00005369"/>
             </Restriction>
@@ -1550,6 +2234,12 @@
             <Restriction>
                 <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002131"/>
                 <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00000004"/>
+            </Restriction>
+        </rdf:type>
+        <rdf:type>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002473"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00003721"/>
             </Restriction>
         </rdf:type>
         <rdf:type>
@@ -1592,6 +2282,12 @@
         </rdf:type>
         <rdf:type>
             <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002473"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00003721"/>
+            </Restriction>
+        </rdf:type>
+        <rdf:type>
+            <Restriction>
                 <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002490"/>
                 <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBdv_00005369"/>
             </Restriction>
@@ -1626,6 +2322,12 @@
             <Restriction>
                 <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002131"/>
                 <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00000004"/>
+            </Restriction>
+        </rdf:type>
+        <rdf:type>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002473"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00003722"/>
             </Restriction>
         </rdf:type>
         <rdf:type>
@@ -1668,6 +2370,12 @@
         </rdf:type>
         <rdf:type>
             <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002473"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00003725"/>
+            </Restriction>
+        </rdf:type>
+        <rdf:type>
+            <Restriction>
                 <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002490"/>
                 <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBdv_00005369"/>
             </Restriction>
@@ -1702,6 +2410,12 @@
             <Restriction>
                 <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002131"/>
                 <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00000004"/>
+            </Restriction>
+        </rdf:type>
+        <rdf:type>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002473"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00003725"/>
             </Restriction>
         </rdf:type>
         <rdf:type>
@@ -1744,6 +2458,12 @@
         </rdf:type>
         <rdf:type>
             <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002473"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00003743"/>
+            </Restriction>
+        </rdf:type>
+        <rdf:type>
+            <Restriction>
                 <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002490"/>
                 <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBdv_00005369"/>
             </Restriction>
@@ -1778,6 +2498,12 @@
             <Restriction>
                 <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002131"/>
                 <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00000004"/>
+            </Restriction>
+        </rdf:type>
+        <rdf:type>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002473"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00003743"/>
             </Restriction>
         </rdf:type>
         <rdf:type>
@@ -1820,6 +2546,12 @@
         </rdf:type>
         <rdf:type>
             <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002473"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00003744"/>
+            </Restriction>
+        </rdf:type>
+        <rdf:type>
+            <Restriction>
                 <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002490"/>
                 <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBdv_00005369"/>
             </Restriction>
@@ -1854,6 +2586,12 @@
             <Restriction>
                 <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002131"/>
                 <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00000004"/>
+            </Restriction>
+        </rdf:type>
+        <rdf:type>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002473"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00003744"/>
             </Restriction>
         </rdf:type>
         <rdf:type>
@@ -1896,6 +2634,12 @@
         </rdf:type>
         <rdf:type>
             <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002473"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00003722"/>
+            </Restriction>
+        </rdf:type>
+        <rdf:type>
+            <Restriction>
                 <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002490"/>
                 <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBdv_00005369"/>
             </Restriction>
@@ -1930,6 +2674,12 @@
             <Restriction>
                 <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002131"/>
                 <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00000004"/>
+            </Restriction>
+        </rdf:type>
+        <rdf:type>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002473"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00003741"/>
             </Restriction>
         </rdf:type>
         <rdf:type>
@@ -1972,6 +2722,12 @@
         </rdf:type>
         <rdf:type>
             <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002473"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00003741"/>
+            </Restriction>
+        </rdf:type>
+        <rdf:type>
+            <Restriction>
                 <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002490"/>
                 <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBdv_00005369"/>
             </Restriction>
@@ -2006,6 +2762,12 @@
             <Restriction>
                 <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002131"/>
                 <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00000004"/>
+            </Restriction>
+        </rdf:type>
+        <rdf:type>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002473"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00110065"/>
             </Restriction>
         </rdf:type>
         <rdf:type>
@@ -2048,6 +2810,12 @@
         </rdf:type>
         <rdf:type>
             <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002473"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00110065"/>
+            </Restriction>
+        </rdf:type>
+        <rdf:type>
+            <Restriction>
                 <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002490"/>
                 <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBdv_00005369"/>
             </Restriction>
@@ -2082,6 +2850,12 @@
             <Restriction>
                 <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002131"/>
                 <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00000004"/>
+            </Restriction>
+        </rdf:type>
+        <rdf:type>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002473"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00003727"/>
             </Restriction>
         </rdf:type>
         <rdf:type>
@@ -2124,6 +2898,12 @@
         </rdf:type>
         <rdf:type>
             <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002473"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00003727"/>
+            </Restriction>
+        </rdf:type>
+        <rdf:type>
+            <Restriction>
                 <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002490"/>
                 <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBdv_00005369"/>
             </Restriction>
@@ -2158,6 +2938,12 @@
             <Restriction>
                 <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002131"/>
                 <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00000004"/>
+            </Restriction>
+        </rdf:type>
+        <rdf:type>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002473"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00003746"/>
             </Restriction>
         </rdf:type>
         <rdf:type>
@@ -2200,6 +2986,12 @@
         </rdf:type>
         <rdf:type>
             <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002473"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00003746"/>
+            </Restriction>
+        </rdf:type>
+        <rdf:type>
+            <Restriction>
                 <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002490"/>
                 <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBdv_00005369"/>
             </Restriction>
@@ -2234,6 +3026,12 @@
             <Restriction>
                 <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002131"/>
                 <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00000004"/>
+            </Restriction>
+        </rdf:type>
+        <rdf:type>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002473"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00003718"/>
             </Restriction>
         </rdf:type>
         <rdf:type>
@@ -2276,6 +3074,12 @@
         </rdf:type>
         <rdf:type>
             <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002473"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00003718"/>
+            </Restriction>
+        </rdf:type>
+        <rdf:type>
+            <Restriction>
                 <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002490"/>
                 <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBdv_00005369"/>
             </Restriction>
@@ -2310,6 +3114,12 @@
             <Restriction>
                 <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002131"/>
                 <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00000004"/>
+            </Restriction>
+        </rdf:type>
+        <rdf:type>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002473"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00003718"/>
             </Restriction>
         </rdf:type>
         <rdf:type>
@@ -2352,6 +3162,12 @@
         </rdf:type>
         <rdf:type>
             <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002473"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00003718"/>
+            </Restriction>
+        </rdf:type>
+        <rdf:type>
+            <Restriction>
                 <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002490"/>
                 <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBdv_00005369"/>
             </Restriction>
@@ -2386,6 +3202,12 @@
             <Restriction>
                 <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002131"/>
                 <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00000004"/>
+            </Restriction>
+        </rdf:type>
+        <rdf:type>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002473"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00003742"/>
             </Restriction>
         </rdf:type>
         <rdf:type>
@@ -2428,6 +3250,12 @@
         </rdf:type>
         <rdf:type>
             <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002473"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00003742"/>
+            </Restriction>
+        </rdf:type>
+        <rdf:type>
+            <Restriction>
                 <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002490"/>
                 <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBdv_00005369"/>
             </Restriction>
@@ -2462,6 +3290,12 @@
             <Restriction>
                 <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002131"/>
                 <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00000004"/>
+            </Restriction>
+        </rdf:type>
+        <rdf:type>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002473"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00111273"/>
             </Restriction>
         </rdf:type>
         <rdf:type>
@@ -2504,6 +3338,12 @@
         </rdf:type>
         <rdf:type>
             <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002473"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00111273"/>
+            </Restriction>
+        </rdf:type>
+        <rdf:type>
+            <Restriction>
                 <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002490"/>
                 <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBdv_00005369"/>
             </Restriction>
@@ -2538,6 +3378,12 @@
             <Restriction>
                 <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002131"/>
                 <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00000004"/>
+            </Restriction>
+        </rdf:type>
+        <rdf:type>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002473"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00003789"/>
             </Restriction>
         </rdf:type>
         <rdf:type>
@@ -2580,6 +3426,12 @@
         </rdf:type>
         <rdf:type>
             <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002473"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00003789"/>
+            </Restriction>
+        </rdf:type>
+        <rdf:type>
+            <Restriction>
                 <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002490"/>
                 <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBdv_00005369"/>
             </Restriction>
@@ -2614,6 +3466,12 @@
             <Restriction>
                 <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002131"/>
                 <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00000004"/>
+            </Restriction>
+        </rdf:type>
+        <rdf:type>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002473"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00048113"/>
             </Restriction>
         </rdf:type>
         <rdf:type>
@@ -2656,6 +3514,12 @@
         </rdf:type>
         <rdf:type>
             <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002473"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00048113"/>
+            </Restriction>
+        </rdf:type>
+        <rdf:type>
+            <Restriction>
                 <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002490"/>
                 <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBdv_00005369"/>
             </Restriction>
@@ -2690,6 +3554,12 @@
             <Restriction>
                 <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002131"/>
                 <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00000004"/>
+            </Restriction>
+        </rdf:type>
+        <rdf:type>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002473"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00048999"/>
             </Restriction>
         </rdf:type>
         <rdf:type>
@@ -2732,6 +3602,12 @@
         </rdf:type>
         <rdf:type>
             <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002473"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00048999"/>
+            </Restriction>
+        </rdf:type>
+        <rdf:type>
+            <Restriction>
                 <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002490"/>
                 <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBdv_00005369"/>
             </Restriction>
@@ -2766,6 +3642,12 @@
             <Restriction>
                 <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002131"/>
                 <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00000004"/>
+            </Restriction>
+        </rdf:type>
+        <rdf:type>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002473"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00110107"/>
             </Restriction>
         </rdf:type>
         <rdf:type>
@@ -2808,6 +3690,12 @@
         </rdf:type>
         <rdf:type>
             <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002473"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00110107"/>
+            </Restriction>
+        </rdf:type>
+        <rdf:type>
+            <Restriction>
                 <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002490"/>
                 <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBdv_00005369"/>
             </Restriction>
@@ -2846,6 +3734,12 @@
         </rdf:type>
         <rdf:type>
             <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002473"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00051053"/>
+            </Restriction>
+        </rdf:type>
+        <rdf:type>
+            <Restriction>
                 <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002490"/>
                 <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBdv_00005369"/>
             </Restriction>
@@ -2880,6 +3774,12 @@
             <Restriction>
                 <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002131"/>
                 <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00000004"/>
+            </Restriction>
+        </rdf:type>
+        <rdf:type>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002473"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00051053"/>
             </Restriction>
         </rdf:type>
         <rdf:type>
@@ -2998,6 +3898,12 @@
         </rdf:type>
         <rdf:type>
             <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002473"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_02000006"/>
+            </Restriction>
+        </rdf:type>
+        <rdf:type>
+            <Restriction>
                 <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002490"/>
                 <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBdv_00005369"/>
             </Restriction>
@@ -3032,6 +3938,12 @@
             <Restriction>
                 <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002131"/>
                 <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00000004"/>
+            </Restriction>
+        </rdf:type>
+        <rdf:type>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002473"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_02000006"/>
             </Restriction>
         </rdf:type>
         <rdf:type>
@@ -3074,6 +3986,12 @@
         </rdf:type>
         <rdf:type>
             <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002473"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_02000004"/>
+            </Restriction>
+        </rdf:type>
+        <rdf:type>
+            <Restriction>
                 <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002490"/>
                 <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBdv_00005369"/>
             </Restriction>
@@ -3108,6 +4026,12 @@
             <Restriction>
                 <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002131"/>
                 <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00000004"/>
+            </Restriction>
+        </rdf:type>
+        <rdf:type>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002473"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_02000004"/>
             </Restriction>
         </rdf:type>
         <rdf:type>
@@ -3150,6 +4074,12 @@
         </rdf:type>
         <rdf:type>
             <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002473"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_02000003"/>
+            </Restriction>
+        </rdf:type>
+        <rdf:type>
+            <Restriction>
                 <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002490"/>
                 <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBdv_00005369"/>
             </Restriction>
@@ -3184,6 +4114,12 @@
             <Restriction>
                 <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002131"/>
                 <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00000004"/>
+            </Restriction>
+        </rdf:type>
+        <rdf:type>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002473"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_02000003"/>
             </Restriction>
         </rdf:type>
         <rdf:type>
@@ -3226,6 +4162,12 @@
         </rdf:type>
         <rdf:type>
             <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002473"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00004225"/>
+            </Restriction>
+        </rdf:type>
+        <rdf:type>
+            <Restriction>
                 <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002490"/>
                 <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBdv_00005369"/>
             </Restriction>
@@ -3260,6 +4202,12 @@
             <Restriction>
                 <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002131"/>
                 <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00000004"/>
+            </Restriction>
+        </rdf:type>
+        <rdf:type>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002473"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00004225"/>
             </Restriction>
         </rdf:type>
         <rdf:type>
@@ -3302,6 +4250,12 @@
         </rdf:type>
         <rdf:type>
             <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002473"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00003820"/>
+            </Restriction>
+        </rdf:type>
+        <rdf:type>
+            <Restriction>
                 <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002490"/>
                 <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBdv_00005369"/>
             </Restriction>
@@ -3336,6 +4290,12 @@
             <Restriction>
                 <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002131"/>
                 <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00000004"/>
+            </Restriction>
+        </rdf:type>
+        <rdf:type>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002473"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00003820"/>
             </Restriction>
         </rdf:type>
         <rdf:type>
@@ -3378,6 +4338,12 @@
         </rdf:type>
         <rdf:type>
             <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002473"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00110135"/>
+            </Restriction>
+        </rdf:type>
+        <rdf:type>
+            <Restriction>
                 <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002490"/>
                 <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBdv_00005369"/>
             </Restriction>
@@ -3412,6 +4378,12 @@
             <Restriction>
                 <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002131"/>
                 <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00000004"/>
+            </Restriction>
+        </rdf:type>
+        <rdf:type>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002473"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00110135"/>
             </Restriction>
         </rdf:type>
         <rdf:type>
@@ -3454,6 +4426,12 @@
         </rdf:type>
         <rdf:type>
             <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002473"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00111271"/>
+            </Restriction>
+        </rdf:type>
+        <rdf:type>
+            <Restriction>
                 <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002490"/>
                 <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBdv_00005369"/>
             </Restriction>
@@ -3488,6 +4466,12 @@
             <Restriction>
                 <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002131"/>
                 <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00000004"/>
+            </Restriction>
+        </rdf:type>
+        <rdf:type>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002473"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00111271"/>
             </Restriction>
         </rdf:type>
         <rdf:type>
@@ -3530,6 +4514,12 @@
         </rdf:type>
         <rdf:type>
             <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002473"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00111272"/>
+            </Restriction>
+        </rdf:type>
+        <rdf:type>
+            <Restriction>
                 <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002490"/>
                 <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBdv_00005369"/>
             </Restriction>
@@ -3564,6 +4554,12 @@
             <Restriction>
                 <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002131"/>
                 <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00000004"/>
+            </Restriction>
+        </rdf:type>
+        <rdf:type>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002473"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00111272"/>
             </Restriction>
         </rdf:type>
         <rdf:type>
@@ -3606,6 +4602,12 @@
         </rdf:type>
         <rdf:type>
             <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002473"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00111282"/>
+            </Restriction>
+        </rdf:type>
+        <rdf:type>
+            <Restriction>
                 <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002490"/>
                 <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBdv_00005369"/>
             </Restriction>
@@ -3640,6 +4642,12 @@
             <Restriction>
                 <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002131"/>
                 <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00000004"/>
+            </Restriction>
+        </rdf:type>
+        <rdf:type>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002473"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00111282"/>
             </Restriction>
         </rdf:type>
         <rdf:type>
@@ -3682,6 +4690,12 @@
         </rdf:type>
         <rdf:type>
             <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002473"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00111285"/>
+            </Restriction>
+        </rdf:type>
+        <rdf:type>
+            <Restriction>
                 <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002490"/>
                 <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBdv_00005369"/>
             </Restriction>
@@ -3716,6 +4730,12 @@
             <Restriction>
                 <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002131"/>
                 <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00000004"/>
+            </Restriction>
+        </rdf:type>
+        <rdf:type>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002473"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00111285"/>
             </Restriction>
         </rdf:type>
         <rdf:type>
@@ -3758,6 +4778,12 @@
         </rdf:type>
         <rdf:type>
             <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002473"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00003823"/>
+            </Restriction>
+        </rdf:type>
+        <rdf:type>
+            <Restriction>
                 <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002490"/>
                 <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBdv_00005369"/>
             </Restriction>
@@ -3792,6 +4818,12 @@
             <Restriction>
                 <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002131"/>
                 <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00000004"/>
+            </Restriction>
+        </rdf:type>
+        <rdf:type>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002473"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00003823"/>
             </Restriction>
         </rdf:type>
         <rdf:type>
@@ -3834,6 +4866,12 @@
         </rdf:type>
         <rdf:type>
             <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002473"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00058227"/>
+            </Restriction>
+        </rdf:type>
+        <rdf:type>
+            <Restriction>
                 <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002490"/>
                 <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBdv_00005369"/>
             </Restriction>
@@ -3868,6 +4906,12 @@
             <Restriction>
                 <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002131"/>
                 <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00000004"/>
+            </Restriction>
+        </rdf:type>
+        <rdf:type>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002473"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00058227"/>
             </Restriction>
         </rdf:type>
         <rdf:type>
@@ -3910,6 +4954,12 @@
         </rdf:type>
         <rdf:type>
             <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002473"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00111767"/>
+            </Restriction>
+        </rdf:type>
+        <rdf:type>
+            <Restriction>
                 <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002490"/>
                 <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBdv_00005369"/>
             </Restriction>
@@ -3944,6 +4994,12 @@
             <Restriction>
                 <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002131"/>
                 <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00000004"/>
+            </Restriction>
+        </rdf:type>
+        <rdf:type>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002473"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00111767"/>
             </Restriction>
         </rdf:type>
         <rdf:type>
@@ -3986,6 +5042,12 @@
         </rdf:type>
         <rdf:type>
             <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002473"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00111747"/>
+            </Restriction>
+        </rdf:type>
+        <rdf:type>
+            <Restriction>
                 <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002490"/>
                 <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBdv_00005369"/>
             </Restriction>
@@ -4020,6 +5082,12 @@
             <Restriction>
                 <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002131"/>
                 <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00000004"/>
+            </Restriction>
+        </rdf:type>
+        <rdf:type>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002473"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00111747"/>
             </Restriction>
         </rdf:type>
         <rdf:type>
@@ -4062,6 +5130,12 @@
         </rdf:type>
         <rdf:type>
             <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002473"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00111767"/>
+            </Restriction>
+        </rdf:type>
+        <rdf:type>
+            <Restriction>
                 <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002490"/>
                 <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBdv_00005369"/>
             </Restriction>
@@ -4096,6 +5170,12 @@
             <Restriction>
                 <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002131"/>
                 <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00000004"/>
+            </Restriction>
+        </rdf:type>
+        <rdf:type>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002473"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00111767"/>
             </Restriction>
         </rdf:type>
         <rdf:type>
@@ -4138,6 +5218,12 @@
         </rdf:type>
         <rdf:type>
             <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002473"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00111745"/>
+            </Restriction>
+        </rdf:type>
+        <rdf:type>
+            <Restriction>
                 <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002490"/>
                 <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBdv_00005369"/>
             </Restriction>
@@ -4172,6 +5258,12 @@
             <Restriction>
                 <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002131"/>
                 <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00000004"/>
+            </Restriction>
+        </rdf:type>
+        <rdf:type>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002473"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00111745"/>
             </Restriction>
         </rdf:type>
         <rdf:type>
@@ -4214,6 +5306,12 @@
         </rdf:type>
         <rdf:type>
             <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002473"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00003771"/>
+            </Restriction>
+        </rdf:type>
+        <rdf:type>
+            <Restriction>
                 <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002490"/>
                 <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBdv_00005369"/>
             </Restriction>
@@ -4248,6 +5346,12 @@
             <Restriction>
                 <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002131"/>
                 <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00000004"/>
+            </Restriction>
+        </rdf:type>
+        <rdf:type>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002473"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00003771"/>
             </Restriction>
         </rdf:type>
         <rdf:type>
@@ -4290,6 +5394,12 @@
         </rdf:type>
         <rdf:type>
             <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002473"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00111751"/>
+            </Restriction>
+        </rdf:type>
+        <rdf:type>
+            <Restriction>
                 <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002490"/>
                 <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBdv_00005369"/>
             </Restriction>
@@ -4324,6 +5434,12 @@
             <Restriction>
                 <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002131"/>
                 <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00000004"/>
+            </Restriction>
+        </rdf:type>
+        <rdf:type>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002473"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00111751"/>
             </Restriction>
         </rdf:type>
         <rdf:type>
@@ -4366,6 +5482,12 @@
         </rdf:type>
         <rdf:type>
             <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002473"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00111751"/>
+            </Restriction>
+        </rdf:type>
+        <rdf:type>
+            <Restriction>
                 <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002490"/>
                 <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBdv_00005369"/>
             </Restriction>
@@ -4400,6 +5522,12 @@
             <Restriction>
                 <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002131"/>
                 <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00000004"/>
+            </Restriction>
+        </rdf:type>
+        <rdf:type>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002473"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00111751"/>
             </Restriction>
         </rdf:type>
         <rdf:type>
@@ -4442,6 +5570,12 @@
         </rdf:type>
         <rdf:type>
             <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002473"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00111762"/>
+            </Restriction>
+        </rdf:type>
+        <rdf:type>
+            <Restriction>
                 <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002490"/>
                 <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBdv_00005369"/>
             </Restriction>
@@ -4476,6 +5610,12 @@
             <Restriction>
                 <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002131"/>
                 <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00000004"/>
+            </Restriction>
+        </rdf:type>
+        <rdf:type>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002473"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00111762"/>
             </Restriction>
         </rdf:type>
         <rdf:type>
@@ -4518,6 +5658,12 @@
         </rdf:type>
         <rdf:type>
             <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002473"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00111763"/>
+            </Restriction>
+        </rdf:type>
+        <rdf:type>
+            <Restriction>
                 <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002490"/>
                 <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBdv_00005369"/>
             </Restriction>
@@ -4552,6 +5698,12 @@
             <Restriction>
                 <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002131"/>
                 <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00000004"/>
+            </Restriction>
+        </rdf:type>
+        <rdf:type>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002473"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00111763"/>
             </Restriction>
         </rdf:type>
         <rdf:type>
@@ -4594,6 +5746,12 @@
         </rdf:type>
         <rdf:type>
             <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002473"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00003876"/>
+            </Restriction>
+        </rdf:type>
+        <rdf:type>
+            <Restriction>
                 <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002490"/>
                 <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBdv_00005369"/>
             </Restriction>
@@ -4628,6 +5786,12 @@
             <Restriction>
                 <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002131"/>
                 <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00000004"/>
+            </Restriction>
+        </rdf:type>
+        <rdf:type>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002473"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00003876"/>
             </Restriction>
         </rdf:type>
         <rdf:type>
@@ -4670,6 +5834,12 @@
         </rdf:type>
         <rdf:type>
             <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002473"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00003876"/>
+            </Restriction>
+        </rdf:type>
+        <rdf:type>
+            <Restriction>
                 <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002490"/>
                 <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBdv_00005369"/>
             </Restriction>
@@ -4704,6 +5874,12 @@
             <Restriction>
                 <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002131"/>
                 <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00000004"/>
+            </Restriction>
+        </rdf:type>
+        <rdf:type>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002473"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00003876"/>
             </Restriction>
         </rdf:type>
         <rdf:type>
@@ -4746,6 +5922,12 @@
         </rdf:type>
         <rdf:type>
             <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002473"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00003874"/>
+            </Restriction>
+        </rdf:type>
+        <rdf:type>
+            <Restriction>
                 <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002490"/>
                 <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBdv_00005369"/>
             </Restriction>
@@ -4780,6 +5962,12 @@
             <Restriction>
                 <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002131"/>
                 <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00000004"/>
+            </Restriction>
+        </rdf:type>
+        <rdf:type>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002473"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00003874"/>
             </Restriction>
         </rdf:type>
         <rdf:type>
@@ -4822,6 +6010,12 @@
         </rdf:type>
         <rdf:type>
             <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002473"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00003771"/>
+            </Restriction>
+        </rdf:type>
+        <rdf:type>
+            <Restriction>
                 <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002490"/>
                 <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBdv_00005369"/>
             </Restriction>
@@ -4856,6 +6050,12 @@
             <Restriction>
                 <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002131"/>
                 <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00000004"/>
+            </Restriction>
+        </rdf:type>
+        <rdf:type>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002473"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00003771"/>
             </Restriction>
         </rdf:type>
         <rdf:type>
@@ -4898,6 +6098,12 @@
         </rdf:type>
         <rdf:type>
             <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002473"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00111404"/>
+            </Restriction>
+        </rdf:type>
+        <rdf:type>
+            <Restriction>
                 <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002490"/>
                 <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBdv_00005369"/>
             </Restriction>
@@ -4932,6 +6138,12 @@
             <Restriction>
                 <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002131"/>
                 <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00000004"/>
+            </Restriction>
+        </rdf:type>
+        <rdf:type>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002473"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00111404"/>
             </Restriction>
         </rdf:type>
         <rdf:type>
@@ -4974,6 +6186,12 @@
         </rdf:type>
         <rdf:type>
             <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002473"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00111404"/>
+            </Restriction>
+        </rdf:type>
+        <rdf:type>
+            <Restriction>
                 <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002490"/>
                 <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBdv_00005369"/>
             </Restriction>
@@ -5008,6 +6226,12 @@
             <Restriction>
                 <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002131"/>
                 <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00000004"/>
+            </Restriction>
+        </rdf:type>
+        <rdf:type>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002473"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00111404"/>
             </Restriction>
         </rdf:type>
         <rdf:type>
@@ -5050,6 +6274,12 @@
         </rdf:type>
         <rdf:type>
             <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002473"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00110066"/>
+            </Restriction>
+        </rdf:type>
+        <rdf:type>
+            <Restriction>
                 <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002490"/>
                 <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBdv_00005369"/>
             </Restriction>
@@ -5084,6 +6314,12 @@
             <Restriction>
                 <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002131"/>
                 <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00000004"/>
+            </Restriction>
+        </rdf:type>
+        <rdf:type>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002473"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00110066"/>
             </Restriction>
         </rdf:type>
         <rdf:type>
@@ -5126,6 +6362,12 @@
         </rdf:type>
         <rdf:type>
             <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002473"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00111396"/>
+            </Restriction>
+        </rdf:type>
+        <rdf:type>
+            <Restriction>
                 <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002490"/>
                 <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBdv_00005369"/>
             </Restriction>
@@ -5160,6 +6402,12 @@
             <Restriction>
                 <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002131"/>
                 <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00000004"/>
+            </Restriction>
+        </rdf:type>
+        <rdf:type>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002473"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00111396"/>
             </Restriction>
         </rdf:type>
         <rdf:type>
@@ -5202,6 +6450,12 @@
         </rdf:type>
         <rdf:type>
             <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002473"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00047030"/>
+            </Restriction>
+        </rdf:type>
+        <rdf:type>
+            <Restriction>
                 <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002490"/>
                 <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBdv_00005369"/>
             </Restriction>
@@ -5236,6 +6490,12 @@
             <Restriction>
                 <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002131"/>
                 <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00000004"/>
+            </Restriction>
+        </rdf:type>
+        <rdf:type>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002473"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00047030"/>
             </Restriction>
         </rdf:type>
         <rdf:type>
@@ -5278,6 +6538,12 @@
         </rdf:type>
         <rdf:type>
             <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002473"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00049807"/>
+            </Restriction>
+        </rdf:type>
+        <rdf:type>
+            <Restriction>
                 <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002490"/>
                 <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBdv_00005369"/>
             </Restriction>
@@ -5312,6 +6578,12 @@
             <Restriction>
                 <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002131"/>
                 <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00000004"/>
+            </Restriction>
+        </rdf:type>
+        <rdf:type>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002473"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00049807"/>
             </Restriction>
         </rdf:type>
         <rdf:type>
@@ -5354,6 +6626,12 @@
         </rdf:type>
         <rdf:type>
             <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002473"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00111289"/>
+            </Restriction>
+        </rdf:type>
+        <rdf:type>
+            <Restriction>
                 <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002490"/>
                 <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBdv_00005369"/>
             </Restriction>
@@ -5388,6 +6666,12 @@
             <Restriction>
                 <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002131"/>
                 <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00000004"/>
+            </Restriction>
+        </rdf:type>
+        <rdf:type>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002473"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00111289"/>
             </Restriction>
         </rdf:type>
         <rdf:type>
@@ -5506,6 +6790,12 @@
         </rdf:type>
         <rdf:type>
             <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002473"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00111390"/>
+            </Restriction>
+        </rdf:type>
+        <rdf:type>
+            <Restriction>
                 <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002490"/>
                 <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBdv_00005369"/>
             </Restriction>
@@ -5540,6 +6830,12 @@
             <Restriction>
                 <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002131"/>
                 <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00000004"/>
+            </Restriction>
+        </rdf:type>
+        <rdf:type>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002473"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00111390"/>
             </Restriction>
         </rdf:type>
         <rdf:type>
@@ -5582,6 +6878,12 @@
         </rdf:type>
         <rdf:type>
             <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002473"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00005722"/>
+            </Restriction>
+        </rdf:type>
+        <rdf:type>
+            <Restriction>
                 <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002490"/>
                 <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBdv_00005369"/>
             </Restriction>
@@ -5616,6 +6918,12 @@
             <Restriction>
                 <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002131"/>
                 <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00000004"/>
+            </Restriction>
+        </rdf:type>
+        <rdf:type>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002473"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00005722"/>
             </Restriction>
         </rdf:type>
         <rdf:type>
@@ -5658,6 +6966,12 @@
         </rdf:type>
         <rdf:type>
             <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002473"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00100524"/>
+            </Restriction>
+        </rdf:type>
+        <rdf:type>
+            <Restriction>
                 <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002490"/>
                 <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBdv_00005369"/>
             </Restriction>
@@ -5692,6 +7006,12 @@
             <Restriction>
                 <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002131"/>
                 <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00000004"/>
+            </Restriction>
+        </rdf:type>
+        <rdf:type>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002473"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00100524"/>
             </Restriction>
         </rdf:type>
         <rdf:type>
@@ -5734,6 +7054,12 @@
         </rdf:type>
         <rdf:type>
             <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002473"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00100524"/>
+            </Restriction>
+        </rdf:type>
+        <rdf:type>
+            <Restriction>
                 <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002490"/>
                 <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBdv_00005369"/>
             </Restriction>
@@ -5768,6 +7094,12 @@
             <Restriction>
                 <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002131"/>
                 <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00000004"/>
+            </Restriction>
+        </rdf:type>
+        <rdf:type>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002473"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00100524"/>
             </Restriction>
         </rdf:type>
         <rdf:type>
@@ -5810,6 +7142,12 @@
         </rdf:type>
         <rdf:type>
             <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002473"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00100513"/>
+            </Restriction>
+        </rdf:type>
+        <rdf:type>
+            <Restriction>
                 <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002490"/>
                 <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBdv_00005369"/>
             </Restriction>
@@ -5844,6 +7182,12 @@
             <Restriction>
                 <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002131"/>
                 <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00000004"/>
+            </Restriction>
+        </rdf:type>
+        <rdf:type>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002473"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00100513"/>
             </Restriction>
         </rdf:type>
         <rdf:type>
@@ -5886,6 +7230,12 @@
         </rdf:type>
         <rdf:type>
             <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002473"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00100513"/>
+            </Restriction>
+        </rdf:type>
+        <rdf:type>
+            <Restriction>
                 <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002490"/>
                 <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBdv_00005369"/>
             </Restriction>
@@ -5920,6 +7270,12 @@
             <Restriction>
                 <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002131"/>
                 <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00000004"/>
+            </Restriction>
+        </rdf:type>
+        <rdf:type>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002473"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00100513"/>
             </Restriction>
         </rdf:type>
         <rdf:type>
@@ -5962,6 +7318,12 @@
         </rdf:type>
         <rdf:type>
             <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002473"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00100513"/>
+            </Restriction>
+        </rdf:type>
+        <rdf:type>
+            <Restriction>
                 <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002490"/>
                 <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBdv_00005369"/>
             </Restriction>
@@ -5996,6 +7358,12 @@
             <Restriction>
                 <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002131"/>
                 <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00000004"/>
+            </Restriction>
+        </rdf:type>
+        <rdf:type>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002473"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00100513"/>
             </Restriction>
         </rdf:type>
         <rdf:type>
@@ -6038,6 +7406,12 @@
         </rdf:type>
         <rdf:type>
             <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002473"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00049916"/>
+            </Restriction>
+        </rdf:type>
+        <rdf:type>
+            <Restriction>
                 <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002490"/>
                 <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBdv_00005369"/>
             </Restriction>
@@ -6072,6 +7446,12 @@
             <Restriction>
                 <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002131"/>
                 <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00000004"/>
+            </Restriction>
+        </rdf:type>
+        <rdf:type>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002473"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00049916"/>
             </Restriction>
         </rdf:type>
         <rdf:type>
@@ -6114,6 +7494,12 @@
         </rdf:type>
         <rdf:type>
             <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002473"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00013774"/>
+            </Restriction>
+        </rdf:type>
+        <rdf:type>
+            <Restriction>
                 <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002490"/>
                 <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBdv_00005369"/>
             </Restriction>
@@ -6148,6 +7534,12 @@
             <Restriction>
                 <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002131"/>
                 <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00000004"/>
+            </Restriction>
+        </rdf:type>
+        <rdf:type>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002473"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00013774"/>
             </Restriction>
         </rdf:type>
         <rdf:type>
@@ -6190,6 +7582,12 @@
         </rdf:type>
         <rdf:type>
             <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002473"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00003808"/>
+            </Restriction>
+        </rdf:type>
+        <rdf:type>
+            <Restriction>
                 <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002490"/>
                 <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBdv_00005369"/>
             </Restriction>
@@ -6224,6 +7622,12 @@
             <Restriction>
                 <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002131"/>
                 <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00000004"/>
+            </Restriction>
+        </rdf:type>
+        <rdf:type>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002473"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00003808"/>
             </Restriction>
         </rdf:type>
         <rdf:type>
@@ -6266,6 +7670,12 @@
         </rdf:type>
         <rdf:type>
             <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002473"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00003741"/>
+            </Restriction>
+        </rdf:type>
+        <rdf:type>
+            <Restriction>
                 <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002490"/>
                 <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBdv_00005369"/>
             </Restriction>
@@ -6300,6 +7710,12 @@
             <Restriction>
                 <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002131"/>
                 <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00000004"/>
+            </Restriction>
+        </rdf:type>
+        <rdf:type>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002473"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00003741"/>
             </Restriction>
         </rdf:type>
         <rdf:type>
@@ -6342,6 +7758,12 @@
         </rdf:type>
         <rdf:type>
             <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002473"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00003770"/>
+            </Restriction>
+        </rdf:type>
+        <rdf:type>
+            <Restriction>
                 <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002490"/>
                 <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBdv_00005369"/>
             </Restriction>
@@ -6376,6 +7798,12 @@
             <Restriction>
                 <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002131"/>
                 <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00000004"/>
+            </Restriction>
+        </rdf:type>
+        <rdf:type>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002473"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00003770"/>
             </Restriction>
         </rdf:type>
         <rdf:type>
@@ -6418,6 +7846,12 @@
         </rdf:type>
         <rdf:type>
             <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002473"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00110932"/>
+            </Restriction>
+        </rdf:type>
+        <rdf:type>
+            <Restriction>
                 <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002490"/>
                 <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBdv_00005369"/>
             </Restriction>
@@ -6452,6 +7886,12 @@
             <Restriction>
                 <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002131"/>
                 <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00000004"/>
+            </Restriction>
+        </rdf:type>
+        <rdf:type>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002473"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00110932"/>
             </Restriction>
         </rdf:type>
         <rdf:type>
@@ -6494,6 +7934,12 @@
         </rdf:type>
         <rdf:type>
             <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002473"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00100250"/>
+            </Restriction>
+        </rdf:type>
+        <rdf:type>
+            <Restriction>
                 <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002490"/>
                 <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBdv_00005369"/>
             </Restriction>
@@ -6528,6 +7974,12 @@
             <Restriction>
                 <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002131"/>
                 <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00000004"/>
+            </Restriction>
+        </rdf:type>
+        <rdf:type>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002473"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00100250"/>
             </Restriction>
         </rdf:type>
         <rdf:type>
@@ -6570,6 +8022,12 @@
         </rdf:type>
         <rdf:type>
             <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002473"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00100253"/>
+            </Restriction>
+        </rdf:type>
+        <rdf:type>
+            <Restriction>
                 <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002490"/>
                 <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBdv_00005369"/>
             </Restriction>
@@ -6604,6 +8062,12 @@
             <Restriction>
                 <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002131"/>
                 <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00000004"/>
+            </Restriction>
+        </rdf:type>
+        <rdf:type>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002473"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00100253"/>
             </Restriction>
         </rdf:type>
         <rdf:type>
@@ -6646,6 +8110,12 @@
         </rdf:type>
         <rdf:type>
             <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002473"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00110931"/>
+            </Restriction>
+        </rdf:type>
+        <rdf:type>
+            <Restriction>
                 <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002490"/>
                 <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBdv_00005369"/>
             </Restriction>
@@ -6680,6 +8150,12 @@
             <Restriction>
                 <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002131"/>
                 <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00000004"/>
+            </Restriction>
+        </rdf:type>
+        <rdf:type>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002473"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00110931"/>
             </Restriction>
         </rdf:type>
         <rdf:type>
@@ -6722,6 +8198,12 @@
         </rdf:type>
         <rdf:type>
             <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002473"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00100248"/>
+            </Restriction>
+        </rdf:type>
+        <rdf:type>
+            <Restriction>
                 <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002490"/>
                 <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBdv_00005369"/>
             </Restriction>
@@ -6756,6 +8238,12 @@
             <Restriction>
                 <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002131"/>
                 <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00000004"/>
+            </Restriction>
+        </rdf:type>
+        <rdf:type>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002473"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00100248"/>
             </Restriction>
         </rdf:type>
         <rdf:type>
@@ -6798,6 +8286,12 @@
         </rdf:type>
         <rdf:type>
             <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002473"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00110930"/>
+            </Restriction>
+        </rdf:type>
+        <rdf:type>
+            <Restriction>
                 <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002490"/>
                 <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBdv_00005369"/>
             </Restriction>
@@ -6832,6 +8326,12 @@
             <Restriction>
                 <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002131"/>
                 <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00000004"/>
+            </Restriction>
+        </rdf:type>
+        <rdf:type>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002473"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00110930"/>
             </Restriction>
         </rdf:type>
         <rdf:type>
@@ -6874,6 +8374,12 @@
         </rdf:type>
         <rdf:type>
             <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002473"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00110929"/>
+            </Restriction>
+        </rdf:type>
+        <rdf:type>
+            <Restriction>
                 <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002490"/>
                 <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBdv_00005369"/>
             </Restriction>
@@ -6908,6 +8414,12 @@
             <Restriction>
                 <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002131"/>
                 <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00000004"/>
+            </Restriction>
+        </rdf:type>
+        <rdf:type>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002473"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00110929"/>
             </Restriction>
         </rdf:type>
         <rdf:type>
@@ -6950,6 +8462,12 @@
         </rdf:type>
         <rdf:type>
             <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002473"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00111022"/>
+            </Restriction>
+        </rdf:type>
+        <rdf:type>
+            <Restriction>
                 <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002490"/>
                 <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBdv_00005369"/>
             </Restriction>
@@ -6984,6 +8502,12 @@
             <Restriction>
                 <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002131"/>
                 <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00000004"/>
+            </Restriction>
+        </rdf:type>
+        <rdf:type>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002473"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00111022"/>
             </Restriction>
         </rdf:type>
         <rdf:type>
@@ -7026,6 +8550,12 @@
         </rdf:type>
         <rdf:type>
             <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002473"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00110994"/>
+            </Restriction>
+        </rdf:type>
+        <rdf:type>
+            <Restriction>
                 <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002490"/>
                 <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBdv_00005369"/>
             </Restriction>
@@ -7060,6 +8590,12 @@
             <Restriction>
                 <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002131"/>
                 <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00000004"/>
+            </Restriction>
+        </rdf:type>
+        <rdf:type>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002473"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00110994"/>
             </Restriction>
         </rdf:type>
         <rdf:type>
@@ -7102,6 +8638,12 @@
         </rdf:type>
         <rdf:type>
             <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002473"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00100230"/>
+            </Restriction>
+        </rdf:type>
+        <rdf:type>
+            <Restriction>
                 <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002490"/>
                 <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBdv_00005369"/>
             </Restriction>
@@ -7136,6 +8678,12 @@
             <Restriction>
                 <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002131"/>
                 <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00000004"/>
+            </Restriction>
+        </rdf:type>
+        <rdf:type>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002473"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00100230"/>
             </Restriction>
         </rdf:type>
         <rdf:type>
@@ -7178,6 +8726,12 @@
         </rdf:type>
         <rdf:type>
             <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002473"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00100214"/>
+            </Restriction>
+        </rdf:type>
+        <rdf:type>
+            <Restriction>
                 <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002490"/>
                 <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBdv_00005369"/>
             </Restriction>
@@ -7212,6 +8766,12 @@
             <Restriction>
                 <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002131"/>
                 <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00000004"/>
+            </Restriction>
+        </rdf:type>
+        <rdf:type>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002473"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00100214"/>
             </Restriction>
         </rdf:type>
         <rdf:type>
@@ -7254,6 +8814,12 @@
         </rdf:type>
         <rdf:type>
             <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002473"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00111015"/>
+            </Restriction>
+        </rdf:type>
+        <rdf:type>
+            <Restriction>
                 <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002490"/>
                 <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBdv_00005369"/>
             </Restriction>
@@ -7288,6 +8854,12 @@
             <Restriction>
                 <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002131"/>
                 <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00000004"/>
+            </Restriction>
+        </rdf:type>
+        <rdf:type>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002473"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00111015"/>
             </Restriction>
         </rdf:type>
         <rdf:type>
@@ -7330,6 +8902,12 @@
         </rdf:type>
         <rdf:type>
             <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002473"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00111016"/>
+            </Restriction>
+        </rdf:type>
+        <rdf:type>
+            <Restriction>
                 <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002490"/>
                 <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBdv_00005369"/>
             </Restriction>
@@ -7364,6 +8942,12 @@
             <Restriction>
                 <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002131"/>
                 <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00000004"/>
+            </Restriction>
+        </rdf:type>
+        <rdf:type>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002473"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00111016"/>
             </Restriction>
         </rdf:type>
         <rdf:type>
@@ -7406,6 +8990,12 @@
         </rdf:type>
         <rdf:type>
             <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002473"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00111008"/>
+            </Restriction>
+        </rdf:type>
+        <rdf:type>
+            <Restriction>
                 <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002490"/>
                 <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBdv_00005369"/>
             </Restriction>
@@ -7440,6 +9030,12 @@
             <Restriction>
                 <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002131"/>
                 <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00000004"/>
+            </Restriction>
+        </rdf:type>
+        <rdf:type>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002473"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00111008"/>
             </Restriction>
         </rdf:type>
         <rdf:type>
@@ -7482,6 +9078,12 @@
         </rdf:type>
         <rdf:type>
             <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002473"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00110992"/>
+            </Restriction>
+        </rdf:type>
+        <rdf:type>
+            <Restriction>
                 <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002490"/>
                 <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBdv_00005369"/>
             </Restriction>
@@ -7516,6 +9118,12 @@
             <Restriction>
                 <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002131"/>
                 <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00000004"/>
+            </Restriction>
+        </rdf:type>
+        <rdf:type>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002473"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00110992"/>
             </Restriction>
         </rdf:type>
         <rdf:type>
@@ -7558,6 +9166,12 @@
         </rdf:type>
         <rdf:type>
             <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002473"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00003731"/>
+            </Restriction>
+        </rdf:type>
+        <rdf:type>
+            <Restriction>
                 <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002490"/>
                 <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBdv_00005369"/>
             </Restriction>
@@ -7592,6 +9206,12 @@
             <Restriction>
                 <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002131"/>
                 <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00000004"/>
+            </Restriction>
+        </rdf:type>
+        <rdf:type>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002473"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00003731"/>
             </Restriction>
         </rdf:type>
         <rdf:type>
@@ -7634,6 +9254,12 @@
         </rdf:type>
         <rdf:type>
             <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002473"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00003731"/>
+            </Restriction>
+        </rdf:type>
+        <rdf:type>
+            <Restriction>
                 <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002490"/>
                 <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBdv_00005369"/>
             </Restriction>
@@ -7668,6 +9294,12 @@
             <Restriction>
                 <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002131"/>
                 <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00000004"/>
+            </Restriction>
+        </rdf:type>
+        <rdf:type>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002473"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00003731"/>
             </Restriction>
         </rdf:type>
         <rdf:type>
@@ -7710,6 +9342,12 @@
         </rdf:type>
         <rdf:type>
             <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002473"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00003736"/>
+            </Restriction>
+        </rdf:type>
+        <rdf:type>
+            <Restriction>
                 <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002490"/>
                 <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBdv_00005369"/>
             </Restriction>
@@ -7744,6 +9382,12 @@
             <Restriction>
                 <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002131"/>
                 <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00000004"/>
+            </Restriction>
+        </rdf:type>
+        <rdf:type>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002473"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00003736"/>
             </Restriction>
         </rdf:type>
         <rdf:type>
@@ -7786,6 +9430,12 @@
         </rdf:type>
         <rdf:type>
             <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002473"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00003736"/>
+            </Restriction>
+        </rdf:type>
+        <rdf:type>
+            <Restriction>
                 <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002490"/>
                 <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBdv_00005369"/>
             </Restriction>
@@ -7820,6 +9470,12 @@
             <Restriction>
                 <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002131"/>
                 <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00000004"/>
+            </Restriction>
+        </rdf:type>
+        <rdf:type>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002473"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00003736"/>
             </Restriction>
         </rdf:type>
         <rdf:type>
@@ -7862,6 +9518,12 @@
         </rdf:type>
         <rdf:type>
             <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002473"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00003726"/>
+            </Restriction>
+        </rdf:type>
+        <rdf:type>
+            <Restriction>
                 <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002490"/>
                 <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBdv_00005369"/>
             </Restriction>
@@ -7896,6 +9558,12 @@
             <Restriction>
                 <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002131"/>
                 <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00000004"/>
+            </Restriction>
+        </rdf:type>
+        <rdf:type>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002473"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00003726"/>
             </Restriction>
         </rdf:type>
         <rdf:type>
@@ -7938,6 +9606,12 @@
         </rdf:type>
         <rdf:type>
             <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002473"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00003726"/>
+            </Restriction>
+        </rdf:type>
+        <rdf:type>
+            <Restriction>
                 <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002490"/>
                 <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBdv_00005369"/>
             </Restriction>
@@ -7972,6 +9646,12 @@
             <Restriction>
                 <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002131"/>
                 <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00000004"/>
+            </Restriction>
+        </rdf:type>
+        <rdf:type>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002473"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00003726"/>
             </Restriction>
         </rdf:type>
         <rdf:type>
@@ -8014,6 +9694,12 @@
         </rdf:type>
         <rdf:type>
             <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002473"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00100214"/>
+            </Restriction>
+        </rdf:type>
+        <rdf:type>
+            <Restriction>
                 <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002490"/>
                 <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBdv_00005369"/>
             </Restriction>
@@ -8048,6 +9734,12 @@
             <Restriction>
                 <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002131"/>
                 <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00000004"/>
+            </Restriction>
+        </rdf:type>
+        <rdf:type>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002473"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00100214"/>
             </Restriction>
         </rdf:type>
         <rdf:type>
@@ -8090,6 +9782,12 @@
         </rdf:type>
         <rdf:type>
             <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002473"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00100214"/>
+            </Restriction>
+        </rdf:type>
+        <rdf:type>
+            <Restriction>
                 <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002490"/>
                 <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBdv_00005369"/>
             </Restriction>
@@ -8124,6 +9822,12 @@
             <Restriction>
                 <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002131"/>
                 <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00000004"/>
+            </Restriction>
+        </rdf:type>
+        <rdf:type>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002473"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00100214"/>
             </Restriction>
         </rdf:type>
         <rdf:type>
@@ -8166,6 +9870,12 @@
         </rdf:type>
         <rdf:type>
             <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002473"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00058207"/>
+            </Restriction>
+        </rdf:type>
+        <rdf:type>
+            <Restriction>
                 <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002490"/>
                 <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBdv_00005369"/>
             </Restriction>
@@ -8200,6 +9910,12 @@
             <Restriction>
                 <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002131"/>
                 <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00000004"/>
+            </Restriction>
+        </rdf:type>
+        <rdf:type>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002473"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00058207"/>
             </Restriction>
         </rdf:type>
         <rdf:type>
@@ -8242,6 +9958,12 @@
         </rdf:type>
         <rdf:type>
             <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002473"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00058205"/>
+            </Restriction>
+        </rdf:type>
+        <rdf:type>
+            <Restriction>
                 <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002490"/>
                 <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBdv_00005369"/>
             </Restriction>
@@ -8276,6 +9998,12 @@
             <Restriction>
                 <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002131"/>
                 <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00000004"/>
+            </Restriction>
+        </rdf:type>
+        <rdf:type>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002473"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00058205"/>
             </Restriction>
         </rdf:type>
         <rdf:type>
@@ -8318,6 +10046,12 @@
         </rdf:type>
         <rdf:type>
             <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002473"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00058208"/>
+            </Restriction>
+        </rdf:type>
+        <rdf:type>
+            <Restriction>
                 <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002490"/>
                 <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBdv_00005369"/>
             </Restriction>
@@ -8352,6 +10086,12 @@
             <Restriction>
                 <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002131"/>
                 <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00000004"/>
+            </Restriction>
+        </rdf:type>
+        <rdf:type>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002473"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00058208"/>
             </Restriction>
         </rdf:type>
         <rdf:type>
@@ -8394,6 +10134,12 @@
         </rdf:type>
         <rdf:type>
             <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002473"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00003784"/>
+            </Restriction>
+        </rdf:type>
+        <rdf:type>
+            <Restriction>
                 <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002490"/>
                 <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBdv_00005369"/>
             </Restriction>
@@ -8432,6 +10178,12 @@
         </rdf:type>
         <rdf:type>
             <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002473"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00003784"/>
+            </Restriction>
+        </rdf:type>
+        <rdf:type>
+            <Restriction>
                 <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002490"/>
                 <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBdv_00005369"/>
             </Restriction>
@@ -8445,14 +10197,14 @@
     <Axiom>
         <annotatedSource rdf:resource="http://virtualflybrain.org/reports/VFBseq_00003483"/>
         <annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
-        <annotatedTarget rdf:resource="http://virtualflybrain.org/reports/BioSample"/>
-        <neo_custom:accession>SAMN09649960</neo_custom:accession>
+        <annotatedTarget rdf:resource="http://virtualflybrain.org/reports/GEO"/>
+        <neo_custom:accession>GSM3265679</neo_custom:accession>
     </Axiom>
     <Axiom>
         <annotatedSource rdf:resource="http://virtualflybrain.org/reports/VFBseq_00003483"/>
         <annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
-        <annotatedTarget rdf:resource="http://virtualflybrain.org/reports/GEO"/>
-        <neo_custom:accession>GSM3265679</neo_custom:accession>
+        <annotatedTarget rdf:resource="http://virtualflybrain.org/reports/BioSample"/>
+        <neo_custom:accession>SAMN09649960</neo_custom:accession>
     </Axiom>
     
 
@@ -8466,6 +10218,12 @@
             <Restriction>
                 <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002131"/>
                 <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00000004"/>
+            </Restriction>
+        </rdf:type>
+        <rdf:type>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002473"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00003784"/>
             </Restriction>
         </rdf:type>
         <rdf:type>
@@ -8508,6 +10266,12 @@
         </rdf:type>
         <rdf:type>
             <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002473"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00003784"/>
+            </Restriction>
+        </rdf:type>
+        <rdf:type>
+            <Restriction>
                 <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002490"/>
                 <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBdv_00005369"/>
             </Restriction>
@@ -8542,6 +10306,12 @@
             <Restriction>
                 <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002131"/>
                 <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00000004"/>
+            </Restriction>
+        </rdf:type>
+        <rdf:type>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002473"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00111285"/>
             </Restriction>
         </rdf:type>
         <rdf:type>
@@ -8584,6 +10354,12 @@
         </rdf:type>
         <rdf:type>
             <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002473"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00111285"/>
+            </Restriction>
+        </rdf:type>
+        <rdf:type>
+            <Restriction>
                 <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002490"/>
                 <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBdv_00005369"/>
             </Restriction>
@@ -8618,6 +10394,12 @@
             <Restriction>
                 <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002131"/>
                 <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00000004"/>
+            </Restriction>
+        </rdf:type>
+        <rdf:type>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002473"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00111748"/>
             </Restriction>
         </rdf:type>
         <rdf:type>
@@ -8660,6 +10442,12 @@
         </rdf:type>
         <rdf:type>
             <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002473"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00111748"/>
+            </Restriction>
+        </rdf:type>
+        <rdf:type>
+            <Restriction>
                 <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002490"/>
                 <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBdv_00005369"/>
             </Restriction>
@@ -8694,6 +10482,12 @@
             <Restriction>
                 <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002131"/>
                 <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00000004"/>
+            </Restriction>
+        </rdf:type>
+        <rdf:type>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002473"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00110933"/>
             </Restriction>
         </rdf:type>
         <rdf:type>
@@ -8736,6 +10530,12 @@
         </rdf:type>
         <rdf:type>
             <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002473"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00110933"/>
+            </Restriction>
+        </rdf:type>
+        <rdf:type>
+            <Restriction>
                 <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002490"/>
                 <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBdv_00005369"/>
             </Restriction>
@@ -8770,6 +10570,12 @@
             <Restriction>
                 <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002131"/>
                 <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00000004"/>
+            </Restriction>
+        </rdf:type>
+        <rdf:type>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002473"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00003768"/>
             </Restriction>
         </rdf:type>
         <rdf:type>
@@ -8812,6 +10618,12 @@
         </rdf:type>
         <rdf:type>
             <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002473"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00003768"/>
+            </Restriction>
+        </rdf:type>
+        <rdf:type>
+            <Restriction>
                 <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002490"/>
                 <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBdv_00005369"/>
             </Restriction>
@@ -8846,6 +10658,12 @@
             <Restriction>
                 <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002131"/>
                 <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00000004"/>
+            </Restriction>
+        </rdf:type>
+        <rdf:type>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002473"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00111273"/>
             </Restriction>
         </rdf:type>
         <rdf:type>
@@ -8888,6 +10706,12 @@
         </rdf:type>
         <rdf:type>
             <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002473"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00111273"/>
+            </Restriction>
+        </rdf:type>
+        <rdf:type>
+            <Restriction>
                 <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002490"/>
                 <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBdv_00005369"/>
             </Restriction>
@@ -8922,6 +10746,12 @@
             <Restriction>
                 <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002131"/>
                 <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00000004"/>
+            </Restriction>
+        </rdf:type>
+        <rdf:type>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002473"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00058230"/>
             </Restriction>
         </rdf:type>
         <rdf:type>
@@ -8964,6 +10794,12 @@
         </rdf:type>
         <rdf:type>
             <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002473"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00058230"/>
+            </Restriction>
+        </rdf:type>
+        <rdf:type>
+            <Restriction>
                 <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002490"/>
                 <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBdv_00005369"/>
             </Restriction>
@@ -8998,6 +10834,12 @@
             <Restriction>
                 <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002131"/>
                 <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00000004"/>
+            </Restriction>
+        </rdf:type>
+        <rdf:type>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002473"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00058230"/>
             </Restriction>
         </rdf:type>
         <rdf:type>
@@ -9040,6 +10882,12 @@
         </rdf:type>
         <rdf:type>
             <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002473"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00058230"/>
+            </Restriction>
+        </rdf:type>
+        <rdf:type>
+            <Restriction>
                 <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002490"/>
                 <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBdv_00005369"/>
             </Restriction>
@@ -9074,6 +10922,12 @@
             <Restriction>
                 <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002131"/>
                 <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00000004"/>
+            </Restriction>
+        </rdf:type>
+        <rdf:type>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002473"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00058230"/>
             </Restriction>
         </rdf:type>
         <rdf:type>
@@ -9116,6 +10970,12 @@
         </rdf:type>
         <rdf:type>
             <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002473"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00058230"/>
+            </Restriction>
+        </rdf:type>
+        <rdf:type>
+            <Restriction>
                 <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002490"/>
                 <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBdv_00005369"/>
             </Restriction>
@@ -9150,6 +11010,12 @@
             <Restriction>
                 <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002131"/>
                 <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00000004"/>
+            </Restriction>
+        </rdf:type>
+        <rdf:type>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002473"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00003726"/>
             </Restriction>
         </rdf:type>
         <rdf:type>
@@ -9192,6 +11058,12 @@
         </rdf:type>
         <rdf:type>
             <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002473"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00003726"/>
+            </Restriction>
+        </rdf:type>
+        <rdf:type>
+            <Restriction>
                 <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002490"/>
                 <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBdv_00005369"/>
             </Restriction>
@@ -9226,6 +11098,12 @@
             <Restriction>
                 <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002131"/>
                 <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00000004"/>
+            </Restriction>
+        </rdf:type>
+        <rdf:type>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002473"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00003726"/>
             </Restriction>
         </rdf:type>
         <rdf:type>
@@ -9268,6 +11146,12 @@
         </rdf:type>
         <rdf:type>
             <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002473"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00003726"/>
+            </Restriction>
+        </rdf:type>
+        <rdf:type>
+            <Restriction>
                 <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002490"/>
                 <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBdv_00005369"/>
             </Restriction>
@@ -9302,6 +11186,12 @@
             <Restriction>
                 <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002131"/>
                 <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00000004"/>
+            </Restriction>
+        </rdf:type>
+        <rdf:type>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002473"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00003906"/>
             </Restriction>
         </rdf:type>
         <rdf:type>
@@ -9344,6 +11234,12 @@
         </rdf:type>
         <rdf:type>
             <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002473"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00003906"/>
+            </Restriction>
+        </rdf:type>
+        <rdf:type>
+            <Restriction>
                 <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002490"/>
                 <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBdv_00005369"/>
             </Restriction>
@@ -9378,6 +11274,12 @@
             <Restriction>
                 <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002131"/>
                 <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00000004"/>
+            </Restriction>
+        </rdf:type>
+        <rdf:type>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002473"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00111316"/>
             </Restriction>
         </rdf:type>
         <rdf:type>
@@ -9420,6 +11322,12 @@
         </rdf:type>
         <rdf:type>
             <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002473"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00111316"/>
+            </Restriction>
+        </rdf:type>
+        <rdf:type>
+            <Restriction>
                 <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002490"/>
                 <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBdv_00005369"/>
             </Restriction>
@@ -9454,6 +11362,12 @@
             <Restriction>
                 <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002131"/>
                 <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00000004"/>
+            </Restriction>
+        </rdf:type>
+        <rdf:type>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002473"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00048113"/>
             </Restriction>
         </rdf:type>
         <rdf:type>
@@ -9496,6 +11410,12 @@
         </rdf:type>
         <rdf:type>
             <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002473"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00048113"/>
+            </Restriction>
+        </rdf:type>
+        <rdf:type>
+            <Restriction>
                 <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002490"/>
                 <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBdv_00005369"/>
             </Restriction>
@@ -9530,6 +11450,12 @@
             <Restriction>
                 <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002131"/>
                 <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00000004"/>
+            </Restriction>
+        </rdf:type>
+        <rdf:type>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002473"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00100171"/>
             </Restriction>
         </rdf:type>
         <rdf:type>
@@ -9572,6 +11498,12 @@
         </rdf:type>
         <rdf:type>
             <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002473"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00100171"/>
+            </Restriction>
+        </rdf:type>
+        <rdf:type>
+            <Restriction>
                 <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002490"/>
                 <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBdv_00005369"/>
             </Restriction>
@@ -9606,6 +11538,12 @@
             <Restriction>
                 <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002131"/>
                 <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00000004"/>
+            </Restriction>
+        </rdf:type>
+        <rdf:type>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002473"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00003763"/>
             </Restriction>
         </rdf:type>
         <rdf:type>
@@ -9648,6 +11586,12 @@
         </rdf:type>
         <rdf:type>
             <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002473"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00003763"/>
+            </Restriction>
+        </rdf:type>
+        <rdf:type>
+            <Restriction>
                 <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002490"/>
                 <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBdv_00005369"/>
             </Restriction>
@@ -9682,6 +11626,12 @@
             <Restriction>
                 <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002131"/>
                 <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00000004"/>
+            </Restriction>
+        </rdf:type>
+        <rdf:type>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002473"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00100246"/>
             </Restriction>
         </rdf:type>
         <rdf:type>
@@ -9724,6 +11674,12 @@
         </rdf:type>
         <rdf:type>
             <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002473"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00100246"/>
+            </Restriction>
+        </rdf:type>
+        <rdf:type>
+            <Restriction>
                 <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002490"/>
                 <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBdv_00005369"/>
             </Restriction>
@@ -9758,6 +11714,12 @@
             <Restriction>
                 <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002131"/>
                 <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00000004"/>
+            </Restriction>
+        </rdf:type>
+        <rdf:type>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002473"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00003745"/>
             </Restriction>
         </rdf:type>
         <rdf:type>
@@ -9800,6 +11762,12 @@
         </rdf:type>
         <rdf:type>
             <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002473"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00003745"/>
+            </Restriction>
+        </rdf:type>
+        <rdf:type>
+            <Restriction>
                 <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002490"/>
                 <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBdv_00005369"/>
             </Restriction>
@@ -9838,6 +11806,12 @@
         </rdf:type>
         <rdf:type>
             <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002473"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00110932"/>
+            </Restriction>
+        </rdf:type>
+        <rdf:type>
+            <Restriction>
                 <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002490"/>
                 <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBdv_00005369"/>
             </Restriction>
@@ -9872,6 +11846,12 @@
             <Restriction>
                 <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002131"/>
                 <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00000004"/>
+            </Restriction>
+        </rdf:type>
+        <rdf:type>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002473"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00110932"/>
             </Restriction>
         </rdf:type>
         <rdf:type>
