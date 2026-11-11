@@ -24,17 +24,20 @@ dropped, with its config, mappings and output files. Once it is live its id is f
 
 ## Outputs
 
-- `metadata/VFB_EPseq_<name>.owl`: the Dataset and Samples. Each Sample is typed by its
+Named by project (`<author>_<year>`), as in vfb-scRNAseq:
+
+- `metadata/vfb_EPseq_metadata_<project>.owl`: the Dataset and Samples. Each Sample is typed by its
   driver's expression pattern class (`VFBexp_...`), with tissue, stage, dataset and xrefs.
-- `expression/VFB_EPseq_exp_<name>_<n>.owl.gz`: per-sample gene expression (TPM as
+- `expression/vfb_EPseq_expression_<project>_<n>.owl.gz`: per-sample gene expression (TPM as
   `expression_level`, `hide_in_terminfo` true), up to 100 samples per file.
-- `expression/FBgn_list_<name>.txt`: the genes in a project's expression output;
+- `expression/FBgn_list_<project>.txt`: the genes in a project's expression output;
   `expression/FBgn_list.txt`: their union, every project's genes (for
   vfb-scRNAseq-gene-annotations).
 
 Until VFB publishes from these paths, the previous release files stay where the old
 Jenkins job reads them: `metadata_release_files/`, `src/ontology/expression_data/`,
-`src/ontology/reports/FBgn_list.txt`.
+`src/ontology/reports/FBgn_list.txt`. Publishing from here needs the renames in
+docs/DESIGN.md *Publishing*.
 
 ## Building
 

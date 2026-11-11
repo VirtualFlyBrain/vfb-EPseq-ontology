@@ -9,12 +9,11 @@ source:
   year: 2019
 dataset:
   label_prefix: Bulk RNA-seq data from   # -> "Bulk RNA-seq data from Aso (2019)"; sorting (hand / FACS) per sample in GEO
-  # cell type-specific RNA-sequencing analysis; not in VFB yet, but the metadata file (VFB_EPseq_PR*) seeds
+  # cell type-specific RNA-sequencing analysis; not in VFB yet, but the metadata file seeds
   # collectdata's FBcv slice, so it comes in with the load
   assay_type: FBcv:0009018
   title: Bulk RNA-seq data from the dopaminergic neurons, MB output neurons, Kenyon cells, APL and DPM neurons in adult Drosophila.
   licence: CC-BY-4.0
-  output_name: PRJNA587485
 samples:
   # dissected adult brains (paper methods; GEO has no tissue field), adult females
   tissue: FBbt:00003624
