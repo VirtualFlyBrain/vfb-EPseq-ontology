@@ -79,11 +79,13 @@ def test_missing_id(cfg):
 def test_entities_emit(cfg, tmp_path):
     from vfb_scrnaseq.emit import emit_owl
     cfg["dataset"]["assay_type"] = "FBcv:0009018"
+    cfg["samples"]["tissue_by_cell_type"] = {"PAM-g5": ["FBbt:00007000"]}
     ents = build.entities(cfg, SAMPLES, build.IdLookup(cfg, IDS))
     text = emit_owl(ents, tmp_path / "out.ofn", schema_path=SCHEMA).read_text()
     s = "VFBseq:00000002"
     for ax in (f"ClassAssertion(FBcv:0003024 {s})", f"ClassAssertion(vfb:VFBexp_FBtp1FBtp2 {s})",
-               f"ClassAssertion(ObjectSomeValuesFrom(RO:0002131 FBbt:00000004) {s})",
+               f"ClassAssertion(ObjectSomeValuesFrom(RO:0002131 FBbt:00007000) {s})",          # override
+               "ClassAssertion(ObjectSomeValuesFrom(RO:0002131 FBbt:00000004) VFBseq:00000003)",
                f"ClassAssertion(ObjectSomeValuesFrom(RO:0002473 FBbt:00111015) {s})",
                f"AnnotationAssertion(dc:source {s} VFBseq:00000001)",
                f'AnnotationAssertion(rdfs:label {s} "a_rep1 (Davis 2020)")',

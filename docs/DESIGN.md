@@ -74,7 +74,22 @@ CC BY 4.0. 266 GEO samples; 238 loaded. Inputs: the SOFT file and supplementary
 `dataTable2.genes_x_samples_TPM.all_genes` (identical to the TPM table of the 2024
 curation).
 
-- **Tissue / stage:** whole heads (GEO `tissue: head`), adult (FBdv:00005369).
+- **Method:** TAPIN-seq / INTACT: nuclei affinity-purified (anti-GFP beads) from
+  homogenised frozen heads by the driver's tagged nuclear envelope protein (UNC84-GFP);
+  no cell sorting. Dataset label *Bulk RNA-seq data from Davis (2020)* (method in the
+  title), assay type FBcv:0009018.
+- **Tissue / stage:** whole heads (GEO `tissue: head`), adult (FBdv:00005369), except
+  Muscles_App (2 samples): *appendage* (FBbt:00007000; `samples.tissue_by_cell_type`).
+  GEO gives head for every sample, but the paper says these libraries were made from
+  appendages after the heads were removed (Figure 3 - figure supplement 1 legend; table A;
+  methods "heads or wings/appendages").
+- **Cell types** (`cell_types.tsv`, 2026-11-11): the authors' type is the title before
+  `_d<n>` (supplementary table A `celltype`, with `celltype.details`). Combination and
+  multi-type drivers (C2.C3, L1.L2, T4.T5, KC α/β c.p.s, LPTC HS.VS, LC10bc, PB_1, PAM_2/3/4/6)
+  map to the common parent; broad drivers (putative ChAT-, Gad1-, VGlut-, CCAP-, Crz-,
+  Dsk-, Ilp2-, NPF-, Pdf-expressing cells) to the adult neurotransmitter / peptide class.
+  No type: Kdm2 (broad enhancer trap, no type stated) and PB_3 (P-EN1 driver, but the
+  authors note optic lobe cells outnumber the PB cells). 234 of 238 samples typed.
 - **Drivers:** `drivers.tsv` maps GEO's `external driver id` to a `VFBexp_` class, from
   the 2024 curation (VFB lookup by name; 14 matched by hand). GEO gives `JSS55439` for
   the Glia_Eg samples where BioSample gives `SS55439`; both are listed. A driver id not
@@ -98,9 +113,9 @@ expression pattern; left out in 2024 too); 4
 Same 238 driver-typed samples with the same drivers, tissue, stage and dataset links.
 
 - New `VFBseq_` IRIs (VFBseq_00003283-00003521); BioSample and GEO xrefs added on
-  samples; new labels `TAPIN-seq and INTACT data from Davis (2020)` (50 samples are
-  INTACT) and `Mi1_d1_rep1 (Davis 2020)`, previously `RNAseq_2020_Davis` and
-  `RNAseq_2020_DavisMi1_d1_rep1`.
+  samples; new labels `Bulk RNA-seq data from Davis (2020)` and `Mi1_d1_rep1 (Davis
+  2020)`, previously `RNAseq_2020_Davis` and `RNAseq_2020_DavisMi1_d1_rep1`.
+- Added since: assay type and sample cell types (2026-11-11).
 - The 4 R1-6 samples (no driver class, no expression) are no longer loaded.
 - Expression: 2,717,993 axioms (was 2,718,789). Iyd (FBgn0286980, 206 axioms) dropped
   as a split (the 2024 curation mapped it by name); 3 merged genes with differing input

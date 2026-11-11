@@ -19,7 +19,7 @@ dropped, with its config, mappings and output files. Once it is live its id is f
 
 | Project | Paper | Data | Samples | Drivers |
 |---|---|---|---|---|
-| `davis_2020` | Davis et al. 2020 (FBrf0244935), TAPIN-seq of adult optic lobe neurons | GEO GSE116969 / BioProject PRJNA480794 | 238 | 113 |
+| `davis_2020` | Davis et al. 2020 (FBrf0244935), bulk RNA-seq (TAPIN-seq / INTACT) of adult head cell types, mostly optic lobe neurons | GEO GSE116969 / BioProject PRJNA480794 | 238 | 113 |
 | `aso_2019` (not yet released) | Aso et al. 2019 (FBrf0244530), bulk RNA-seq of sorted mushroom body cell types | GEO GSE139889 / BioProject PRJNA587485 | 50 | 19 |
 
 ## Outputs
