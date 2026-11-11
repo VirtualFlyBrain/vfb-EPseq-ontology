@@ -351,6 +351,12 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/FBbt_00007000 -->
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/FBbt_00007000"/>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/FBbt_00013774 -->
 
     <Class rdf:about="http://purl.obolibrary.org/obo/FBbt_00013774"/>
@@ -10745,7 +10751,7 @@
         <rdf:type>
             <Restriction>
                 <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002131"/>
-                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00000004"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00007000"/>
             </Restriction>
         </rdf:type>
         <rdf:type>
@@ -10789,7 +10795,7 @@
         <rdf:type>
             <Restriction>
                 <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002131"/>
-                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00000004"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00007000"/>
             </Restriction>
         </rdf:type>
         <rdf:type>

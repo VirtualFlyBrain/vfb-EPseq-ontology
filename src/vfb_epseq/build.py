@@ -91,7 +91,8 @@ def entities(cfg: dict, samples: list[Sample], ids: IdLookup) -> list[dict]:
         out.append({
             "type": "DriverSample", "id": VFB + ids.sample(s), "name": sample_label(cfg, s),
             "associated_dataset": ds_iri, "neo_label": ["Sample"],
-            "sample_tissue": [sc["tissue"]], "stage": sc["stage"],
+            "sample_tissue": sc.get("tissue_by_cell_type", {}).get(s.author_cell_type, [sc["tissue"]]),
+            "stage": sc["stage"],
             "expression_pattern": f"vfb:{s.expression_pattern}",
             **({"cell_type": list(s.cell_types)} if s.cell_types else {}),
             "geo_xref": [s.gsm], **({"biosample_xref": [s.biosample]} if s.biosample else {}),

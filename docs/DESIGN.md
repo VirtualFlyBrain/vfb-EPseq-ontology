@@ -78,7 +78,11 @@ curation).
   homogenised frozen heads by the driver's tagged nuclear envelope protein (UNC84-GFP);
   no cell sorting. Dataset label *Bulk RNA-seq data from Davis (2020)* (method in the
   title), assay type FBcv:0009018.
-- **Tissue / stage:** whole heads (GEO `tissue: head`), adult (FBdv:00005369).
+- **Tissue / stage:** whole heads (GEO `tissue: head`), adult (FBdv:00005369), except
+  Muscles_App (2 samples): *appendage* (FBbt:00007000; `samples.tissue_by_cell_type`).
+  GEO gives head for every sample, but the paper says these libraries were made from
+  appendages after the heads were removed (Figure 3 - figure supplement 1 legend; table A;
+  methods "heads or wings/appendages").
 - **Cell types** (`cell_types.tsv`, 2026-11-11): the authors' type is the title before
   `_d<n>` (supplementary table A `celltype`, with `celltype.details`). Combination and
   multi-type drivers (C2.C3, L1.L2, T4.T5, KC α/β c.p.s, LPTC HS.VS, LC10bc, PB_1, PAM_2/3/4/6)
