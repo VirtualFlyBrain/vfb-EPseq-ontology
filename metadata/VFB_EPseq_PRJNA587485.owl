@@ -1,0 +1,2641 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.w3.org/2002/07/owl"
+     xmlns:RO="http://purl.obolibrary.org/obo/RO_"
+     xmlns:dc="http://purl.org/dc/terms/"
+     xmlns:BAO="http://www.bioassayontology.org/bao#BAO_"
+     xmlns:BFO="http://purl.obolibrary.org/obo/BFO_"
+     xmlns:IAO="http://purl.obolibrary.org/obo/IAO_"
+     xmlns:OBI="http://purl.obolibrary.org/obo/OBI_"
+     xmlns:obo="http://purl.obolibrary.org/obo/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:vfb="http://virtualflybrain.org/reports/"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:FBbt="http://purl.obolibrary.org/obo/FBbt_"
+     xmlns:FBcv="http://purl.obolibrary.org/obo/FBcv_"
+     xmlns:FBdv="http://purl.obolibrary.org/obo/FBdv_"
+     xmlns:GENO="http://purl.obolibrary.org/obo/GENO_"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:shex="http://www.w3.org/ns/shex#"
+     xmlns:VFBseq="http://virtualflybrain.org/reports/VFBseq_"
+     xmlns:linkml="https://w3id.org/linkml/"
+     xmlns:schema="http://schema.org/"
+     xmlns:FlyBase="http://flybase.org/reports/"
+     xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#"
+     xmlns:neo_custom="http://n2o.neo/custom/"
+     xmlns:neo_property="http://n2o.neo/property/">
+    <Ontology/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://n2o.neo/custom/accession -->
+
+    <AnnotationProperty rdf:about="http://n2o.neo/custom/accession"/>
+    
+
+
+    <!-- http://n2o.neo/property/nodeLabel -->
+
+    <AnnotationProperty rdf:about="http://n2o.neo/property/nodeLabel"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000115 -->
+
+    <AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000115"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/licence -->
+
+    <AnnotationProperty rdf:about="http://purl.org/dc/terms/licence"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/references -->
+
+    <AnnotationProperty rdf:about="http://purl.org/dc/terms/references"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/source -->
+
+    <AnnotationProperty rdf:about="http://purl.org/dc/terms/source"/>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#hasDbXref -->
+
+    <AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0000312 -->
+
+    <ObjectProperty rdf:about="http://purl.obolibrary.org/obo/OBI_0000312"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RO_0002131 -->
+
+    <ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0002131"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RO_0002473 -->
+
+    <ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0002473"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RO_0002490 -->
+
+    <ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0002490"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FBbt_00003624 -->
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/FBbt_00003624"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FBbt_00005780 -->
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/FBbt_00005780"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FBbt_00049828 -->
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/FBbt_00049828"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FBbt_00049834 -->
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/FBbt_00049834"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FBbt_00100214 -->
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/FBbt_00100214"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FBbt_00100230 -->
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/FBbt_00100230"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FBbt_00100234 -->
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/FBbt_00100234"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FBbt_00100236 -->
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/FBbt_00100236"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FBbt_00100238 -->
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/FBbt_00100238"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FBbt_00100241 -->
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/FBbt_00100241"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FBbt_00100242 -->
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/FBbt_00100242"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FBbt_00100243 -->
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/FBbt_00100243"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FBbt_00100246 -->
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/FBbt_00100246"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FBbt_00100248 -->
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/FBbt_00100248"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FBbt_00110102 -->
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/FBbt_00110102"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FBbt_00110320 -->
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/FBbt_00110320"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FBbt_00110992 -->
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/FBbt_00110992"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FBbt_00111005 -->
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/FBbt_00111005"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FBbt_00111015 -->
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/FBbt_00111015"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FBbt_00111016 -->
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/FBbt_00111016"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FBbt_00111022 -->
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/FBbt_00111022"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FBcv_0003023 -->
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/FBcv_0003023"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FBcv_0003024 -->
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/FBcv_0003024"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FBcv_0009018 -->
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/FBcv_0009018"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FBdv_00005369 -->
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/FBdv_00005369"/>
+    
+
+
+    <!-- http://virtualflybrain.org/reports/VFBexp_FBti0132502 -->
+
+    <Class rdf:about="http://virtualflybrain.org/reports/VFBexp_FBti0132502"/>
+    
+
+
+    <!-- http://virtualflybrain.org/reports/VFBexp_FBtp0099191FBtp0099546 -->
+
+    <Class rdf:about="http://virtualflybrain.org/reports/VFBexp_FBtp0099191FBtp0099546"/>
+    
+
+
+    <!-- http://virtualflybrain.org/reports/VFBexp_FBtp0099451FBtp0099551 -->
+
+    <Class rdf:about="http://virtualflybrain.org/reports/VFBexp_FBtp0099451FBtp0099551"/>
+    
+
+
+    <!-- http://virtualflybrain.org/reports/VFBexp_FBtp0099453FBtp0099538 -->
+
+    <Class rdf:about="http://virtualflybrain.org/reports/VFBexp_FBtp0099453FBtp0099538"/>
+    
+
+
+    <!-- http://virtualflybrain.org/reports/VFBexp_FBtp0099456FBtp0099565 -->
+
+    <Class rdf:about="http://virtualflybrain.org/reports/VFBexp_FBtp0099456FBtp0099565"/>
+    
+
+
+    <!-- http://virtualflybrain.org/reports/VFBexp_FBtp0099456FBtp0120685 -->
+
+    <Class rdf:about="http://virtualflybrain.org/reports/VFBexp_FBtp0099456FBtp0120685"/>
+    
+
+
+    <!-- http://virtualflybrain.org/reports/VFBexp_FBtp0099459FBtp0161044 -->
+
+    <Class rdf:about="http://virtualflybrain.org/reports/VFBexp_FBtp0099459FBtp0161044"/>
+    
+
+
+    <!-- http://virtualflybrain.org/reports/VFBexp_FBtp0099469FBtp0099561 -->
+
+    <Class rdf:about="http://virtualflybrain.org/reports/VFBexp_FBtp0099469FBtp0099561"/>
+    
+
+
+    <!-- http://virtualflybrain.org/reports/VFBexp_FBtp0099472FBtp0099523 -->
+
+    <Class rdf:about="http://virtualflybrain.org/reports/VFBexp_FBtp0099472FBtp0099523"/>
+    
+
+
+    <!-- http://virtualflybrain.org/reports/VFBexp_FBtp0099473FBtp0120835 -->
+
+    <Class rdf:about="http://virtualflybrain.org/reports/VFBexp_FBtp0099473FBtp0120835"/>
+    
+
+
+    <!-- http://virtualflybrain.org/reports/VFBexp_FBtp0099478FBtp0099551 -->
+
+    <Class rdf:about="http://virtualflybrain.org/reports/VFBexp_FBtp0099478FBtp0099551"/>
+    
+
+
+    <!-- http://virtualflybrain.org/reports/VFBexp_FBtp0099479FBtp0099561 -->
+
+    <Class rdf:about="http://virtualflybrain.org/reports/VFBexp_FBtp0099479FBtp0099561"/>
+    
+
+
+    <!-- http://virtualflybrain.org/reports/VFBexp_FBtp0099485FBtp0133108 -->
+
+    <Class rdf:about="http://virtualflybrain.org/reports/VFBexp_FBtp0099485FBtp0133108"/>
+    
+
+
+    <!-- http://virtualflybrain.org/reports/VFBexp_FBtp0099487FBtp0099540 -->
+
+    <Class rdf:about="http://virtualflybrain.org/reports/VFBexp_FBtp0099487FBtp0099540"/>
+    
+
+
+    <!-- http://virtualflybrain.org/reports/VFBexp_FBtp0099488FBtp0099551 -->
+
+    <Class rdf:about="http://virtualflybrain.org/reports/VFBexp_FBtp0099488FBtp0099551"/>
+    
+
+
+    <!-- http://virtualflybrain.org/reports/VFBexp_FBtp0099491FBtp0099563 -->
+
+    <Class rdf:about="http://virtualflybrain.org/reports/VFBexp_FBtp0099491FBtp0099563"/>
+    
+
+
+    <!-- http://virtualflybrain.org/reports/VFBexp_FBtp0099497FBtp0099533 -->
+
+    <Class rdf:about="http://virtualflybrain.org/reports/VFBexp_FBtp0099497FBtp0099533"/>
+    
+
+
+    <!-- http://virtualflybrain.org/reports/VFBexp_FBtp0099504FBtp0117260 -->
+
+    <Class rdf:about="http://virtualflybrain.org/reports/VFBexp_FBtp0099504FBtp0117260"/>
+    
+
+
+    <!-- http://virtualflybrain.org/reports/VFBexp_FBtp0117486FBtp0133108 -->
+
+    <Class rdf:about="http://virtualflybrain.org/reports/VFBexp_FBtp0117486FBtp0133108"/>
+    
+
+
+    <!-- http://virtualflybrain.org/reports/VFBexp_FBtp0125032FBtp0133108 -->
+
+    <Class rdf:about="http://virtualflybrain.org/reports/VFBexp_FBtp0125032FBtp0133108"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://virtualflybrain.org/reports/VFBseq_00003522 -->
+
+    <NamedIndividual rdf:about="http://virtualflybrain.org/reports/VFBseq_00003522">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/FBcv_0003023"/>
+        <rdf:type>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000312"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBcv_0009018"/>
+            </Restriction>
+        </rdf:type>
+        <neo_property:nodeLabel>DataSet</neo_property:nodeLabel>
+        <obo:IAO_0000115>Bulk RNA-seq data from the dopaminergic neurons, MB output neurons, Kenyon cells, APL and DPM neurons in adult Drosophila.</obo:IAO_0000115>
+        <dc:licence rdf:resource="http://virtualflybrain.org/reports/VFBlicense_CC_BY_4_0"/>
+        <dc:references rdf:resource="http://flybase.org/reports/FBrf0244530"/>
+        <oboInOwl:hasDbXref rdf:resource="http://virtualflybrain.org/reports/GEO"/>
+        <rdfs:label>Bulk RNA-seq data from Aso (2019)</rdfs:label>
+    </NamedIndividual>
+    <Axiom>
+        <annotatedSource rdf:resource="http://virtualflybrain.org/reports/VFBseq_00003522"/>
+        <annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <annotatedTarget rdf:resource="http://virtualflybrain.org/reports/GEO"/>
+        <neo_custom:accession>GSE139889</neo_custom:accession>
+    </Axiom>
+    
+
+
+    <!-- http://virtualflybrain.org/reports/VFBseq_00003523 -->
+
+    <NamedIndividual rdf:about="http://virtualflybrain.org/reports/VFBseq_00003523">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/FBcv_0003024"/>
+        <rdf:type rdf:resource="http://virtualflybrain.org/reports/VFBexp_FBtp0125032FBtp0133108"/>
+        <rdf:type>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002131"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00003624"/>
+            </Restriction>
+        </rdf:type>
+        <rdf:type>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002473"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00049828"/>
+            </Restriction>
+        </rdf:type>
+        <rdf:type>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002490"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBdv_00005369"/>
+            </Restriction>
+        </rdf:type>
+        <neo_property:nodeLabel>Sample</neo_property:nodeLabel>
+        <dc:source rdf:resource="http://virtualflybrain.org/reports/VFBseq_00003522"/>
+        <oboInOwl:hasDbXref rdf:resource="http://virtualflybrain.org/reports/BioSample"/>
+        <oboInOwl:hasDbXref rdf:resource="http://virtualflybrain.org/reports/GEO"/>
+        <rdfs:label>20_1_1_KC-γ_MB623C_nlstdTomato_F_FACS_2500-cells (Aso 2019)</rdfs:label>
+    </NamedIndividual>
+    <Axiom>
+        <annotatedSource rdf:resource="http://virtualflybrain.org/reports/VFBseq_00003523"/>
+        <annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <annotatedTarget rdf:resource="http://virtualflybrain.org/reports/BioSample"/>
+        <neo_custom:accession>SAMN13191424</neo_custom:accession>
+    </Axiom>
+    <Axiom>
+        <annotatedSource rdf:resource="http://virtualflybrain.org/reports/VFBseq_00003523"/>
+        <annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <annotatedTarget rdf:resource="http://virtualflybrain.org/reports/GEO"/>
+        <neo_custom:accession>GSM4148299</neo_custom:accession>
+    </Axiom>
+    
+
+
+    <!-- http://virtualflybrain.org/reports/VFBseq_00003524 -->
+
+    <NamedIndividual rdf:about="http://virtualflybrain.org/reports/VFBseq_00003524">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/FBcv_0003024"/>
+        <rdf:type rdf:resource="http://virtualflybrain.org/reports/VFBexp_FBtp0125032FBtp0133108"/>
+        <rdf:type>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002131"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00003624"/>
+            </Restriction>
+        </rdf:type>
+        <rdf:type>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002473"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00049828"/>
+            </Restriction>
+        </rdf:type>
+        <rdf:type>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002490"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBdv_00005369"/>
+            </Restriction>
+        </rdf:type>
+        <neo_property:nodeLabel>Sample</neo_property:nodeLabel>
+        <dc:source rdf:resource="http://virtualflybrain.org/reports/VFBseq_00003522"/>
+        <oboInOwl:hasDbXref rdf:resource="http://virtualflybrain.org/reports/BioSample"/>
+        <oboInOwl:hasDbXref rdf:resource="http://virtualflybrain.org/reports/GEO"/>
+        <rdfs:label>20_1_2_KC-γ_MB623C_nlstdTomato_F_FACS_2500-cells (Aso 2019)</rdfs:label>
+    </NamedIndividual>
+    <Axiom>
+        <annotatedSource rdf:resource="http://virtualflybrain.org/reports/VFBseq_00003524"/>
+        <annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <annotatedTarget rdf:resource="http://virtualflybrain.org/reports/BioSample"/>
+        <neo_custom:accession>SAMN13191423</neo_custom:accession>
+    </Axiom>
+    <Axiom>
+        <annotatedSource rdf:resource="http://virtualflybrain.org/reports/VFBseq_00003524"/>
+        <annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <annotatedTarget rdf:resource="http://virtualflybrain.org/reports/GEO"/>
+        <neo_custom:accession>GSM4148300</neo_custom:accession>
+    </Axiom>
+    
+
+
+    <!-- http://virtualflybrain.org/reports/VFBseq_00003525 -->
+
+    <NamedIndividual rdf:about="http://virtualflybrain.org/reports/VFBseq_00003525">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/FBcv_0003024"/>
+        <rdf:type rdf:resource="http://virtualflybrain.org/reports/VFBexp_FBtp0125032FBtp0133108"/>
+        <rdf:type>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002131"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00003624"/>
+            </Restriction>
+        </rdf:type>
+        <rdf:type>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002473"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00049828"/>
+            </Restriction>
+        </rdf:type>
+        <rdf:type>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002490"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBdv_00005369"/>
+            </Restriction>
+        </rdf:type>
+        <neo_property:nodeLabel>Sample</neo_property:nodeLabel>
+        <dc:source rdf:resource="http://virtualflybrain.org/reports/VFBseq_00003522"/>
+        <oboInOwl:hasDbXref rdf:resource="http://virtualflybrain.org/reports/BioSample"/>
+        <oboInOwl:hasDbXref rdf:resource="http://virtualflybrain.org/reports/GEO"/>
+        <rdfs:label>20_1_3_KC-γ_MB623C_nlstdTomato_F_FACS_2500-cells (Aso 2019)</rdfs:label>
+    </NamedIndividual>
+    <Axiom>
+        <annotatedSource rdf:resource="http://virtualflybrain.org/reports/VFBseq_00003525"/>
+        <annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <annotatedTarget rdf:resource="http://virtualflybrain.org/reports/BioSample"/>
+        <neo_custom:accession>SAMN13191422</neo_custom:accession>
+    </Axiom>
+    <Axiom>
+        <annotatedSource rdf:resource="http://virtualflybrain.org/reports/VFBseq_00003525"/>
+        <annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <annotatedTarget rdf:resource="http://virtualflybrain.org/reports/GEO"/>
+        <neo_custom:accession>GSM4148301</neo_custom:accession>
+    </Axiom>
+    
+
+
+    <!-- http://virtualflybrain.org/reports/VFBseq_00003526 -->
+
+    <NamedIndividual rdf:about="http://virtualflybrain.org/reports/VFBseq_00003526">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/FBcv_0003024"/>
+        <rdf:type rdf:resource="http://virtualflybrain.org/reports/VFBexp_FBtp0117486FBtp0133108"/>
+        <rdf:type>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002131"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00003624"/>
+            </Restriction>
+        </rdf:type>
+        <rdf:type>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002473"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00049834"/>
+            </Restriction>
+        </rdf:type>
+        <rdf:type>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002490"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBdv_00005369"/>
+            </Restriction>
+        </rdf:type>
+        <neo_property:nodeLabel>Sample</neo_property:nodeLabel>
+        <dc:source rdf:resource="http://virtualflybrain.org/reports/VFBseq_00003522"/>
+        <oboInOwl:hasDbXref rdf:resource="http://virtualflybrain.org/reports/BioSample"/>
+        <oboInOwl:hasDbXref rdf:resource="http://virtualflybrain.org/reports/GEO"/>
+        <rdfs:label>20_11_2_KC-α′/β′_MB005C_nlstdTomato_F_FACS_1000-cells (Aso 2019)</rdfs:label>
+    </NamedIndividual>
+    <Axiom>
+        <annotatedSource rdf:resource="http://virtualflybrain.org/reports/VFBseq_00003526"/>
+        <annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <annotatedTarget rdf:resource="http://virtualflybrain.org/reports/BioSample"/>
+        <neo_custom:accession>SAMN13191421</neo_custom:accession>
+    </Axiom>
+    <Axiom>
+        <annotatedSource rdf:resource="http://virtualflybrain.org/reports/VFBseq_00003526"/>
+        <annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <annotatedTarget rdf:resource="http://virtualflybrain.org/reports/GEO"/>
+        <neo_custom:accession>GSM4148302</neo_custom:accession>
+    </Axiom>
+    
+
+
+    <!-- http://virtualflybrain.org/reports/VFBseq_00003527 -->
+
+    <NamedIndividual rdf:about="http://virtualflybrain.org/reports/VFBseq_00003527">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/FBcv_0003024"/>
+        <rdf:type rdf:resource="http://virtualflybrain.org/reports/VFBexp_FBtp0117486FBtp0133108"/>
+        <rdf:type>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002131"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00003624"/>
+            </Restriction>
+        </rdf:type>
+        <rdf:type>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002473"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00049834"/>
+            </Restriction>
+        </rdf:type>
+        <rdf:type>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002490"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBdv_00005369"/>
+            </Restriction>
+        </rdf:type>
+        <neo_property:nodeLabel>Sample</neo_property:nodeLabel>
+        <dc:source rdf:resource="http://virtualflybrain.org/reports/VFBseq_00003522"/>
+        <oboInOwl:hasDbXref rdf:resource="http://virtualflybrain.org/reports/BioSample"/>
+        <oboInOwl:hasDbXref rdf:resource="http://virtualflybrain.org/reports/GEO"/>
+        <rdfs:label>20_11_3_KC-α′/β′_MB005C_nlstdTomato_F_FACS_1000-cells (Aso 2019)</rdfs:label>
+    </NamedIndividual>
+    <Axiom>
+        <annotatedSource rdf:resource="http://virtualflybrain.org/reports/VFBseq_00003527"/>
+        <annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <annotatedTarget rdf:resource="http://virtualflybrain.org/reports/BioSample"/>
+        <neo_custom:accession>SAMN13191419</neo_custom:accession>
+    </Axiom>
+    <Axiom>
+        <annotatedSource rdf:resource="http://virtualflybrain.org/reports/VFBseq_00003527"/>
+        <annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <annotatedTarget rdf:resource="http://virtualflybrain.org/reports/GEO"/>
+        <neo_custom:accession>GSM4148303</neo_custom:accession>
+    </Axiom>
+    
+
+
+    <!-- http://virtualflybrain.org/reports/VFBseq_00003528 -->
+
+    <NamedIndividual rdf:about="http://virtualflybrain.org/reports/VFBseq_00003528">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/FBcv_0003024"/>
+        <rdf:type rdf:resource="http://virtualflybrain.org/reports/VFBexp_FBtp0117486FBtp0133108"/>
+        <rdf:type>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002131"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00003624"/>
+            </Restriction>
+        </rdf:type>
+        <rdf:type>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002473"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00049834"/>
+            </Restriction>
+        </rdf:type>
+        <rdf:type>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002490"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBdv_00005369"/>
+            </Restriction>
+        </rdf:type>
+        <neo_property:nodeLabel>Sample</neo_property:nodeLabel>
+        <dc:source rdf:resource="http://virtualflybrain.org/reports/VFBseq_00003522"/>
+        <oboInOwl:hasDbXref rdf:resource="http://virtualflybrain.org/reports/BioSample"/>
+        <oboInOwl:hasDbXref rdf:resource="http://virtualflybrain.org/reports/GEO"/>
+        <rdfs:label>20_11_4_KC-α′/β′_MB005C_nlstdTomato_F_FACS_1000-cells (Aso 2019)</rdfs:label>
+    </NamedIndividual>
+    <Axiom>
+        <annotatedSource rdf:resource="http://virtualflybrain.org/reports/VFBseq_00003528"/>
+        <annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <annotatedTarget rdf:resource="http://virtualflybrain.org/reports/BioSample"/>
+        <neo_custom:accession>SAMN13191418</neo_custom:accession>
+    </Axiom>
+    <Axiom>
+        <annotatedSource rdf:resource="http://virtualflybrain.org/reports/VFBseq_00003528"/>
+        <annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <annotatedTarget rdf:resource="http://virtualflybrain.org/reports/GEO"/>
+        <neo_custom:accession>GSM4148304</neo_custom:accession>
+    </Axiom>
+    
+
+
+    <!-- http://virtualflybrain.org/reports/VFBseq_00003529 -->
+
+    <NamedIndividual rdf:about="http://virtualflybrain.org/reports/VFBseq_00003529">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/FBcv_0003024"/>
+        <rdf:type rdf:resource="http://virtualflybrain.org/reports/VFBexp_FBtp0117486FBtp0133108"/>
+        <rdf:type>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002131"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00003624"/>
+            </Restriction>
+        </rdf:type>
+        <rdf:type>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002473"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00049834"/>
+            </Restriction>
+        </rdf:type>
+        <rdf:type>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002490"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBdv_00005369"/>
+            </Restriction>
+        </rdf:type>
+        <neo_property:nodeLabel>Sample</neo_property:nodeLabel>
+        <dc:source rdf:resource="http://virtualflybrain.org/reports/VFBseq_00003522"/>
+        <oboInOwl:hasDbXref rdf:resource="http://virtualflybrain.org/reports/BioSample"/>
+        <oboInOwl:hasDbXref rdf:resource="http://virtualflybrain.org/reports/GEO"/>
+        <rdfs:label>20_11_5_KC-α′/β′_MB005C_nlstdTomato_F_FACS_1000-cells (Aso 2019)</rdfs:label>
+    </NamedIndividual>
+    <Axiom>
+        <annotatedSource rdf:resource="http://virtualflybrain.org/reports/VFBseq_00003529"/>
+        <annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <annotatedTarget rdf:resource="http://virtualflybrain.org/reports/BioSample"/>
+        <neo_custom:accession>SAMN13191416</neo_custom:accession>
+    </Axiom>
+    <Axiom>
+        <annotatedSource rdf:resource="http://virtualflybrain.org/reports/VFBseq_00003529"/>
+        <annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <annotatedTarget rdf:resource="http://virtualflybrain.org/reports/GEO"/>
+        <neo_custom:accession>GSM4148305</neo_custom:accession>
+    </Axiom>
+    
+
+
+    <!-- http://virtualflybrain.org/reports/VFBseq_00003530 -->
+
+    <NamedIndividual rdf:about="http://virtualflybrain.org/reports/VFBseq_00003530">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/FBcv_0003024"/>
+        <rdf:type rdf:resource="http://virtualflybrain.org/reports/VFBexp_FBtp0099485FBtp0133108"/>
+        <rdf:type>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002131"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00003624"/>
+            </Restriction>
+        </rdf:type>
+        <rdf:type>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002473"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00100248"/>
+            </Restriction>
+        </rdf:type>
+        <rdf:type>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002490"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBdv_00005369"/>
+            </Restriction>
+        </rdf:type>
+        <neo_property:nodeLabel>Sample</neo_property:nodeLabel>
+        <dc:source rdf:resource="http://virtualflybrain.org/reports/VFBseq_00003522"/>
+        <oboInOwl:hasDbXref rdf:resource="http://virtualflybrain.org/reports/BioSample"/>
+        <oboInOwl:hasDbXref rdf:resource="http://virtualflybrain.org/reports/GEO"/>
+        <rdfs:label>20_1_4_KC-α/β_MB008C_nlstdTomato_F_FACS_2500-cells (Aso 2019)</rdfs:label>
+    </NamedIndividual>
+    <Axiom>
+        <annotatedSource rdf:resource="http://virtualflybrain.org/reports/VFBseq_00003530"/>
+        <annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <annotatedTarget rdf:resource="http://virtualflybrain.org/reports/BioSample"/>
+        <neo_custom:accession>SAMN13191415</neo_custom:accession>
+    </Axiom>
+    <Axiom>
+        <annotatedSource rdf:resource="http://virtualflybrain.org/reports/VFBseq_00003530"/>
+        <annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <annotatedTarget rdf:resource="http://virtualflybrain.org/reports/GEO"/>
+        <neo_custom:accession>GSM4148306</neo_custom:accession>
+    </Axiom>
+    
+
+
+    <!-- http://virtualflybrain.org/reports/VFBseq_00003531 -->
+
+    <NamedIndividual rdf:about="http://virtualflybrain.org/reports/VFBseq_00003531">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/FBcv_0003024"/>
+        <rdf:type rdf:resource="http://virtualflybrain.org/reports/VFBexp_FBtp0099485FBtp0133108"/>
+        <rdf:type>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002131"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00003624"/>
+            </Restriction>
+        </rdf:type>
+        <rdf:type>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002473"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00100248"/>
+            </Restriction>
+        </rdf:type>
+        <rdf:type>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002490"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBdv_00005369"/>
+            </Restriction>
+        </rdf:type>
+        <neo_property:nodeLabel>Sample</neo_property:nodeLabel>
+        <dc:source rdf:resource="http://virtualflybrain.org/reports/VFBseq_00003522"/>
+        <oboInOwl:hasDbXref rdf:resource="http://virtualflybrain.org/reports/BioSample"/>
+        <oboInOwl:hasDbXref rdf:resource="http://virtualflybrain.org/reports/GEO"/>
+        <rdfs:label>20_1_5_KC-α/β_MB008C_nlstdTomato_F_FACS_2500-cells (Aso 2019)</rdfs:label>
+    </NamedIndividual>
+    <Axiom>
+        <annotatedSource rdf:resource="http://virtualflybrain.org/reports/VFBseq_00003531"/>
+        <annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <annotatedTarget rdf:resource="http://virtualflybrain.org/reports/BioSample"/>
+        <neo_custom:accession>SAMN13191414</neo_custom:accession>
+    </Axiom>
+    <Axiom>
+        <annotatedSource rdf:resource="http://virtualflybrain.org/reports/VFBseq_00003531"/>
+        <annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <annotatedTarget rdf:resource="http://virtualflybrain.org/reports/GEO"/>
+        <neo_custom:accession>GSM4148307</neo_custom:accession>
+    </Axiom>
+    
+
+
+    <!-- http://virtualflybrain.org/reports/VFBseq_00003532 -->
+
+    <NamedIndividual rdf:about="http://virtualflybrain.org/reports/VFBseq_00003532">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/FBcv_0003024"/>
+        <rdf:type rdf:resource="http://virtualflybrain.org/reports/VFBexp_FBtp0099485FBtp0133108"/>
+        <rdf:type>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002131"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00003624"/>
+            </Restriction>
+        </rdf:type>
+        <rdf:type>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002473"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00100248"/>
+            </Restriction>
+        </rdf:type>
+        <rdf:type>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002490"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBdv_00005369"/>
+            </Restriction>
+        </rdf:type>
+        <neo_property:nodeLabel>Sample</neo_property:nodeLabel>
+        <dc:source rdf:resource="http://virtualflybrain.org/reports/VFBseq_00003522"/>
+        <oboInOwl:hasDbXref rdf:resource="http://virtualflybrain.org/reports/BioSample"/>
+        <oboInOwl:hasDbXref rdf:resource="http://virtualflybrain.org/reports/GEO"/>
+        <rdfs:label>20_1_6_KC-α/β_MB008C_nlstdTomato_F_FACS_2500-cells (Aso 2019)</rdfs:label>
+    </NamedIndividual>
+    <Axiom>
+        <annotatedSource rdf:resource="http://virtualflybrain.org/reports/VFBseq_00003532"/>
+        <annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <annotatedTarget rdf:resource="http://virtualflybrain.org/reports/BioSample"/>
+        <neo_custom:accession>SAMN13191412</neo_custom:accession>
+    </Axiom>
+    <Axiom>
+        <annotatedSource rdf:resource="http://virtualflybrain.org/reports/VFBseq_00003532"/>
+        <annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <annotatedTarget rdf:resource="http://virtualflybrain.org/reports/GEO"/>
+        <neo_custom:accession>GSM4148308</neo_custom:accession>
+    </Axiom>
+    
+
+
+    <!-- http://virtualflybrain.org/reports/VFBseq_00003533 -->
+
+    <NamedIndividual rdf:about="http://virtualflybrain.org/reports/VFBseq_00003533">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/FBcv_0003024"/>
+        <rdf:type rdf:resource="http://virtualflybrain.org/reports/VFBexp_FBtp0099459FBtp0161044"/>
+        <rdf:type>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002131"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00003624"/>
+            </Restriction>
+        </rdf:type>
+        <rdf:type>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002473"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00100243"/>
+            </Restriction>
+        </rdf:type>
+        <rdf:type>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002490"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBdv_00005369"/>
+            </Restriction>
+        </rdf:type>
+        <neo_property:nodeLabel>Sample</neo_property:nodeLabel>
+        <dc:source rdf:resource="http://virtualflybrain.org/reports/VFBseq_00003522"/>
+        <oboInOwl:hasDbXref rdf:resource="http://virtualflybrain.org/reports/BioSample"/>
+        <oboInOwl:hasDbXref rdf:resource="http://virtualflybrain.org/reports/GEO"/>
+        <rdfs:label>15_12_6_PPL1-γ1pedc_SS01248_nlstdTomato_F_Hand_396-cells (Aso 2019)</rdfs:label>
+    </NamedIndividual>
+    <Axiom>
+        <annotatedSource rdf:resource="http://virtualflybrain.org/reports/VFBseq_00003533"/>
+        <annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <annotatedTarget rdf:resource="http://virtualflybrain.org/reports/BioSample"/>
+        <neo_custom:accession>SAMN13191411</neo_custom:accession>
+    </Axiom>
+    <Axiom>
+        <annotatedSource rdf:resource="http://virtualflybrain.org/reports/VFBseq_00003533"/>
+        <annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <annotatedTarget rdf:resource="http://virtualflybrain.org/reports/GEO"/>
+        <neo_custom:accession>GSM4148309</neo_custom:accession>
+    </Axiom>
+    
+
+
+    <!-- http://virtualflybrain.org/reports/VFBseq_00003534 -->
+
+    <NamedIndividual rdf:about="http://virtualflybrain.org/reports/VFBseq_00003534">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/FBcv_0003024"/>
+        <rdf:type rdf:resource="http://virtualflybrain.org/reports/VFBexp_FBtp0099459FBtp0161044"/>
+        <rdf:type>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002131"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00003624"/>
+            </Restriction>
+        </rdf:type>
+        <rdf:type>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002473"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00100243"/>
+            </Restriction>
+        </rdf:type>
+        <rdf:type>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002490"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBdv_00005369"/>
+            </Restriction>
+        </rdf:type>
+        <neo_property:nodeLabel>Sample</neo_property:nodeLabel>
+        <dc:source rdf:resource="http://virtualflybrain.org/reports/VFBseq_00003522"/>
+        <oboInOwl:hasDbXref rdf:resource="http://virtualflybrain.org/reports/BioSample"/>
+        <oboInOwl:hasDbXref rdf:resource="http://virtualflybrain.org/reports/GEO"/>
+        <rdfs:label>19_4_6_PPL1-γ1pedc_SS01248_mCD8::GFP_F_Hand_358-cells (Aso 2019)</rdfs:label>
+    </NamedIndividual>
+    <Axiom>
+        <annotatedSource rdf:resource="http://virtualflybrain.org/reports/VFBseq_00003534"/>
+        <annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <annotatedTarget rdf:resource="http://virtualflybrain.org/reports/BioSample"/>
+        <neo_custom:accession>SAMN13191410</neo_custom:accession>
+    </Axiom>
+    <Axiom>
+        <annotatedSource rdf:resource="http://virtualflybrain.org/reports/VFBseq_00003534"/>
+        <annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <annotatedTarget rdf:resource="http://virtualflybrain.org/reports/GEO"/>
+        <neo_custom:accession>GSM4148310</neo_custom:accession>
+    </Axiom>
+    
+
+
+    <!-- http://virtualflybrain.org/reports/VFBseq_00003535 -->
+
+    <NamedIndividual rdf:about="http://virtualflybrain.org/reports/VFBseq_00003535">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/FBcv_0003024"/>
+        <rdf:type rdf:resource="http://virtualflybrain.org/reports/VFBexp_FBtp0099488FBtp0099551"/>
+        <rdf:type>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002131"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00003624"/>
+            </Restriction>
+        </rdf:type>
+        <rdf:type>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002473"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00111015"/>
+            </Restriction>
+        </rdf:type>
+        <rdf:type>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002490"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBdv_00005369"/>
+            </Restriction>
+        </rdf:type>
+        <neo_property:nodeLabel>Sample</neo_property:nodeLabel>
+        <dc:source rdf:resource="http://virtualflybrain.org/reports/VFBseq_00003522"/>
+        <oboInOwl:hasDbXref rdf:resource="http://virtualflybrain.org/reports/BioSample"/>
+        <oboInOwl:hasDbXref rdf:resource="http://virtualflybrain.org/reports/GEO"/>
+        <rdfs:label>15_10_8_PAM-γ5_MB315C_nlstdTomato_F_Hand_266-cells (Aso 2019)</rdfs:label>
+    </NamedIndividual>
+    <Axiom>
+        <annotatedSource rdf:resource="http://virtualflybrain.org/reports/VFBseq_00003535"/>
+        <annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <annotatedTarget rdf:resource="http://virtualflybrain.org/reports/BioSample"/>
+        <neo_custom:accession>SAMN13191408</neo_custom:accession>
+    </Axiom>
+    <Axiom>
+        <annotatedSource rdf:resource="http://virtualflybrain.org/reports/VFBseq_00003535"/>
+        <annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <annotatedTarget rdf:resource="http://virtualflybrain.org/reports/GEO"/>
+        <neo_custom:accession>GSM4148311</neo_custom:accession>
+    </Axiom>
+    
+
+
+    <!-- http://virtualflybrain.org/reports/VFBseq_00003536 -->
+
+    <NamedIndividual rdf:about="http://virtualflybrain.org/reports/VFBseq_00003536">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/FBcv_0003024"/>
+        <rdf:type rdf:resource="http://virtualflybrain.org/reports/VFBexp_FBtp0099488FBtp0099551"/>
+        <rdf:type>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002131"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00003624"/>
+            </Restriction>
+        </rdf:type>
+        <rdf:type>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002473"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00111015"/>
+            </Restriction>
+        </rdf:type>
+        <rdf:type>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002490"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBdv_00005369"/>
+            </Restriction>
+        </rdf:type>
+        <neo_property:nodeLabel>Sample</neo_property:nodeLabel>
+        <dc:source rdf:resource="http://virtualflybrain.org/reports/VFBseq_00003522"/>
+        <oboInOwl:hasDbXref rdf:resource="http://virtualflybrain.org/reports/BioSample"/>
+        <oboInOwl:hasDbXref rdf:resource="http://virtualflybrain.org/reports/GEO"/>
+        <rdfs:label>19_4_1_PAM-γ5_MB315C_nlstdTomato_F_Hand_390-cells (Aso 2019)</rdfs:label>
+    </NamedIndividual>
+    <Axiom>
+        <annotatedSource rdf:resource="http://virtualflybrain.org/reports/VFBseq_00003536"/>
+        <annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <annotatedTarget rdf:resource="http://virtualflybrain.org/reports/BioSample"/>
+        <neo_custom:accession>SAMN13191407</neo_custom:accession>
+    </Axiom>
+    <Axiom>
+        <annotatedSource rdf:resource="http://virtualflybrain.org/reports/VFBseq_00003536"/>
+        <annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <annotatedTarget rdf:resource="http://virtualflybrain.org/reports/GEO"/>
+        <neo_custom:accession>GSM4148312</neo_custom:accession>
+    </Axiom>
+    
+
+
+    <!-- http://virtualflybrain.org/reports/VFBseq_00003537 -->
+
+    <NamedIndividual rdf:about="http://virtualflybrain.org/reports/VFBseq_00003537">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/FBcv_0003024"/>
+        <rdf:type rdf:resource="http://virtualflybrain.org/reports/VFBexp_FBtp0099488FBtp0099551"/>
+        <rdf:type>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002131"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00003624"/>
+            </Restriction>
+        </rdf:type>
+        <rdf:type>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002473"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00111015"/>
+            </Restriction>
+        </rdf:type>
+        <rdf:type>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002490"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBdv_00005369"/>
+            </Restriction>
+        </rdf:type>
+        <neo_property:nodeLabel>Sample</neo_property:nodeLabel>
+        <dc:source rdf:resource="http://virtualflybrain.org/reports/VFBseq_00003522"/>
+        <oboInOwl:hasDbXref rdf:resource="http://virtualflybrain.org/reports/BioSample"/>
+        <oboInOwl:hasDbXref rdf:resource="http://virtualflybrain.org/reports/GEO"/>
+        <rdfs:label>19_9_1_PAM-γ5_MB315C_nlstdTomato_F_Hand_722-cells (Aso 2019)</rdfs:label>
+    </NamedIndividual>
+    <Axiom>
+        <annotatedSource rdf:resource="http://virtualflybrain.org/reports/VFBseq_00003537"/>
+        <annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <annotatedTarget rdf:resource="http://virtualflybrain.org/reports/BioSample"/>
+        <neo_custom:accession>SAMN13191406</neo_custom:accession>
+    </Axiom>
+    <Axiom>
+        <annotatedSource rdf:resource="http://virtualflybrain.org/reports/VFBseq_00003537"/>
+        <annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <annotatedTarget rdf:resource="http://virtualflybrain.org/reports/GEO"/>
+        <neo_custom:accession>GSM4148313</neo_custom:accession>
+    </Axiom>
+    
+
+
+    <!-- http://virtualflybrain.org/reports/VFBseq_00003538 -->
+
+    <NamedIndividual rdf:about="http://virtualflybrain.org/reports/VFBseq_00003538">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/FBcv_0003024"/>
+        <rdf:type rdf:resource="http://virtualflybrain.org/reports/VFBexp_FBtp0099488FBtp0099551"/>
+        <rdf:type>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002131"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00003624"/>
+            </Restriction>
+        </rdf:type>
+        <rdf:type>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002473"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00111015"/>
+            </Restriction>
+        </rdf:type>
+        <rdf:type>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002490"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBdv_00005369"/>
+            </Restriction>
+        </rdf:type>
+        <neo_property:nodeLabel>Sample</neo_property:nodeLabel>
+        <dc:source rdf:resource="http://virtualflybrain.org/reports/VFBseq_00003522"/>
+        <oboInOwl:hasDbXref rdf:resource="http://virtualflybrain.org/reports/BioSample"/>
+        <oboInOwl:hasDbXref rdf:resource="http://virtualflybrain.org/reports/GEO"/>
+        <rdfs:label>19_9_2_PAM-γ5_MB315C_nlstdTomato_F_Hand_766-cells (Aso 2019)</rdfs:label>
+    </NamedIndividual>
+    <Axiom>
+        <annotatedSource rdf:resource="http://virtualflybrain.org/reports/VFBseq_00003538"/>
+        <annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <annotatedTarget rdf:resource="http://virtualflybrain.org/reports/BioSample"/>
+        <neo_custom:accession>SAMN13191445</neo_custom:accession>
+    </Axiom>
+    <Axiom>
+        <annotatedSource rdf:resource="http://virtualflybrain.org/reports/VFBseq_00003538"/>
+        <annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <annotatedTarget rdf:resource="http://virtualflybrain.org/reports/GEO"/>
+        <neo_custom:accession>GSM4148314</neo_custom:accession>
+    </Axiom>
+    
+
+
+    <!-- http://virtualflybrain.org/reports/VFBseq_00003539 -->
+
+    <NamedIndividual rdf:about="http://virtualflybrain.org/reports/VFBseq_00003539">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/FBcv_0003024"/>
+        <rdf:type rdf:resource="http://virtualflybrain.org/reports/VFBexp_FBtp0099472FBtp0099523"/>
+        <rdf:type>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002131"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00003624"/>
+            </Restriction>
+        </rdf:type>
+        <rdf:type>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002473"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00100241"/>
+            </Restriction>
+        </rdf:type>
+        <rdf:type>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002490"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBdv_00005369"/>
+            </Restriction>
+        </rdf:type>
+        <neo_property:nodeLabel>Sample</neo_property:nodeLabel>
+        <dc:source rdf:resource="http://virtualflybrain.org/reports/VFBseq_00003522"/>
+        <oboInOwl:hasDbXref rdf:resource="http://virtualflybrain.org/reports/BioSample"/>
+        <oboInOwl:hasDbXref rdf:resource="http://virtualflybrain.org/reports/GEO"/>
+        <rdfs:label>19_5_1_PPL1-γ2 α′1_MB296B_unc84-GFP_F_FACS_289-cells (Aso 2019)</rdfs:label>
+    </NamedIndividual>
+    <Axiom>
+        <annotatedSource rdf:resource="http://virtualflybrain.org/reports/VFBseq_00003539"/>
+        <annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <annotatedTarget rdf:resource="http://virtualflybrain.org/reports/BioSample"/>
+        <neo_custom:accession>SAMN13191444</neo_custom:accession>
+    </Axiom>
+    <Axiom>
+        <annotatedSource rdf:resource="http://virtualflybrain.org/reports/VFBseq_00003539"/>
+        <annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <annotatedTarget rdf:resource="http://virtualflybrain.org/reports/GEO"/>
+        <neo_custom:accession>GSM4148315</neo_custom:accession>
+    </Axiom>
+    
+
+
+    <!-- http://virtualflybrain.org/reports/VFBseq_00003540 -->
+
+    <NamedIndividual rdf:about="http://virtualflybrain.org/reports/VFBseq_00003540">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/FBcv_0003024"/>
+        <rdf:type rdf:resource="http://virtualflybrain.org/reports/VFBexp_FBtp0099472FBtp0099523"/>
+        <rdf:type>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002131"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00003624"/>
+            </Restriction>
+        </rdf:type>
+        <rdf:type>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002473"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00100241"/>
+            </Restriction>
+        </rdf:type>
+        <rdf:type>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002490"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBdv_00005369"/>
+            </Restriction>
+        </rdf:type>
+        <neo_property:nodeLabel>Sample</neo_property:nodeLabel>
+        <dc:source rdf:resource="http://virtualflybrain.org/reports/VFBseq_00003522"/>
+        <oboInOwl:hasDbXref rdf:resource="http://virtualflybrain.org/reports/BioSample"/>
+        <oboInOwl:hasDbXref rdf:resource="http://virtualflybrain.org/reports/GEO"/>
+        <rdfs:label>19_4_7_PPL1-γ2 α′1_MB296B_unc84-GFP_F_Hand_285-cells (Aso 2019)</rdfs:label>
+    </NamedIndividual>
+    <Axiom>
+        <annotatedSource rdf:resource="http://virtualflybrain.org/reports/VFBseq_00003540"/>
+        <annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <annotatedTarget rdf:resource="http://virtualflybrain.org/reports/BioSample"/>
+        <neo_custom:accession>SAMN13191442</neo_custom:accession>
+    </Axiom>
+    <Axiom>
+        <annotatedSource rdf:resource="http://virtualflybrain.org/reports/VFBseq_00003540"/>
+        <annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <annotatedTarget rdf:resource="http://virtualflybrain.org/reports/GEO"/>
+        <neo_custom:accession>GSM4148316</neo_custom:accession>
+    </Axiom>
+    
+
+
+    <!-- http://virtualflybrain.org/reports/VFBseq_00003541 -->
+
+    <NamedIndividual rdf:about="http://virtualflybrain.org/reports/VFBseq_00003541">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/FBcv_0003024"/>
+        <rdf:type rdf:resource="http://virtualflybrain.org/reports/VFBexp_FBtp0099472FBtp0099523"/>
+        <rdf:type>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002131"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00003624"/>
+            </Restriction>
+        </rdf:type>
+        <rdf:type>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002473"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00100241"/>
+            </Restriction>
+        </rdf:type>
+        <rdf:type>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002490"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBdv_00005369"/>
+            </Restriction>
+        </rdf:type>
+        <neo_property:nodeLabel>Sample</neo_property:nodeLabel>
+        <dc:source rdf:resource="http://virtualflybrain.org/reports/VFBseq_00003522"/>
+        <oboInOwl:hasDbXref rdf:resource="http://virtualflybrain.org/reports/BioSample"/>
+        <oboInOwl:hasDbXref rdf:resource="http://virtualflybrain.org/reports/GEO"/>
+        <rdfs:label>19_4_8_PPL1-γ2 α′1_MB296B_unc84-GFP_F_Hand_279-cells (Aso 2019)</rdfs:label>
+    </NamedIndividual>
+    <Axiom>
+        <annotatedSource rdf:resource="http://virtualflybrain.org/reports/VFBseq_00003541"/>
+        <annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <annotatedTarget rdf:resource="http://virtualflybrain.org/reports/BioSample"/>
+        <neo_custom:accession>SAMN13191441</neo_custom:accession>
+    </Axiom>
+    <Axiom>
+        <annotatedSource rdf:resource="http://virtualflybrain.org/reports/VFBseq_00003541"/>
+        <annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <annotatedTarget rdf:resource="http://virtualflybrain.org/reports/GEO"/>
+        <neo_custom:accession>GSM4148317</neo_custom:accession>
+    </Axiom>
+    
+
+
+    <!-- http://virtualflybrain.org/reports/VFBseq_00003542 -->
+
+    <NamedIndividual rdf:about="http://virtualflybrain.org/reports/VFBseq_00003542">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/FBcv_0003024"/>
+        <rdf:type rdf:resource="http://virtualflybrain.org/reports/VFBexp_FBtp0099504FBtp0117260"/>
+        <rdf:type>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002131"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00003624"/>
+            </Restriction>
+        </rdf:type>
+        <rdf:type>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002473"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00110320"/>
+            </Restriction>
+        </rdf:type>
+        <rdf:type>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002490"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBdv_00005369"/>
+            </Restriction>
+        </rdf:type>
+        <neo_property:nodeLabel>Sample</neo_property:nodeLabel>
+        <dc:source rdf:resource="http://virtualflybrain.org/reports/VFBseq_00003522"/>
+        <oboInOwl:hasDbXref rdf:resource="http://virtualflybrain.org/reports/BioSample"/>
+        <oboInOwl:hasDbXref rdf:resource="http://virtualflybrain.org/reports/GEO"/>
+        <rdfs:label>19_4_5_PPL1-α3_SS01399_mCD8::GFP_F_FACS_462-cells (Aso 2019)</rdfs:label>
+    </NamedIndividual>
+    <Axiom>
+        <annotatedSource rdf:resource="http://virtualflybrain.org/reports/VFBseq_00003542"/>
+        <annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <annotatedTarget rdf:resource="http://virtualflybrain.org/reports/BioSample"/>
+        <neo_custom:accession>SAMN13191440</neo_custom:accession>
+    </Axiom>
+    <Axiom>
+        <annotatedSource rdf:resource="http://virtualflybrain.org/reports/VFBseq_00003542"/>
+        <annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <annotatedTarget rdf:resource="http://virtualflybrain.org/reports/GEO"/>
+        <neo_custom:accession>GSM4148318</neo_custom:accession>
+    </Axiom>
+    
+
+
+    <!-- http://virtualflybrain.org/reports/VFBseq_00003543 -->
+
+    <NamedIndividual rdf:about="http://virtualflybrain.org/reports/VFBseq_00003543">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/FBcv_0003024"/>
+        <rdf:type rdf:resource="http://virtualflybrain.org/reports/VFBexp_FBtp0099504FBtp0117260"/>
+        <rdf:type>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002131"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00003624"/>
+            </Restriction>
+        </rdf:type>
+        <rdf:type>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002473"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00110320"/>
+            </Restriction>
+        </rdf:type>
+        <rdf:type>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002490"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBdv_00005369"/>
+            </Restriction>
+        </rdf:type>
+        <neo_property:nodeLabel>Sample</neo_property:nodeLabel>
+        <dc:source rdf:resource="http://virtualflybrain.org/reports/VFBseq_00003522"/>
+        <oboInOwl:hasDbXref rdf:resource="http://virtualflybrain.org/reports/BioSample"/>
+        <oboInOwl:hasDbXref rdf:resource="http://virtualflybrain.org/reports/GEO"/>
+        <rdfs:label>15_10_7_PPL1-α3_SS01399_mCD8::GFP_F_Hand_252-cells (Aso 2019)</rdfs:label>
+    </NamedIndividual>
+    <Axiom>
+        <annotatedSource rdf:resource="http://virtualflybrain.org/reports/VFBseq_00003543"/>
+        <annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <annotatedTarget rdf:resource="http://virtualflybrain.org/reports/BioSample"/>
+        <neo_custom:accession>SAMN13191439</neo_custom:accession>
+    </Axiom>
+    <Axiom>
+        <annotatedSource rdf:resource="http://virtualflybrain.org/reports/VFBseq_00003543"/>
+        <annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <annotatedTarget rdf:resource="http://virtualflybrain.org/reports/GEO"/>
+        <neo_custom:accession>GSM4148319</neo_custom:accession>
+    </Axiom>
+    
+
+
+    <!-- http://virtualflybrain.org/reports/VFBseq_00003544 -->
+
+    <NamedIndividual rdf:about="http://virtualflybrain.org/reports/VFBseq_00003544">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/FBcv_0003024"/>
+        <rdf:type rdf:resource="http://virtualflybrain.org/reports/VFBexp_FBtp0099491FBtp0099563"/>
+        <rdf:type>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002131"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00003624"/>
+            </Restriction>
+        </rdf:type>
+        <rdf:type>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002473"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00100236"/>
+            </Restriction>
+        </rdf:type>
+        <rdf:type>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002490"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBdv_00005369"/>
+            </Restriction>
+        </rdf:type>
+        <neo_property:nodeLabel>Sample</neo_property:nodeLabel>
+        <dc:source rdf:resource="http://virtualflybrain.org/reports/VFBseq_00003522"/>
+        <oboInOwl:hasDbXref rdf:resource="http://virtualflybrain.org/reports/BioSample"/>
+        <oboInOwl:hasDbXref rdf:resource="http://virtualflybrain.org/reports/GEO"/>
+        <rdfs:label>15_10_5_PPL1-α′2α2_MB058B_nlstdTomato_F_Hand_284-cells (Aso 2019)</rdfs:label>
+    </NamedIndividual>
+    <Axiom>
+        <annotatedSource rdf:resource="http://virtualflybrain.org/reports/VFBseq_00003544"/>
+        <annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <annotatedTarget rdf:resource="http://virtualflybrain.org/reports/BioSample"/>
+        <neo_custom:accession>SAMN13191438</neo_custom:accession>
+    </Axiom>
+    <Axiom>
+        <annotatedSource rdf:resource="http://virtualflybrain.org/reports/VFBseq_00003544"/>
+        <annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <annotatedTarget rdf:resource="http://virtualflybrain.org/reports/GEO"/>
+        <neo_custom:accession>GSM4148320</neo_custom:accession>
+    </Axiom>
+    
+
+
+    <!-- http://virtualflybrain.org/reports/VFBseq_00003545 -->
+
+    <NamedIndividual rdf:about="http://virtualflybrain.org/reports/VFBseq_00003545">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/FBcv_0003024"/>
+        <rdf:type rdf:resource="http://virtualflybrain.org/reports/VFBexp_FBtp0099491FBtp0099563"/>
+        <rdf:type>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002131"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00003624"/>
+            </Restriction>
+        </rdf:type>
+        <rdf:type>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002473"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00100236"/>
+            </Restriction>
+        </rdf:type>
+        <rdf:type>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002490"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBdv_00005369"/>
+            </Restriction>
+        </rdf:type>
+        <neo_property:nodeLabel>Sample</neo_property:nodeLabel>
+        <dc:source rdf:resource="http://virtualflybrain.org/reports/VFBseq_00003522"/>
+        <oboInOwl:hasDbXref rdf:resource="http://virtualflybrain.org/reports/BioSample"/>
+        <oboInOwl:hasDbXref rdf:resource="http://virtualflybrain.org/reports/GEO"/>
+        <rdfs:label>16_9_7_PPL1-α′2α2_MB058B_nlstdTomato_F_Hand_284-cells (Aso 2019)</rdfs:label>
+    </NamedIndividual>
+    <Axiom>
+        <annotatedSource rdf:resource="http://virtualflybrain.org/reports/VFBseq_00003545"/>
+        <annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <annotatedTarget rdf:resource="http://virtualflybrain.org/reports/BioSample"/>
+        <neo_custom:accession>SAMN13191437</neo_custom:accession>
+    </Axiom>
+    <Axiom>
+        <annotatedSource rdf:resource="http://virtualflybrain.org/reports/VFBseq_00003545"/>
+        <annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <annotatedTarget rdf:resource="http://virtualflybrain.org/reports/GEO"/>
+        <neo_custom:accession>GSM4148321</neo_custom:accession>
+    </Axiom>
+    
+
+
+    <!-- http://virtualflybrain.org/reports/VFBseq_00003546 -->
+
+    <NamedIndividual rdf:about="http://virtualflybrain.org/reports/VFBseq_00003546">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/FBcv_0003024"/>
+        <rdf:type rdf:resource="http://virtualflybrain.org/reports/VFBexp_FBtp0099469FBtp0099561"/>
+        <rdf:type>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002131"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00003624"/>
+            </Restriction>
+        </rdf:type>
+        <rdf:type>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002473"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00111016"/>
+            </Restriction>
+        </rdf:type>
+        <rdf:type>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002490"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBdv_00005369"/>
+            </Restriction>
+        </rdf:type>
+        <neo_property:nodeLabel>Sample</neo_property:nodeLabel>
+        <dc:source rdf:resource="http://virtualflybrain.org/reports/VFBseq_00003522"/>
+        <oboInOwl:hasDbXref rdf:resource="http://virtualflybrain.org/reports/BioSample"/>
+        <oboInOwl:hasDbXref rdf:resource="http://virtualflybrain.org/reports/GEO"/>
+        <rdfs:label>15_12_5_PAM-β′2a_MB109B_nlstdTomato_F_Hand_442-cells (Aso 2019)</rdfs:label>
+    </NamedIndividual>
+    <Axiom>
+        <annotatedSource rdf:resource="http://virtualflybrain.org/reports/VFBseq_00003546"/>
+        <annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <annotatedTarget rdf:resource="http://virtualflybrain.org/reports/BioSample"/>
+        <neo_custom:accession>SAMN13191436</neo_custom:accession>
+    </Axiom>
+    <Axiom>
+        <annotatedSource rdf:resource="http://virtualflybrain.org/reports/VFBseq_00003546"/>
+        <annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <annotatedTarget rdf:resource="http://virtualflybrain.org/reports/GEO"/>
+        <neo_custom:accession>GSM4148322</neo_custom:accession>
+    </Axiom>
+    
+
+
+    <!-- http://virtualflybrain.org/reports/VFBseq_00003547 -->
+
+    <NamedIndividual rdf:about="http://virtualflybrain.org/reports/VFBseq_00003547">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/FBcv_0003024"/>
+        <rdf:type rdf:resource="http://virtualflybrain.org/reports/VFBexp_FBtp0099469FBtp0099561"/>
+        <rdf:type>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002131"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00003624"/>
+            </Restriction>
+        </rdf:type>
+        <rdf:type>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002473"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00111016"/>
+            </Restriction>
+        </rdf:type>
+        <rdf:type>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002490"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBdv_00005369"/>
+            </Restriction>
+        </rdf:type>
+        <neo_property:nodeLabel>Sample</neo_property:nodeLabel>
+        <dc:source rdf:resource="http://virtualflybrain.org/reports/VFBseq_00003522"/>
+        <oboInOwl:hasDbXref rdf:resource="http://virtualflybrain.org/reports/BioSample"/>
+        <oboInOwl:hasDbXref rdf:resource="http://virtualflybrain.org/reports/GEO"/>
+        <rdfs:label>16_9_8_PAM-β′2a_MB109B_nlstdTomato_F_Hand_274-cells (Aso 2019)</rdfs:label>
+    </NamedIndividual>
+    <Axiom>
+        <annotatedSource rdf:resource="http://virtualflybrain.org/reports/VFBseq_00003547"/>
+        <annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <annotatedTarget rdf:resource="http://virtualflybrain.org/reports/BioSample"/>
+        <neo_custom:accession>SAMN13191435</neo_custom:accession>
+    </Axiom>
+    <Axiom>
+        <annotatedSource rdf:resource="http://virtualflybrain.org/reports/VFBseq_00003547"/>
+        <annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <annotatedTarget rdf:resource="http://virtualflybrain.org/reports/GEO"/>
+        <neo_custom:accession>GSM4148323</neo_custom:accession>
+    </Axiom>
+    
+
+
+    <!-- http://virtualflybrain.org/reports/VFBseq_00003548 -->
+
+    <NamedIndividual rdf:about="http://virtualflybrain.org/reports/VFBseq_00003548">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/FBcv_0003024"/>
+        <rdf:type rdf:resource="http://virtualflybrain.org/reports/VFBexp_FBtp0099469FBtp0099561"/>
+        <rdf:type>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002131"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00003624"/>
+            </Restriction>
+        </rdf:type>
+        <rdf:type>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002473"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00111016"/>
+            </Restriction>
+        </rdf:type>
+        <rdf:type>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002490"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBdv_00005369"/>
+            </Restriction>
+        </rdf:type>
+        <neo_property:nodeLabel>Sample</neo_property:nodeLabel>
+        <dc:source rdf:resource="http://virtualflybrain.org/reports/VFBseq_00003522"/>
+        <oboInOwl:hasDbXref rdf:resource="http://virtualflybrain.org/reports/BioSample"/>
+        <oboInOwl:hasDbXref rdf:resource="http://virtualflybrain.org/reports/GEO"/>
+        <rdfs:label>19_4_3_PAM-β′2a_MB109B_nlstdTomato_F_Hand_405-cells (Aso 2019)</rdfs:label>
+    </NamedIndividual>
+    <Axiom>
+        <annotatedSource rdf:resource="http://virtualflybrain.org/reports/VFBseq_00003548"/>
+        <annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <annotatedTarget rdf:resource="http://virtualflybrain.org/reports/BioSample"/>
+        <neo_custom:accession>SAMN13191434</neo_custom:accession>
+    </Axiom>
+    <Axiom>
+        <annotatedSource rdf:resource="http://virtualflybrain.org/reports/VFBseq_00003548"/>
+        <annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <annotatedTarget rdf:resource="http://virtualflybrain.org/reports/GEO"/>
+        <neo_custom:accession>GSM4148324</neo_custom:accession>
+    </Axiom>
+    
+
+
+    <!-- http://virtualflybrain.org/reports/VFBseq_00003549 -->
+
+    <NamedIndividual rdf:about="http://virtualflybrain.org/reports/VFBseq_00003549">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/FBcv_0003024"/>
+        <rdf:type rdf:resource="http://virtualflybrain.org/reports/VFBexp_FBtp0099451FBtp0099551"/>
+        <rdf:type>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002131"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00003624"/>
+            </Restriction>
+        </rdf:type>
+        <rdf:type>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002473"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00100214"/>
+            </Restriction>
+        </rdf:type>
+        <rdf:type>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002490"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBdv_00005369"/>
+            </Restriction>
+        </rdf:type>
+        <neo_property:nodeLabel>Sample</neo_property:nodeLabel>
+        <dc:source rdf:resource="http://virtualflybrain.org/reports/VFBseq_00003522"/>
+        <oboInOwl:hasDbXref rdf:resource="http://virtualflybrain.org/reports/BioSample"/>
+        <oboInOwl:hasDbXref rdf:resource="http://virtualflybrain.org/reports/GEO"/>
+        <rdfs:label>15_12_4_PAM-γ4&lt;γ1γ2_MB312C_nlstdTomato_F_Hand_378-cells (Aso 2019)</rdfs:label>
+    </NamedIndividual>
+    <Axiom>
+        <annotatedSource rdf:resource="http://virtualflybrain.org/reports/VFBseq_00003549"/>
+        <annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <annotatedTarget rdf:resource="http://virtualflybrain.org/reports/BioSample"/>
+        <neo_custom:accession>SAMN13191433</neo_custom:accession>
+    </Axiom>
+    <Axiom>
+        <annotatedSource rdf:resource="http://virtualflybrain.org/reports/VFBseq_00003549"/>
+        <annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <annotatedTarget rdf:resource="http://virtualflybrain.org/reports/GEO"/>
+        <neo_custom:accession>GSM4148325</neo_custom:accession>
+    </Axiom>
+    
+
+
+    <!-- http://virtualflybrain.org/reports/VFBseq_00003550 -->
+
+    <NamedIndividual rdf:about="http://virtualflybrain.org/reports/VFBseq_00003550">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/FBcv_0003024"/>
+        <rdf:type rdf:resource="http://virtualflybrain.org/reports/VFBexp_FBtp0099451FBtp0099551"/>
+        <rdf:type>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002131"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00003624"/>
+            </Restriction>
+        </rdf:type>
+        <rdf:type>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002473"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00100214"/>
+            </Restriction>
+        </rdf:type>
+        <rdf:type>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002490"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBdv_00005369"/>
+            </Restriction>
+        </rdf:type>
+        <neo_property:nodeLabel>Sample</neo_property:nodeLabel>
+        <dc:source rdf:resource="http://virtualflybrain.org/reports/VFBseq_00003522"/>
+        <oboInOwl:hasDbXref rdf:resource="http://virtualflybrain.org/reports/BioSample"/>
+        <oboInOwl:hasDbXref rdf:resource="http://virtualflybrain.org/reports/GEO"/>
+        <rdfs:label>19_9_3_PAM-γ4&lt;γ1γ2_MB312C_nlstdTomato_F_FACS_703-cells (Aso 2019)</rdfs:label>
+    </NamedIndividual>
+    <Axiom>
+        <annotatedSource rdf:resource="http://virtualflybrain.org/reports/VFBseq_00003550"/>
+        <annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <annotatedTarget rdf:resource="http://virtualflybrain.org/reports/BioSample"/>
+        <neo_custom:accession>SAMN13191432</neo_custom:accession>
+    </Axiom>
+    <Axiom>
+        <annotatedSource rdf:resource="http://virtualflybrain.org/reports/VFBseq_00003550"/>
+        <annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <annotatedTarget rdf:resource="http://virtualflybrain.org/reports/GEO"/>
+        <neo_custom:accession>GSM4148326</neo_custom:accession>
+    </Axiom>
+    
+
+
+    <!-- http://virtualflybrain.org/reports/VFBseq_00003551 -->
+
+    <NamedIndividual rdf:about="http://virtualflybrain.org/reports/VFBseq_00003551">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/FBcv_0003024"/>
+        <rdf:type rdf:resource="http://virtualflybrain.org/reports/VFBexp_FBtp0099451FBtp0099551"/>
+        <rdf:type>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002131"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00003624"/>
+            </Restriction>
+        </rdf:type>
+        <rdf:type>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002473"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00100214"/>
+            </Restriction>
+        </rdf:type>
+        <rdf:type>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002490"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBdv_00005369"/>
+            </Restriction>
+        </rdf:type>
+        <neo_property:nodeLabel>Sample</neo_property:nodeLabel>
+        <dc:source rdf:resource="http://virtualflybrain.org/reports/VFBseq_00003522"/>
+        <oboInOwl:hasDbXref rdf:resource="http://virtualflybrain.org/reports/BioSample"/>
+        <oboInOwl:hasDbXref rdf:resource="http://virtualflybrain.org/reports/GEO"/>
+        <rdfs:label>19_9_4_PAM-γ4&lt;γ1γ2_MB312C_nlstdTomato_F_FACS_629-cells (Aso 2019)</rdfs:label>
+    </NamedIndividual>
+    <Axiom>
+        <annotatedSource rdf:resource="http://virtualflybrain.org/reports/VFBseq_00003551"/>
+        <annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <annotatedTarget rdf:resource="http://virtualflybrain.org/reports/BioSample"/>
+        <neo_custom:accession>SAMN13191431</neo_custom:accession>
+    </Axiom>
+    <Axiom>
+        <annotatedSource rdf:resource="http://virtualflybrain.org/reports/VFBseq_00003551"/>
+        <annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <annotatedTarget rdf:resource="http://virtualflybrain.org/reports/GEO"/>
+        <neo_custom:accession>GSM4148327</neo_custom:accession>
+    </Axiom>
+    
+
+
+    <!-- http://virtualflybrain.org/reports/VFBseq_00003552 -->
+
+    <NamedIndividual rdf:about="http://virtualflybrain.org/reports/VFBseq_00003552">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/FBcv_0003024"/>
+        <rdf:type rdf:resource="http://virtualflybrain.org/reports/VFBexp_FBtp0099487FBtp0099540"/>
+        <rdf:type>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002131"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00003624"/>
+            </Restriction>
+        </rdf:type>
+        <rdf:type>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002473"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00100230"/>
+            </Restriction>
+        </rdf:type>
+        <rdf:type>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002490"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBdv_00005369"/>
+            </Restriction>
+        </rdf:type>
+        <neo_property:nodeLabel>Sample</neo_property:nodeLabel>
+        <dc:source rdf:resource="http://virtualflybrain.org/reports/VFBseq_00003522"/>
+        <oboInOwl:hasDbXref rdf:resource="http://virtualflybrain.org/reports/BioSample"/>
+        <oboInOwl:hasDbXref rdf:resource="http://virtualflybrain.org/reports/GEO"/>
+        <rdfs:label>19_9_5_PAM-γ3_MB441B_nlstdTomato_F_FACS_600-cells (Aso 2019)</rdfs:label>
+    </NamedIndividual>
+    <Axiom>
+        <annotatedSource rdf:resource="http://virtualflybrain.org/reports/VFBseq_00003552"/>
+        <annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <annotatedTarget rdf:resource="http://virtualflybrain.org/reports/BioSample"/>
+        <neo_custom:accession>SAMN13191430</neo_custom:accession>
+    </Axiom>
+    <Axiom>
+        <annotatedSource rdf:resource="http://virtualflybrain.org/reports/VFBseq_00003552"/>
+        <annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <annotatedTarget rdf:resource="http://virtualflybrain.org/reports/GEO"/>
+        <neo_custom:accession>GSM4148328</neo_custom:accession>
+    </Axiom>
+    
+
+
+    <!-- http://virtualflybrain.org/reports/VFBseq_00003553 -->
+
+    <NamedIndividual rdf:about="http://virtualflybrain.org/reports/VFBseq_00003553">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/FBcv_0003024"/>
+        <rdf:type rdf:resource="http://virtualflybrain.org/reports/VFBexp_FBtp0099487FBtp0099540"/>
+        <rdf:type>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002131"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00003624"/>
+            </Restriction>
+        </rdf:type>
+        <rdf:type>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002473"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00100230"/>
+            </Restriction>
+        </rdf:type>
+        <rdf:type>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002490"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBdv_00005369"/>
+            </Restriction>
+        </rdf:type>
+        <neo_property:nodeLabel>Sample</neo_property:nodeLabel>
+        <dc:source rdf:resource="http://virtualflybrain.org/reports/VFBseq_00003522"/>
+        <oboInOwl:hasDbXref rdf:resource="http://virtualflybrain.org/reports/BioSample"/>
+        <oboInOwl:hasDbXref rdf:resource="http://virtualflybrain.org/reports/GEO"/>
+        <rdfs:label>19_9_6_PAM-γ3_MB441B_nlstdTomato_F_FACS_570-cells (Aso 2019)</rdfs:label>
+    </NamedIndividual>
+    <Axiom>
+        <annotatedSource rdf:resource="http://virtualflybrain.org/reports/VFBseq_00003553"/>
+        <annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <annotatedTarget rdf:resource="http://virtualflybrain.org/reports/BioSample"/>
+        <neo_custom:accession>SAMN13191386</neo_custom:accession>
+    </Axiom>
+    <Axiom>
+        <annotatedSource rdf:resource="http://virtualflybrain.org/reports/VFBseq_00003553"/>
+        <annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <annotatedTarget rdf:resource="http://virtualflybrain.org/reports/GEO"/>
+        <neo_custom:accession>GSM4148329</neo_custom:accession>
+    </Axiom>
+    
+
+
+    <!-- http://virtualflybrain.org/reports/VFBseq_00003554 -->
+
+    <NamedIndividual rdf:about="http://virtualflybrain.org/reports/VFBseq_00003554">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/FBcv_0003024"/>
+        <rdf:type rdf:resource="http://virtualflybrain.org/reports/VFBexp_FBtp0099487FBtp0099540"/>
+        <rdf:type>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002131"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00003624"/>
+            </Restriction>
+        </rdf:type>
+        <rdf:type>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002473"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00100230"/>
+            </Restriction>
+        </rdf:type>
+        <rdf:type>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002490"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBdv_00005369"/>
+            </Restriction>
+        </rdf:type>
+        <neo_property:nodeLabel>Sample</neo_property:nodeLabel>
+        <dc:source rdf:resource="http://virtualflybrain.org/reports/VFBseq_00003522"/>
+        <oboInOwl:hasDbXref rdf:resource="http://virtualflybrain.org/reports/BioSample"/>
+        <oboInOwl:hasDbXref rdf:resource="http://virtualflybrain.org/reports/GEO"/>
+        <rdfs:label>15_10_6_PAM-γ3_MB441B_nlstdTomato_F_Hand_280-cells (Aso 2019)</rdfs:label>
+    </NamedIndividual>
+    <Axiom>
+        <annotatedSource rdf:resource="http://virtualflybrain.org/reports/VFBseq_00003554"/>
+        <annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <annotatedTarget rdf:resource="http://virtualflybrain.org/reports/BioSample"/>
+        <neo_custom:accession>SAMN13191405</neo_custom:accession>
+    </Axiom>
+    <Axiom>
+        <annotatedSource rdf:resource="http://virtualflybrain.org/reports/VFBseq_00003554"/>
+        <annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <annotatedTarget rdf:resource="http://virtualflybrain.org/reports/GEO"/>
+        <neo_custom:accession>GSM4148330</neo_custom:accession>
+    </Axiom>
+    
+
+
+    <!-- http://virtualflybrain.org/reports/VFBseq_00003555 -->
+
+    <NamedIndividual rdf:about="http://virtualflybrain.org/reports/VFBseq_00003555">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/FBcv_0003024"/>
+        <rdf:type rdf:resource="http://virtualflybrain.org/reports/VFBexp_FBtp0099478FBtp0099551"/>
+        <rdf:type>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002131"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00003624"/>
+            </Restriction>
+        </rdf:type>
+        <rdf:type>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002473"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00111022"/>
+            </Restriction>
+        </rdf:type>
+        <rdf:type>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002490"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBdv_00005369"/>
+            </Restriction>
+        </rdf:type>
+        <neo_property:nodeLabel>Sample</neo_property:nodeLabel>
+        <dc:source rdf:resource="http://virtualflybrain.org/reports/VFBseq_00003522"/>
+        <oboInOwl:hasDbXref rdf:resource="http://virtualflybrain.org/reports/BioSample"/>
+        <oboInOwl:hasDbXref rdf:resource="http://virtualflybrain.org/reports/GEO"/>
+        <rdfs:label>14_10_5_PAM-α1_MB043C_nlstdTomato_F_Hand_1048-cells (Aso 2019)</rdfs:label>
+    </NamedIndividual>
+    <Axiom>
+        <annotatedSource rdf:resource="http://virtualflybrain.org/reports/VFBseq_00003555"/>
+        <annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <annotatedTarget rdf:resource="http://virtualflybrain.org/reports/BioSample"/>
+        <neo_custom:accession>SAMN13191404</neo_custom:accession>
+    </Axiom>
+    <Axiom>
+        <annotatedSource rdf:resource="http://virtualflybrain.org/reports/VFBseq_00003555"/>
+        <annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <annotatedTarget rdf:resource="http://virtualflybrain.org/reports/GEO"/>
+        <neo_custom:accession>GSM4148331</neo_custom:accession>
+    </Axiom>
+    
+
+
+    <!-- http://virtualflybrain.org/reports/VFBseq_00003556 -->
+
+    <NamedIndividual rdf:about="http://virtualflybrain.org/reports/VFBseq_00003556">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/FBcv_0003024"/>
+        <rdf:type rdf:resource="http://virtualflybrain.org/reports/VFBexp_FBtp0099478FBtp0099551"/>
+        <rdf:type>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002131"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00003624"/>
+            </Restriction>
+        </rdf:type>
+        <rdf:type>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002473"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00111022"/>
+            </Restriction>
+        </rdf:type>
+        <rdf:type>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002490"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBdv_00005369"/>
+            </Restriction>
+        </rdf:type>
+        <neo_property:nodeLabel>Sample</neo_property:nodeLabel>
+        <dc:source rdf:resource="http://virtualflybrain.org/reports/VFBseq_00003522"/>
+        <oboInOwl:hasDbXref rdf:resource="http://virtualflybrain.org/reports/BioSample"/>
+        <oboInOwl:hasDbXref rdf:resource="http://virtualflybrain.org/reports/GEO"/>
+        <rdfs:label>19_4_4_PAM-α1_MB043C_nlstdTomato_F_Hand_385-cells (Aso 2019)</rdfs:label>
+    </NamedIndividual>
+    <Axiom>
+        <annotatedSource rdf:resource="http://virtualflybrain.org/reports/VFBseq_00003556"/>
+        <annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <annotatedTarget rdf:resource="http://virtualflybrain.org/reports/BioSample"/>
+        <neo_custom:accession>SAMN13191403</neo_custom:accession>
+    </Axiom>
+    <Axiom>
+        <annotatedSource rdf:resource="http://virtualflybrain.org/reports/VFBseq_00003556"/>
+        <annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <annotatedTarget rdf:resource="http://virtualflybrain.org/reports/GEO"/>
+        <neo_custom:accession>GSM4148332</neo_custom:accession>
+    </Axiom>
+    
+
+
+    <!-- http://virtualflybrain.org/reports/VFBseq_00003557 -->
+
+    <NamedIndividual rdf:about="http://virtualflybrain.org/reports/VFBseq_00003557">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/FBcv_0003024"/>
+        <rdf:type rdf:resource="http://virtualflybrain.org/reports/VFBexp_FBtp0099479FBtp0099561"/>
+        <rdf:type>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002131"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00003624"/>
+            </Restriction>
+        </rdf:type>
+        <rdf:type>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002473"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00110992"/>
+            </Restriction>
+        </rdf:type>
+        <rdf:type>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002490"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBdv_00005369"/>
+            </Restriction>
+        </rdf:type>
+        <neo_property:nodeLabel>Sample</neo_property:nodeLabel>
+        <dc:source rdf:resource="http://virtualflybrain.org/reports/VFBseq_00003522"/>
+        <oboInOwl:hasDbXref rdf:resource="http://virtualflybrain.org/reports/BioSample"/>
+        <oboInOwl:hasDbXref rdf:resource="http://virtualflybrain.org/reports/GEO"/>
+        <rdfs:label>14_10_4_PMA-β1, PAM-β2_MB213B_nlstdTomato_F_Hand_1048-cells (Aso 2019)</rdfs:label>
+    </NamedIndividual>
+    <Axiom>
+        <annotatedSource rdf:resource="http://virtualflybrain.org/reports/VFBseq_00003557"/>
+        <annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <annotatedTarget rdf:resource="http://virtualflybrain.org/reports/BioSample"/>
+        <neo_custom:accession>SAMN13191402</neo_custom:accession>
+    </Axiom>
+    <Axiom>
+        <annotatedSource rdf:resource="http://virtualflybrain.org/reports/VFBseq_00003557"/>
+        <annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <annotatedTarget rdf:resource="http://virtualflybrain.org/reports/GEO"/>
+        <neo_custom:accession>GSM4148333</neo_custom:accession>
+    </Axiom>
+    
+
+
+    <!-- http://virtualflybrain.org/reports/VFBseq_00003558 -->
+
+    <NamedIndividual rdf:about="http://virtualflybrain.org/reports/VFBseq_00003558">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/FBcv_0003024"/>
+        <rdf:type rdf:resource="http://virtualflybrain.org/reports/VFBexp_FBtp0099479FBtp0099561"/>
+        <rdf:type>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002131"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00003624"/>
+            </Restriction>
+        </rdf:type>
+        <rdf:type>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002473"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00110992"/>
+            </Restriction>
+        </rdf:type>
+        <rdf:type>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002490"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBdv_00005369"/>
+            </Restriction>
+        </rdf:type>
+        <neo_property:nodeLabel>Sample</neo_property:nodeLabel>
+        <dc:source rdf:resource="http://virtualflybrain.org/reports/VFBseq_00003522"/>
+        <oboInOwl:hasDbXref rdf:resource="http://virtualflybrain.org/reports/BioSample"/>
+        <oboInOwl:hasDbXref rdf:resource="http://virtualflybrain.org/reports/GEO"/>
+        <rdfs:label>19_4_2_PMA-β1, PAM-β2_MB213B_nlstdTomato_F_Hand_381-cells (Aso 2019)</rdfs:label>
+    </NamedIndividual>
+    <Axiom>
+        <annotatedSource rdf:resource="http://virtualflybrain.org/reports/VFBseq_00003558"/>
+        <annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <annotatedTarget rdf:resource="http://virtualflybrain.org/reports/BioSample"/>
+        <neo_custom:accession>SAMN13191401</neo_custom:accession>
+    </Axiom>
+    <Axiom>
+        <annotatedSource rdf:resource="http://virtualflybrain.org/reports/VFBseq_00003558"/>
+        <annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <annotatedTarget rdf:resource="http://virtualflybrain.org/reports/GEO"/>
+        <neo_custom:accession>GSM4148334</neo_custom:accession>
+    </Axiom>
+    
+
+
+    <!-- http://virtualflybrain.org/reports/VFBseq_00003559 -->
+
+    <NamedIndividual rdf:about="http://virtualflybrain.org/reports/VFBseq_00003559">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/FBcv_0003024"/>
+        <rdf:type rdf:resource="http://virtualflybrain.org/reports/VFBexp_FBtp0099456FBtp0120685"/>
+        <rdf:type>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002131"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00003624"/>
+            </Restriction>
+        </rdf:type>
+        <rdf:type>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002473"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00005780"/>
+            </Restriction>
+        </rdf:type>
+        <rdf:type>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002490"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBdv_00005369"/>
+            </Restriction>
+        </rdf:type>
+        <neo_property:nodeLabel>Sample</neo_property:nodeLabel>
+        <dc:source rdf:resource="http://virtualflybrain.org/reports/VFBseq_00003522"/>
+        <oboInOwl:hasDbXref rdf:resource="http://virtualflybrain.org/reports/BioSample"/>
+        <oboInOwl:hasDbXref rdf:resource="http://virtualflybrain.org/reports/GEO"/>
+        <rdfs:label>20_12_1_MB-DPM_SS01240_nlstdTomato__Hand_130-cells (Aso 2019)</rdfs:label>
+    </NamedIndividual>
+    <Axiom>
+        <annotatedSource rdf:resource="http://virtualflybrain.org/reports/VFBseq_00003559"/>
+        <annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <annotatedTarget rdf:resource="http://virtualflybrain.org/reports/BioSample"/>
+        <neo_custom:accession>SAMN13191395</neo_custom:accession>
+    </Axiom>
+    <Axiom>
+        <annotatedSource rdf:resource="http://virtualflybrain.org/reports/VFBseq_00003559"/>
+        <annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <annotatedTarget rdf:resource="http://virtualflybrain.org/reports/GEO"/>
+        <neo_custom:accession>GSM4148340</neo_custom:accession>
+    </Axiom>
+    
+
+
+    <!-- http://virtualflybrain.org/reports/VFBseq_00003560 -->
+
+    <NamedIndividual rdf:about="http://virtualflybrain.org/reports/VFBseq_00003560">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/FBcv_0003024"/>
+        <rdf:type rdf:resource="http://virtualflybrain.org/reports/VFBexp_FBtp0099456FBtp0120685"/>
+        <rdf:type>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002131"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00003624"/>
+            </Restriction>
+        </rdf:type>
+        <rdf:type>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002473"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00005780"/>
+            </Restriction>
+        </rdf:type>
+        <rdf:type>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002490"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBdv_00005369"/>
+            </Restriction>
+        </rdf:type>
+        <neo_property:nodeLabel>Sample</neo_property:nodeLabel>
+        <dc:source rdf:resource="http://virtualflybrain.org/reports/VFBseq_00003522"/>
+        <oboInOwl:hasDbXref rdf:resource="http://virtualflybrain.org/reports/BioSample"/>
+        <oboInOwl:hasDbXref rdf:resource="http://virtualflybrain.org/reports/GEO"/>
+        <rdfs:label>20_12_2_MB-DPM_SS01240_nlstdTomato__Hand_123-cells (Aso 2019)</rdfs:label>
+    </NamedIndividual>
+    <Axiom>
+        <annotatedSource rdf:resource="http://virtualflybrain.org/reports/VFBseq_00003560"/>
+        <annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <annotatedTarget rdf:resource="http://virtualflybrain.org/reports/BioSample"/>
+        <neo_custom:accession>SAMN13191394</neo_custom:accession>
+    </Axiom>
+    <Axiom>
+        <annotatedSource rdf:resource="http://virtualflybrain.org/reports/VFBseq_00003560"/>
+        <annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <annotatedTarget rdf:resource="http://virtualflybrain.org/reports/GEO"/>
+        <neo_custom:accession>GSM4148341</neo_custom:accession>
+    </Axiom>
+    
+
+
+    <!-- http://virtualflybrain.org/reports/VFBseq_00003561 -->
+
+    <NamedIndividual rdf:about="http://virtualflybrain.org/reports/VFBseq_00003561">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/FBcv_0003024"/>
+        <rdf:type rdf:resource="http://virtualflybrain.org/reports/VFBexp_FBtp0099456FBtp0099565"/>
+        <rdf:type>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002131"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00003624"/>
+            </Restriction>
+        </rdf:type>
+        <rdf:type>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002473"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00100246"/>
+            </Restriction>
+        </rdf:type>
+        <rdf:type>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002490"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBdv_00005369"/>
+            </Restriction>
+        </rdf:type>
+        <neo_property:nodeLabel>Sample</neo_property:nodeLabel>
+        <dc:source rdf:resource="http://virtualflybrain.org/reports/VFBseq_00003522"/>
+        <oboInOwl:hasDbXref rdf:resource="http://virtualflybrain.org/reports/BioSample"/>
+        <oboInOwl:hasDbXref rdf:resource="http://virtualflybrain.org/reports/GEO"/>
+        <rdfs:label>SB_79_MBON-γ1pedc&gt;α/β_MB112C_nlsGFP _F_Hand_350-cells (Aso 2019)</rdfs:label>
+    </NamedIndividual>
+    <Axiom>
+        <annotatedSource rdf:resource="http://virtualflybrain.org/reports/VFBseq_00003561"/>
+        <annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <annotatedTarget rdf:resource="http://virtualflybrain.org/reports/BioSample"/>
+        <neo_custom:accession>SAMN13191393</neo_custom:accession>
+    </Axiom>
+    <Axiom>
+        <annotatedSource rdf:resource="http://virtualflybrain.org/reports/VFBseq_00003561"/>
+        <annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <annotatedTarget rdf:resource="http://virtualflybrain.org/reports/GEO"/>
+        <neo_custom:accession>GSM4148342</neo_custom:accession>
+    </Axiom>
+    
+
+
+    <!-- http://virtualflybrain.org/reports/VFBseq_00003562 -->
+
+    <NamedIndividual rdf:about="http://virtualflybrain.org/reports/VFBseq_00003562">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/FBcv_0003024"/>
+        <rdf:type rdf:resource="http://virtualflybrain.org/reports/VFBexp_FBtp0099456FBtp0099565"/>
+        <rdf:type>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002131"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00003624"/>
+            </Restriction>
+        </rdf:type>
+        <rdf:type>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002473"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00100246"/>
+            </Restriction>
+        </rdf:type>
+        <rdf:type>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002490"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBdv_00005369"/>
+            </Restriction>
+        </rdf:type>
+        <neo_property:nodeLabel>Sample</neo_property:nodeLabel>
+        <dc:source rdf:resource="http://virtualflybrain.org/reports/VFBseq_00003522"/>
+        <oboInOwl:hasDbXref rdf:resource="http://virtualflybrain.org/reports/BioSample"/>
+        <oboInOwl:hasDbXref rdf:resource="http://virtualflybrain.org/reports/GEO"/>
+        <rdfs:label>SB_80_MBON-γ1pedc&gt;α/β_MB112C_nlsGFP _F_Hand_348-cells (Aso 2019)</rdfs:label>
+    </NamedIndividual>
+    <Axiom>
+        <annotatedSource rdf:resource="http://virtualflybrain.org/reports/VFBseq_00003562"/>
+        <annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <annotatedTarget rdf:resource="http://virtualflybrain.org/reports/BioSample"/>
+        <neo_custom:accession>SAMN13191392</neo_custom:accession>
+    </Axiom>
+    <Axiom>
+        <annotatedSource rdf:resource="http://virtualflybrain.org/reports/VFBseq_00003562"/>
+        <annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <annotatedTarget rdf:resource="http://virtualflybrain.org/reports/GEO"/>
+        <neo_custom:accession>GSM4148343</neo_custom:accession>
+    </Axiom>
+    
+
+
+    <!-- http://virtualflybrain.org/reports/VFBseq_00003563 -->
+
+    <NamedIndividual rdf:about="http://virtualflybrain.org/reports/VFBseq_00003563">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/FBcv_0003024"/>
+        <rdf:type rdf:resource="http://virtualflybrain.org/reports/VFBexp_FBtp0099456FBtp0099565"/>
+        <rdf:type>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002131"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00003624"/>
+            </Restriction>
+        </rdf:type>
+        <rdf:type>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002473"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00100246"/>
+            </Restriction>
+        </rdf:type>
+        <rdf:type>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002490"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBdv_00005369"/>
+            </Restriction>
+        </rdf:type>
+        <neo_property:nodeLabel>Sample</neo_property:nodeLabel>
+        <dc:source rdf:resource="http://virtualflybrain.org/reports/VFBseq_00003522"/>
+        <oboInOwl:hasDbXref rdf:resource="http://virtualflybrain.org/reports/BioSample"/>
+        <oboInOwl:hasDbXref rdf:resource="http://virtualflybrain.org/reports/GEO"/>
+        <rdfs:label>SB_81_MBON-γ1pedc&gt;α/β_MB112C_nlsGFP _F_Hand_352-cells (Aso 2019)</rdfs:label>
+    </NamedIndividual>
+    <Axiom>
+        <annotatedSource rdf:resource="http://virtualflybrain.org/reports/VFBseq_00003563"/>
+        <annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <annotatedTarget rdf:resource="http://virtualflybrain.org/reports/BioSample"/>
+        <neo_custom:accession>SAMN13191391</neo_custom:accession>
+    </Axiom>
+    <Axiom>
+        <annotatedSource rdf:resource="http://virtualflybrain.org/reports/VFBseq_00003563"/>
+        <annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <annotatedTarget rdf:resource="http://virtualflybrain.org/reports/GEO"/>
+        <neo_custom:accession>GSM4148344</neo_custom:accession>
+    </Axiom>
+    
+
+
+    <!-- http://virtualflybrain.org/reports/VFBseq_00003564 -->
+
+    <NamedIndividual rdf:about="http://virtualflybrain.org/reports/VFBseq_00003564">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/FBcv_0003024"/>
+        <rdf:type rdf:resource="http://virtualflybrain.org/reports/VFBexp_FBti0132502"/>
+        <rdf:type>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002131"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00003624"/>
+            </Restriction>
+        </rdf:type>
+        <rdf:type>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002473"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00100238"/>
+            </Restriction>
+        </rdf:type>
+        <rdf:type>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002490"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBdv_00005369"/>
+            </Restriction>
+        </rdf:type>
+        <neo_property:nodeLabel>Sample</neo_property:nodeLabel>
+        <dc:source rdf:resource="http://virtualflybrain.org/reports/VFBseq_00003522"/>
+        <oboInOwl:hasDbXref rdf:resource="http://virtualflybrain.org/reports/BioSample"/>
+        <oboInOwl:hasDbXref rdf:resource="http://virtualflybrain.org/reports/GEO"/>
+        <rdfs:label>14_10_3_MBON-α3_G239_nlsGFP _F_Hand_251-cells (Aso 2019)</rdfs:label>
+    </NamedIndividual>
+    <Axiom>
+        <annotatedSource rdf:resource="http://virtualflybrain.org/reports/VFBseq_00003564"/>
+        <annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <annotatedTarget rdf:resource="http://virtualflybrain.org/reports/BioSample"/>
+        <neo_custom:accession>SAMN13191390</neo_custom:accession>
+    </Axiom>
+    <Axiom>
+        <annotatedSource rdf:resource="http://virtualflybrain.org/reports/VFBseq_00003564"/>
+        <annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <annotatedTarget rdf:resource="http://virtualflybrain.org/reports/GEO"/>
+        <neo_custom:accession>GSM4148345</neo_custom:accession>
+    </Axiom>
+    
+
+
+    <!-- http://virtualflybrain.org/reports/VFBseq_00003565 -->
+
+    <NamedIndividual rdf:about="http://virtualflybrain.org/reports/VFBseq_00003565">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/FBcv_0003024"/>
+        <rdf:type rdf:resource="http://virtualflybrain.org/reports/VFBexp_FBtp0099191FBtp0099546"/>
+        <rdf:type>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002131"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00003624"/>
+            </Restriction>
+        </rdf:type>
+        <rdf:type>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002473"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00111005"/>
+            </Restriction>
+        </rdf:type>
+        <rdf:type>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002490"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBdv_00005369"/>
+            </Restriction>
+        </rdf:type>
+        <neo_property:nodeLabel>Sample</neo_property:nodeLabel>
+        <dc:source rdf:resource="http://virtualflybrain.org/reports/VFBseq_00003522"/>
+        <oboInOwl:hasDbXref rdf:resource="http://virtualflybrain.org/reports/BioSample"/>
+        <oboInOwl:hasDbXref rdf:resource="http://virtualflybrain.org/reports/GEO"/>
+        <rdfs:label>15_12_3_MBON-α1_MB310C_unc84-GFP_F_Hand_184-cells (Aso 2019)</rdfs:label>
+    </NamedIndividual>
+    <Axiom>
+        <annotatedSource rdf:resource="http://virtualflybrain.org/reports/VFBseq_00003565"/>
+        <annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <annotatedTarget rdf:resource="http://virtualflybrain.org/reports/BioSample"/>
+        <neo_custom:accession>SAMN13191389</neo_custom:accession>
+    </Axiom>
+    <Axiom>
+        <annotatedSource rdf:resource="http://virtualflybrain.org/reports/VFBseq_00003565"/>
+        <annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <annotatedTarget rdf:resource="http://virtualflybrain.org/reports/GEO"/>
+        <neo_custom:accession>GSM4148346</neo_custom:accession>
+    </Axiom>
+    
+
+
+    <!-- http://virtualflybrain.org/reports/VFBseq_00003566 -->
+
+    <NamedIndividual rdf:about="http://virtualflybrain.org/reports/VFBseq_00003566">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/FBcv_0003024"/>
+        <rdf:type rdf:resource="http://virtualflybrain.org/reports/VFBexp_FBtp0099453FBtp0099538"/>
+        <rdf:type>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002131"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00003624"/>
+            </Restriction>
+        </rdf:type>
+        <rdf:type>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002473"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00100242"/>
+            </Restriction>
+        </rdf:type>
+        <rdf:type>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002490"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBdv_00005369"/>
+            </Restriction>
+        </rdf:type>
+        <neo_property:nodeLabel>Sample</neo_property:nodeLabel>
+        <dc:source rdf:resource="http://virtualflybrain.org/reports/VFBseq_00003522"/>
+        <oboInOwl:hasDbXref rdf:resource="http://virtualflybrain.org/reports/BioSample"/>
+        <oboInOwl:hasDbXref rdf:resource="http://virtualflybrain.org/reports/GEO"/>
+        <rdfs:label>14_10_6_MBON-β1&gt;α_MB433B_nlstdTomato_F_Hand_279-cells (Aso 2019)</rdfs:label>
+    </NamedIndividual>
+    <Axiom>
+        <annotatedSource rdf:resource="http://virtualflybrain.org/reports/VFBseq_00003566"/>
+        <annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <annotatedTarget rdf:resource="http://virtualflybrain.org/reports/BioSample"/>
+        <neo_custom:accession>SAMN13191388</neo_custom:accession>
+    </Axiom>
+    <Axiom>
+        <annotatedSource rdf:resource="http://virtualflybrain.org/reports/VFBseq_00003566"/>
+        <annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <annotatedTarget rdf:resource="http://virtualflybrain.org/reports/GEO"/>
+        <neo_custom:accession>GSM4148347</neo_custom:accession>
+    </Axiom>
+    
+
+
+    <!-- http://virtualflybrain.org/reports/VFBseq_00003567 -->
+
+    <NamedIndividual rdf:about="http://virtualflybrain.org/reports/VFBseq_00003567">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/FBcv_0003024"/>
+        <rdf:type rdf:resource="http://virtualflybrain.org/reports/VFBexp_FBtp0099497FBtp0099533"/>
+        <rdf:type>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002131"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00003624"/>
+            </Restriction>
+        </rdf:type>
+        <rdf:type>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002473"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00110102"/>
+            </Restriction>
+        </rdf:type>
+        <rdf:type>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002490"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBdv_00005369"/>
+            </Restriction>
+        </rdf:type>
+        <neo_property:nodeLabel>Sample</neo_property:nodeLabel>
+        <dc:source rdf:resource="http://virtualflybrain.org/reports/VFBseq_00003522"/>
+        <oboInOwl:hasDbXref rdf:resource="http://virtualflybrain.org/reports/BioSample"/>
+        <oboInOwl:hasDbXref rdf:resource="http://virtualflybrain.org/reports/GEO"/>
+        <rdfs:label>21_1_1_MBON-α′3_MB027B_nlstdTomato_F_FACS_315-cells (Aso 2019)</rdfs:label>
+    </NamedIndividual>
+    <Axiom>
+        <annotatedSource rdf:resource="http://virtualflybrain.org/reports/VFBseq_00003567"/>
+        <annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <annotatedTarget rdf:resource="http://virtualflybrain.org/reports/BioSample"/>
+        <neo_custom:accession>SAMN13191387</neo_custom:accession>
+    </Axiom>
+    <Axiom>
+        <annotatedSource rdf:resource="http://virtualflybrain.org/reports/VFBseq_00003567"/>
+        <annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <annotatedTarget rdf:resource="http://virtualflybrain.org/reports/GEO"/>
+        <neo_custom:accession>GSM4148348</neo_custom:accession>
+    </Axiom>
+    
+
+
+    <!-- http://virtualflybrain.org/reports/VFBseq_00003568 -->
+
+    <NamedIndividual rdf:about="http://virtualflybrain.org/reports/VFBseq_00003568">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/FBcv_0003024"/>
+        <rdf:type rdf:resource="http://virtualflybrain.org/reports/VFBexp_FBtp0099497FBtp0099533"/>
+        <rdf:type>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002131"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00003624"/>
+            </Restriction>
+        </rdf:type>
+        <rdf:type>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002473"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00110102"/>
+            </Restriction>
+        </rdf:type>
+        <rdf:type>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002490"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBdv_00005369"/>
+            </Restriction>
+        </rdf:type>
+        <neo_property:nodeLabel>Sample</neo_property:nodeLabel>
+        <dc:source rdf:resource="http://virtualflybrain.org/reports/VFBseq_00003522"/>
+        <oboInOwl:hasDbXref rdf:resource="http://virtualflybrain.org/reports/BioSample"/>
+        <oboInOwl:hasDbXref rdf:resource="http://virtualflybrain.org/reports/GEO"/>
+        <rdfs:label>21_1_2_MBON-α′3_MB027B_nlstdTomato_F_FACS_308-cells (Aso 2019)</rdfs:label>
+    </NamedIndividual>
+    <Axiom>
+        <annotatedSource rdf:resource="http://virtualflybrain.org/reports/VFBseq_00003568"/>
+        <annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <annotatedTarget rdf:resource="http://virtualflybrain.org/reports/BioSample"/>
+        <neo_custom:accession>SAMN13191429</neo_custom:accession>
+    </Axiom>
+    <Axiom>
+        <annotatedSource rdf:resource="http://virtualflybrain.org/reports/VFBseq_00003568"/>
+        <annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <annotatedTarget rdf:resource="http://virtualflybrain.org/reports/GEO"/>
+        <neo_custom:accession>GSM4148349</neo_custom:accession>
+    </Axiom>
+    
+
+
+    <!-- http://virtualflybrain.org/reports/VFBseq_00003569 -->
+
+    <NamedIndividual rdf:about="http://virtualflybrain.org/reports/VFBseq_00003569">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/FBcv_0003024"/>
+        <rdf:type rdf:resource="http://virtualflybrain.org/reports/VFBexp_FBtp0099497FBtp0099533"/>
+        <rdf:type>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002131"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00003624"/>
+            </Restriction>
+        </rdf:type>
+        <rdf:type>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002473"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00110102"/>
+            </Restriction>
+        </rdf:type>
+        <rdf:type>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002490"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBdv_00005369"/>
+            </Restriction>
+        </rdf:type>
+        <neo_property:nodeLabel>Sample</neo_property:nodeLabel>
+        <dc:source rdf:resource="http://virtualflybrain.org/reports/VFBseq_00003522"/>
+        <oboInOwl:hasDbXref rdf:resource="http://virtualflybrain.org/reports/BioSample"/>
+        <oboInOwl:hasDbXref rdf:resource="http://virtualflybrain.org/reports/GEO"/>
+        <rdfs:label>21_1_3_MBON-α′3_MB027B_nlstdTomato_F_FACS_285-cells (Aso 2019)</rdfs:label>
+    </NamedIndividual>
+    <Axiom>
+        <annotatedSource rdf:resource="http://virtualflybrain.org/reports/VFBseq_00003569"/>
+        <annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <annotatedTarget rdf:resource="http://virtualflybrain.org/reports/BioSample"/>
+        <neo_custom:accession>SAMN13191428</neo_custom:accession>
+    </Axiom>
+    <Axiom>
+        <annotatedSource rdf:resource="http://virtualflybrain.org/reports/VFBseq_00003569"/>
+        <annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <annotatedTarget rdf:resource="http://virtualflybrain.org/reports/GEO"/>
+        <neo_custom:accession>GSM4148350</neo_custom:accession>
+    </Axiom>
+    
+
+
+    <!-- http://virtualflybrain.org/reports/VFBseq_00003570 -->
+
+    <NamedIndividual rdf:about="http://virtualflybrain.org/reports/VFBseq_00003570">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/FBcv_0003024"/>
+        <rdf:type rdf:resource="http://virtualflybrain.org/reports/VFBexp_FBtp0099473FBtp0120835"/>
+        <rdf:type>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002131"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00003624"/>
+            </Restriction>
+        </rdf:type>
+        <rdf:type>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002473"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00100234"/>
+            </Restriction>
+        </rdf:type>
+        <rdf:type>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002490"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBdv_00005369"/>
+            </Restriction>
+        </rdf:type>
+        <neo_property:nodeLabel>Sample</neo_property:nodeLabel>
+        <dc:source rdf:resource="http://virtualflybrain.org/reports/VFBseq_00003522"/>
+        <oboInOwl:hasDbXref rdf:resource="http://virtualflybrain.org/reports/BioSample"/>
+        <oboInOwl:hasDbXref rdf:resource="http://virtualflybrain.org/reports/GEO"/>
+        <rdfs:label>21_1_4_MBON-γ5β′2a_SS01308_nlstdTomato_F_FACS_174-cells (Aso 2019)</rdfs:label>
+    </NamedIndividual>
+    <Axiom>
+        <annotatedSource rdf:resource="http://virtualflybrain.org/reports/VFBseq_00003570"/>
+        <annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <annotatedTarget rdf:resource="http://virtualflybrain.org/reports/BioSample"/>
+        <neo_custom:accession>SAMN13191427</neo_custom:accession>
+    </Axiom>
+    <Axiom>
+        <annotatedSource rdf:resource="http://virtualflybrain.org/reports/VFBseq_00003570"/>
+        <annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <annotatedTarget rdf:resource="http://virtualflybrain.org/reports/GEO"/>
+        <neo_custom:accession>GSM4148351</neo_custom:accession>
+    </Axiom>
+    
+
+
+    <!-- http://virtualflybrain.org/reports/VFBseq_00003571 -->
+
+    <NamedIndividual rdf:about="http://virtualflybrain.org/reports/VFBseq_00003571">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/FBcv_0003024"/>
+        <rdf:type rdf:resource="http://virtualflybrain.org/reports/VFBexp_FBtp0099473FBtp0120835"/>
+        <rdf:type>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002131"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00003624"/>
+            </Restriction>
+        </rdf:type>
+        <rdf:type>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002473"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00100234"/>
+            </Restriction>
+        </rdf:type>
+        <rdf:type>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002490"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBdv_00005369"/>
+            </Restriction>
+        </rdf:type>
+        <neo_property:nodeLabel>Sample</neo_property:nodeLabel>
+        <dc:source rdf:resource="http://virtualflybrain.org/reports/VFBseq_00003522"/>
+        <oboInOwl:hasDbXref rdf:resource="http://virtualflybrain.org/reports/BioSample"/>
+        <oboInOwl:hasDbXref rdf:resource="http://virtualflybrain.org/reports/GEO"/>
+        <rdfs:label>21_1_5_MBON-γ5β′2a_SS01308_nlstdTomato_F_FACS_183-cells (Aso 2019)</rdfs:label>
+    </NamedIndividual>
+    <Axiom>
+        <annotatedSource rdf:resource="http://virtualflybrain.org/reports/VFBseq_00003571"/>
+        <annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <annotatedTarget rdf:resource="http://virtualflybrain.org/reports/BioSample"/>
+        <neo_custom:accession>SAMN13191426</neo_custom:accession>
+    </Axiom>
+    <Axiom>
+        <annotatedSource rdf:resource="http://virtualflybrain.org/reports/VFBseq_00003571"/>
+        <annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <annotatedTarget rdf:resource="http://virtualflybrain.org/reports/GEO"/>
+        <neo_custom:accession>GSM4148352</neo_custom:accession>
+    </Axiom>
+    
+
+
+    <!-- http://virtualflybrain.org/reports/VFBseq_00003572 -->
+
+    <NamedIndividual rdf:about="http://virtualflybrain.org/reports/VFBseq_00003572">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/FBcv_0003024"/>
+        <rdf:type rdf:resource="http://virtualflybrain.org/reports/VFBexp_FBtp0099473FBtp0120835"/>
+        <rdf:type>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002131"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00003624"/>
+            </Restriction>
+        </rdf:type>
+        <rdf:type>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002473"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00100234"/>
+            </Restriction>
+        </rdf:type>
+        <rdf:type>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002490"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBdv_00005369"/>
+            </Restriction>
+        </rdf:type>
+        <neo_property:nodeLabel>Sample</neo_property:nodeLabel>
+        <dc:source rdf:resource="http://virtualflybrain.org/reports/VFBseq_00003522"/>
+        <oboInOwl:hasDbXref rdf:resource="http://virtualflybrain.org/reports/BioSample"/>
+        <oboInOwl:hasDbXref rdf:resource="http://virtualflybrain.org/reports/GEO"/>
+        <rdfs:label>21_1_6_MBON-γ5β′2a_SS01308_nlstdTomato_F_FACS_297-cells (Aso 2019)</rdfs:label>
+    </NamedIndividual>
+    <Axiom>
+        <annotatedSource rdf:resource="http://virtualflybrain.org/reports/VFBseq_00003572"/>
+        <annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <annotatedTarget rdf:resource="http://virtualflybrain.org/reports/BioSample"/>
+        <neo_custom:accession>SAMN13191425</neo_custom:accession>
+    </Axiom>
+    <Axiom>
+        <annotatedSource rdf:resource="http://virtualflybrain.org/reports/VFBseq_00003572"/>
+        <annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <annotatedTarget rdf:resource="http://virtualflybrain.org/reports/GEO"/>
+        <neo_custom:accession>GSM4148353</neo_custom:accession>
+    </Axiom>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.29) https://github.com/owlcs/owlapi -->
+

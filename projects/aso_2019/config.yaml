@@ -1,5 +1,5 @@
 # Aso et al. 2019 (eLife 8:e49257), bulk RNA-seq of split-GAL4-sorted mushroom body cell types.
-# Not loaded yet: trial project to firm up EPseq policies (2026-11).
+# Ids minted 2026-11-11; not in a VFB release yet, so still open to change (docs/DESIGN.md).
 project: aso_2019
 source:
   geo_series: GSE139889

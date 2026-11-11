@@ -18,6 +18,10 @@ vfb-scRNAseq is a uv git dependency, pinned to a commit, for:
   follow its form: `<GEO series>` for the Dataset, `<GEO series>:<sample title>` for a
   Sample. CI checks `ids.tsv` against the registry on vfb-scRNAseq main.
 
+**Ids are not final until published on the live VFB site** (virtualflybrain.org). Until
+an entity is in a VFB release, anything about it may change: re-keyed, re-minted or
+dropped, with its config, mappings and output files. Once it is live its id is fixed.
+
 Before the migration, samples and the dataset had NCBI BioSample / BioProject IRIs
 (`http://www.ncbi.nlm.nih.gov/biosample/SAMN...`); these are now xrefs.
 
@@ -103,7 +107,7 @@ Same 238 driver-typed samples with the same drivers, tissue, stage and dataset l
   rows dropped (xmas, Or67c, lncRNA:CR46499; 590 axioms); 5 genes renamed by FlyBase
   since 2025-10 moved to their new ids; all other values identical.
 
-## Aso 2019 (`aso_2019`; trial, not loaded)
+## Aso 2019 (`aso_2019`; ids minted, not yet released)
 
 GEO GSE139889 (BioProject PRJNA587485), FBrf0244530, CC BY 4.0. 55 GEO samples; 50
 loaded. Cells hand-picked or FACS-sorted (GEO `sorting`, per sample) from dissociated
@@ -125,5 +129,6 @@ adult female brains, by split-GAL4 (Aso 2014a) or GAL4 driving a fluorescent rep
   assigns each read once across transcripts, so the sum is the merged gene's TPM. stg1's
   two old models (CG11566 / stg1) have identical TPMs in every sample, as in Davis; under
   EM that is reads split evenly between indistinguishable transcripts, not duplicated.
-- Trial build (placeholder ids): 51 entities, 381,696 expression axioms, 15,237 genes,
-  2,863-11,087 genes per sample.
+- Build: 51 entities (VFBseq_00003522-00003572), 381,696 expression axioms, 15,237
+  genes, 2,863-11,087 genes per sample. Not in a VFB release yet (that waits for the
+  Argo job replacing Jenkins), so still open to change.

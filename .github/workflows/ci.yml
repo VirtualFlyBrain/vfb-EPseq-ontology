@@ -28,4 +28,4 @@ jobs:
         run: uv run python scripts/check_ids.py
 
       - name: id_keys.tsv up to date with GEO and the config; every key has an id
-        run: uv run python scripts/write_keys.py --project davis_2020 --check
+        run: for p in projects/*/config.yaml; do uv run python scripts/write_keys.py --project "$(basename "$(dirname "$p")")" --check || exit 1; done
