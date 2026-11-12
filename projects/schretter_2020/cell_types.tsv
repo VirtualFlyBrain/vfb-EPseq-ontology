@@ -1,0 +1,9 @@
+# Authors' cell type (bulk: from the GEO title, samples.cell_type_pattern; pooled libraries: the spreadsheet's
+# neuron_type row) -> FBbt cell type(s) the sample is composed primarily of. Where the line labels several types,
+# their common parent. From the lines as the authors describe them (Schretter 2020 figure supplements), not the
+# transcriptome. Checked against FBbt 2026-11-02.
+author_cell_type	cell_type	label	note
+aIPg	FBbt:00052698	adult fruitless aIP-g neuron	SS47478 (aIPgSS4) and SS32237 (aIPgSS3) each label several aIPg types (types 2 and 3 shown for SS4, Figure 1-figure supplement 2): the parent, not aIPg type 1-3
+pC1d	FBbt:00049925	adult doublesex pC1d (female) neuron	SS56987 (pC1dSS1)
+pC1d & pC1e	FBbt:00047349	adult doublesex pC1 (female) neuron	SS43274 (pC1dSS3) "contains both pC1d and pC1e cells" (Figure 4-figure supplement 4): common parent
+pC1e	FBbt:00049926	adult doublesex pC1e (female) neuron	SS59336 (pC1eSS1), SS59433 (pC1eSS3)

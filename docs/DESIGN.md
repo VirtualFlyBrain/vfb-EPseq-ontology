@@ -78,6 +78,16 @@ pattern class).
   not by line name: a class may carry only another line's name (lines sharing an AD+DBD
   pair are one class). A driver not in the table stops the build; one with no class
   (e.g. a GAL4 restricted by FLP, which has no intersection class) leaves its samples out.
+- **Pooled GEO samples** (`samples.libraries`): a GEO sample that pools several libraries,
+  each with its own column, line and cell type in the authors' table, gives one Sample per
+  library (natural key `<GEO series>:<sample title>:<library>`; the GSM and BioSample are
+  shared xrefs). Values are never combined across libraries.
+- **Expression values:** the authors' gene-level values only. A dataset with only
+  transcript- or exon-level values is not loaded (curator 2026-11-12: e.g. Abruzzi 2017,
+  ESAT per-transcript values where isoforms sharing a 3' end get the same reads); summing
+  transcripts is fine only where each read is assigned once (RSEM, Salmon), as the authors'
+  own gene value. Counts with no normalised values are scaled to counts per million
+  (`expression.normalise: cpm`, as for scRNAseq), over the sample's FBgn rows.
 - **Cell types** (optional `cell_types.tsv`): the authors' type for each sample, matched
   from the title by `samples.cell_type_pattern`, mapped to one FBbt term (the common
   parent where the driver labels several types, as for a grouped cluster call in
@@ -168,3 +178,26 @@ adult female brains, by split-GAL4 (Aso 2014a) or GAL4 driving a fluorescent rep
 - Build: 51 entities (VFBseq_00003522-00003572), 381,696 expression axioms, 15,237
   genes, 2,863-11,087 genes per sample. Not in a VFB release yet (that waits for the
   Argo job replacing Jenkins), so still open to change.
+
+## Schretter 2020 (`schretter_2020`; ids minted, not yet released)
+
+GEO GSE158748 (BioProject PRJNA666415), FBrf0247707, eLife, CC BY 4.0. Same Janelia
+pipeline as Aso 2019. 6 GEO samples; 20 loaded.
+
+- **Tissue / stage:** adult brain (60-100 dissected per sample; GEO extract protocol), adult
+  females. Dataset label *Bulk RNA-seq data from Schretter (2020)*, assay type FBcv:0009018.
+- **Samples:** 5 bulk samples of 400-800 FACS-sorted cells (two aIPg lines). GSM4809508
+  (`pC1d_pC1de_pC1e_RNAseq_reps`) pools 15 low-cell libraries of ~40 hand- or FACS-sorted
+  cells from 4 lines; the spreadsheet gives each library a column (`<plate>_<well>_Sample_Rubin_DGE_pool01`),
+  line and cell type, so each is a Sample (`samples.libraries`; curator 2026-11-12). Bulk
+  samples' columns are their GEO descriptions (`expression.sample_columns`).
+- **Drivers / cell types:** 6 split-GAL4 lines; AD / DBD from Janelia's combinations file,
+  matching the paper's key resources table. aIPg lines label several aIPg types (parent
+  FBbt:00052698); SS43274 labels pC1d and pC1e (parent *adult doublesex pC1 (female) neuron*).
+- **Expression:** supplementary file 1 (xlsx, r6.34): gene counts only (RSEM expected counts
+  for bulk, STARsolo UMI counts for low-cell), scaled to CPM over each sample's FBgn rows
+  (curator 2026-11-12); ERCC spike-ins and transgene rows skipped. Gene ids as Aso (FB2026_03:
+  74 retired ids replaced, snRNA:U3 dropped, 3 merges summed: RSEM and STARsolo assign each
+  read / UMI once).
+- Build: 21 entities (VFBseq_00003573-00003593), 124,700 expression axioms, 13,725 genes.
+  `FBgn_list.txt` grows by 85 genes (16,948 -> 17,033).

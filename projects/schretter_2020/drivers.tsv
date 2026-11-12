@@ -1,0 +1,10 @@
+# GEO "genetic driver" (and the pooled libraries' spreadsheet "driver line") -> VFB expression pattern class.
+# AD/DBD from Janelia's combinations file (flylight-split-gal4-curation data/flylight_combination_lines_VFB.tsv),
+# matching the paper's key resources table (AD-x-DBD enhancers); class looked up by FBtp pair in VFB Solr 2026-11-12.
+driver	expression_pattern	AD	DBD	evidence	note
+SS47478	VFBexp_FBtp0121106FBtp0147805	PBac{R72C11-p65.AD}VK00027	P{R11A07-GAL4.DBD}attP2	combinations file; key resources R72C11-x-R11A07; only class	aIPgSS4
+SS32237	VFBexp_FBtp0124454FBtp0118174	P{R11A07-p65.AD}attP40	P{VT043700-GAL4.DBD}attP2	combinations file (AD in attP40); key resources R11A07-x-VT043700; not the PBac{} AD class FBtp0166412	aIPgSS3
+SS56987	VFBexp_FBtp0147801FBtp0147806	P{R35C10-p65.AD}JK73A	P{R71A09-GAL4.DBD}attP2	combinations file; key resources R35C10-x-R71A09; only class	pC1dSS1
+SS43274	VFBexp_FBtp0122642FBtp0120063	P{VT025602-p65.AD}attP40	P{VT002064-GAL4.DBD}attP2	combinations file; key resources VT25602-x-VT002064; only class	pC1dSS3
+SS59336	VFBexp_FBtp0122055FBtp0147806	P{R35C10-p65.AD}JK73A	P{R60G08-GAL4.DBD}attP2	combinations file; key resources R35C10-x-R60G08; only class	pC1eSS1
+SS59433	VFBexp_FBtp0147803FBtp0118981	P{R60G08-p65.AD}attP40	P{R35C10-GAL4.DBD}attP2	combinations file; key resources R60G08-x-R35C10; only class	pC1eSS3
