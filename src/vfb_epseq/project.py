@@ -61,6 +61,18 @@ def tpm_path(cfg: dict) -> Path:
     return path
 
 
+def cached_url(url: str) -> Path:
+    """A file at `url` (e.g. a reference GTF), downloaded once into .cache/."""
+    path = CACHE / url.rsplit("/", 1)[-1]
+    if not path.exists():
+        CACHE.mkdir(exist_ok=True)
+        tmp = path.with_suffix(".part")
+        with urllib.request.urlopen(url, timeout=300) as r, tmp.open("wb") as fh:  # noqa: S310
+            shutil.copyfileobj(r, fh)
+        tmp.rename(path)
+    return path
+
+
 def _read_tsv(path: Path) -> list[dict]:
     with path.open() as fh:
         return list(csv.DictReader((ln for ln in fh if not ln.startswith("#")), delimiter="\t"))

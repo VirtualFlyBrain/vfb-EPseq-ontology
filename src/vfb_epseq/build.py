@@ -168,9 +168,75 @@ def _read_xlsx(path: Path, x: dict) -> TpmTable:
     return TpmTable([str(keys[c]) for c in cols], [(g, sym, v) for g, (sym, v) in genes.items()], meta)
 
 
+def gtf_gene_ids(path: Path) -> dict[str, str]:
+    """{gene_name: gene_id} from a (gzipped) GTF, e.g. the Ensembl annotation the authors
+    counted against. Raises if a name belongs to several genes (it would not be one gene)."""
+    out: dict[str, set] = defaultdict(set)
+    with gzip.open(path, "rt") as fh:
+        for ln in fh:
+            if ln.startswith("#"):
+                continue
+            attrs = ln.rstrip("\n").split("\t")[8]
+            gid, name = re.search(r'gene_id "([^"]+)"', attrs), re.search(r'gene_name "([^"]+)"', attrs)
+            if gid:
+                out[name.group(1) if name else gid.group(1)].add(gid.group(1))
+    multi = sorted(n for n, ids in out.items() if len(ids) > 1)
+    if multi:
+        raise ValueError(f"GTF gene names with several gene ids: {multi[:10]}")
+    return {n: next(iter(ids)) for n, ids in out.items()}
+
+
+def _read_tar(path: Path, t: dict, cfg: dict) -> TpmTable:
+    """A GEO RAW.tar of per-sample files (gzipped, tab-separated, '#' lines skipped, one
+    header line): the members matching `member` (a regex whose `column` group is the
+    sample's column key, e.g. its GSM), gene ids from column `id_column`, values from
+    `value_column` (default the last column). With `gene_names_gtf` (a URL), the ids are
+    gene names, mapped to the GTF's gene ids (the annotation the authors counted against);
+    names not in it stop the read. Genes missing from a sample's file count as 0."""
+    import tarfile
+    from vfb_epseq.project import cached_url
+    pat = re.compile(t["member"])
+    cols: list[str] = []
+    vals: dict[str, dict[str, str]] = {}
+    with tarfile.open(path) as tar:
+        for m in sorted(tar.getmembers(), key=lambda m: m.name):
+            mm = pat.fullmatch(m.name)
+            if not mm:
+                continue
+            col = mm["column"]
+            cols.append(col)
+            with gzip.open(tar.extractfile(m), "rt") as fh:
+                lines = (ln.rstrip("\n").split("\t") for ln in fh if not ln.startswith("#"))
+                header = next(lines)
+                gi = header.index(t["id_column"])
+                vi = header.index(t["value_column"]) if t.get("value_column") else len(header) - 1
+                for r in lines:
+                    vals.setdefault(r[gi], {})[col] = r[vi]
+    if not cols:
+        raise ValueError(f"no members of {path.name} match {t['member']!r}")
+    names = gtf_gene_ids(cached_url(t["gene_names_gtf"])) if t.get("gene_names_gtf") else None
+    rows, unknown = [], []
+    for gid, by in vals.items():
+        fbgn, sym = gid, gid
+        if names is not None:
+            if gid not in names:
+                unknown.append(gid)
+                continue
+            fbgn = names[gid]
+        if fbgn.startswith("FBgn"):
+            rows.append((fbgn, sym, [by.get(c, "0") for c in cols]))
+    if unknown:
+        raise ValueError(f"gene names not in {t['gene_names_gtf']}: {unknown[:10]} ({len(unknown)})")
+    return TpmTable(cols, rows)
+
+
 def read_tpm(cfg: dict, path: Path) -> TpmTable:
     x = cfg["expression"]
-    return _read_xlsx(path, x["xlsx"]) if path.suffix == ".xlsx" else _read_text(path)
+    if path.suffix == ".xlsx":
+        return _read_xlsx(path, x["xlsx"])
+    if path.suffix == ".tar":
+        return _read_tar(path, x["tar"], cfg)
+    return _read_text(path)
 
 
 def tpm_features(table: TpmTable) -> list[tuple[str, str]]:
@@ -185,10 +251,12 @@ def _fmt(v) -> str:
 
 def sample_column(cfg: dict, s: Sample) -> str:
     """The table column of a sample: its own (`expression.sample_columns`, or a pooled
-    library's), else the GEO title, or the `column` group of `expression.sample_column`
+    library's), its GSM (`expression.column_key: gsm`), else the GEO title, or the `column` group of `expression.sample_column`
     matched against it (e.g. a sample id prefix)."""
     if s.column:
         return s.column
+    if cfg["expression"].get("column_key") == "gsm":
+        return s.gsm
     pat = cfg["expression"].get("sample_column")
     if not pat:
         return s.title

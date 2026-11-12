@@ -199,3 +199,42 @@ def test_pooled_libraries_and_cpm(cfg, tmp_path):
     assert got == {("aIPgSS4_rep1", "FBgn1"): "250000", ("aIPgSS4_rep1", "FBgn2"): "750000",
                    ("pool_reps:A1", "FBgn1"): "750000", ("pool_reps:A1", "FBgn2"): "250000",
                    ("pool_reps:A2", "FBgn2"): "1000000", ("pool_reps:B1", "FBgn1"): "1000000"}
+
+
+def test_tar_per_sample_files(cfg, tmp_path, monkeypatch):
+    """Per-sample count files in a GEO RAW.tar, keyed by gene name and mapped to FBgn
+    through the authors' GTF; columns keyed by GSM."""
+    import io
+    import tarfile
+    import vfb_epseq.project as project
+    gtf = tmp_path / "g.gtf.gz"
+    with gzip.open(gtf, "wt") as fh:
+        fh.write('#!genome\n'
+                 'X\tF\texon\t1\t9\t.\t+\t.\tgene_id "FBgn1"; gene_name "a";\n'
+                 'X\tF\texon\t20\t29\t.\t+\t.\tgene_id "FBgn1"; gene_name "a";\n'
+                 'X\tF\texon\t40\t49\t.\t+\t.\tgene_id "FBgn2"; gene_name "b";\n')
+    monkeypatch.setattr(project, "cached_url", lambda url: gtf)
+    tar_path = tmp_path / "GSE1_RAW.tar"
+    with tarfile.open(tar_path, "w") as tar:
+        for name, text in [("GSM1_x_1_counts.txt.gz", "# cmd\nGeneid\tChr\tCounts\na\tX\t3\nb\tX\t1\n"),
+                           ("GSM2_x_2_counts.txt.gz", "# cmd\nGeneid\tChr\tCounts\na\tX\t0\nb\tX\t5\n"),
+                           ("GSM1_x_1_RNAseq_editing.txt.gz", "chr\tpos\nX\t1\n")]:
+            data = gzip.compress(text.encode())
+            info = tarfile.TarInfo(name)
+            info.size = len(data)
+            tar.addfile(info, io.BytesIO(data))
+    cfg["expression"].update(tar={"member": r"(?P<column>GSM\d+)_[^_]+_\d+_counts\.txt\.gz", "id_column": "Geneid",
+                                  "value_column": "Counts", "gene_names_gtf": "https://example.org/g.gtf.gz"},
+                             column_key="gsm", normalise="cpm")
+    table = build.read_tpm(cfg, tar_path)
+    assert table.columns == ["GSM1", "GSM2"]
+    assert table.rows == [("FBgn1", "a", ["3", "0"]), ("FBgn2", "b", ["1", "5"])]
+    genes = {"FBgn1": ("FBgn1", "a"), "FBgn2": ("FBgn2", "b")}
+    got = {(r[0], r[2]): r[4] for c in build.expression(cfg, table, SAMPLES, build.IdLookup(cfg, IDS), genes)
+           for r in c}
+    assert got == {("VFBseq_00000002", "FBgn1"): "750000", ("VFBseq_00000002", "FBgn2"): "250000",
+                   ("VFBseq_00000003", "FBgn2"): "1000000"}
+    with gzip.open(gtf, "at") as fh:
+        fh.write('X\tF\texon\t60\t69\t.\t+\t.\tgene_id "FBgn3"; gene_name "b";\n')
+    with pytest.raises(ValueError, match="several gene ids"):
+        build.read_tpm(cfg, tar_path)
