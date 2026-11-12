@@ -1,0 +1,14 @@
+# GEO "genotype" -> VFB expression pattern class of the GAL4 driver (UAS-unc84-2XGFP is the INTACT reporter).
+# Each driver's construct / insertion from FlyBase's curation of the paper (FBrf0241444: one GAL4 per driver);
+# class looked up in VFB Solr 2026-11-12.
+driver	expression_pattern	feature	evidence	note
+UAS-unc84-2XGFP; Dh44-GAL4	VFBexp_FBtp0093701	P{VT039046-GAL4}	FlyBase FBrf0241444 (synonym Dh44-GAL4)	
+UAS-unc84-2XGFP; NPF-GAL4	VFBexp_FBtp0018000	P{NPF-GAL4.1}	FlyBase FBrf0241444	
+UAS-unc84-2XGFP; NPFR-GAL4		P{NPFR-GAL4.T} (FBtp0131830)	FlyBase FBrf0241444	FBtp0131830 has no VFBexp class (not in VFB; checked 2026-11-12): samples not loaded
+UAS-unc84-2XGFP; Tdc2-GAL4	VFBexp_FBtp0127561	P{Tdc2-GAL4.C}	FlyBase FBrf0241444	
+UAS-unc84-2XGFP; Crz-GAL4	VFBexp_FBtp0083990	P{Crz-GAL4.391}	FlyBase FBrf0241444	
+UAS-unc84-2XGFP; TH-GAL4	VFBexp_FBtp0114847	P{ple-GAL4.F}	FlyBase FBrf0241444	
+UAS-unc84-2XGFP; Trh-GAL4	VFBexp_FBtp0055412	P{Trhn-GAL4.long}	FlyBase FBrf0241444	
+UAS-unc84-2XGFP; Fru-GAL4	VFBexp_FBti0168666	TI{GAL4}fru[GAL4.P1.D]	FlyBase FBrf0241444	
+UAS-unc84-2XGFP; OK107-GAL4	VFBexp_FBti0004170	P{GawB}OK107	FlyBase FBrf0241444	
+UAS-unc84-2XGFP; elav-GAL4	VFBexp_FBti0002575	P{GawB}elav[C155]	FlyBase FBrf0241444	

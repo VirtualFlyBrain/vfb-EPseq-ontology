@@ -1,0 +1,14 @@
+# Authors' population (from the GEO title, samples.cell_type_pattern; GEO "neuronal population") -> FBbt cell type
+# the sample is composed primarily of, as the authors name it. Samples are from heads, so adult brain-only terms
+# apply where exact. Checked against FBbt 2026-11-02.
+author_cell_type	cell_type	label	note
+Dh44	FBbt:00048427	adult Dh44 neuron of brain	"diuretic hormone 44"; heads, so the brain Dh44 neurons (not those of the VNC)
+NPF	FBbt:00048113	adult NPF neuron	"neuropeptide F"
+NPFR			not loaded (no VFBexp class); "neuropeptide F receptor"
+Tdc2	FBbt:00058203	adult octopaminergic neuron	"octopaminergic", as the authors name it (Tdc2-GAL4 also labels tyraminergic neurons)
+Crz	FBbt:00051053	adult corazonin neuron	"corzonin" (sic)
+TH	FBbt:00058206	adult dopaminergic neuron	"dopaminergic"
+Trh	FBbt:00049526	adult serotonergic neuron	"serotonergic"
+Fru	FBbt:00016687	fruitless expressing neuron	"fruitless"; no adult-specific term
+OK107	FBbt:00049825	adult Kenyon cell	"mushroom body"; OK107 labels the Kenyon cells
+elav			no cell type: pan-neuronal ("all brain neurons", a reference); a generic neuron term only

@@ -1,0 +1,40 @@
+# Sapiro et al. 2019 (PNAS 116:2318), INTACT RNA-seq of nuclei from 10 GAL4-labelled neuronal populations.
+# Not in a VFB release yet, so still open to change (docs/DESIGN.md).
+project: sapiro_2019
+source:
+  geo_series: GSE113661
+  bioproject: PRJNA453551
+  publication: FlyBase:FBrf0241444
+  first_author: Sapiro
+  year: 2019
+dataset:
+  label_prefix: Bulk RNA-seq data from   # -> "Bulk RNA-seq data from Sapiro (2019)"; INTACT in the description
+  assay_type: FBcv:0009018    # cell type-specific RNA-sequencing analysis
+  title: Measuring A-to-I RNA editing and gene expression signatures of neuronal populations within the Drosophila brain
+  licence: CC-BY-4.0
+samples:
+  # INTACT: nuclei affinity-purified (UNC84-2xGFP) from ~300 homogenised heads of 2-3 day old adults (GEO protocols)
+  tissue: FBbt:00000004
+  stage: FBdv:00005369
+  drivers: drivers.tsv
+  driver_field: genotype
+  cell_types: cell_types.tsv
+  # GEO titles: <driver>_<replicate>_RNAseq, e.g. Dh44_1_RNAseq -> Dh44
+  cell_type_pattern: '^(?P<cell_type>[^_]+)_\d+_RNAseq$'
+expression:
+  # GEO RAW.tar: per-sample featureCounts gene counts (*_counts.txt.gz; the *_RNAseq_editing files are
+  # editing levels, not expression), keyed by gene name (-g gene_name) in Ensembl BDGP6.88, which the
+  # authors counted against; each name there is one gene, so names map 1:1 to its FBgn
+  tpm_file: GSE113661_RAW.tar
+  tar:
+    member: '(?P<column>GSM\d+)_[^_]+_\d+_counts\.txt\.gz'
+    id_column: Geneid
+    value_column: Counts
+    gene_names_gtf: https://ftp.ensembl.org/pub/release-88/gtf/drosophila_melanogaster/Drosophila_melanogaster.BDGP6.88.chr.gtf.gz
+  column_key: gsm
+  # raw counts only (the DESeq2-normalised values aren't in GEO): counts per million, as for scRNAseq
+  normalise: cpm
+  # featureCounts gives each read to one gene (multi-overlap reads not counted), so a merged gene's count is the sum
+  merged_genes: sum
+  value: CPM
+  samples_per_file: 100
