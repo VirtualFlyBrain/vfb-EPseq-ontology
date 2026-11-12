@@ -13,7 +13,7 @@ import gzip
 import re
 from collections import defaultdict
 from collections.abc import Iterator
-from dataclasses import dataclass
+from dataclasses import dataclass, field
 from pathlib import Path
 
 from vfb_scrnaseq.gene_ids import read_map
@@ -35,14 +35,15 @@ def dataset_label(cfg: dict) -> str:
 
 
 def sample_label(cfg: dict, s: Sample) -> str:
-    return f"{s.title}{_cite(cfg)[1]}"
+    return f"{s.name}{_cite(cfg)[1]}"
 
 
 def keys(cfg: dict, samples: list[Sample]) -> list[dict]:
-    """Natural keys to mint ids for, in vfb-scRNAseq's form (`<series>`, `<series>:<sample>`)."""
+    """Natural keys to mint ids for, in vfb-scRNAseq's form (`<series>`, `<series>:<sample>`,
+    and `<series>:<sample>:<library>` for a library of a pooled GEO sample)."""
     gse = cfg["source"]["geo_series"]
     rows = [{"entity_type": "Dataset", "natural_key": gse, "label": dataset_label(cfg), "accession": gse}]
-    rows += [{"entity_type": "Sample", "natural_key": f"{gse}:{s.title}", "label": s.title,
+    rows += [{"entity_type": "Sample", "natural_key": f"{gse}:{s.name}", "label": s.name,
               "accession": s.biosample} for s in samples]
     return rows
 
@@ -74,7 +75,7 @@ class IdLookup:
         return self._get("Dataset", self.gse)
 
     def sample(self, s: Sample) -> str:
-        return self._get("Sample", f"{self.gse}:{s.title}")
+        return self._get("Sample", f"{self.gse}:{s.name}")
 
 
 def entities(cfg: dict, samples: list[Sample], ids: IdLookup) -> list[dict]:
@@ -110,9 +111,12 @@ def gene_map(path: Path) -> dict[str, tuple[str, str]]:
 class TpmTable:
     """An expression table: one column key per sample and one row per input gene id
     (FBgn, symbol, values as in the source: strings from a text table, floats from a
-    spreadsheet)."""
+    spreadsheet). `meta`: a spreadsheet's per-column metadata rows (down to the header row),
+    keyed by their label in the first column, aligned with `columns` and filled forward
+    (a value applies to the columns after it until the next one, as in merged cells)."""
     columns: list[str]
     rows: list[tuple[str, str, list]]
+    meta: dict[str, list] = field(default_factory=dict)
 
 
 def _read_text(path: Path) -> TpmTable:
@@ -125,11 +129,12 @@ def _read_text(path: Path) -> TpmTable:
 
 
 def _read_xlsx(path: Path, x: dict) -> TpmTable:
-    """A spreadsheet of transcripts x samples (e.g. RSEM transcript TPM). Sample keys are
-    read from row `column_row` (1-based) of the sample columns; gene id / symbol from the
-    header row's `gene_column` / `symbol_column`. Transcript TPMs are summed per gene (a
-    gene's TPM is the sum of its transcripts'); rows with no FBgn (non-FlyBase sequences,
-    transgenes) are skipped."""
+    """A spreadsheet of genes or transcripts x samples (e.g. RSEM transcript TPM, gene
+    counts). Sample keys are read from row `column_row` (1-based) of the sample columns;
+    gene id / symbol from the header row's `gene_column` / `symbol_column` (optional; the
+    gene id where absent). Rows of one gene are summed (a gene's TPM is the sum of its
+    transcripts'); rows with no FBgn (spike-ins, non-FlyBase sequences, transgenes) are
+    skipped."""
     import openpyxl
     wb = openpyxl.load_workbook(path, read_only=True, data_only=True)
     try:
@@ -137,7 +142,8 @@ def _read_xlsx(path: Path, x: dict) -> TpmTable:
     finally:
         wb.close()
     keys, header = rows[x["column_row"] - 1], rows[x["header_row"] - 1]
-    gi, si = header.index(x["gene_column"]), header.index(x["symbol_column"])
+    gi = header.index(x["gene_column"])
+    si = header.index(x["symbol_column"]) if x.get("symbol_column") else gi
     cols = [i for i in range(len(header)) if i > max(gi, si) and keys[i] not in (None, "")
             and str(header[i] or "").startswith(x.get("sample_prefix", ""))]
     genes: dict[str, tuple[str, list[float]]] = {}
@@ -145,12 +151,21 @@ def _read_xlsx(path: Path, x: dict) -> TpmTable:
         g = r[gi] if gi < len(r) else None
         if not (isinstance(g, str) and g.startswith("FBgn")):
             continue
-        sym, acc = genes.setdefault(g, (r[si] or g, [0.0] * len(cols)))
+        sym, acc = genes.setdefault(g, (r[si] if si != gi and r[si] else g, [0.0] * len(cols)))
         for j, c in enumerate(cols):
             v = r[c]
             if v not in (None, ""):
                 acc[j] += float(v)
-    return TpmTable([str(keys[c]) for c in cols], [(g, sym, v) for g, (sym, v) in genes.items()])
+    meta = {}
+    for r in rows[:x["header_row"]]:
+        if r and isinstance(r[0], str) and r[0].strip():
+            vals, last = [], None
+            for c in cols:
+                v = r[c] if c < len(r) else None
+                last = v if v not in (None, "") else last
+                vals.append(last)
+            meta[r[0].strip()] = vals
+    return TpmTable([str(keys[c]) for c in cols], [(g, sym, v) for g, (sym, v) in genes.items()], meta)
 
 
 def read_tpm(cfg: dict, path: Path) -> TpmTable:
@@ -169,8 +184,11 @@ def _fmt(v) -> str:
 
 
 def sample_column(cfg: dict, s: Sample) -> str:
-    """The table column of a sample: the GEO title, or the `column` group of
-    `expression.sample_column` matched against it (e.g. a sample id prefix)."""
+    """The table column of a sample: its own (`expression.sample_columns`, or a pooled
+    library's), else the GEO title, or the `column` group of `expression.sample_column`
+    matched against it (e.g. a sample id prefix)."""
+    if s.column:
+        return s.column
     pat = cfg["expression"].get("sample_column")
     if not pat:
         return s.title
@@ -189,9 +207,14 @@ def expression(cfg: dict, table: TpmTable, samples: list[Sample], ids: IdLookup,
     `identical` (default; for tables where overlapping models may be given the same
     reads): rows identical in every sample count once, and a gene whose input rows
     differ is dropped, since the overlap between the old models is unknown; `sum`: for
-    tables where each read is assigned once (e.g. RSEM's EM), the rows are summed."""
+    tables where each read is assigned once (e.g. RSEM's EM), the rows are summed.
+
+    `expression.normalise: cpm` (for tables of counts) scales each sample to counts per
+    million: the value over the sum of the sample's gene rows in the table (every FBgn row,
+    before id mapping, so dropped ids don't rescale the rest; spike-ins and transgenes,
+    which have no FBgn, are not counted)."""
     col = {t: i for i, t in enumerate(table.columns)}
-    scol = {s.title: sample_column(cfg, s) for s in samples}
+    scol = {s.name: sample_column(cfg, s) for s in samples}
     missing = [t for t, c in scol.items() if c not in col]
     if missing:
         raise ValueError(f"samples not in the expression table: {missing}")
@@ -211,14 +234,22 @@ def expression(cfg: dict, table: TpmTable, samples: list[Sample], ids: IdLookup,
                 kept[cur] = vs[0]
         else:
             raise ValueError(f"expression.merged_genes: {mode!r} (identical or sum)")
+    norm = cfg["expression"].get("normalise")
+    if norm not in (None, "cpm"):
+        raise ValueError(f"expression.normalise: {norm!r} (cpm or unset)")
+    scale = [1.0] * len(table.columns)
+    if norm == "cpm":
+        totals = [sum(float(v or 0) for v in t) for t in zip(*(vals for _, _, vals in table.rows))]
+        scale = [1e6 / t if t else 0.0 for t in totals]
     symbols = {cur: sym for cur, sym in genes.values()}
     n = cfg["expression"]["samples_per_file"]
     for i in range(0, len(samples), n):
         chunk = []
         for s in samples[i:i + n]:
-            sid, c = ids.sample(s), col[scol[s.title]]
+            sid, c = ids.sample(s), col[scol[s.name]]
             for cur in sorted(kept):
                 v = kept[cur][c]
                 if v and float(v) > 0:
-                    chunk.append((sid, s.title, cur, symbols[cur], _fmt(v), None))
+                    v = float(v) * scale[c] if norm else v
+                    chunk.append((sid, s.name, cur, symbols[cur], _fmt(v), None))
         yield chunk

@@ -151,3 +151,51 @@ def test_xlsx(cfg, tmp_path):
                    ("VFBseq_00000003", "FBgn2"): "2.5"}
     with pytest.raises(ValueError, match="does not match"):
         build.sample_column(cfg, Sample("x", "GSM9", "", "SS1", ""))
+
+
+def test_pooled_libraries_and_cpm(cfg, tmp_path):
+    """A GEO sample pooling libraries gives one Sample per library (driver and cell type
+    from the spreadsheet's metadata rows, filled forward); counts are scaled to CPM."""
+    openpyxl = pytest.importorskip("openpyxl")
+    wb = openpyxl.Workbook()
+    ws = wb.active
+    ws.title = "c"
+    ws.append(["sample_id", "S_1", "A1_pool", "A2_pool", "B1_pool"])
+    ws.append(["driver line", "SS1", "SS1", None, "SS2"])
+    ws.append(["neuron_type/gene_id", "aIPg", "pC1d", None, "pC1d & pC1e"])
+    ws.append(["ERCC-1", 50, 50, 50, 50])                    # no FBgn: not counted
+    ws.append(["FBgn1", 1, 3, 0, 1])
+    ws.append(["FBgn2", 3, 1, 4, 0])
+    path = tmp_path / "c.xlsx"
+    wb.save(path)
+    (cfg["_dir"] / "drivers.tsv").write_text(
+        "driver\texpression_pattern\tnote\nSS1\tVFBexp_FBtp1FBtp2\t\nSS2\tVFBexp_FBtp3FBtp4\t\n")
+    (cfg["_dir"] / "cell_types.tsv").write_text(
+        "author_cell_type\tcell_type\tlabel\tnote\naIPg\tFBbt:1\t\t\npC1d\tFBbt:2\t\t\npC1d & pC1e\tFBbt:3\t\t\n")
+    cfg["samples"].update(cell_types="cell_types.tsv", cell_type_pattern=r"^(?P<cell_type>[A-Za-z]+?)SS\d+_",
+                          libraries={"GSM2": {"column_suffix": "_pool"}},
+                          library_driver_row="driver line", library_cell_type_row="neuron_type/gene_id")
+    cfg["expression"].update(xlsx={"sheet": "c", "column_row": 1, "header_row": 3,
+                                   "gene_column": "neuron_type/gene_id"},
+                             sample_columns={"GSM1": "S_1"}, normalise="cpm")
+    table = build.read_tpm(cfg, path)
+    assert table.columns == ["S_1", "A1_pool", "A2_pool", "B1_pool"]
+    assert table.meta["driver line"] == ["SS1", "SS1", "SS1", "SS2"]          # filled forward
+    series = GeoSeries("GSE1", samples=[_gsm("GSM1", "aIPgSS4_rep1", "single", "SS1"),
+                                        _gsm("GSM2", "pool_reps", "single", "SS1, SS2")])
+    with pytest.raises(ValueError, match="pass the expression table"):
+        select_samples(series, cfg)
+    keep, _ = select_samples(series, cfg, table)
+    assert [(s.name, s.driver_id, s.cell_types) for s in keep] == [
+        ("aIPgSS4_rep1", "SS1", ("FBbt:1",)), ("pool_reps:A1", "SS1", ("FBbt:2",)),
+        ("pool_reps:A2", "SS1", ("FBbt:2",)), ("pool_reps:B1", "SS2", ("FBbt:3",))]
+    rows = build.keys(cfg, keep)
+    assert rows[2] == {"entity_type": "Sample", "natural_key": "GSE1:pool_reps:A1", "label": "pool_reps:A1",
+                       "accession": "SAMN2"}
+    assert build.sample_label(cfg, keep[1]) == "pool_reps:A1 (Davis 2020)"
+    ids = build.IdLookup(cfg, {("Sample", "GSE1:" + s.name): f"VFBseq_{i}" for i, s in enumerate(keep)})
+    genes = {"FBgn1": ("FBgn1", "g1"), "FBgn2": ("FBgn2", "g2")}
+    got = {(r[1], r[2]): r[4] for c in build.expression(cfg, table, keep, ids, genes) for r in c}
+    assert got == {("aIPgSS4_rep1", "FBgn1"): "250000", ("aIPgSS4_rep1", "FBgn2"): "750000",
+                   ("pool_reps:A1", "FBgn1"): "750000", ("pool_reps:A1", "FBgn2"): "250000",
+                   ("pool_reps:A2", "FBgn2"): "1000000", ("pool_reps:B1", "FBgn1"): "1000000"}

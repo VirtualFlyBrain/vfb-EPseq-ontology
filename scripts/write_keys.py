@@ -21,15 +21,15 @@ import tempfile
 from pathlib import Path
 
 import _common  # noqa: F401
-from vfb_epseq.build import keys, read_ids, write_keys
-from vfb_epseq.project import geo_series, load_config, select_samples
+from vfb_epseq.build import keys, read_ids, read_tpm, write_keys
+from vfb_epseq.project import geo_series, load_config, needs_table, select_samples, tpm_path
 
 ap = argparse.ArgumentParser()
 ap.add_argument("--project", required=True)
 ap.add_argument("--check", action="store_true")
 args = ap.parse_args()
 cfg = load_config(args.project)
-samples, _ = select_samples(geo_series(cfg), cfg)
+samples, _ = select_samples(geo_series(cfg), cfg, read_tpm(cfg, tpm_path(cfg)) if needs_table(cfg) else None)
 rows = keys(cfg, samples)
 out = cfg["_dir"] / "id_keys.tsv"
 if args.check:
