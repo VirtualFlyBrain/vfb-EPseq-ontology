@@ -78,6 +78,14 @@ pattern class).
   not by line name: a class may carry only another line's name (lines sharing an AD+DBD
   pair are one class). A driver not in the table stops the build; one with no class
   (e.g. a GAL4 restricted by FLP, which has no intersection class) leaves its samples out.
+- **Classic GAL4 lines** (named loosely, e.g. `TH-GAL4`): take the construct or
+  insertion from FlyBase's curation of the paper where it lists one per driver, else the
+  paper's cited source; never a guess from the name alone.
+- **No narrower type** (a pan-neuronal driver such as elav-GAL4, or a line whose cells are
+  mixed neurons): *adult neuron* (FBbt:00047095) where the cells are known to be neurons.
+  Unlike an scRNAseq cluster (held when typeable only as *neuron*), the sample still has its
+  driver, so the generic class adds to it (curator 2026-11-12). Untyped only where even
+  that isn't stated (Davis Kdm2).
 - **Pooled GEO samples** (`samples.libraries`): a GEO sample that pools several libraries,
   each with its own column, line and cell type in the authors' table, gives one Sample per
   library (natural key `<GEO series>:<sample title>:<library>`; the GSM and BioSample are
@@ -119,8 +127,9 @@ curation).
   multi-type drivers (C2.C3, L1.L2, T4.T5, KC α/β c.p.s, LPTC HS.VS, LC10bc, PB_1, PAM_2/3/4/6)
   map to the common parent; broad drivers (putative ChAT-, Gad1-, VGlut-, CCAP-, Crz-,
   Dsk-, Ilp2-, NPF-, Pdf-expressing cells) to the adult neurotransmitter / peptide class.
-  No type: Kdm2 (broad enhancer trap, no type stated) and PB_3 (P-EN1 driver, but the
-  authors note optic lobe cells outnumber the PB cells). 234 of 238 samples typed.
+  PB_3 (P-EN1 driver, but the authors note optic lobe cells outnumber the PB cells) ->
+  *adult neuron* (2026-11-12). No type: Kdm2 (broad enhancer trap; the authors don't say
+  which cells, so not even *neuron*). 236 of 238 samples typed.
 - **Drivers:** `drivers.tsv` maps GEO's `external driver id` to a `VFBexp_` class, from
   the 2024 curation (VFB lookup by name; 14 matched by hand). GEO gives `JSS55439` for
   the Glia_Eg samples where BioSample gives `SS55439`; both are listed. A driver id not
@@ -201,3 +210,26 @@ pipeline as Aso 2019. 6 GEO samples; 20 loaded.
   read / UMI once).
 - Build: 21 entities (VFBseq_00003573-00003593), 124,700 expression axioms, 13,725 genes.
   `FBgn_list.txt` grows by 85 genes (16,948 -> 17,033).
+
+## Sapiro 2019 (`sapiro_2019`; ids minted, not yet released)
+
+GEO GSE113661 (BioProject PRJNA453551; SubSeries of GSE113663), FBrf0241444, PNAS, CC BY 4.0.
+30 GEO samples; 27 loaded.
+
+- **Method / tissue / stage:** INTACT (UNC84-2xGFP nuclei affinity-purified from ~300
+  homogenised heads), 10 GAL4 lines x 3 replicates; adult head (FBbt:00000004), adult (2-3 day).
+- **Drivers:** GEO `genotype` (`UAS-unc84-2XGFP; <name>-GAL4`). Each line from FlyBase's
+  curation of the paper (one GAL4 per driver), e.g. TH-GAL4 = P{ple-GAL4.F}, fru-GAL4 =
+  TI{GAL4}fru[GAL4.P1.D], elav-GAL4 = P{GawB}elav[C155], Dh44-GAL4 = P{VT039046-GAL4}.
+- **Left out:** the 3 NPFR samples (P{NPFR-GAL4.T}, FBtp0131830, is not in VFB, so no
+  VFBexp class; checked 2026-11-12).
+- **Cell types:** the authors' populations (`cell_types.tsv`): Dh44 -> *adult Dh44 neuron of
+  brain* (heads), Tdc2 -> *adult octopaminergic neuron* as the authors name it, OK107 ->
+  *adult Kenyon cell*, fru -> *fruitless expressing neuron*; elav (pan-neuronal reference)
+  -> *adult neuron*.
+- **Expression:** GEO RAW.tar, per-sample featureCounts gene counts keyed by gene name
+  (`-g gene_name`) in Ensembl BDGP6.88, mapped to FBgn through that GTF (each name is one
+  gene there); the `*_RNAseq_editing` files are editing levels and are skipped. Raw counts
+  only, scaled to CPM. Gene ids (FB2026_03): 17,490 genes; 254 retired ids replaced, 9 split
+  and 1 withdrawn dropped, 11 merges summed (featureCounts counts each read once).
+- Build: 28 entities (VFBseq_00003594-00003621), 344,353 expression axioms, 16,386 genes.

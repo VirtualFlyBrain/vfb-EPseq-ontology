@@ -77,7 +77,7 @@ PAM_8	FBbt:00100230	dopaminergic PAM neuron 12	PAM-γ3
 PAM_9	FBbt:00110994	dopaminergic PAM neuron 10	PAM-β1
 PB_1	FBbt:00049807	adult intrinsic protocerebral bridge 18 glomeruli-delta7 neuron	PB18.s-GxΔ7Gy.b and PB18.s-9i1i8c.b: their common parent (Δ7)
 PB_2	FBbt:00047030	adult ellipsoid body-protocerebral bridge 1 glomerulus-dorsal/ventral gall neuron	PBG1-8.b-EBw.s-D/Vgall.b (E-PG)
-PB_3			no cell type: PBG2-9.s-EBt.b-NO1.b (P-EN1), but the authors note optic lobe cells (incl. Mi1) outnumber the PB cells
+PB_3	FBbt:00047095	adult neuron	PBG2-9.s-EBt.b-NO1.b (P-EN1), but the authors note optic lobe cells (incl. Mi1) and GF cells outnumber the PB cells: all neurons, no narrower common type (curator 2026-11-12: adult neuron rather than untyped)
 PB_4	FBbt:00111404	protocerebral bridge 1 glomerulus-fan-shaped body-nodulus 3 posterior domain neuron	PBG2-9.s-FBl1.b-NO3P.b
 PB_5	FBbt:00111396	protocerebral bridge 1 glomerulus-fan-shaped body-nodulus 3 anterior domain neuron	PBG2-9.s-FBl2.b-NO3A.b
 PB_6	FBbt:00111390	protocerebral bridge 1 glomerulus-fan-shaped body-nodulus 2 dorsal domain neuron	PBG2-9.s-FBl3.b-NO2D.b
