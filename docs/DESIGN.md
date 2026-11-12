@@ -81,8 +81,11 @@ pattern class).
 - **Classic GAL4 lines** (named loosely, e.g. `TH-GAL4`): take the construct or
   insertion from FlyBase's curation of the paper where it lists one per driver, else the
   paper's cited source; never a guess from the name alone.
-- **Pan-neuronal drivers** (e.g. elav-GAL4 as a reference): no cell type (a generic
-  *neuron* term says nothing; cf. the scRNAseq cell-level rule).
+- **No narrower type** (a pan-neuronal driver such as elav-GAL4, or a line whose cells are
+  mixed neurons): *adult neuron* (FBbt:00047095) where the cells are known to be neurons.
+  Unlike an scRNAseq cluster (held when typeable only as *neuron*), the sample still has its
+  driver, so the generic class adds to it (curator 2026-11-12). Untyped only where even
+  that isn't stated (Davis Kdm2).
 - **Pooled GEO samples** (`samples.libraries`): a GEO sample that pools several libraries,
   each with its own column, line and cell type in the authors' table, gives one Sample per
   library (natural key `<GEO series>:<sample title>:<library>`; the GSM and BioSample are
@@ -124,8 +127,9 @@ curation).
   multi-type drivers (C2.C3, L1.L2, T4.T5, KC α/β c.p.s, LPTC HS.VS, LC10bc, PB_1, PAM_2/3/4/6)
   map to the common parent; broad drivers (putative ChAT-, Gad1-, VGlut-, CCAP-, Crz-,
   Dsk-, Ilp2-, NPF-, Pdf-expressing cells) to the adult neurotransmitter / peptide class.
-  No type: Kdm2 (broad enhancer trap, no type stated) and PB_3 (P-EN1 driver, but the
-  authors note optic lobe cells outnumber the PB cells). 234 of 238 samples typed.
+  PB_3 (P-EN1 driver, but the authors note optic lobe cells outnumber the PB cells) ->
+  *adult neuron* (2026-11-12). No type: Kdm2 (broad enhancer trap; the authors don't say
+  which cells, so not even *neuron*). 236 of 238 samples typed.
 - **Drivers:** `drivers.tsv` maps GEO's `external driver id` to a `VFBexp_` class, from
   the 2024 curation (VFB lookup by name; 14 matched by hand). GEO gives `JSS55439` for
   the Glia_Eg samples where BioSample gives `SS55439`; both are listed. A driver id not
@@ -222,7 +226,7 @@ GEO GSE113661 (BioProject PRJNA453551; SubSeries of GSE113663), FBrf0241444, PNA
 - **Cell types:** the authors' populations (`cell_types.tsv`): Dh44 -> *adult Dh44 neuron of
   brain* (heads), Tdc2 -> *adult octopaminergic neuron* as the authors name it, OK107 ->
   *adult Kenyon cell*, fru -> *fruitless expressing neuron*; elav (pan-neuronal reference)
-  untyped.
+  -> *adult neuron*.
 - **Expression:** GEO RAW.tar, per-sample featureCounts gene counts keyed by gene name
   (`-g gene_name`) in Ensembl BDGP6.88, mapped to FBgn through that GTF (each name is one
   gene there); the `*_RNAseq_editing` files are editing levels and are skipped. Raw counts

@@ -11,4 +11,4 @@ TH	FBbt:00058206	adult dopaminergic neuron	"dopaminergic"
 Trh	FBbt:00049526	adult serotonergic neuron	"serotonergic"
 Fru	FBbt:00016687	fruitless expressing neuron	"fruitless"; no adult-specific term
 OK107	FBbt:00049825	adult Kenyon cell	"mushroom body"; OK107 labels the Kenyon cells
-elav			no cell type: pan-neuronal ("all brain neurons", a reference); a generic neuron term only
+elav	FBbt:00047095	adult neuron	"all brain neurons" (pan-neuronal reference): no narrower type; with the driver known, the generic class is still informative (curator 2026-11-12)
