@@ -1,0 +1,53 @@
+# Schretter et al. 2020 (eLife 9:e58942), bulk and low-cell RNA-seq of split-GAL4-sorted aIPg and pC1 neurons.
+# Not in a VFB release yet, so still open to change (docs/DESIGN.md).
+project: schretter_2020
+source:
+  geo_series: GSE158748
+  bioproject: PRJNA666415
+  publication: FlyBase:FBrf0247707
+  first_author: Schretter
+  year: 2020
+dataset:
+  label_prefix: Bulk RNA-seq data from   # -> "Bulk RNA-seq data from Schretter (2020)"; sorting (hand / FACS) per library
+  assay_type: FBcv:0009018    # cell type-specific RNA-sequencing analysis
+  title: Bulk RNA-seq data from the aIPg, pC1d, and pC1e neurons in adult Drosophila
+  licence: CC-BY-4.0
+samples:
+  # dissected adult brains (60-100 per sample; GEO extract protocol), adult females (GEO Sex: Female)
+  tissue: FBbt:00003624
+  stage: FBdv:00005369
+  drivers: drivers.tsv
+  driver_field: genetic driver
+  cell_types: cell_types.tsv
+  # bulk GEO titles: <type><line alias>_RNAseq_rep<n>, e.g. aIPgSS4_RNAseq_rep1 -> aIPg
+  cell_type_pattern: '^(?P<cell_type>[A-Za-z0-9]+?)SS\d+_'
+  # GSM4809508 (pC1d_pC1de_pC1e_RNAseq_reps, one GEO sample / BioSample) pools 15 low-cell libraries
+  # (~40 hand- or FACS-sorted cells each) from 4 lines; the spreadsheet gives each its own column
+  # (<plate>_<well>_Sample_Rubin_DGE_pool01) with its line and cell type: one Sample per library
+  # (curator 2026-11-12), so no values are combined
+  libraries:
+    GSM4809508: {column_suffix: _Sample_Rubin_DGE_pool01}
+  library_driver_row: driver line
+  library_cell_type_row: neuron_type/gene_id
+expression:
+  # GEO supplementary file 1: gene counts (r6.34); RSEM expected counts for the 5 bulk samples,
+  # STARsolo UMI counts for the 15 low-cell libraries; ERCC spike-ins and transgenes have no FBgn
+  tpm_file: GSE158748_Schretter_et_al_2020_Supplementary_File_1.xlsx
+  xlsx:
+    sheet: counts_matrix
+    column_row: 9             # sample_id row
+    header_row: 11            # 'neuron_type/gene_id': gene ids in the first column below it
+    gene_column: neuron_type/gene_id
+  # bulk samples: the GEO sample description is the column's sample_id
+  sample_columns:
+    GSM4809503: Sample_19_5_2
+    GSM4809504: Sample_19_5_3
+    GSM4809505: Sample_19_5_4
+    GSM4809506: Sample_18_7_1
+    GSM4809507: Sample_18_7_2
+  # counts only (no TPM): scaled to counts per million, as for scRNAseq (curator 2026-11-12)
+  normalise: cpm
+  # RSEM assigns each read once and STARsolo each UMI once, so a merged gene's count is the sum
+  merged_genes: sum
+  value: CPM
+  samples_per_file: 100
