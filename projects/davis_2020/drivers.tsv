@@ -116,4 +116,4 @@ SS55439	VFBexp_FBtp0121986FBtp0118643
 SS55440	VFBexp_FBtp0117263FBtp0118655	
 SS55441	VFBexp_FBtp0117263FBtp0118727	
 SS55442	VFBexp_FBtp0122468FBtp0118915	
-ninaEfl-GAL4		FBtp0092375 has no VFBexp class in VFB (checked 2026-11-10): samples not loaded
+ninaEfl-GAL4	VFBexp_FBtp0092375	P{ninaE-GAL4.U}; class loaded by curation new_eps 2026-11-15

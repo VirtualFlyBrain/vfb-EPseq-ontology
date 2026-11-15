@@ -4,7 +4,7 @@
 author_cell_type	cell_type	label	note
 Dh44	FBbt:00048427	adult Dh44 neuron of brain	"diuretic hormone 44"; heads, so the brain Dh44 neurons (not those of the VNC)
 NPF	FBbt:00048113	adult NPF neuron	"neuropeptide F"
-NPFR			not loaded (no VFBexp class); "neuropeptide F receptor"
+NPFR	FBbt:00047095	adult neuron	"neuropeptide F receptor": no FBbt term for NPFR-expressing neurons, so no narrower type (as elav)
 Tdc2	FBbt:00058203	adult octopaminergic neuron	"octopaminergic", as the authors name it (Tdc2-GAL4 also labels tyraminergic neurons)
 Crz	FBbt:00051053	adult corazonin neuron	"corzonin" (sic)
 TH	FBbt:00058206	adult dopaminergic neuron	"dopaminergic"
