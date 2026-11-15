@@ -84,6 +84,7 @@ PB_6	FBbt:00111390	protocerebral bridge 1 glomerulus-fan-shaped body-nodulus 2 d
 Pdf	FBbt:00100171	adult Pdf neuron	broad: putative PDF-expressing cells (promoter fusion)
 Pm3	FBbt:00110066	proximal medullary amacrine neuron Pm3	
 Pm4	FBbt:00111282	proximal medullary amacrine neuron Pm4	
+R1-6	FBbt:00006007	outer photoreceptor cell	R1-R6 (ninaE / Rh1 driver)
 R7	FBbt:00004225	photoreceptor cell R7	R7 (Rh3 and Rh4 expressing)
 R7_Rh3	FBbt:02000006	photoreceptor cell R7 of pale ommatidium	Rh3 R7: pale R7
 R8_Rh5	FBbt:02000004	photoreceptor cell R8 of pale ommatidium	Rh5 R8: pale R8

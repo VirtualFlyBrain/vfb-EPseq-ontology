@@ -109,7 +109,7 @@ pattern class).
 ## Davis 2020 (`davis_2020`)
 
 GEO GSE116969 (BioProject PRJNA480794, Expression Atlas E-GEOD-116969), FBrf0244935,
-CC BY 4.0. 266 GEO samples; 238 loaded. Inputs: the SOFT file and supplementary
+CC BY 4.0. 266 GEO samples; 242 loaded. Inputs: the SOFT file and supplementary
 `dataTable2.genes_x_samples_TPM.all_genes` (identical to the TPM table of the 2024
 curation).
 
@@ -129,7 +129,8 @@ curation).
   Dsk-, Ilp2-, NPF-, Pdf-expressing cells) to the adult neurotransmitter / peptide class.
   PB_3 (P-EN1 driver, but the authors note optic lobe cells outnumber the PB cells) ->
   *adult neuron* (2026-11-12). No type: Kdm2 (broad enhancer trap; the authors don't say
-  which cells, so not even *neuron*). 236 of 238 samples typed.
+  which cells, so not even *neuron*). R1-6 -> *outer photoreceptor cell*. 240 of 242 samples
+  typed.
 - **Drivers:** `drivers.tsv` maps GEO's `external driver id` to a `VFBexp_` class, from
   the 2024 curation (VFB lookup by name; 14 matched by hand). GEO gives `JSS55439` for
   the Glia_Eg samples where BioSample gives `SS55439`; both are listed. A driver id not
@@ -137,8 +138,10 @@ curation).
 - **Left out** (`projects/davis_2020/samples_left_out.tsv`): 16 TAPIN controls; 8 lamina /
   optic lobe dissections (SS00796, SS55439: bulk RNA from dissected tissue, GEO protocol
 `bulk` with no reporter, so not captured by the driver and not instances of its
-expression pattern; left out in 2024 too); 4
-  R1-6 samples (ninaE driver FBtp0092375 has no VFBexp class; checked 2026-11-10).
+expression pattern; left out in 2024 too).
+- **R1-6:** the 4 samples were left out until the ninaE driver (P{ninaE-GAL4.U},
+  FBtp0092375) had a VFBexp class: loaded through curation `new_eps` 2026-11-15, samples
+  VFBseq_00003622-00003625.
 - **Gene ids** (`gene_id_map.tsv`, FB2026_03): retired ids replaced by their current
   gene; 3 split ids (CG30456, Osi10, Iyd) and 1 withdrawn id (FBgn0003926) dropped; ERCC
   spike-ins skipped. Where several input ids now belong to one gene (FlyBase merges):
@@ -156,9 +159,10 @@ Same 238 driver-typed samples with the same drivers, tissue, stage and dataset l
   samples; new labels `Bulk RNA-seq data from Davis (2020)` and `Mi1_d1_rep1 (Davis
   2020)`, previously `RNAseq_2020_Davis` and `RNAseq_2020_DavisMi1_d1_rep1`.
 - Added since: assay type and sample cell types (2026-11-11).
-- The 4 R1-6 samples (no driver class, no expression) are no longer loaded.
-- Expression: 2,717,993 axioms (was 2,718,789). Iyd (FBgn0286980, 206 axioms) dropped
-  as a split (the 2024 curation mapped it by name); 3 merged genes with differing input
+- The 4 R1-6 samples (no driver class, no expression in 2025) are now loaded with their
+  driver class and expression (2026-11-15).
+- Expression: 2,717,993 axioms for the 2025 samples (was 2,718,789); 2,766,228 with R1-6.
+  Iyd (FBgn0286980, 206 axioms) dropped as a split (the 2024 curation mapped it by name); 3 merged genes with differing input
   rows dropped (xmas, Or67c, lncRNA:CR46499; 590 axioms); 5 genes renamed by FlyBase
   since 2025-10 moved to their new ids; all other values identical.
 
@@ -214,22 +218,23 @@ pipeline as Aso 2019. 6 GEO samples; 20 loaded.
 ## Sapiro 2019 (`sapiro_2019`; ids minted, not yet released)
 
 GEO GSE113661 (BioProject PRJNA453551; SubSeries of GSE113663), FBrf0241444, PNAS, CC BY 4.0.
-30 GEO samples; 27 loaded.
+30 GEO samples; all loaded.
 
 - **Method / tissue / stage:** INTACT (UNC84-2xGFP nuclei affinity-purified from ~300
   homogenised heads), 10 GAL4 lines x 3 replicates; adult head (FBbt:00000004), adult (2-3 day).
 - **Drivers:** GEO `genotype` (`UAS-unc84-2XGFP; <name>-GAL4`). Each line from FlyBase's
   curation of the paper (one GAL4 per driver), e.g. TH-GAL4 = P{ple-GAL4.F}, fru-GAL4 =
   TI{GAL4}fru[GAL4.P1.D], elav-GAL4 = P{GawB}elav[C155], Dh44-GAL4 = P{VT039046-GAL4}.
-- **Left out:** the 3 NPFR samples (P{NPFR-GAL4.T}, FBtp0131830, is not in VFB, so no
-  VFBexp class; checked 2026-11-12).
+- **NPFR:** the 3 samples were left out until P{NPFR-GAL4.T} (FBtp0131830) had a VFBexp
+  class: loaded through curation `new_eps` 2026-11-15, samples VFBseq_00003626-00003628.
 - **Cell types:** the authors' populations (`cell_types.tsv`): Dh44 -> *adult Dh44 neuron of
   brain* (heads), Tdc2 -> *adult octopaminergic neuron* as the authors name it, OK107 ->
   *adult Kenyon cell*, fru -> *fruitless expressing neuron*; elav (pan-neuronal reference)
-  -> *adult neuron*.
+  -> *adult neuron*; NPFR -> *adult neuron* too (no FBbt term for NPFR-expressing neurons).
 - **Expression:** GEO RAW.tar, per-sample featureCounts gene counts keyed by gene name
   (`-g gene_name`) in Ensembl BDGP6.88, mapped to FBgn through that GTF (each name is one
   gene there); the `*_RNAseq_editing` files are editing levels and are skipped. Raw counts
   only, scaled to CPM. Gene ids (FB2026_03): 17,490 genes; 254 retired ids replaced, 9 split
   and 1 withdrawn dropped, 11 merges summed (featureCounts counts each read once).
-- Build: 28 entities (VFBseq_00003594-00003621), 344,353 expression axioms, 16,386 genes.
+- Build: 31 entities (VFBseq_00003594-00003621, 00003626-00003628), 380,402 expression
+  axioms, 16,395 genes. `FBgn_list.txt` grows by 3 genes (17,526 -> 17,529).
