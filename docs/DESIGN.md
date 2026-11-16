@@ -82,6 +82,24 @@ pattern class).
 - **Classic GAL4 lines** (named loosely, e.g. `TH-GAL4`): take the construct or
   insertion from FlyBase's curation of the paper where it lists one per driver, else the
   paper's cited source; never a guess from the name alone.
+- **Driver classes not in VFB** are loaded through the curation repo (`records/new_eps`
+  for a single driver, `records/new_splits` for an AD + DBD pair) on the curator's branch:
+  a test-mode curation-load first, run mode (kbw) only on the curator's go-ahead, then
+  archive the record and check the class in the KB. Until the class is in VFB, the
+  driver's `drivers.tsv` row has no class and its samples are left out. Conventions
+  (curator 2026-11-16), matching what pdb already has:
+  - **Synonyms:** single drivers get none in the record: the class takes the FlyBase
+    feature's synonyms (+ " expression pattern") at load, so their capture is left to
+    FlyBase curators. Split classes get no synonyms from FlyBase, so the record gives the
+    line's name(s) as the paper uses them (e.g. `Tm5ab-Gal4`; pdb's C2 split has `C2b-Gal4`).
+  - **Cross-references:** `dbxrefs` only for sites showing the line itself (FlyLight,
+    FlyLightSplit, NeuronBridge; a new VFB Site can be added where one fits). No stock
+    centre links (e.g. Bloomington): FlyBase links stocks to the constructs. Leave the
+    column out when no row has one (peevish counts blank values as duplicates).
+  - **No direct pub link** on the class: in pdb, expression pattern classes cite papers
+    only through FlyBase expression curation (`pub` on `overlaps` / `part_of` edges) and
+    synonym references. The paper reaches the class through the dataset and its samples;
+    VFBquery has no EPseq queries yet (todo: pattern -> samples -> dataset -> pub and back).
 - **No narrower type** (a pan-neuronal driver such as elav-GAL4, or a line whose cells are
   mixed neurons): *adult neuron* (FBbt:00047095) where the cells are known to be neurons.
   Unlike an scRNAseq cluster (held when typeable only as *neuron*), the sample still has its
