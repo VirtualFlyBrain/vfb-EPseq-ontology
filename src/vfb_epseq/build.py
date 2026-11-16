@@ -84,7 +84,8 @@ def entities(cfg: dict, samples: list[Sample], ids: IdLookup) -> list[dict]:
     out = [{
         "type": "EPseqDataset", "id": ds_iri, "name": dataset_label(cfg), "title": ds["title"],
         "neo_label": ["DataSet"], "site": "vfb:GEO", "accession": src["geo_series"],
-        "licence": LICENCES[ds["licence"]], "publication": src["publication"],
+        "publication": src["publication"],
+        **({"licence": LICENCES[ds["licence"]]} if ds.get("licence") else {}),   # none where the paper states none
         **({"assay_type": ds["assay_type"]} if ds.get("assay_type") else {}),
         **({"expression_atlas_xref": src["expression_atlas"]} if src.get("expression_atlas") else {}),
     }]
@@ -121,11 +122,16 @@ class TpmTable:
 
 def _read_text(path: Path) -> TpmTable:
     """Tab-separated (gzipped) genes x samples: gene id, symbol, then one column per
-    sample. Non-gene rows (e.g. ERCC spike-ins) are skipped."""
+    sample; or, where the header has one field fewer than the rows (R's write.table, row
+    names = gene ids), gene id then one column per sample (the id stands for the symbol).
+    Non-gene rows (e.g. ERCC spike-ins) are skipped."""
     with gzip.open(path, "rt") as fh:
         rows = csv.reader(fh, delimiter="\t")
         header = next(rows)
-        return TpmTable(header[2:], [(r[0], r[1], r[2:]) for r in rows if r[0].startswith("FBgn")])
+        body = [r for r in rows if r[0].startswith("FBgn")]
+    if body and len(header) == len(body[0]) - 1:
+        return TpmTable(header, [(r[0], r[0], r[1:]) for r in body])
+    return TpmTable(header[2:], [(r[0], r[1], r[2:]) for r in body])
 
 
 def _read_xlsx(path: Path, x: dict) -> TpmTable:

@@ -98,7 +98,7 @@ class Sample:
     expression_pattern: str
     author_cell_type: str = ""
     cell_types: tuple[str, ...] = ()   # FBbt ids the sample is composed primarily of
-    library: str = ""     # one library of a GEO sample that pools several (samples.libraries)
+    library: str = ""     # one library / replicate column of a GEO sample (samples.libraries, replicate_columns)
     column: str = ""      # expression table column, where not derived from the title
 
     @property
@@ -116,8 +116,9 @@ def _author_cell_type(sc: dict, title: str, driver: str) -> str | None:
 
 
 def needs_table(cfg: dict) -> bool:
-    """Whether select_samples needs the expression table (for samples.libraries)."""
-    return bool(cfg["samples"].get("libraries"))
+    """Whether select_samples needs the expression table (samples.libraries or
+    samples.replicate_columns)."""
+    return bool(cfg["samples"].get("libraries") or cfg["samples"].get("replicate_columns"))
 
 
 def _library_samples(s, sc: dict, table) -> list[tuple[str, str, str, str]]:
@@ -136,6 +137,25 @@ def _library_samples(s, sc: dict, table) -> list[tuple[str, str, str, str]]:
     return out
 
 
+def _replicate_samples(s, sc: dict, table) -> list[tuple[str, str, str, str | None]]:
+    """(replicate, column, driver, author cell type) for each replicate of a GEO sample
+    whose biological replicates are separate expression-table columns: the columns
+    matching samples.replicate_columns, a regex in which `{cell_type}` stands for the
+    sample's author cell type (from its title, samples.cell_type_pattern). One Sample per
+    replicate, so no values are combined."""
+    if table is None:
+        raise ValueError(f"{s.accession}: samples.replicate_columns needs the expression table")
+    driver = (s.characteristic(sc["driver_field"]) or "").strip()
+    author = _author_cell_type(sc, s.title, driver)
+    if author is None:
+        return [("", "", driver, None)]          # reported as a missing author cell type
+    pattern = re.compile(sc["replicate_columns"].replace("{cell_type}", re.escape(author)))
+    out = [(c, c, driver, author) for c in table.columns if pattern.fullmatch(c)]
+    if not out:
+        raise ValueError(f"no expression table columns match {pattern.pattern!r} ({s.accession} {s.title})")
+    return out
+
+
 def select_samples(series: GeoSeries, cfg: dict, table=None) -> tuple[list[Sample], list[dict]]:
     """(samples to load, [{title, gsm, reason}] left out), in GEO order.
 
@@ -144,7 +164,8 @@ def select_samples(series: GeoSeries, cfg: dict, table=None) -> tuple[list[Sampl
     samples.cell_types, each sample's author cell type (from its title) is mapped to FBbt.
     A GEO sample in samples.libraries pools several libraries, each with its own table
     column, driver and cell type (from the table's metadata rows; needs `table`): it gives
-    one Sample per library. Raises on a driver missing from drivers.tsv or an author cell
+    one Sample per library. With samples.replicate_columns, a GEO sample whose biological
+    replicates are separate table columns gives one Sample per replicate. Raises on a driver missing from drivers.tsv or an author cell
     type missing from cell_types.tsv (new ones need curating)."""
     sc = cfg["samples"]
     columns = cfg.get("expression", {}).get("sample_columns", {})
@@ -159,6 +180,8 @@ def select_samples(series: GeoSeries, cfg: dict, table=None) -> tuple[list[Sampl
             continue
         if s.accession in sc.get("libraries", {}):
             parts = _library_samples(s, sc, table)
+        elif sc.get("replicate_columns"):
+            parts = _replicate_samples(s, sc, table)
         else:
             parts = [("", columns.get(s.accession, ""), (s.characteristic(sc["driver_field"]) or "").strip(), None)]
         for library, column, driver_id, author in parts:
