@@ -85,13 +85,21 @@ pattern class).
 - **Driver classes not in VFB** are loaded through the curation repo (`records/new_eps`
   for a single driver, `records/new_splits` for an AD + DBD pair) on the curator's branch:
   a test-mode curation-load first, run mode (kbw) only on the curator's go-ahead, then
-  archive the record and check the class in the KB. Until the class is in VFB, the
+  archive the record and check the class in the KB. Check pdb, not just the KB, before
+  loading: the data release's FlyBase expression import (VFB_neo4j
+  `generate_expression_patterns`) makes the class for every driver and split FlyBase has
+  expression curation for, straight into pdb, so it is never in the KB. Load only classes
+  the import doesn't make. A kbw copy of an imported class adds nothing (the import re-sets
+  its label and synonyms each release) and would be left as an orphan if FlyBase obsoleted
+  or merged the driver. Until the class is in VFB, the
   driver's `drivers.tsv` row has no class and its samples are left out. Conventions
   (curator 2026-11-16), matching what pdb already has:
   - **Synonyms:** single drivers get none in the record: the class takes the FlyBase
     feature's synonyms (+ " expression pattern") at load, so their capture is left to
     FlyBase curators. Split classes get no synonyms from FlyBase, so the record gives the
     line's name(s) as the paper uses them (e.g. `Tm5ab-Gal4`; pdb's C2 split has `C2b-Gal4`).
+    These synonyms only last for splits the import doesn't make: the import overwrites an
+    imported split's synonyms with FlyBase's.
   - **Cross-references:** `dbxrefs` only for sites showing the line itself (FlyLight,
     FlyLightSplit, NeuronBridge; a new VFB Site can be added where one fits). No stock
     centre links (e.g. Bloomington): FlyBase links stocks to the constructs. Leave the
@@ -278,9 +286,11 @@ clusters) is separate and not in VFB (a vfb-scRNAseq candidate). Not the Konstan
 - **Drivers** (`drivers.tsv`, keyed by GEO `cell type`): the paper's key resources table,
   identified with FlyBase's curation of the paper and FlyBase stocks: 10 GMR GAL4s (Dm2:
   BDSC 49204, not in FlyBase stocks, is GMR26H07-GAL4 per RRID:BDSC_49204, the paper's one
-  otherwise unassigned GMR line), 4 Reiser splits (C2, C3, Lawf1, Lawf2), and 4 lines whose
-  classes were not in VFB: Dm8 P{ort-GAL4.C2} and Tm2 P{oc-GAL4.1.6} (curation `new_eps`),
-  Tm5ab and Tm5c (ort.C1a DBD with ET24g / OK371 dVP16AD; curation `new_splits`).
+  otherwise unassigned GMR line), 4 Reiser splits (C2, C3, Lawf1, Lawf2), Dm8
+  P{ort-GAL4.C2}, Tm2 P{oc-GAL4.1.6}, and Tm5ab and Tm5c (ort.C1a DBD with ET24g / OK371
+  dVP16AD). The last 4 were missing from the KB, so they were loaded into kbw (curation
+  `new_eps` / `new_splits`, 2026-11-16), but pdb already had them from the FlyBase
+  expression import; the kbw copies were deleted the same day.
 - **Left out:** the pan-neuronal control (Elav_RNASeq, 3 replicates): its driver is not in
   the key resources table and FlyBase links no elav line to the paper (2026-11-16).
 - **Cell types:** as Davis for the same types; Tm5ab (Tm5a + Tm5b) -> *transmedullary
