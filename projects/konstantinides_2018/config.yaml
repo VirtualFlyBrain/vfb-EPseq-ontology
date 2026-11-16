@@ -1,0 +1,35 @@
+# Konstantinides et al. 2018 (Cell 174:622), bulk RNA-seq of 17 FACS-sorted adult optic lobe neuron types,
+# a two-type line (R74G01: Tm1 + T1) and pan-neuronal control, 3 biological replicates each. The paper's
+# Drop-seq data (GSE103771) is a separate series, not loaded. No licence stated (Cell; the author is happy
+# for VFB to use the data). Not in a VFB release yet, so still open to change (docs/DESIGN.md).
+project: konstantinides_2018
+source:
+  geo_series: GSE103772
+  bioproject: PRJNA406954
+  publication: FlyBase:FBrf0239558
+  first_author: Konstantinides
+  year: 2018
+dataset:
+  label_prefix: Bulk RNA-seq data from   # -> "Bulk RNA-seq data from Konstantinides (2018)"; FACS in the description
+  assay_type: FBcv:0009018    # cell type-specific RNA-sequencing analysis
+  title: 'Phenotypic Convergence: Distinct Transcription Factors Regulate Common Terminal Features'
+samples:
+  # GAL4 > UAS-RedStinger nuclei; "dissected brains were dissociated", labelled cells FACS-sorted (STAR
+  # Methods); GEO source "Optic lobe neurons" names the cells, not the dissection; 3-6 day adults
+  tissue: FBbt:00003624
+  stage: FBdv:00005369
+  drivers: drivers.tsv
+  driver_field: cell type
+  cell_types: cell_types.tsv
+  # GEO titles: <type>_RNASeq, e.g. Tm1_T1_RNASeq -> Tm1_T1
+  cell_type_pattern: '^(?P<cell_type>.+)_RNASeq$'
+  # one GEO sample per type; its 3 biological replicates are separate table columns (<type>_<n>):
+  # one Sample per replicate (curator 2026-11-16)
+  replicate_columns: '{cell_type}_\d+'
+expression:
+  # GEO supplementary table: gene counts (integers), FBgn row names, one column per replicate
+  tpm_file: GSE103772_FACS_sorted_cell_types_RNASeq.txt.gz
+  normalise: cpm
+  merged_genes: sum
+  value: CPM
+  samples_per_file: 100

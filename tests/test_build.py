@@ -238,3 +238,37 @@ def test_tar_per_sample_files(cfg, tmp_path, monkeypatch):
         fh.write('X\tF\texon\t60\t69\t.\t+\t.\tgene_id "FBgn3"; gene_name "b";\n')
     with pytest.raises(ValueError, match="several gene ids"):
         build.read_tpm(cfg, tar_path)
+
+
+def test_replicate_columns_and_row_names(cfg, tmp_path):
+    """A GEO sample whose biological replicates are separate table columns gives one Sample
+    per replicate; a table whose header lacks the gene id column (R row names) is read."""
+    tpm = tmp_path / "counts.txt.gz"
+    with gzip.open(tpm, "wt") as fh:
+        fh.write("C2_1\tC2_2\tTm1_T1_1\tC3_1\n"
+                 "FBgn1\t1\t3\t5\t7\n"
+                 "FBgn2\t3\t1\t0\t1\n")
+    table = build.read_tpm(cfg, tpm)
+    assert table.columns == ["C2_1", "C2_2", "Tm1_T1_1", "C3_1"]
+    assert build.tpm_features(table) == [("FBgn1", "FBgn1"), ("FBgn2", "FBgn2")]
+    (cfg["_dir"] / "drivers.tsv").write_text(
+        "driver\texpression_pattern\tnote\nC2\tVFBexp_FBtp1FBtp2\t\nT1 and Tm1\tVFBexp_FBtp3\t\n")
+    (cfg["_dir"] / "cell_types.tsv").write_text(
+        "author_cell_type\tcell_type\tlabel\tnote\nC2\tFBbt:1\t\t\nTm1_T1\tFBbt:2|FBbt:3\t\t\n")
+    cfg["samples"].update(driver_field="cell type", cell_types="cell_types.tsv",
+                          cell_type_pattern=r"^(?P<cell_type>.+)_RNASeq$",
+                          replicate_columns=r"{cell_type}_\d+")
+    series = GeoSeries("GSE1", samples=[
+        GeoSample("GSM1", "C2_RNASeq", characteristics={"cell type": "C2"}, relations={"BioSample": "SAMN1"}),
+        GeoSample("GSM2", "Tm1_T1_RNASeq", characteristics={"cell type": "T1 and Tm1"},
+                  relations={"BioSample": "SAMN2"})])
+    with pytest.raises(ValueError, match="needs the expression table"):
+        select_samples(series, cfg)
+    keep, _ = select_samples(series, cfg, table)
+    assert [(s.name, s.column, s.cell_types) for s in keep] == [
+        ("C2_RNASeq:C2_1", "C2_1", ("FBbt:1",)), ("C2_RNASeq:C2_2", "C2_2", ("FBbt:1",)),
+        ("Tm1_T1_RNASeq:Tm1_T1_1", "Tm1_T1_1", ("FBbt:2", "FBbt:3"))]
+    ids = build.IdLookup(cfg, {("Sample", "GSE1:" + s.name): f"VFBseq_{i}" for i, s in enumerate(keep)})
+    genes = {"FBgn1": ("FBgn1", "g1"), "FBgn2": ("FBgn2", "g2")}
+    got = {(r[1], r[2]): r[4] for c in build.expression(cfg, table, keep, ids, genes) for r in c}
+    assert got[("C2_RNASeq:C2_2", "FBgn1")] == "3" and ("Tm1_T1_RNASeq:Tm1_T1_1", "FBgn2") not in got

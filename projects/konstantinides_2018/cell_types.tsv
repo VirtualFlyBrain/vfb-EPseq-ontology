@@ -1,0 +1,22 @@
+# Authors' cell type (the GEO title before _RNASeq) -> FBbt type the sample is composed primarily of. Same terms as
+# Davis 2020 for the same types; a line labelling two types maps to their common parent. Checked against FBbt 2026-11-16.
+author_cell_type	cell_type	label	note
+C2	FBbt:00003743	centrifugal neuron C2	
+C3	FBbt:00003744	centrifugal neuron C3	
+Dm12	FBbt:00111273	distal medullary amacrine neuron Dm12	
+Dm2	FBbt:00003769	distal medullary amacrine neuron Dm2	
+Dm8	FBbt:00013774	distal medullary amacrine neuron Dm8	
+Lawf1	FBbt:00003741	lamina wide-field 1 neuron	
+Lawf2	FBbt:00110065	lamina wide-field 2 neuron	
+Mi1	FBbt:00003776	medulla intrinsic neuron Mi1	
+T1	FBbt:00003727	columnar neuron T1	
+T2	FBbt:00003728	T2 neuron	
+T3	FBbt:00003730	T3 neuron	
+T5	FBbt:00003736	T5 neuron	
+Tm2	FBbt:00003790	transmedullary neuron Tm2	
+Tm3	FBbt:00003791	transmedullary neuron Tm3	
+Tm5ab	FBbt:00003793	transmedullary neuron Tm5	Tm5a and Tm5b ("consists of 2 cell types"): their common parent
+Tm5c	FBbt:00110074	transmedullary neuron Tm5c	
+Tm9	FBbt:00003797	transmedullary neuron Tm9	
+Tm1_T1	FBbt:00007578	optic lobe intrinsic columnar neuron	R74G01 labels Tm1 and T1 (Figure 2C): their common parent
+Elav			pan-neuronal control; not loaded (driver not identified)
