@@ -1,0 +1,23 @@
+# GEO "cell type" -> VFB expression pattern class. Lines from the paper's key resources table, identified with
+# FlyBase's curation of the paper (FBrf0239558) and FlyBase stocks; classes checked in the VFB KB 2026-11-16.
+# Splits: VFBexp_<DBD><AD>.
+driver	expression_pattern	feature	evidence	note
+C2	VFBexp_FBtp0099184FBtp0099404	P{R48D11-GAL4.DBD} ∩ P{R25B02-p65.AD}	KRT "25B02AD; 48D11DBD" (M. Reiser)	
+C3	VFBexp_FBtp0093500FBtp0093501	P{R29G11-GAL4.DBD} ∩ P{R26H02-p65.AD}	KRT "26H02AD; 29G11DBD" (M. Reiser)	
+Dm12	VFBexp_FBtp0060646	P{GMR47G08-GAL4}	KRT BDSC 50328 (FBst0050328)	
+Dm2	VFBexp_FBtp0058835	P{GMR26H07-GAL4}	KRT BDSC 49204 (RRID:BDSC_49204: GMR26H07-GAL4; not in FlyBase stocks)	
+Dm8	VFBexp_FBtp0052927	P{ort-GAL4.C2}	KRT "ort C2b-GAL4" (C.-H. Lee); FlyBase curates P{ort-GAL4.C2}	class to load (curation new_eps)
+Lawf1	VFBexp_FBtp0099191FBtp0099408	P{R17C11-GAL4.DBD} ∩ P{R52H01-p65.AD}	KRT "R52H01AD; R17C11DBD" (M. Reiser)	
+Lawf2	VFBexp_FBtp0099195FBtp0099409	P{R61H02-GAL4.DBD} ∩ P{R11D03-p65.AD}	KRT "R11D03AD; R61H02DBD" (M. Reiser)	
+Mi1	VFBexp_FBtp0058162	P{GMR19F01-GAL4}	KRT BDSC 48852 (FBst0048852)	
+T1	VFBexp_FBtp0059276	P{GMR31F10-GAL4}	KRT BDSC 49685 (FBst0049685)	
+T2	VFBexp_FBtp0063754	P{GMR88C02-GAL4}	KRT BDSC 40519 (FBst0040519)	
+T3	VFBexp_FBtp0059068	P{GMR29D11-GAL4}	KRT BDSC 49484 (FBst0049484)	
+T5	VFBexp_FBtp0060233	P{GMR42H07-GAL4}	KRT BDSC 50172 (FBst0050172)	
+Tm2	VFBexp_FBtp0118047	P{oc-GAL4.1.6}	KRT "otd-Gal4" (T. Cook); FlyBase curates P{oc-GAL4.1.6}	class to load (curation new_eps)
+Tm3	VFBexp_FBtp0057623	P{GMR13E12-GAL4}	KRT BDSC 48569 (FBst0048569)	
+Tm5ab	VFBexp_FBtp0093984FBti0161243	P{ort-Gal4.C1a.DBD} ∩ P{dVP16AD}ET24g	KRT "OrtC1aDBD#3; dvP16AD-24g" (Melnattur 2014)	class to load (curation new_splits)
+Tm5c	VFBexp_FBtp0093984FBti0129742	P{ort-Gal4.C1a.DBD} ∩ P{dVP16AD}VGlut1[OK371-dVP16AD]	KRT "OrtC1a-Gal4DBD#3 OK371AD" (Melnattur 2014)	class to load (curation new_splits)
+Tm9	VFBexp_FBtp0058594	P{GMR24C08-GAL4}	KRT BDSC 48050 (FBst0048050)	
+T1 and Tm1	VFBexp_FBtp0062646	P{GMR74G01-GAL4}	KRT R74G01-Gal4, BDSC 39868 (FBst0039868)	
+neurons			pan-neuronal control (Elav_RNASeq)	driver not identified: not in the key resources table and FlyBase links no elav line to the paper (checked 2026-11-16): samples not loaded

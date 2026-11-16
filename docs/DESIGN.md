@@ -51,7 +51,8 @@ next data release:
 - **Dataset** (FBcv:0003023): label `<method> data from <Author> (<year>)` (`Bulk RNA-seq`
   from Aso 2019 on; the isolation method goes in the description), optional assay type
   (`dataset.assay_type`, e.g. FBcv:0009018 *cell type-specific RNA-sequencing analysis*), description,
-  publication, licence, GEO and Expression Atlas xrefs. Node label `DataSet`.
+  publication, licence (where the paper states one), GEO and Expression Atlas xrefs. Node
+  label `DataSet`.
 - **Sample** (FBcv:0003024): one per driver-sorted GEO sample, label `<sample title>
   (<Author> <year>)`. Instance of the driver's `VFBexp_` expression pattern class (VFB
   links the sample to the driver through it); overlaps the dissected tissue; stage; the
@@ -90,6 +91,10 @@ pattern class).
   each with its own column, line and cell type in the authors' table, gives one Sample per
   library (natural key `<GEO series>:<sample title>:<library>`; the GSM and BioSample are
   shared xrefs). Values are never combined across libraries.
+- **Replicates as columns** (`samples.replicate_columns`): where a GEO sample holds a line's
+  biological replicates as separate columns of the authors' table, each replicate is its
+  own Sample (natural key `<GEO series>:<sample title>:<column>`), as for pooled libraries;
+  replicates are never averaged or summed (curator 2026-11-16, general rule).
 - **Expression values:** the authors' gene-level values only. A dataset with only
   transcript- or exon-level values is not loaded (curator 2026-11-12: e.g. Abruzzi 2017,
   ESAT per-transcript values where isoforms sharing a 3' end get the same reads); summing
@@ -238,3 +243,32 @@ GEO GSE113661 (BioProject PRJNA453551; SubSeries of GSE113663), FBrf0241444, PNA
   and 1 withdrawn dropped, 11 merges summed (featureCounts counts each read once).
 - Build: 31 entities (VFBseq_00003594-00003621, 00003626-00003628), 380,402 expression
   axioms, 16,395 genes. `FBgn_list.txt` grows by 3 genes (17,526 -> 17,529).
+
+## Konstantinides 2018 (`konstantinides_2018`; ids minted, not yet released)
+
+GEO GSE103772 (BioProject PRJNA406954), FBrf0239558, Cell 174:622. No licence stated (the
+author is happy for VFB to use the data; dataset loaded with no licence). 19 GEO samples
+x 3 biological replicates; 54 Samples loaded. The paper's Drop-seq series (GSE103771, 52
+clusters) is separate and not in VFB (a vfb-scRNAseq candidate). Not the Konstantinides
+2022 scRNAseq (GSE167266) already in vfb-scRNAseq.
+
+- **Method / tissue / stage:** GAL4 > UAS-RedStinger; "dissected brains were dissociated"
+  and labelled cells FACS-sorted (STAR Methods; GEO source "Optic lobe neurons" names the
+  cells): adult brain (FBbt:00003624), adult (3-6 day).
+- **Samples:** one GEO sample per line, its 3 replicates as table columns (`<type>_<n>`):
+  one Sample per replicate (`samples.replicate_columns`), labelled `<title>:<column>`.
+- **Drivers** (`drivers.tsv`, keyed by GEO `cell type`): the paper's key resources table,
+  identified with FlyBase's curation of the paper and FlyBase stocks: 10 GMR GAL4s (Dm2:
+  BDSC 49204, not in FlyBase stocks, is GMR26H07-GAL4 per RRID:BDSC_49204, the paper's one
+  otherwise unassigned GMR line), 4 Reiser splits (C2, C3, Lawf1, Lawf2), and 4 lines whose
+  classes were not in VFB: Dm8 P{ort-GAL4.C2} and Tm2 P{oc-GAL4.1.6} (curation `new_eps`),
+  Tm5ab and Tm5c (ort.C1a DBD with ET24g / OK371 dVP16AD; curation `new_splits`).
+- **Left out:** the pan-neuronal control (Elav_RNASeq, 3 replicates): its driver is not in
+  the key resources table and FlyBase links no elav line to the paper (2026-11-16).
+- **Cell types:** as Davis for the same types; Tm5ab (Tm5a + Tm5b) -> *transmedullary
+  neuron Tm5*; Tm1_T1 (R74G01, Tm1 + T1) -> *optic lobe intrinsic columnar neuron*.
+- **Expression:** GEO supplementary table, HTSeq counts (union mode: each read counted at
+  most once) on Ensembl 81 / BDGP6, FBgn row names; scaled to CPM. Gene ids (FB2026_03):
+  17,294 current, 254 retired ids replaced, 9 split and 1 withdrawn dropped, 11 merges summed.
+- Build: 55 entities (VFBseq_00003629-00003683), 577,362 expression axioms, 16,344 genes,
+  6,252-12,937 genes per sample. `FBgn_list.txt` grows by 70 genes (17,529 -> 17,599).
